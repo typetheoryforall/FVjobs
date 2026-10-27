@@ -12,6 +12,7 @@ import html
 import json
 import pathlib
 import shutil
+import urllib.parse
 
 import yaml
 
@@ -94,6 +95,17 @@ def details(e):
     return f'<details><summary>Pay, eligibility and notes</summary><dl>{body}</dl></details>'
 
 
+def report(e):
+    """Link to the stale-job issue form, filled in with this listing."""
+    query = urllib.parse.urlencode(
+        {"template": "stale-job.yml", "title": f"[stale] {e['company']} — {e['role']}", "url": e["url"]},
+        quote_via=urllib.parse.quote,
+    )
+    label = f"Report a problem with {e['role']} at {e['company']}"
+    return (f'<a class="report" href="{esc(REPO)}/issues/new?{esc(query)}" target="_blank" rel="noopener"'
+            f' aria-label="{esc(label)}">Report a problem</a>')
+
+
 def job(e, closed=False):
     kind = CATEGORY_LABEL.get(e["category"], e["category"])
     data = {
@@ -126,6 +138,7 @@ def job(e, closed=False):
   <ul class="domain" aria-label="Domain">{chips(e["domain"], "area")}</ul>
   <p class="checked">{when}</p>
   {details(e)}
+  {"" if closed else report(e)}
 </li>"""
 
 

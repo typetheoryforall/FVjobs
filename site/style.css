@@ -98,6 +98,11 @@ code { font-size: .92em; }
 h1 { font: 600 clamp(2rem, 5vw, 3rem)/1.1 var(--serif); margin: 0 0 1rem; letter-spacing: -.01em; }
 .intro p { margin: 0 0 1rem; font: 1.13rem/1.6 var(--serif); }
 .intro .stats { color: var(--muted); font: 1rem/1.5 var(--sans); }
+.intro .ask {
+  font: .95rem/1.5 var(--sans); color: var(--muted);
+  border-left: 3px solid var(--accent); padding-left: .85rem;
+}
+.intro .ask b { color: var(--ink); font-weight: 600; }
 
 /* Filters */
 .board { padding-top: 2rem; }
@@ -136,7 +141,7 @@ legend { font-weight: 600; font-size: .9rem; margin-bottom: .5rem; padding: 0; }
     "head where"
     "stack level"
     "domain checked"
-    "details details";
+    "details report";
   column-gap: 2rem;
   padding: 1.25rem 0;
   border-bottom: 1px solid var(--rule);
@@ -177,6 +182,12 @@ legend { font-weight: 600; font-size: .9rem; margin-bottom: .5rem; padding: 0; }
 .job dl { display: grid; grid-template-columns: max-content 1fr; gap: .35rem 1rem; margin: .6rem 0 0; max-width: 46rem; }
 .job dt { color: var(--muted); }
 .job dd { margin: 0; }
+.report {
+  grid-area: report; justify-self: start; align-self: start; margin-top: .6rem;
+  padding: .15rem .65rem; border: 1px solid var(--rule); border-radius: 999px;
+  font-size: .85rem; color: var(--muted); text-decoration: none; background: var(--raised);
+}
+.report:hover { color: var(--accent); border-color: var(--accent); }
 .empty { padding: 2rem 0; color: var(--muted); }
 
 .archive { padding: 3rem 0 1rem; }
@@ -193,7 +204,7 @@ footer p { max-width: 44rem; }
   .premises { flex-direction: column; }
   .job {
     grid-template-columns: 1fr;
-    grid-template-areas: "head" "where" "level" "stack" "domain" "checked" "details";
+    grid-template-areas: "head" "where" "level" "stack" "domain" "checked" "details" "report";
     row-gap: .35rem;
   }
   .remote { display: inline; margin-right: .4em; }

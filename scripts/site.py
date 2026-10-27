@@ -117,7 +117,7 @@ def job(e, closed=False):
 <li class="job" {attrs}>
   <div class="job-head">
     <p class="company">{esc(e["company"])} <span class="kind kind-{esc(e["category"])}">{esc(kind)}</span></p>
-    <h3><a href="{esc(e["url"])}" rel="noopener">{esc(e["role"])}</a></h3>
+    <h3><a href="{esc(e["url"])}" target="_blank" rel="noopener">{esc(e["role"])}</a></h3>
   </div>
   <p class="where"><span class="remote remote-{esc(e["remote"])}">{esc(REMOTE_LABEL.get(e["remote"], e["remote"]))}</span>
     {esc(e["location"])}</p>

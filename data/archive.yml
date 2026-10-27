@@ -2,17 +2,44 @@
 # hired for Lean work six months ago" is useful even when the posting is gone.
 # Same fields as jobs.yml, plus `closed` (the date it was found to be gone).
 
+- company: Cryspen
+  role: Open applications (Rust verification, hax)
+  category: software
+  url: https://cryspen.com/jobs
+  location: France / Germany
+  remote: hybrid
+  stack: [hax, Rust, F*]
+  domain: [cryptography]
+  seniority: any
+  notes: No individual postings listed; speculative applications via info@cryspen.com.
+  last_verified: 2026-10-26
+  closed: 2026-10-27
+
 - company: Google DeepMind
   role: Research Scientist, Verified Code Generation
+  category: ai-for-proof
   url: https://www.google.com/about/careers/applications/jobs/results/138630831110267590-research-scientist-verified-code-generation-deepmind
   location: Mountain View, CA / London, UK
   remote: onsite
   stack: [Lean]
   domain: [AI for code, program verification]
   seniority: research-scientist
+  tags: [big-company]
   compensation: USD 174,000–252,000 plus 15% bonus and equity
   notes: >-
     Formalizing C/C++ semantics in Lean, verified static analyses, and AI-driven
     proof search. Both posting IDs returned "job not found" on 2026-10-26.
   last_verified: 2026-09-25
   closed: 2026-10-26
+
+- company: Imandra
+  role: Open applications — R&D (automated reasoning)
+  category: software
+  url: https://apply.workable.com/imandra/
+  location: Edinburgh / London / Bristol / Austin
+  remote: remote
+  stack: [OCaml, SMT, automated reasoning]
+  domain: [finance, automated reasoning]
+  seniority: any
+  last_verified: 2026-10-26
+  closed: 2026-10-27

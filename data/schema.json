@@ -5,10 +5,15 @@
   "items": {
     "type": "object",
     "additionalProperties": false,
-    "required": ["company", "role", "url", "location", "remote", "stack", "domain", "seniority", "last_verified"],
+    "required": ["company", "role", "category", "url", "location", "remote", "stack", "domain", "seniority", "last_verified"],
     "properties": {
       "company":  { "type": "string", "minLength": 1 },
       "role":     { "type": "string", "minLength": 1 },
+      "category": {
+        "type": "string",
+        "enum": ["academic", "ai-for-proof", "software", "hardware", "cryptocurrency"],
+        "description": "Kind of formal verification: academic post, AI for proof and autoformalization, software, hardware, or cryptocurrency (blockchain, smart contracts, ZK)"
+      },
       "url":      { "type": "string", "pattern": "^https://" },
       "location": { "type": "string", "minLength": 1 },
       "remote": {
@@ -26,6 +31,14 @@
       "seniority": {
         "type": "string",
         "enum": ["intern", "phd", "postdoc", "engineer", "research-engineer", "research-scientist", "senior", "principal", "lead", "any"]
+      },
+      "tags": {
+        "type": "array", "uniqueItems": true, "items": { "enum": ["big-company"] },
+        "description": "Filter-only labels, not shown on the board. big-company = big tech, the major chip, EDA and aerospace groups, and their subsidiaries"
+      },
+      "posted": {
+        "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+        "description": "Date the employer published the posting, as the posting or its job board API states it. Omit when no date is published"
       },
       "last_verified": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
       "closed":        { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },

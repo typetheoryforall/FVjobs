@@ -2,10 +2,10 @@ name: validate
 
 on:
   pull_request:
-    paths: ["data/**", "scripts/**", "README.md", ".github/workflows/ci.yml"]
+    paths: ["data/**", "scripts/**", ".github/workflows/ci.yml"]
   push:
     branches: [main]
-    paths: ["data/**", "scripts/**", "README.md"]
+    paths: ["data/**", "scripts/**"]
   workflow_dispatch:
 
 jobs:
@@ -19,5 +19,3 @@ jobs:
       - run: pip install pyyaml jsonschema
       - name: Validate the data
         run: python3 scripts/validate.py
-      - name: Check the README table is up to date
-        run: python3 scripts/render.py --check

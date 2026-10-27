@@ -14,10 +14,8 @@ takes two minutes, and a maintainer moves it into the data file.
 1. Add an entry to `data/jobs.yml`, keeping the file sorted by company.
 2. Install the two dependencies: `pip install pyyaml jsonschema`.
 3. Run `python3 scripts/validate.py` and fix anything it reports.
-4. Run `python3 scripts/render.py` to regenerate the table in `README.md`.
-5. Commit both the data and the regenerated README.
 
-CI runs the same two commands, so a PR that forgets step 4 will fail.
+CI runs the same validator and builds a preview of the site for every PR.
 
 ## The fields
 
@@ -25,12 +23,15 @@ CI runs the same two commands, so a PR that forgets step 4 will fail.
 |---|---|---|
 | `company` | yes | The employer, not the recruiting agency |
 | `role` | yes | The posting's own title |
+| `category` | yes | The kind of verification: `hardware`, `software`, `ai-for-proof` (AI for proof and autoformalization), `academic` (university and research-institute posts), or `cryptocurrency` (blockchain, smart contracts, ZK). Industry labs such as Microsoft Research go under the kind of work they do |
 | `url` | yes | Link to the posting itself where one exists; a careers page is acceptable for speculative or open applications |
 | `location` | yes | As the posting states it. "Anywhere" for genuinely unrestricted roles |
 | `remote` | yes | `onsite`, `hybrid`, `remote` (within a stated region) or `remote-worldwide` |
 | `stack` | yes | Verification tools the posting names: Lean, Rocq, Isabelle, Agda, SMT, TLA+, F\*, K, SystemVerilog, hax, Verus, … |
 | `domain` | yes | Where the work lands: hardware, cryptography, compilers, blockchain, AI safety, aerospace, finance, … |
 | `seniority` | yes | One of the values in `data/schema.json` |
+| `tags` | no | `[big-company]` for big tech, the major chip, EDA and aerospace groups, and their subsidiaries (roughly 5,000 staff or more). Used only by the site's employer filter; it is not shown on the board |
+| `posted` | no | ISO date the employer published the posting, as the posting or its job board states it. Leave it out when no date is shown rather than guessing. The site's "newest first" order uses it |
 | `last_verified` | yes | ISO date on which you confirmed the posting was live |
 | `work_authorization` | no | **Please fill this in when the posting restricts it.** Export-control clauses ("US Person required"), visa sponsorship, and region limits are the single most useful thing here |
 | `compensation` | no | Only what the employer published. Do not add third-party estimates |

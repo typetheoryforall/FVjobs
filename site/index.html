@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FVjobs — formal verification jobs</title>
-<meta name="description" content="{{count}} open roles in formal verification: proof assistants, automated reasoning, verified compilation and AI-for-proof, with the proof stack and work authorization recorded for each.">
+<meta name="description" content="{{count}} open roles in formal verification across hardware, software, AI for proof, academia and cryptocurrency, with the proof stack and work authorization recorded for each.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600&family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -50,6 +50,10 @@
       <span class="visually-hidden">Search roles</span>
       <input type="search" id="q" placeholder="Search company, role, tool or domain" autocomplete="off">
     </label>
+    <fieldset>
+      <legend>Kind of verification</legend>
+      <div class="seg counted">{{categories}}</div>
+    </fieldset>
     <fieldset class="stack-filter" hidden>
       <legend>Proof stack</legend>
       <div id="stacks"></div>
@@ -64,11 +68,28 @@
         <label><input type="radio" name="remote" value="onsite"><span>On-site</span></label>
       </div>
     </fieldset>
+    <fieldset>
+      <legend>Employer</legend>
+      <div class="seg">
+        <label><input type="radio" name="big" value="" checked><span>Any</span></label>
+        <label><input type="radio" name="big" value="yes"><span>Big companies</span></label>
+        <label><input type="radio" name="big" value="no"><span>Not big companies</span></label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Order</legend>
+      <div class="seg">
+        <label><input type="radio" name="order" value="" checked><span>Company A–Z</span></label>
+        <label><input type="radio" name="order" value="newest"><span>Newest first</span></label>
+        <label><input type="radio" name="order" value="oldest"><span>Oldest first</span></label>
+      </div>
+    </fieldset>
   </form>
   <p class="shown" id="shown" aria-live="polite"></p>
+  <p class="undated" id="undated" hidden>Roles whose posting gives no date are listed last.</p>
   <ol class="jobs" id="jobs">{{jobs}}
   </ol>
-  <p class="empty" id="empty" hidden>No role matches these filters. Clear the search or pick another proof stack.</p>
+  <p class="empty" id="empty" hidden>No role matches these filters. Clear the search or loosen a filter.</p>
 </section>
 
 <section class="archive">

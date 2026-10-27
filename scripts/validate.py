@@ -27,7 +27,7 @@ def load(name):
     for entry in entries:
         if not isinstance(entry, dict):
             continue
-        for key in ("last_verified", "closed"):
+        for key in ("posted", "last_verified", "closed"):
             if isinstance(entry.get(key), dt.date):
                 entry[key] = entry[key].isoformat()
     return entries
@@ -52,6 +52,14 @@ def main():
             if url in seen:
                 errors.append(f"{name}: duplicate url {url} (entries {seen[url]} and {i})")
             seen[url] = i
+
+            posted = e.get("posted")
+            if posted:
+                try:
+                    if dt.date.fromisoformat(posted) > today:
+                        errors.append(f"{name}: {e.get('company')}: posted is in the future")
+                except ValueError:
+                    errors.append(f"{name}: {e.get('company')}: bad posted {posted!r}")
 
             verified = e.get("last_verified")
             if verified:

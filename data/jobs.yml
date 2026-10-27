@@ -1,14 +1,15 @@
 # FVjobs — open roles in formal verification.
 #
-# One entry per role. Required fields: company, role, url, location, remote,
-# stack, domain, seniority, last_verified. Optional: work_authorization,
-# compensation, notes.
+# One entry per role. Required fields: company, role, category, url, location,
+# remote, stack, domain, seniority, last_verified. Optional: tags,
+# work_authorization, compensation, notes. CONTRIBUTING.md explains each one.
 #
-# Keep entries sorted by company. Run `python3 scripts/validate.py` and
-# `python3 scripts/render.py` before opening a pull request.
+# Keep entries sorted by company. Run `python3 scripts/validate.py` before
+# opening a pull request.
 
 - company: Access Softek Toolchains
   role: Compiler Developer (LLVM, C++)
+  category: software
   url: https://jobs.lever.co/accesssoftek/55497b30-5fbc-4fda-81ce-91752ae1599a
   location: Anywhere
   remote: remote-worldwide
@@ -16,23 +17,582 @@
   domain: [compilers, toolchains]
   seniority: engineer
   work_authorization: No restriction stated; "work from anywhere in the world"
-  last_verified: 2026-10-26
+  posted: '2019-11-18'
+  last_verified: 2026-10-27
+
+- company: AdaCore
+  role: 'Internship - SPARK: Formally verify an ordered set/map library in SPARK'
+  category: software
+  url: https://app.hellotalent.com/vacancy/spark-formally-verify-an-ordered-setmap-library-in-spark-ee2361007
+  location: Toulouse, France
+  remote: onsite
+  stack: [SPARK, Ada]
+  domain: [safety-critical software, verified libraries]
+  seniority: intern
+  notes: >-
+    Six months during 2027. Proves the absence of runtime errors and more in
+    SPARKlib's red-black-tree containers, with AI-assisted proof.
+  last_verified: 2026-10-27
+
+- company: Advanced Micro Devices (AMD)
+  role: CPU Formal Verification Engineer
+  category: hardware
+  url: https://careers.amd.com/careers-home/jobs/77115?lang=en-us
+  location: Cambridge, United Kingdom
+  remote: onsite
+  stack: [SystemVerilog, SVA, JasperGold, VC Formal]
+  domain: [hardware, CPU]
+  seniority: senior
+  tags: [big-company]
+  notes: >-
+    CPU IP formal methodology, FPV/X-prop/DPV/SEC apps. The scope includes
+    exploring formalisation of the ISA and memory models.
+  posted: '2026-07-16'
+  last_verified: 2026-10-27
+
+- company: Advanced Micro Devices (AMD)
+  role: Lead Formal Verification Engineer
+  category: hardware
+  url: https://careers.amd.com/careers-home/jobs/93590?lang=en-us
+  location: Austin, TX / Orlando, FL / San Diego, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA, JasperGold, VC Formal, Murphi, theorem proving]
+  domain: [hardware, GPU]
+  seniority: lead
+  tags: [big-company]
+  work_authorization: Not eligible for visa sponsorship (stated in posting)
+  compensation: USD 175,000–250,000 base (range in AMD careers listing data; not rendered as prose)
+  notes: >-
+    Sets formal strategy for AMD graphics/GPU IP, including datapath,
+    equivalence and security verification.
+  posted: '2026-10-09'
+  last_verified: 2026-10-27
+
+- company: Advanced Micro Devices (AMD)
+  role: Staff Formal Verification Engineer (GPU)
+  category: hardware
+  url: https://careers.amd.com/careers-home/jobs/87249?lang=en-us
+  location: Cambridge, United Kingdom
+  remote: hybrid
+  stack: [SystemVerilog, SVA, JasperGold, VC Formal, Murphi, theorem proving]
+  domain: [hardware, GPU]
+  seniority: lead
+  tags: [big-company]
+  notes: >-
+    Primary point of contact for formal across AMD's graphics IP. The scope
+    includes exploring formalisation of the GPU ISA and memory model.
+  posted: '2026-06-18'
+  last_verified: 2026-10-27
+
+- company: Airbus
+  role: STAGE 2027 Formalisation pour la spécification et l'architecture logicielle
+  category: software
+  url: https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/STAGE-2027-Formalisation-pour-la-spcification-et-l-architecture-logicielle_JR10441502
+  location: Toulouse, France
+  remote: onsite
+  stack: [Rocq, F*, Lean, Idris, AADL, SysML]
+  domain: [avionics, aerospace]
+  seniority: intern
+  tags: [big-company]
+  notes: >-
+    Six months starting around March 2027, in the Avionics Software department
+    (flight controls and related critical software).
+  posted: '2026-09-24'
+  last_verified: 2026-10-27
+
+- company: Alignerr
+  role: Lean 4 Proof Engineer - Mathematical Formalization
+  category: ai-for-proof
+  url: https://www.alignerr.com/jobs/f2064608-6c58-4aff-ba54-ed98171bf2ae
+  location: Remote
+  remote: remote-worldwide
+  stack: [Lean, Coq, Isabelle, Agda]
+  domain: [AI for mathematics, AI training data]
+  seniority: engineer
+  compensation: USD 170–200/hour (hourly contract, 10–40 hours/week)
+  notes: >-
+    Freelance AI-training contract (Alignerr is Labelbox's expert network).
+    Translate informal proofs into Lean 4 and document where automated provers
+    fail. Asks for a Master's or higher in mathematics, logic or theoretical CS.
+  posted: '2026-10-22'
+  last_verified: 2026-10-27
+
+- company: Amazon (Amazon Leo)
+  role: Sr. Formal Verification Engineer, Amazon Leo
+  category: hardware
+  url: https://www.amazon.jobs/en/jobs/10515790/sr-formal-verification-engineer-amazon-leo
+  location: Austin, TX / Sunnyvale, CA / Redmond, WA / San Diego, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA, JasperGold, Questa Formal]
+  domain: [hardware, satellite communications]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: 'Export control: US citizen or national, US permanent resident, or admitted refugee/asylee required'
+  compensation: USD 185,200–250,000 (Austin, San Diego, Redmond); USD 213,000–287,500 (Sunnyvale)
+  notes: Modem SoCs for the Amazon Leo (formerly Kuiper) LEO satellite constellation.
+  posted: '2026-08-26'
+  last_verified: 2026-10-27
+
+- company: Amazon (Annapurna Labs)
+  role: ASIC Formal Verification Engineer I, Annapurna Labs
+  category: hardware
+  url: https://www.amazon.jobs/en/jobs/10586351/asic-formal-verification-engineer-i-annapurna-labs
+  location: Austin, TX / Cupertino, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA, JasperGold, VC Formal]
+  domain: [hardware, AI accelerators]
+  seniority: engineer
+  tags: [big-company]
+  compensation: 'Listed base: USD 116,100 (Austin) / USD 133,600 (Cupertino) annually'
+  notes: >-
+    New-grad role on the Machine Learning Acceleration (Trainium/Inferentia)
+    team; coursework or internship in formal methods required.
+  posted: '2026-10-22'
+  last_verified: 2026-10-27
+
+- company: Amazon (Annapurna Labs)
+  role: Senior Formal Verification Engineer, Annapurna Labs
+  category: hardware
+  url: https://www.amazon.jobs/en/jobs/10583054/senior-formal-verification-engineer-annapurna-labs
+  location: Haifa, Israel
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, CPU, cloud]
+  seniority: lead
+  tags: [big-company]
+  notes: >-
+    L6 technical lead owning FV strategy for a Graviton/Nitro subsystem; team
+    includes AI/agentic formal flows.
+  posted: '2026-10-19'
+  last_verified: 2026-10-27
+
+- company: Amazon Web Services
+  role: 2027 Applied Science Internship - Automated Reasoning - United States, PhD Student Science Recruiting
+  category: software
+  url: https://www.amazon.jobs/en/jobs/10552930/2027-applied-science-internship-automated-reasoning-united-states-phd-student-science-recruiting-automated-reasoning
+  location: Seattle, WA
+  remote: onsite
+  stack: [SAT, SMT, theorem proving, model checking, Lean]
+  domain: [cloud, AI safety]
+  seniority: intern
+  tags: [big-company]
+  work_authorization: US internship; must be enrolled in a PhD and able to relocate
+  compensation: USD 135,660 annualized (Seattle)
+  notes: Minimum 12 weeks at 40 hours/week.
+  posted: '2026-09-17'
+  last_verified: 2026-10-27
+
+- company: Amazon Web Services
+  role: Applied Scientist, Amazon Cryptographic Libraries
+  category: software
+  url: https://www.amazon.jobs/en/jobs/10522632/applied-scientist-amazon-cryptographic-libraries
+  location: Seattle, WA
+  remote: onsite
+  stack: [HOL Light, Isabelle/HOL, Lean, Rocq, Verus]
+  domain: [cryptography, post-quantum cryptography]
+  seniority: research-scientist
+  tags: [big-company]
+  work_authorization: US-based; sponsorship not stated
+  compensation: USD 142,800–193,200
+  notes: >-
+    Machine-checked proofs of AWS-LC's C and assembly, including ML-KEM, ML-DSA
+    and SLH-DSA. Early-career, with mentoring from senior scientists. A twin
+    requisition, 10524924, has identical text.
+  posted: '2026-08-31'
+  last_verified: 2026-10-27
 
 - company: Amazon Web Services
   role: Applied Scientist, Automated Reasoning
+  category: software
   url: https://www.amazon.jobs/en/jobs/10502706/applied-scientist-automated-reasoning
   location: Multiple US cities
   remote: onsite
   stack: [Lean, Rocq, Dafny, Isabelle, SMT]
   domain: [cloud, cryptography, AI safety]
   seniority: research-scientist
+  tags: [big-company]
   work_authorization: US-based; sponsorship not stated
   compensation: USD 167,100–260,000 depending on location
   notes: Requires a PhD or equivalent research experience.
-  last_verified: 2026-10-26
+  posted: '2026-08-14'
+  last_verified: 2026-10-27
+
+- company: Amazon Web Services
+  role: Principal Applied Scientist, Neuro-Symbolic AI Labs
+  category: software
+  url: https://www.amazon.jobs/en/jobs/10404529/principal-applied-scientist-neuro-symbolic-ai-labs
+  location: Boston, MA
+  remote: onsite
+  stack: [proof assistants]
+  domain: [AI for reasoning, AI for mathematics]
+  seniority: principal
+  tags: [big-company]
+  work_authorization: US-based; sponsorship not stated
+  compensation: USD 198,900–269,000
+  notes: >-
+    Team includes an Amazon Scholar in mathematics and collaborates with MIT,
+    Berkeley and CMU.
+  posted: '2026-04-27'
+  last_verified: 2026-10-27
+
+- company: Amazon Web Services
+  role: Senior Applied Scientist, AWS Quick
+  category: ai-for-proof
+  url: https://www.amazon.jobs/en/jobs/10428524/senior-applied-scientist-aws-quick
+  location: Santa Clara, CA
+  remote: onsite
+  stack: [SMT, model checking, Lean, automated reasoning]
+  domain: [AI safety, generative AI guardrails]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 192,200–260,000 (Santa Clara)
+  notes: >-
+    Neuro-symbolic team behind Automated Reasoning checks. Builds formal
+    reasoning into GenAI and agent products for hallucination detection, policy
+    verification and guardrails. Different team from the Automated Reasoning
+    Applied Scientist role already on the board.
+  posted: '2026-05-22'
+  last_verified: 2026-10-27
+
+- company: Amazon Web Services
+  role: Senior Applied Scientist, Neuro-Symbolic AI Labs
+  category: software
+  url: https://www.amazon.jobs/en/jobs/10503197/senior-applied-scientist-neuro-symbolic-ai-labs
+  location: Boston, MA / Santa Clara, CA
+  remote: onsite
+  stack: [proof assistants, Lean, Dafny]
+  domain: [AI for reasoning, AI for mathematics]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: US-based; sponsorship not stated
+  compensation: USD 167,100–226,100 (Boston); USD 192,200–260,000 (Santa Clara)
+  notes: A twin requisition, 10503196, has identical text.
+  posted: '2026-08-18'
+  last_verified: 2026-10-27
+
+- company: Amazon Web Services
+  role: Sr Applied Scientist, Amazon Cryptographic Libraries
+  category: software
+  url: https://www.amazon.jobs/en/jobs/10522631/sr-applied-scientist-amazon-cryptographic-libraries
+  location: Seattle, WA
+  remote: onsite
+  stack: [HOL Light, Verus, CBMC, Lean]
+  domain: [cryptography, post-quantum cryptography]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: US-based; sponsorship not stated
+  compensation: USD 167,100–226,100
+  notes: >-
+    Senior version of the AWS-LC proof role; Rust, C and assembly verification
+    with AI-assisted proof development. A twin requisition, 10524925, has
+    identical text.
+  posted: '2026-08-31'
+  last_verified: 2026-10-27
+
+- company: Amazon Web Services
+  role: Sr. Applied Scientist, Automated Reasoning in Identity
+  category: software
+  url: https://www.amazon.jobs/en/jobs/10522623/sr-applied-scientist-automated-reasoning-in-identity
+  location: Santa Clara, CA
+  remote: onsite
+  stack: [SAT, SMT, BDDs, theorem proving, model checking]
+  domain: [cloud, identity and access management]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: US-based; sponsorship not stated
+  compensation: USD 192,200–260,000
+  notes: >-
+    Builds tools that prove the absence of security problems in customer IAM
+    configurations; PhD or equivalent research experience required.
+  posted: '2026-08-31'
+  last_verified: 2026-10-27
+
+- company: Amazon Web Services
+  role: Sr. Software Development Engineer, Automated Reasoning Group
+  category: software
+  url: https://www.amazon.jobs/en/jobs/10475668/sr-software-development-engineer-automated-reasoning-group
+  location: New York, NY
+  remote: onsite
+  stack: [automated reasoning, formal methods]
+  domain: [AI safety, cloud]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: US-based; sponsorship not stated
+  compensation: USD 184,900–250,200
+  notes: >-
+    Builds Automated Reasoning Checks (ARc), which uses logic to verify
+    generative-AI outputs. Formal methods experience is preferred, not required.
+  posted: '2026-07-15'
+  last_verified: 2026-10-27
+
+- company: Antithesis
+  role: Senior/Staff Engineer - Bombadil
+  category: software
+  url: https://jobs.ashbyhq.com/antithesis/88f9ee26-c86f-4625-9ac2-cb268678044a
+  location: London, UK
+  remote: onsite
+  stack: [LTL, property-based testing, Rust]
+  domain: [testing, web applications]
+  seniority: senior
+  work_authorization: No visa sponsorship; must already be authorized to work in the UK
+  notes: >-
+    Maintains Bombadil, Antithesis's open-source specification language and
+    verifier for web UIs.
+  posted: '2026-03-18'
+  last_verified: 2026-10-27
+
+- company: Apple
+  role: Formal Verification Engineer
+  category: hardware
+  url: https://jobs.apple.com/en-us/details/200657422-0157/formal-verification-engineer
+  location: Austin, TX / Beaverton, OR / Cupertino, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, security]
+  seniority: engineer
+  tags: [big-company]
+  compensation: USD 115,773–194,700 base (Cupertino range)
+  notes: >-
+    Entry-level (0 years required). The role focuses on the Secure Enclave and
+    security-requirement verification.
+  posted: '2026-04-13'
+  last_verified: 2026-10-27
+
+- company: Apple
+  role: Formal Verification Engineer
+  category: hardware
+  url: https://jobs.apple.com/de-de/details/200685650-1731/formal-verification-engineer
+  location: Munich, Germany
+  remote: onsite
+  stack: [SVA, PSL]
+  domain: [hardware, CPU]
+  seniority: any
+  tags: [big-company]
+  notes: >-
+    Posting says Apple is hiring all levels from junior to senior; description
+    reads as a formal verification architect role.
+  posted: '2026-09-24'
+  last_verified: 2026-10-27
+
+- company: Apple
+  role: GPU Formal Verification Engineer
+  category: hardware
+  url: https://jobs.apple.com/en-us/details/200684912-3760/gpu-formal-verification-engineer
+  location: Santa Clara, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, GPU, security]
+  seniority: engineer
+  tags: [big-company]
+  compensation: USD 150,400–277,600 base
+  notes: >-
+    Apple Silicon formal team. The work covers formal micro-architecture
+    specifications and security-attack modelling.
+  posted: '2026-10-26'
+  last_verified: 2026-10-27
+
+- company: Arizona State University
+  role: Professor (all ranks) in Verification, Validation, and Certification of AI-Enabled Complex Dynamical and Cyber-Physical Systems
+  category: academic
+  url: https://apply.interfolio.com/195699
+  location: Tempe, AZ, USA
+  remote: onsite
+  stack: [formal verification of hybrid systems, runtime assurance]
+  domain: [cyber-physical systems, autonomy, AI safety]
+  seniority: lead
+  notes: >-
+    Faculty position (tenure-track or tenured, any rank), start August 2027.
+    Deadline 2026-11-30; later applications go to a reserve pool.
+  last_verified: 2026-10-27
+
+- company: Arm
+  role: Formal Verification Engineer
+  category: hardware
+  url: https://careers.arm.com/job/cambridge/formal-verification-engineer/33099/100739285472
+  location: Cambridge, United Kingdom
+  remote: hybrid
+  stack: [model checking, SystemVerilog]
+  domain: [hardware, CPU]
+  seniority: senior
+  tags: [big-company]
+  compensation: GBP 55,300–74,800
+  notes: >-
+    Solutions Group. The posting asks for assume-guarantee reasoning, invariants
+    and abstraction skills.
+  posted: '2026-09-16'
+  last_verified: 2026-10-27
+
+- company: Arm
+  role: Staff Architecture Formal Engineer
+  category: hardware
+  url: https://careers.arm.com/job/cambridge/staff-architecture-formal-engineer/33099/89039360960
+  location: Cambridge, United Kingdom
+  remote: hybrid
+  stack: [OCaml, ASL, memory model tools]
+  domain: [hardware, ISA specification]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: UK skilled worker sponsorship available; Arm covers employer-side costs only; no relocation package
+  compensation: GBP 97,300–131,700
+  notes: >-
+    Architecture Formal Team, which works on the Arm concurrency model and a
+    formal description of ASL (the language of the Arm ARM). Builds lightweight
+    verification tools.
+  posted: '2026-06-25'
+  last_verified: 2026-10-27
+
+- company: Arm
+  role: Theorem Proving Engineer
+  category: hardware
+  url: https://careers.arm.com/job/austin/theorem-proving-engineer/33099/97584421536
+  location: Austin, TX
+  remote: hybrid
+  stack: [ACL2, SLEC, C, Verilog]
+  domain: [hardware, CPU, floating point]
+  seniority: research-engineer
+  tags: [big-company]
+  compensation: USD 198,100–268,000
+  notes: >-
+    Datapath RTL is proved equivalent to C models (SLEC), and the C models are
+    proved correct against the architecture spec in ACL2. Requires an MS or PhD
+    in CS or Mathematics.
+  posted: '2026-07-09'
+  last_verified: 2026-10-27
+
+- company: Astera Labs
+  role: Distinguished Formal Verification
+  category: hardware
+  url: https://job-boards.greenhouse.io/asteralabs/jobs/4664853005
+  location: San Jose, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, interconnect, AI infrastructure]
+  seniority: principal
+  compensation: USD 230,000–285,000
+  notes: Company-wide technical authority on formal for PCIe/CXL/Ethernet/UCIe/UALink products.
+  posted: '2026-02-23'
+  last_verified: 2026-10-27
+
+- company: Astera Labs
+  role: Formal Verification and RTL Design Software Engineer
+  category: hardware
+  url: https://job-boards.greenhouse.io/asteralabs/jobs/4728001005
+  location: San Jose, CA
+  remote: onsite
+  stack: [JasperGold, VC Formal, SystemVerilog Assertions, Python, LLM agents]
+  domain: [hardware, AI for chip design]
+  seniority: senior
+  compensation: USD 160,500–200,000
+  notes: >-
+    AppliedAI team building LLM agents for formal proof convergence, lint and
+    static verification flows.
+  posted: '2026-08-31'
+  last_verified: 2026-10-27
+
+- company: Astera Labs
+  role: Senior/ Staff Formal Verification Engineer
+  category: hardware
+  url: https://job-boards.greenhouse.io/asteralabs/jobs/4674496005
+  location: Tel Aviv, Israel
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, interconnect, AI infrastructure]
+  seniority: senior
+  notes: >-
+    Founding member of Astera's new Israel R&D centre; owns formal environments
+    from scratch to sign-off.
+  posted: '2026-03-18'
+  last_verified: 2026-10-27
+
+- company: Astera Labs
+  role: Tech Lead, Formal Verification
+  category: hardware
+  url: https://job-boards.greenhouse.io/asteralabs/jobs/4720768005
+  location: Bengaluru, India
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, interconnect, AI infrastructure]
+  seniority: lead
+  posted: '2026-08-03'
+  last_verified: 2026-10-27
+
+- company: Axiom Math
+  role: Member of Technical Staff
+  category: ai-for-proof
+  url: https://jobs.ashbyhq.com/axiommath/03aafabc-4156-4ba2-bb71-280f704bbcb2
+  location: Palo Alto, CA / London, UK / Portland, OR / US remote / UK remote
+  remote: remote
+  stack: [Lean, Coq, Isabelle]
+  domain: [AI for mathematics, theorem proving]
+  seniority: research-scientist
+  notes: >-
+    AI for mathematical discovery (successors to PatternBoost). Wants
+    large-scale RL and neuro-symbolic experience plus a strong foundation in
+    formal proof systems. Axiom makes AxiomProver and is moving into verified
+    code generation.
+  posted: '2026-04-03'
+  last_verified: 2026-10-27
+
+- company: Axiomise
+  role: Graduate Formal Verification Engineer
+  category: hardware
+  url: https://axiomise.jobs.personio.de/job/2480767
+  location: Hemel Hempstead, United Kingdom
+  remote: onsite
+  stack: [SystemVerilog, SVA, PSL]
+  domain: [hardware, EDA services]
+  seniority: engineer
+  work_authorization: For recent UK-based graduates; Graduate-visa holders sponsored for a Skilled Worker visa after the programme
+  notes: The graduate programme cohort starts in 2026.
+  posted: '2026-01-08'
+  last_verified: 2026-10-27
+
+- company: Axiomise
+  role: Senior Formal Verification Engineer
+  category: hardware
+  url: https://axiomise.jobs.personio.de/job/2607228
+  location: Hemel Hempstead, United Kingdom
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, EDA services]
+  seniority: senior
+  work_authorization: Visa sponsorship offered for exceptional candidates, on conditional terms
+  notes: Includes line-management responsibilities.
+  posted: '2026-04-20'
+  last_verified: 2026-10-27
+
+- company: Axiomise
+  role: Staff Formal Verification Engineer
+  category: hardware
+  url: https://axiomise.jobs.personio.de/job/2607253
+  location: Hemel Hempstead, UK
+  remote: onsite
+  stack: [SystemVerilog Assertions, PSL, theorem proving, equivalence checking]
+  domain: [hardware, verification services]
+  seniority: principal
+  work_authorization: Visa sponsorship "for exceptional candidates"
+  posted: '2026-04-20'
+  last_verified: 2026-10-27
+
+- company: Bedrock Robotics
+  role: 2027 Internship Safety Engineer, Agentic Safety Case Assessment
+  category: software
+  url: https://jobs.ashbyhq.com/bedrock-robotics/cb06dc4f-3e78-4546-897d-b39ba12a9178
+  location: San Francisco, CA
+  remote: onsite
+  stack: [Lean, Mathlib, Aeneas, Verus, Kani]
+  domain: [robotics, autonomous vehicles, safety cases]
+  seniority: intern
+  notes: >-
+    Autonomous-excavator company. Intern formalises a safety claim, writes and
+    proves a checker in Lean, runs it on fleet data, and builds audit tooling
+    for LLM-assisted proving. Students only.
+  posted: '2026-09-25'
+  last_verified: 2026-10-27
 
 - company: Beneficial AI Foundation
   role: AI Safety Research Scientist / Research Engineer (formal verification)
+  category: software
   url: https://www.beneficialaifoundation.org/jobs
   location: Anywhere
   remote: remote-worldwide
@@ -42,11 +602,61 @@
   compensation: USD 30–75/hour depending on role
   notes: >-
     Max Tegmark's foundation. Verifies production cryptographic Rust in Lean
-    (curve25519-dalek, Signal protocols) — see github.com/Beneficial-AI-Foundation.
-  last_verified: 2026-10-26
+    (curve25519-dalek, Signal protocols) — see
+    github.com/Beneficial-AI-Foundation.
+  last_verified: 2026-10-27
+
+- company: Cadence Design Systems
+  role: 'Software Engineer I: Jasper R&D'
+  category: hardware
+  url: https://cadence.wd1.myworkdayjobs.com/External_Careers/job/BELO-HORIZONTE/Software-Engineer-I--Jasper-R-D_R55752
+  location: Belo Horizonte, Brazil
+  remote: onsite
+  stack: [Jasper, C++]
+  domain: [EDA tools]
+  seniority: engineer
+  tags: [big-company]
+  notes: >-
+    Develops the Jasper formal tool itself, working on formal engines, HDL
+    synthesis and graph modelling.
+  posted: '2026-08-24'
+  last_verified: 2026-10-27
+
+- company: Cadence Design Systems
+  role: Software Engineer II
+  category: hardware
+  url: https://cadence.wd1.myworkdayjobs.com/External_Careers/job/AUSTIN/Software-Engineering-Director_R56213
+  location: Austin, TX
+  remote: onsite
+  stack: [Conformal LEC, C++]
+  domain: [EDA tools]
+  seniority: engineer
+  tags: [big-company]
+  notes: >-
+    Conformal team building the Conformal Logical Equivalence Checking, ECO and
+    Low Power tools. The generic title hides the formal content.
+  posted: '2026-09-23'
+  last_verified: 2026-10-27
+
+- company: Cajal
+  role: Open applications (Lean, verified code)
+  category: ai-for-proof
+  url: https://caj.al/careers
+  location: San Francisco, CA (from the YC profile; the careers page gives no location)
+  remote: onsite
+  stack: [Lean, WebAssembly]
+  domain: [verified code optimization, scientific computing]
+  seniority: any
+  notes: >-
+    YC W26 company. Its product Tau optimizes hot routines and proves in Lean
+    that each version behaves like the original. To apply, open a PR to Talos
+    (their open-source Lean Wasm interpreter), then email careers@caj.al. They
+    say they do not look at CVs.
+  last_verified: 2026-10-27
 
 - company: CertiK
   role: Software Engineer (III to Principal), Formal Methods
+  category: cryptocurrency
   url: https://jobs.lever.co/certik/f8fbe497-34d2-49fa-9308-879f0ffd8fa8
   location: New York / Seattle / SF Bay Area / Remote
   remote: remote
@@ -55,33 +665,121 @@
   seniority: engineer
   compensation: USD 115,000–230,000 (US)
   notes: Wants model checking (BMC, CEGAR, IC3/PDR); publications at POPL/CAV/TACAS preferred.
-  last_verified: 2026-10-26
+  posted: '2022-07-30'
+  last_verified: 2026-10-27
+
+- company: CertiK
+  role: Solidity Compiler Frontend Engineer
+  category: cryptocurrency
+  url: https://jobs.lever.co/certik/93ff3247-b56b-40a1-a4a1-daa0456663bf
+  location: US / Remote
+  remote: remote
+  stack: [SMT, theorem provers, Solidity, Java, EVM]
+  domain: [blockchain, smart contracts, compilers]
+  seniority: engineer
+  work_authorization: US remote only ("US / Remote"); hires must complete US employment-eligibility verification; visa sponsorship not stated
+  compensation: USD 140,000–220,000 (US)
+  notes: >-
+    Builds the Java-based Solidity compiler frontend (parsing, type checking,
+    semantic analysis) and the layer that feeds CertiK's formal verification
+    tools. Requires 3+ years of compiler work and experience with SMT solvers or
+    theorem provers. Sits alongside CertiK's Formal Methods SWE role, which is
+    already on the board.
+  posted: '2025-10-20'
+  last_verified: 2026-10-27
+
+- company: CLEARSY
+  role: Ingénieur développeur full stack Atelier B H/F
+  category: software
+  url: https://clearsy.nos-recrutements.fr/job/5883
+  location: Aix-en-Provence, France
+  remote: hybrid
+  stack: [Atelier B, B method, C++, Qt]
+  domain: [formal methods tooling, railway]
+  seniority: engineer
+  notes: Develops and modernises Atelier B (C/C++ back end, Qt front end). Published May 11, 2026.
+  last_verified: 2026-10-27
+
+- company: CLEARSY
+  role: Ingénieur Méthodes Formelles H/F
+  category: software
+  url: https://clearsy.nos-recrutements.fr/job/5906
+  location: Aix-en-Provence, France (also Paris and Lyon)
+  remote: hybrid
+  stack: [B method, Atelier B]
+  domain: [railway, safety-critical systems]
+  seniority: engineer
+  compensation: EUR 33,000–55,000 per year
+  notes: >-
+    Same posting in three cities: Paris
+    https://clearsy.nos-recrutements.fr/job/5912 and Lyon
+    https://clearsy.nos-recrutements.fr/job/5914. French-language posting; Bac+5
+    engineering profile. Teleworking agreement available.
+  posted: '2026-08-17'
+  last_verified: 2026-10-27
+
+- company: CLEARSY
+  role: Ingénieur validation formelle de données sécuritaires H/F
+  category: software
+  url: https://clearsy.nos-recrutements.fr/job/5881
+  location: Aix-en-Provence, France
+  remote: hybrid
+  stack: [B method, formal data validation]
+  domain: [railway, safety-critical systems]
+  seniority: engineer
+  notes: >-
+    Long-running posting (published July 22, 2025) still listed; formal
+    validation of safety constraints on railway project data.
+  last_verified: 2026-10-27
 
 - company: Code Metal
   role: Research Engineer — Formal Methods
+  category: software
   url: https://jobs.ashbyhq.com/code-metal/550aed7b-86d2-48c3-af27-e61671e2d493
   location: Boston, MA
   remote: hybrid
   stack: [theorem proving, SMT, program synthesis, static analysis]
   domain: [compilers, embedded]
   seniority: research-engineer
-  compensation: USD 180,000–266,800 plus equity
   work_authorization: US Top Secret clearance eligibility listed as required
-  last_verified: 2026-10-26
+  compensation: USD 180,000–266,800 plus equity
+  posted: '2026-05-22'
+  last_verified: 2026-10-27
 
-- company: Cryspen
-  role: Open applications (Rust verification, hax)
-  url: https://cryspen.com/jobs
-  location: France / Germany
-  remote: hybrid
-  stack: [hax, Rust, F*]
-  domain: [cryptography]
-  seniority: any
-  notes: No individual postings listed; speculative applications via info@cryspen.com.
-  last_verified: 2026-10-26
+- company: Cognichip
+  role: Formal Verification Engineer - AI
+  category: hardware
+  url: https://talent.octopyd.com/careers/cognichip/apply/6c53107d-1b6a-40b3-a2a5-3bc742b078f5
+  location: Redwood City, CA / Toronto, ON
+  remote: onsite
+  stack: [model checking, Coq, Lean, Isabelle, ACL2, Z3, cvc5]
+  domain: [hardware, AI for chip design]
+  seniority: engineer
+  compensation: USD 175,000–210,000
+  notes: >-
+    AI-for-chip-design startup. Open to people from pure maths/physics;
+    mentorship and structured ramp-up into formal methods offered. Listing also
+    at cognichip.ai/careers.
+  last_verified: 2026-10-27
+
+- company: Cornell University
+  role: Postdoc in formal methods and programming languages (Alexandra Silva's group)
+  category: academic
+  url: https://lists.seas.upenn.edu/pipermail/types-announce/2026/012748.html
+  location: Ithaca, NY, USA
+  remote: onsite
+  stack: [algebraic program analysis, program repair]
+  domain: [networking, security, agentic systems]
+  seniority: postdoc
+  notes: >-
+    Announced on TYPES-announce on 2026-10-12. No deadline and no official ad;
+    candidates are asked to contact the PI directly.
+  posted: '2026-10-12'
+  last_verified: 2026-10-27
 
 - company: eleQtron
   role: Compiler Engineer (m/w/d)
+  category: software
   url: https://eleqtron.com/en/jobs/compiler-engineer-m-w-d/
   location: Hamburg or Siegen, Germany
   remote: onsite
@@ -89,41 +787,315 @@
   domain: [quantum, compilers]
   seniority: engineer
   work_authorization: Relocation support offered; EU Blue Card route for non-EU candidates
-  last_verified: 2026-10-26
+  posted: '2026-09-22'
+  last_verified: 2026-10-27
+
+- company: EPFL
+  role: Post-doc on formal verification and algorithm discovery for numerical analysis
+  category: academic
+  url: https://careers.epfl.ch/job/Lausanne-Post-doc-on-formal-verification-and-algorithm-discovery-for-numerical-analysis/1165456955/
+  location: Lausanne, Switzerland
+  remote: onsite
+  stack: [Lean]
+  domain: [numerical analysis, AI for mathematics]
+  seniority: postdoc
+  notes: >-
+    Chair of Numerical Modelling and Simulation (Annalisa Buffa). Possible
+    projects: formalizing finite-element stability and error estimates in Lean,
+    or AI-assisted discovery of discretizations that are then verified formally.
+    1-year contract, renewable.
+  last_verified: 2026-10-27
+
+- company: EPFL
+  role: 'Postdoc: Keystone Project (Machine-Verified LLM Inference)'
+  category: academic
+  url: https://careers.epfl.ch/job/Lausanne-Postdoc-Keystone-Project-(Machine-Verified-LLM-Inference)/1165508355/
+  location: Lausanne, Switzerland (regular visits to Imperial College London)
+  remote: onsite
+  stack: [Rocq, Lean, Isabelle, HOL, PTX, Triton]
+  domain: [ML inference, GPU kernels, AI-assisted proof engineering]
+  seniority: postdoc
+  notes: >-
+    ARIA-funded EPFL/Imperial project to build a formally verified LLM inference
+    engine (contact: Nate Foster). 1-year renewable contract, start 2026-12-01
+    or later. The EPFL page states no deadline; one third-party aggregator
+    listed 3 Nov 2026, so treat it as urgent.
+  last_verified: 2026-10-27
+
+- company: EPFL
+  role: 'Postdoc: Networked Systems Abstractions Lab (LASeR)'
+  category: academic
+  url: https://careers.epfl.ch/job/Lausanne-Postdoc-Networked-Systems-Abstractions-Lab-%28LASeR%29/1165481555/
+  location: Lausanne, Switzerland
+  remote: onsite
+  stack: [NetKAT, symbolic automata, decision procedures, theorem proving]
+  domain: [networking]
+  seniority: postdoc
+  notes: >-
+    Nate Foster's lab: languages and formal reasoning tools for networks
+    (NetKAT, routing algebras, packet scheduling). 1-year renewable, start
+    2026-12-01. No deadline stated.
+  last_verified: 2026-10-27
+
+- company: EPFL
+  role: 'Software Engineer: Keystone Project (Machine-Verified LLM Inference)'
+  category: academic
+  url: https://careers.epfl.ch/job/Lausanne-Software-Engineer-Keystone-Project-%28Machine-Verified-LLM-Inference%29/1165508255/
+  location: Lausanne, Switzerland (regular visits to Imperial College London)
+  remote: onsite
+  stack: [Rocq, Lean, HOL, Isabelle, CUDA, Triton]
+  domain: [ML inference, GPU kernels, AI-assisted proof engineering]
+  seniority: research-engineer
+  notes: >-
+    Engineering role on the same ARIA-funded verified-inference project. Prior
+    formal verification experience is welcome but not required. 1-year
+    renewable, start 2026-12-01. No deadline stated.
+  last_verified: 2026-10-27
+
+- company: Etched
+  role: Formal Verification - DV
+  category: hardware
+  url: https://jobs.ashbyhq.com/etched/07b00790-2817-4863-a330-b0caf2322460
+  location: San Jose, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, AI accelerators]
+  seniority: senior
+  notes: >-
+    Covers the full ASIC (compute arrays, NoC, PCIe, Ethernet). Includes a
+    housing subsidy for living near the office.
+  posted: '2026-06-10'
+  last_verified: 2026-10-27
+
+- company: Galois
+  role: Principal Scientist
+  category: software
+  url: https://apply.workable.com/galois/j/165CC05D51/
+  location: Portland, OR / Arlington, VA / Dayton, OH / Minneapolis, MN / Boston, MA
+  remote: hybrid
+  stack: [formal verification, theorem proving, static analysis]
+  domain: [high-assurance software, defense, cryptography, AI]
+  seniority: principal
+  work_authorization: Must be eligible for a US security clearance (active clearance strongly preferred) and must not require an export licence
+  notes: >-
+    Leads externally funded research programs; PhD or equivalent with a
+    publication record in FV.
+  posted: '2026-04-13'
+  last_verified: 2026-10-27
+
+- company: Galois
+  role: Research Engineer
+  category: software
+  url: https://apply.workable.com/galois/j/2E49DBE9CB/
+  location: Portland, OR / Arlington, VA / Dayton, OH / Minneapolis, MN / Boston, MA
+  remote: hybrid
+  stack: [theorem provers, model checkers, Haskell, formal semantics]
+  domain: [high-assurance software, defense, cryptography]
+  seniority: research-engineer
+  work_authorization: US citizenship required (security clearance eligibility)
+  notes: >-
+    Employee-owned; pay is set by a company-wide transparent process rather than
+    published per posting.
+  posted: '2026-01-05'
+  last_verified: 2026-10-27
+
+- company: General Diffusion
+  role: Member of Technical Staff, Safety & Formal Verification
+  category: software
+  url: https://www.generaldiffusion.com/careers/mts-safety-verification/
+  location: San Francisco, CA
+  remote: onsite
+  stack: [model checking, SMT, theorem proving, abstract interpretation, runtime verification]
+  domain: [AI infrastructure, compilers, AI safety]
+  seniority: engineer
+  notes: >-
+    Compute-world-model startup. Owns an independent assurance layer that gates
+    AI-proposed compute actions: machine-checkable safety invariants,
+    refinement/semantic-equivalence validation of generated kernels, runtime
+    monitors. Apply by email (careers@generaldiffusion.com).
+  last_verified: 2026-10-27
+
+- company: Google
+  role: ASIC Formal Verification Engineer, Google Cloud
+  category: hardware
+  url: https://www.google.com/about/careers/applications/jobs/results/104345785444770502-asic-formal-verification-engineer-google-cloud
+  location: Sunnyvale, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA, Jasper, VC Formal, Questa Formal, 360-DV]
+  domain: [hardware, AI accelerators]
+  seniority: engineer
+  tags: [big-company]
+  compensation: USD 138,000–197,000 base + 15% bonus target + equity
+  last_verified: 2026-10-27
+
+- company: Google
+  role: ASIC Formal Verification Engineer, TPU Compute
+  category: hardware
+  url: https://www.google.com/about/careers/applications/jobs/results/93401021752976070-asic-formal-verification-engineer-tpu-compute
+  location: Sunnyvale, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA, Jasper, VC Formal, Questa Formal]
+  domain: [hardware, AI accelerators]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 163,000–237,000 base + 15% bonus target + equity
+  notes: >-
+    The work includes formally proving floating-point adders and multipliers.
+    Requires 8 years of experience, although Google labels the level "Mid".
+  last_verified: 2026-10-27
+
+- company: Google
+  role: Senior SoC Formal Verification Engineer, Google Cloud
+  category: hardware
+  url: https://www.google.com/about/careers/applications/jobs/results/89558689786012358-senior-soc-formal-verification-engineer-google-cloud
+  location: Tel Aviv / Haifa, Israel
+  remote: onsite
+  stack: [SystemVerilog, SVA, PSL, JasperGold, VC Formal, Questa Formal, 360-DV]
+  domain: [hardware, cloud]
+  seniority: senior
+  tags: [big-company]
+  notes: Google's Israel team for custom server chips.
+  last_verified: 2026-10-27
+
+- company: Google DeepMind
+  role: Lean Theorem Proving Engineer, Verified Code Generation, DeepMind
+  category: ai-for-proof
+  url: https://www.google.com/about/careers/applications/jobs/results/72320887935640262-lean-theorem-proving-engineer-verified-code-generation-deepmind
+  location: London, UK / Mountain View, CA
+  remote: onsite
+  stack: [Lean]
+  domain: [AI for code, program verification]
+  seniority: engineer
+  tags: [big-company]
+  compensation: USD 174,000–252,000 plus 15% bonus target and equity (US)
+  notes: >-
+    Successor to the archived Research Scientist, Verified Code Generation role.
+    Requires a PhD or equivalent, 3 years with Lean and 3 years using AI agents.
+    The work formalizes C/C++/Rust semantics and correctness specs in Lean with
+    AI help, and builds infrastructure for proof search at scale.
+  last_verified: 2026-10-27
 
 - company: Harmonic
   role: Formal Verification Engineer (Aristotle)
+  category: ai-for-proof
   url: https://jobs.ashbyhq.com/harmonic/5e759f93-e90c-43a9-8c88-af25428237ca
-  location: Palo Alto, CA
+  location: Palo Alto, CA / London, UK
   remote: onsite
   stack: [Lean]
   domain: [AI for mathematics, hardware, software verification]
   seniority: engineer
   notes: Customer-facing; scope properties, run proofs with Aristotle, diagnose failures.
-  last_verified: 2026-10-26
+  posted: '2026-08-13'
+  last_verified: 2026-10-27
+
+- company: Harmonic
+  role: Research Engineer
+  category: ai-for-proof
+  url: https://jobs.ashbyhq.com/harmonic/700d7dd6-db2b-4693-9e11-40fb755a54c4
+  location: Palo Alto, CA
+  remote: onsite
+  stack: [Lean, theorem proving, reinforcement learning]
+  domain: [AI for mathematics, theorem proving]
+  seniority: research-engineer
+  notes: >-
+    Reinforcement Learning & Formal Methods team: new RL algorithms and models
+    for mathematical theorem proving behind Aristotle (Lean 4). Separate from
+    the two Harmonic roles already on the board.
+  posted: '2025-07-10'
+  last_verified: 2026-10-27
 
 - company: Harmonic
   role: Research Engineer, Formal Methods
+  category: ai-for-proof
   url: https://jobs.ashbyhq.com/harmonic/74f2ed85-b1cc-40b1-825d-fefd2fcf557c
-  location: Palo Alto, CA
+  location: Palo Alto, CA / London, UK
   remote: onsite
   stack: [Lean, Rocq, Isabelle, Agda, Python]
   domain: [AI for mathematics, theorem proving]
   seniority: research-engineer
-  last_verified: 2026-10-26
+  posted: '2026-08-24'
+  last_verified: 2026-10-27
 
-- company: Imandra
-  role: Open applications — R&D (automated reasoning)
-  url: https://apply.workable.com/imandra/
-  location: Edinburgh / London / Bristol / Austin
-  remote: remote
-  stack: [OCaml, SMT, automated reasoning]
-  domain: [finance, automated reasoning]
-  seniority: any
-  last_verified: 2026-10-26
+- company: IBM
+  role: Formal Verification Engineer
+  category: hardware
+  url: https://careers.ibm.com/careers/JobDetail?jobId=136675
+  location: Bangalore, India
+  remote: hybrid
+  stack: [SVA, Verilog, VHDL, Python]
+  domain: [hardware, CPU]
+  seniority: senior
+  tags: [big-company]
+  notes: >-
+    The posting body calls the role "Formal Verification Lead". The work covers
+    IBM server-class processors, SoCs and ASICs, using IBM internal formal
+    tools.
+  posted: '2026-10-13'
+  last_verified: 2026-10-27
+
+- company: Inria (Argo team, Paris)
+  role: 'Advanced Research Position: AI for formal mathematics (quality, evaluation and translation of LLM-generated proofs)'
+  category: academic
+  url: https://jobs.inria.fr/public/classic/en/offres/2026-10606
+  location: Paris, France
+  remote: onsite
+  stack: [Lean, Mathlib, Rocq, Mathematical Components]
+  domain: [AI for mathematics, formalized mathematics]
+  seniority: research-scientist
+  notes: >-
+    BELLE project (AI for Math Fund). Leads the LLM axis: quality metrics for
+    AI-generated Lean code, the BELLE-Prefs dataset and GRPO fine-tuning, and
+    supervises a postdoc. 12-month renewable contract, start 2026-12-01. Ad in
+    French. Deadline 2026-11-14.
+  last_verified: 2026-10-27
+
+- company: Inria (Rennes)
+  role: 'PhD Position: Trustable Machine Learning: Analysis and Verification of Soft Automata'
+  category: academic
+  url: https://jobs.inria.fr/public/classic/en/offres/2026-10416
+  location: Rennes, France
+  remote: onsite
+  stack: [neural network verification, automata learning]
+  domain: [trustworthy ML]
+  seniority: phd
+  compensation: EUR 2,300 gross/month
+  notes: >-
+    Part of the SAIF ("Safe AI through Formal methods") project. 3-year
+    contract. Deadline 2026-11-07.
+  last_verified: 2026-10-27
+
+- company: Intel
+  role: Formal Verification Engineer
+  category: hardware
+  url: https://intel.wd1.myworkdayjobs.com/External/job/Israel-Haifa/Formal-Verification-Engineer_JR0287702
+  location: Haifa / Jerusalem / Petah Tikva, Israel
+  remote: onsite
+  stack: [Jasper, SVA, model checking, equivalence checking]
+  domain: [hardware, networking]
+  seniority: engineer
+  tags: [big-company]
+  notes: Intel Networking (Ethernet) team.
+  posted: '2026-10-06'
+  last_verified: 2026-10-27
+
+- company: Intel
+  role: Senior Formal Verification Engineer – AI SoC Development
+  category: hardware
+  url: https://intel.wd1.myworkdayjobs.com/External/job/US-California-Folsom/Senior-Formal-Verification-Engineer---AI-SoC-Development_JR0279196
+  location: Folsom, CA / Santa Clara, CA / Hillsboro, OR / Austin, TX
+  remote: hybrid
+  stack: [SystemVerilog, SVA, JasperGold, VC Formal, Questa Formal]
+  domain: [hardware, AI accelerators]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: 'Position of Trust: extended background investigation required'
+  compensation: USD 220,920–311,890
+  posted: '2026-02-20'
+  last_verified: 2026-10-27
 
 - company: Jane Street
   role: Formal Methods Engineer
+  category: software
   url: https://www.janestreet.com/join-jane-street/apply/8588405002
   location: London, UK (also New York)
   remote: onsite
@@ -131,10 +1103,437 @@
   domain: [finance, AI-assisted programming]
   seniority: engineer
   notes: New team; no OCaml or functional programming experience required.
-  last_verified: 2026-10-26
+  last_verified: 2026-10-27
+
+- company: Johns Hopkins Applied Physics Laboratory
+  role: 2027 PhD Graduate - Formal Verification and Software Assurance Engineer
+  category: software
+  url: https://careers.jhuapl.edu/jobs/59920
+  location: Laurel, MD
+  remote: onsite
+  stack: [model checking, interactive theorem proving, automated theorem proving, abstract interpretation, symbolic execution]
+  domain: [defense, cybersecurity, cyber-physical systems]
+  seniority: engineer
+  work_authorization: U.S. citizenship required; must obtain Interim Top Secret clearance by start date
+  compensation: USD 105,000–245,000
+  notes: For PhD graduates (2027 start). Rolling applications.
+  posted: '2026-09-01'
+  last_verified: 2026-10-27
+
+- company: LUBIS EDA
+  role: Formal Verification Engineer - Professional Level
+  category: hardware
+  url: https://lubis-eda.jobs.personio.de/job/2573655
+  location: Kaiserslautern, Germany
+  remote: hybrid
+  stack: [SVA, Jasper, VC Formal, Questa Formal, OneSpin]
+  domain: [hardware, EDA services]
+  seniority: engineer
+  notes: Formal verification consultancy for clients' RTL.
+  posted: '2026-03-23'
+  last_verified: 2026-10-27
+
+- company: LUBIS EDA
+  role: Formal Verification Engineer - Senior Level
+  category: hardware
+  url: https://lubis-eda.jobs.personio.de/job/2642291
+  location: Kaiserslautern, Germany
+  remote: hybrid
+  stack: [SVA]
+  domain: [hardware, EDA services]
+  seniority: senior
+  posted: '2026-05-20'
+  last_verified: 2026-10-27
+
+- company: LUBIS EDA
+  role: Manager Formal Verification (m/f/d)
+  category: hardware
+  url: https://lubis-eda.jobs.personio.de/job/2811579
+  location: Kaiserslautern, Germany
+  remote: hybrid
+  stack: [SVA]
+  domain: [hardware, EDA services]
+  seniority: lead
+  notes: >-
+    Leads a team of 10–15 formal verification engineers. This is a people and
+    customer management role.
+  posted: '2026-09-23'
+  last_verified: 2026-10-27
+
+- company: Marvell
+  role: Senior Engineer, Logic Equivalence CAD
+  category: hardware
+  url: https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Bangalore/Senior-Engineer--Logic-Equivalence-CAD_2604938-1
+  location: Bangalore, India
+  remote: onsite
+  stack: [logical equivalence checking]
+  domain: [hardware, EDA tools]
+  seniority: senior
+  tags: [big-company]
+  notes: CAD role owning company-wide RTL-to-gate and gate-to-gate equivalence checking flows.
+  posted: '2026-10-14'
+  last_verified: 2026-10-27
+
+- company: Math, Inc.
+  role: Open applications (verified mathematics)
+  category: ai-for-proof
+  url: https://www.math.inc/careers
+  location: Not stated
+  remote: remote-worldwide
+  stack: [Lean]
+  domain: [AI for mathematics, autoformalization]
+  seniority: any
+  notes: >-
+    Makers of Gauss, an autoformalization agent that works in Lean. The page is
+    a general application form asking for "evidence of extraordinary ability";
+    internships go through math.inc/careers/intern. Location and remote policy
+    are not stated. Third-party bios place the company in Palo Alto.
+  last_verified: 2026-10-27
+
+- company: Mathlib Initiative
+  role: Open applications — part-time reviewers and autoformalization expert (Formal Frontier team)
+  category: ai-for-proof
+  url: https://mathlib-initiative.org/careers/
+  location: Not stated
+  remote: remote-worldwide
+  stack: [Lean, mathlib]
+  domain: [formal mathematics, AI for mathematics]
+  seniority: any
+  notes: >-
+    A Renaissance Philanthropy program. Takes applications for part-time
+    contract reviewers and a part-time autoformalization expert on the Formal
+    Frontier team. Successful applicants usually already contribute to major
+    formal-math libraries. The published contact is info@mathlib-initiative.org.
+  last_verified: 2026-10-27
+
+- company: MatX
+  role: Formal Verification Engineer
+  category: hardware
+  url: https://jobs.ashbyhq.com/matx/20f2ce61-2e1e-4009-8539-b460344ee018
+  location: Mountain View, CA (HQ) or Remote
+  remote: remote
+  stack: [JasperGold, VC Formal, SymbiYosys, SVA, Lean, Rocq, Isabelle]
+  domain: [hardware, AI accelerators, compilers]
+  seniority: any
+  work_authorization: 'US export control: must be able to work without an export licence'
+  compensation: USD 160k–275k (early career), 175k–400k (mid), 250k–600k (senior), plus equity
+  notes: >-
+    Combines RTL model checking with HDL embeddings in interactive theorem
+    provers and machine-checked compiler-lowering proofs.
+  posted: '2026-05-19'
+  last_verified: 2026-10-27
+
+- company: Mercor
+  role: Lean Engineer, Formal Mathematics (Lean 4, Mathlib, Theorem Proving)
+  category: ai-for-proof
+  url: https://work.mercor.com/jobs/list_AAABoPJ_fWgrIgAI-ilEL5S3
+  location: Remote
+  remote: remote-worldwide
+  stack: [Lean, mathlib]
+  domain: [AI for mathematics, AI training data]
+  seniority: engineer
+  work_authorization: Mercor states it cannot support H-1B or STEM OPT candidates
+  compensation: USD 90–110/hour, part-time (20–40 hours/week)
+  notes: >-
+    Placement at an unnamed "leading AI lab". Write and review Lean 4 proofs,
+    formalize informal mathematics, and check whether AI-generated proofs prove
+    the right statement. The posting calls it both W-2 employment through
+    Cincinnatus LLC (or an international entity) and independent contracting.
+  posted: '2026-09-30'
+  last_verified: 2026-10-27
+
+- company: Microsoft
+  role: Post Doc Researcher (FoSSE, Microsoft Research India)
+  category: software
+  url: https://apply.careers.microsoft.com/careers/job/1970393556972332
+  location: Bangalore, India
+  remote: onsite
+  stack: [formal methods, static analysis, programming languages]
+  domain: [software engineering, code migration]
+  seniority: postdoc
+  tags: [big-company]
+  notes: >-
+    Req 200049580. FoSSE team works on code migration, translation and static
+    analysis "using AI and formal methods".
+  posted: '2026-08-20'
+  last_verified: 2026-10-27
+
+- company: Microsoft
+  role: Principal Design Verification Engineer - Formal
+  category: hardware
+  url: https://apply.careers.microsoft.com/careers/job/1970393557023199
+  location: Raleigh, NC / Austin, TX / Hillsboro, OR / Mountain View, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, cloud, interconnect]
+  seniority: principal
+  tags: [big-company]
+  work_authorization: 'Export-controlled (ITAR/EAR) access: proof of citizenship or US residency/protected status required; Microsoft Cloud Background Check'
+  compensation: USD 142,800–274,800 base (US typical); USD 188,000–304,200 (SF Bay Area / NYC)
+  notes: SCHIE / Compute Silicon (Azure Cobalt); formal verification of fabric interconnect IP.
+  posted: '2026-10-23'
+  last_verified: 2026-10-27
+
+- company: Microsoft
+  role: Principal Formal Design Verification Engineer
+  category: hardware
+  url: https://apply.careers.microsoft.com/careers/job/1970393557041180
+  location: Bangalore, India
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, cloud, interconnect]
+  seniority: principal
+  tags: [big-company]
+  work_authorization: 'Export-controlled information: proof of citizenship/residency for eligibility assessment; Microsoft Cloud Background Check'
+  posted: '2026-10-15'
+  last_verified: 2026-10-27
+
+- company: Microsoft
+  role: Principal Researcher and Senior Principal Researcher - Software Verification - Microsoft Research
+  category: software
+  url: https://apply.careers.microsoft.com/careers/job/1970393557040565
+  location: Redmond, WA
+  remote: onsite
+  stack: [formal methods, systems software verification, AI agents]
+  domain: [systems software, AI for verification]
+  seniority: principal
+  tags: [big-company]
+  compensation: USD 142,800–274,800 (Principal) / 165,600–296,400 (Senior Principal); higher bands in SF Bay Area and NYC
+  notes: >-
+    Req 200061832. Research on AI and agents for "rapid development of vast
+    amounts of verified systems code".
+  posted: '2026-10-14'
+  last_verified: 2026-10-27
+
+- company: Microsoft
+  role: Principal Software Engineer (AI-driven code transformation with formal verification)
+  category: software
+  url: https://apply.careers.microsoft.com/careers/job/1970393557045292
+  location: Bangalore, India
+  remote: onsite
+  stack: [Verus, F*, Lean, TLA+, Dafny, CodeQL]
+  domain: [developer tools, code migration]
+  seniority: principal
+  tags: [big-company]
+  notes: >-
+    Req 200063311 (posting title is just "Principal Software Engineer"). Agentic
+    code migration backed by Verus proofs and spec inference. A Senior Software
+    Engineer twin is req 200063310 (job/1970393557045291).
+  posted: '2026-10-23'
+  last_verified: 2026-10-27
+
+- company: Microsoft
+  role: Senior Researcher - Software Verification - Microsoft Research
+  category: software
+  url: https://apply.careers.microsoft.com/careers/job/1970393557040562
+  location: Redmond, WA
+  remote: onsite
+  stack: [SMT, automated reasoning, program verification]
+  domain: [systems software, AI for verification]
+  seniority: research-scientist
+  tags: [big-company]
+  compensation: USD 119,800–234,700 (US); USD 160,200–261,000 (SF Bay Area, NYC)
+  notes: >-
+    Req 200061829. Develops automated reasoning tools including SMT solvers (the
+    Z3 / RiSE lineage, though the posting does not name Z3).
+  posted: '2026-10-14'
+  last_verified: 2026-10-27
+
+- company: Microsoft
+  role: Senior Software Engineer (AI-driven code transformation with formal verification)
+  category: software
+  url: https://apply.careers.microsoft.com/careers/job/1970393557045291
+  location: Bangalore, India
+  remote: onsite
+  stack: [Verus, F*, Lean, TLA+, Dafny, CodeQL]
+  domain: [developer tools, code migration]
+  seniority: senior
+  tags: [big-company]
+  notes: >-
+    Req 200063310 (posting title is just "Senior Software Engineer"). Same team
+    as req 200063311.
+  posted: '2026-10-23'
+  last_verified: 2026-10-27
+
+- company: Mistral AI
+  role: Applied Scientist - Research Engineer (Formal Methods), EMEA
+  category: ai-for-proof
+  url: https://jobs.ashbyhq.com/mistral.ai/d722e1e1-dcc6-489b-a3b5-ecc6813ca374
+  location: Paris, France / London, UK
+  remote: onsite
+  stack: [Lean, proof assistants, autoformalization]
+  domain: [AI for mathematics, software verification]
+  seniority: research-engineer
+  notes: >-
+    Train and post-train LLMs for formal reasoning. Build theorem-proving and
+    software-verification datasets, evaluators and benchmarks. RL from Lean
+    verifiable rewards is a plus. The posting does not state a workplace type.
+  posted: '2026-10-20'
+  last_verified: 2026-10-27
+
+- company: Mobileye
+  role: Experienced Formal Verification Engineer
+  category: hardware
+  url: https://careers.mobileye.com/jobs/formal-verification-engineer/422fa926-abc4-4da0-ba57-57ad102f2754
+  location: Haifa, Israel
+  remote: onsite
+  stack: [JasperGold, SystemVerilog]
+  domain: [hardware, automotive, autonomous driving]
+  seniority: senior
+  tags: [big-company]
+  notes: Automated Driving Hardware group; 5+ years of formal verification experience required.
+  last_verified: 2026-10-27
+
+- company: National University of Singapore
+  role: Postdoctoral and PhD positions — Foundations for Testing and Verifying Concurrency in Go (Umang Mathur)
+  category: academic
+  url: https://lists.seas.upenn.edu/pipermail/types-announce/2026/012697.html
+  location: Singapore
+  remote: onsite
+  stack: [mechanized semantics, model checking, predictive analysis]
+  domain: [concurrency, compilers]
+  seniority: postdoc
+  notes: >-
+    Also recruiting PhD students. The FOCS Lab project includes mechanized Go
+    concurrency semantics with compiler-correctness proofs. Enquire by email; no
+    deadline.
+  posted: '2026-09-15'
+  last_verified: 2026-10-27
+
+- company: Nuvacore
+  role: Formal Verification Engineer
+  category: hardware
+  url: https://jobs.lever.co/nuvacore/c97cf60a-9758-4233-b94e-908094dc892e
+  location: Austin, TX (also Santa Clara, CA; Markham, ON; Bangalore)
+  remote: hybrid
+  stack: [JasperGold, VC Formal, Questa Formal, SystemVerilog Assertions, model checking, equivalence checking]
+  domain: [hardware, CPUs]
+  seniority: senior
+  compensation: USD 140,000–250,000
+  notes: >-
+    CPU startup; Senior (4+ yrs) to Principal (15+ yrs); cache coherence, memory
+    consistency, speculation. Theorem proving listed as a plus.
+  posted: '2026-09-18'
+  last_verified: 2026-10-27
+
+- company: NVIDIA
+  role: AI Compiler Formal Verification Intern
+  category: ai-for-proof
+  url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Switzerland-Zurich/AI-Compiler-Formal-Verification-Intern_JR2027025
+  location: Zurich, Switzerland
+  remote: onsite
+  stack: [Lean, SMT]
+  domain: [compilers, AI infrastructure]
+  seniority: intern
+  tags: [big-company]
+  notes: >-
+    Research and implement formal methods to verify AI compiler passes, IRs and
+    lowerings, using AI and semantic verification. A strong formal-methods
+    background (preferably a PhD) is expected.
+  posted: '2026-10-20'
+  last_verified: 2026-10-27
+
+- company: NVIDIA
+  role: Engineering Manager, AI Compiler Analysis
+  category: ai-for-proof
+  url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Engineering-Manager--AI-Compiler-Analysis_JR2022377
+  location: Santa Clara, CA / Austin, TX / Seattle, WA
+  remote: onsite
+  stack: [Lean, SMT, theorem proving, fuzzing]
+  domain: [compilers, AI infrastructure]
+  seniority: lead
+  tags: [big-company]
+  compensation: USD 168,000–270,250 (Level 2); USD 200,000–322,000 (Level 3)
+  notes: >-
+    Leads AI-compiler quality work. Includes setting formal-verification
+    requirements for compiler transformations and generated GPU programs,
+    alongside fuzzing and differential testing.
+  posted: '2026-10-16'
+  last_verified: 2026-10-27
+
+- company: NVIDIA
+  role: Formal Verification Engineer - New College Grad 2026
+  category: hardware
+  url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Formal-Verification-Engineer---New-College-Grad-2026_JR2020837
+  location: Santa Clara, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA, JasperGold, VC Formal]
+  domain: [hardware, GPU, CPU]
+  seniority: engineer
+  tags: [big-company]
+  compensation: USD 100,000–166,750 (L1) / 116,000–189,750 (L2) base + equity
+  posted: '2026-10-06'
+  last_verified: 2026-10-27
+
+- company: NVIDIA
+  role: Senior Compute System Software Engineer
+  category: software
+  url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Bengaluru/Senior-Compute-System-Software-Engineer_JR2025828
+  location: Bengaluru, India
+  remote: onsite
+  stack: [Lean 4, TLA+, Haskell]
+  domain: [GPU drivers, safety-critical software]
+  seniority: senior
+  tags: [big-company]
+  notes: >-
+    Bootstraps formal verification of the software architecture and design of
+    Tegra user-mode compute drivers, and defines a company-wide formal
+    verification process.
+  posted: '2026-09-21'
+  last_verified: 2026-10-27
+
+- company: NVIDIA
+  role: Senior Formal Verification Engineer
+  category: hardware
+  url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Formal-Verification-Engineer_JR2012844
+  location: Santa Clara, CA / Austin, TX
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, GPU]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 136,000–218,500 (L3) / 168,000–264,500 (L4) base + equity
+  posted: '2026-09-23'
+  last_verified: 2026-10-27
+
+- company: NVIDIA
+  role: Senior Formal Verification Engineer - LPU
+  category: hardware
+  url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Remote/Senior-Formal-Verification-Engineer---LPU_JR2016647
+  location: US remote (CA, TX, CO, OR, WA, MA)
+  remote: remote
+  stack: [SystemVerilog, SVA, JasperGold, VC Formal]
+  domain: [hardware, AI accelerators]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 136,000–218,500 (L3) / 168,000–264,500 (L4) base + equity
+  notes: >-
+    LPU (the Groq-derived inference architecture). Two more LPU formal reqs are
+    open, one remote US and one remote Canada.
+  posted: '2026-07-06'
+  last_verified: 2026-10-27
+
+- company: NVIDIA
+  role: Senior Research Scientist, AI-Enabled Secure Systems
+  category: hardware
+  url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-MA-Westford/Senior-Research-Scientist--AI-Enabled-Secure-Systems_JR2028202
+  location: Westford, MA / Santa Clara, CA
+  remote: onsite
+  stack: [theorem provers, formal verification, program analysis, synthesis]
+  domain: [security, AI for code, hardware]
+  seniority: research-scientist
+  tags: [big-company]
+  compensation: USD 224,000–356,500 (Level 5); USD 272,000–431,250 (Level 6)
+  notes: >-
+    Combine generative AI and agents with formal methods, program analysis and
+    synthesis to design and verify secure hardware and software, including
+    building and checking proofs.
+  posted: '2026-10-22'
+  last_verified: 2026-10-27
 
 - company: Oath Technologies
   role: Formal Methods Research Engineer
+  category: software
   url: https://jobs.lever.co/convergentresearch/87a70993-3dbd-480a-9fe2-221628639f07
   location: Berkeley, CA
   remote: onsite
@@ -146,10 +1545,12 @@
     containment. Wants direct proof-assistant or SMT experience, plus PL theory
     or a record of moving formal methods into deployed systems. Hiring runs
     through Convergent Research's board.
-  last_verified: 2026-10-26
+  posted: '2026-09-09'
+  last_verified: 2026-10-27
 
 - company: Oath Technologies
   role: Research Engineer, Tools & Infrastructure
+  category: software
   url: https://jobs.lever.co/convergentresearch/a2e56f3e-09b0-402e-9566-6c7b235759d0
   location: Berkeley, CA
   remote: onsite
@@ -159,32 +1560,435 @@
   notes: >-
     IDE integrations, language servers, CLI and build-system work for formal
     methods tools. Prior formal methods depth is explicitly not required.
-  last_verified: 2026-10-26
+  posted: '2026-09-09'
+  last_verified: 2026-10-27
+
+- company: Pramaana Labs
+  role: Research Engineer
+  category: ai-for-proof
+  url: https://jobs.ashbyhq.com/pramaana-labs/c8176bd3-163d-4305-baae-fe585f573c4c
+  location: Palo Alto, CA (also Bengaluru, India)
+  remote: onsite
+  stack: [Lean, Coq, Isabelle, SMT]
+  domain: [AI for formal reasoning, law, tax]
+  seniority: research-engineer
+  notes: >-
+    Builds and improves the domain formalizer, autoformalizer and prover with
+    the formal-methods engineers. The posting says prior formal verification
+    experience is not required.
+  posted: '2026-10-26'
+  last_verified: 2026-10-27
+
+- company: Pramaana Labs
+  role: Research Intern
+  category: ai-for-proof
+  url: https://jobs.ashbyhq.com/pramaana-labs/83f179da-9bc8-4146-b217-817b79e78fa0
+  location: Palo Alto, CA (also Bengaluru, India)
+  remote: onsite
+  stack: [Lean, Coq, Isabelle]
+  domain: [AI for formal reasoning]
+  seniority: intern
+  notes: >-
+    Possible areas: model training, harness engineering, AI-for-formal research
+    and benchmarks. Includes designing harnesses for autoformalization and
+    prover systems.
+  posted: '2026-09-23'
+  last_verified: 2026-10-27
+
+- company: Pramaana Labs
+  role: Research Scientist, AI
+  category: ai-for-proof
+  url: https://jobs.ashbyhq.com/pramaana-labs/bf2d1dbe-c8aa-4bc6-91f3-979681a82081
+  location: Palo Alto, CA (also Bengaluru, India)
+  remote: onsite
+  stack: [Lean]
+  domain: [AI for formal reasoning, law, tax]
+  seniority: research-scientist
+  notes: >-
+    Improves the accuracy, coverage and generalization of the domain formalizer,
+    autoformalizer and prover. Works with formal-methods experts on whether
+    model outputs are faithful to the source.
+  posted: '2026-10-26'
+  last_verified: 2026-10-27
+
+- company: Pramaana Labs
+  role: Research Scientist, Reinforcement Learning
+  category: ai-for-proof
+  url: https://jobs.ashbyhq.com/pramaana-labs/725f2412-b0cc-4aeb-b5bd-bb225356f3e4
+  location: Palo Alto, CA
+  remote: onsite
+  stack: [Lean]
+  domain: [AI for formal reasoning, law, tax, healthcare]
+  seniority: research-scientist
+  notes: >-
+    Pramaana (founded 2025; $27M seed led by Khosla, June 2026) formalizes tax
+    codes, legal rules and clinical guidelines into a Lean 4 "symbolic world
+    model". This role scales RLVR with the Lean kernel as reward and pushes
+    autoformalization and proof search.
+  posted: '2026-08-24'
+  last_verified: 2026-10-27
+
+- company: Qualcomm
+  role: CPU Formal Verification Engineer
+  category: hardware
+  url: https://careers.qualcomm.com/careers/job/446720301715
+  location: Santa Clara, CA
+  remote: onsite
+  stack: [JasperGold, VC Formal, ACL2, HOL]
+  domain: [hardware, CPU]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 147,900–221,900
+  notes: >-
+    End-to-end formalisation of the refinement from architecture to
+    microarchitecture. Domain knowledge wanted in ISA, floating point, memory
+    consistency and coherency.
+  posted: '2026-09-17'
+  last_verified: 2026-10-27
+
+- company: Qualcomm
+  role: Formal Verification Senior Engineer - Qualcomm, Cambridge, UK
+  category: hardware
+  url: https://careers.qualcomm.com/careers/job/446720960309
+  location: Cambridge, United Kingdom
+  remote: onsite
+  stack: [SystemVerilog, SVA, JasperGold, VC Formal]
+  domain: [hardware, GPU]
+  seniority: engineer
+  tags: [big-company]
+  notes: >-
+    Requires 2+ years of FV experience. DPV and C2RTL/RTL2RTL sequential
+    equivalence experience is a plus.
+  posted: '2026-09-04'
+  last_verified: 2026-10-27
+
+- company: Qualcomm
+  role: Senior Staff Formal Verification Engineer
+  category: hardware
+  url: https://careers.qualcomm.com/careers/job/446715563691
+  location: San Diego, CA / Austin, TX / Santa Clara, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, GPU]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 203,700–305,500
+  notes: Adreno GPU.
+  posted: '2026-09-17'
+  last_verified: 2026-10-27
 
 - company: Quantinuum
   role: Advanced Quantum Compiler Engineer (925)
+  category: software
   url: https://jobs.eu.lever.co/quantinuum/1e52f038-a161-4276-ab8f-5c0b9c2fc28e
   location: Broomfield, CO
   remote: hybrid
   stack: [LLVM, MLIR, QIR, Rust, C++]
   domain: [quantum, compilers]
   seniority: engineer
-  work_authorization: "US Person required (citizen, green card, refugee or asylee)"
+  work_authorization: US Person required (citizen, green card, refugee or asylee)
   compensation: USD 138,000–173,000
-  last_verified: 2026-10-26
+  posted: '2026-08-03'
+  last_verified: 2026-10-27
+
+- company: Resolution
+  role: Lean Engineer
+  category: ai-for-proof
+  url: https://jobs.ashbyhq.com/resolution/55d2db0f-9484-4429-bdaa-d039a8f05217
+  location: Berkeley, CA
+  remote: hybrid
+  stack: [Lean, mathlib, autoformalization]
+  domain: [AI safety, alignment theory, formal mathematics]
+  seniority: engineer
+  work_authorization: Visa sponsorship offered for relocation to Berkeley
+  compensation: 'Research Engineer levels L4–L7: USD 346,000–930,000 in person, USD 208,000–558,000 remote'
+  notes: >-
+    ASI-alignment lab founded in 2026 by former UK AISI alignment staff and
+    Timaeus. The first dedicated Lean hire: sets conventions, shared libraries
+    and review harnesses so agent-written autoformalizations can be trusted at
+    scale. The posting says the job is mostly not writing Lean by hand. Based in
+    Berkeley; remote only in exceptional cases.
+  posted: '2026-10-06'
+  last_verified: 2026-10-27
+
+- company: RTX BBN Technologies
+  role: Research Software Engineer, Formal Methods (Hybrid) — Networking and Cyber Technologies
+  category: software
+  url: https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-MA-CAMBRIDGE-BBN06--10--50-Moulton-St--MOULTON-B6/Research-Software-Engineer--Formal-Methods--Hybrid-_01833650
+  location: Cambridge, MA / Arlington, VA / Columbia, MD
+  remote: hybrid
+  stack: [model checking, theorem proving, SAT, SMT]
+  domain: [defense, network security, protocols]
+  seniority: research-engineer
+  tags: [big-company]
+  work_authorization: US citizenship required (must be able to obtain a security clearance)
+  compensation: USD 86,800–165,200
+  notes: Same title as req 01878215 but a different BBN group, and no existing clearance required.
+  posted: '2026-04-01'
+  last_verified: 2026-10-27
+
+- company: RTX BBN Technologies
+  role: Research Software Engineer, Formal Methods (Hybrid) — Non-Kinetic Capabilities and Technologies
+  category: software
+  url: https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-MA-CAMBRIDGE-BBN05--10--50-Moulton-St--MOULTON-B5/Research-Software-Engineer--Formal-Methods--Hybrid-_01878215
+  location: Cambridge, MA / Arlington, VA / Columbia, MD
+  remote: onsite
+  stack: [model checking, theorem proving, SAT, SMT]
+  domain: [defense, network security, protocols]
+  seniority: research-engineer
+  tags: [big-company]
+  work_authorization: US citizenship required; active Top Secret clearance required
+  compensation: USD 86,800–165,200
+  notes: The title says Hybrid but the posting body lists the role type as onsite.
+  posted: '2026-09-29'
+  last_verified: 2026-10-27
 
 - company: Runtime Verification
   role: Open applications — verification engineering (K framework)
+  category: cryptocurrency
   url: https://runtimeverification.com/careers
   location: Urbana, IL — remote friendly
   remote: remote
   stack: [K framework, executable semantics]
   domain: [blockchain, language semantics]
   seniority: any
-  last_verified: 2026-10-26
+  last_verified: 2026-10-27
+
+- company: RWTH Aachen University (Chair for Quantum Information Systems)
+  role: PhD positions — Certified quantum compilation; Verification of quantum cryptography; Type systems for quantum programming languages (postdocs also welcome)
+  category: academic
+  url: https://qis.rwth-aachen.de/positions/
+  location: Aachen, Germany
+  remote: onsite
+  stack: [machine-checked proofs, type systems]
+  domain: [quantum computing, cryptography, compilers]
+  seniority: phd
+  compensation: TV-L E13
+  notes: >-
+    Dominique Unruh's group. The soft deadline (end of September 2026) has
+    passed; the pages say later applications are considered only if the position
+    is still unfilled.
+  last_verified: 2026-10-27
+
+- company: Samsung Semiconductor (SARC/ACL)
+  role: Senior Staff Engineer, GPU Design Verification (Formal Verification)
+  category: hardware
+  url: https://sec.wd3.myworkdayjobs.com/Samsung_Careers/job/3655-N-1st-St-San-Jose-CA-USA/Senior-Staff-Engineer--GPU-Design-Verification--Formal-Verification-_R118078-1
+  location: San Jose, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, GPU]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: May require access to US export-controlled information; must be authorized or eligible for government authorization
+  compensation: USD 198,200–297,200 base
+  posted: '2026-10-08'
+  last_verified: 2026-10-27
+
+- company: Samsung Semiconductor (SARC/ACL)
+  role: Staff GPU Design Verification Engineer – Formal Verification
+  category: hardware
+  url: https://sec.wd3.myworkdayjobs.com/Samsung_Careers/job/3900-N-Capital-of-Texas-Hwy-Austin-TX-USA/Staff-GPU-Design-Verification-Engineer---Formal-Verification_R119694
+  location: Austin, TX
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, GPU]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: May require access to US export-controlled information; must be authorized or eligible for government authorization
+  compensation: USD 151,000–226,600 base
+  notes: Xclipse mobile GPU; clock/power-gating formal.
+  posted: '2026-10-12'
+  last_verified: 2026-10-27
+
+- company: Sandia National Laboratories
+  role: Intern, R&D Graduate Year Round - Formal Verification
+  category: software
+  url: https://sandia.jobs/livermore-ca/intern-rd-graduate-year-round-formal-verification/B58BD1E76FCB47C886C291BFE0A6E633/job/
+  location: Livermore, CA
+  remote: onsite
+  stack: [Rocq, CompCert, VST, Flocq, separation logic, Isabelle/HOL]
+  domain: [compilers, firmware, hardware, numerical software]
+  seniority: intern
+  work_authorization: US citizens, permanent residents, asylees or refugees; nationals of China, Iran, North Korea or Russia barred unless also US citizens; no clearance required
+  notes: Req 699392. Enrolled full-time graduate students; up to 30 hours/week during term.
+  last_verified: 2026-10-27
+
+- company: SF Tensor
+  role: Member of Mathematical Staff
+  category: software
+  url: https://jobs.ashbyhq.com/sf-tensor/0b03b95d-3399-4080-9b11-0fcffcbcc963
+  location: San Francisco, CA
+  remote: onsite
+  stack: [Lean, Rocq, SMT, Mathlib, Flocq]
+  domain: [compilers, GPU kernels, AI for mathematics]
+  seniority: research-scientist
+  compensation: USD 225,000–315,000 base plus equity
+  notes: >-
+    YC-backed GPU compiler that proves kernel correctness after search; role
+    owns the proof engine, formal models of new hardware and floating-point /
+    low-precision formalisation. PhD in maths strongly recommended but not
+    required.
+  posted: '2026-09-27'
+  last_verified: 2026-10-27
+
+- company: SiFive
+  role: Distinguished Formal Verification Architect
+  category: hardware
+  url: https://sifive.wd1.myworkdayjobs.com/sifivecareers/job/Santa-Clara-California-United-States/Distinguished-Formal-Verification-Architect_R-101444-1
+  location: Santa Clara, CA / Austin, TX / Boston, MA
+  remote: onsite
+  stack: [VC Formal, JasperGold, SAT, SMT, theorem proving]
+  domain: [hardware, CPU, RISC-V]
+  seniority: principal
+  work_authorization: Offer contingent on authorization for access to export-controlled technology (or obtaining a licence)
+  compensation: USD 279,504–341,616 base
+  notes: >-
+    Functional programming (Scala/OCaml/Haskell) and theorem-prover familiarity
+    are nice-to-haves.
+  posted: '2026-09-21'
+  last_verified: 2026-10-27
+
+- company: SiFive
+  role: Senior CPU Formal Verification Engineer
+  category: hardware
+  url: https://sifive.wd1.myworkdayjobs.com/sifivecareers/job/Hyderabad-India/Senior-CPU-Formal-Verification-Engineer_R-101476
+  location: Hyderabad / Bengaluru, India
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, CPU, RISC-V]
+  seniority: senior
+  posted: '2026-10-26'
+  last_verified: 2026-10-27
+
+- company: SiFive
+  role: Staff Design Verification Engineer – CPU Core Formal Verification
+  category: hardware
+  url: https://sifive.wd1.myworkdayjobs.com/sifivecareers/job/Austin-Texas-United-States/Staff-Design-Verification-Engineer---CPU-Core-Formal-Verification_R-101466
+  location: Austin, TX / Santa Clara, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, CPU, RISC-V]
+  seniority: senior
+  work_authorization: Offer contingent on authorization for access to export-controlled technology (or obtaining a licence)
+  notes: >-
+    Formal work on out-of-order RISC-V core units such as the frontend,
+    issue/commit and the load-store unit. Three identical reqs are open
+    (R-101462, R-101463, R-101466).
+  posted: '2026-09-13'
+  last_verified: 2026-10-27
+
+- company: Snowflake
+  role: Principal / Staff Applied Research Scientist
+  category: software
+  url: https://jobs.ashbyhq.com/snowflake/31fdda97-2347-4031-8cb3-0d78207b58b4
+  location: Menlo Park, CA
+  remote: onsite
+  stack: [model checking, theorem proving, SAT/SMT, program verification, program analysis]
+  domain: [databases, distributed systems, cloud]
+  seniority: principal
+  tags: [big-company]
+  compensation: USD 236,000–339,200
+  notes: >-
+    New applied-research line on "verified data infrastructure": formal methods
+    and automated reasoning applied to Snowflake's distributed systems and
+    developer tooling. Hiring at Staff or Principal level; PhD (or equivalent)
+    and 8+ years expected. Workplace arrangement not stated.
+  posted: '2026-09-02'
+  last_verified: 2026-10-27
+
+- company: Sorbonne Paris North University (LIPN)
+  role: PhD Position in Strategy Logics (verification and synthesis for multi-agent systems)
+  category: academic
+  url: https://www.illc.uva.nl/NewsandEvents/News/Positions/newsitem/16326/PhD-Position-in-Strategy-Logics-at-Sorbonne-Paris-North-University-FR-
+  location: Villetaneuse (Paris area), France
+  remote: onsite
+  stack: [model checking, ATL, synthesis]
+  domain: [multi-agent systems]
+  seniority: phd
+  notes: Supervisor Munyque Mittelmann. Apply by email. Deadline 2026-11-15.
+  last_verified: 2026-10-27
+
+- company: Synopsys
+  role: Principal Application Engineer, VC Formal
+  category: hardware
+  url: https://careers.synopsys.com/job/bengaluru/principal-application-engineer-vc-formal/44408/100930292880
+  location: Bengaluru, India
+  remote: onsite
+  stack: [VC Formal, SVA]
+  domain: [EDA tools, hardware]
+  seniority: principal
+  tags: [big-company]
+  posted: '2026-09-20'
+  last_verified: 2026-10-27
+
+- company: Synopsys
+  role: Senior Staff Formal Verification Applications Engineer
+  category: hardware
+  url: https://careers.synopsys.com/job/sunnyvale/senior-staff-formal-verification-applications-engineer/44408/101288479376
+  location: Sunnyvale, CA
+  remote: onsite
+  stack: [VC Formal, SVA]
+  domain: [EDA tools, hardware]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 157,000–235,000 base
+  notes: >-
+    Customer-facing VC Formal deployment role covering property checking, DPV,
+    SEQ and connectivity.
+  posted: '2026-09-27'
+  last_verified: 2026-10-27
+
+- company: Tenstorrent
+  role: Formal Verification Engineer
+  category: hardware
+  url: https://job-boards.greenhouse.io/tenstorrent/jobs/5239971007
+  location: North America or Spain (listed Santa Clara, CA; Spain)
+  remote: remote
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, CPU, RISC-V, AI accelerators]
+  seniority: senior
+  work_authorization: 'US export control (EAR): offer may be contingent on citizenship/permanent residency or a licence'
+  compensation: USD 100k–500k company-wide engineer range (base + variable); role-specific band not given
+  notes: Posting says candidates at various experience levels are welcome; 6+ years listed.
+  posted: '2026-10-05'
+  last_verified: 2026-10-27
+
+- company: Thales
+  role: 'Stage en IA : automatisation de la conformité d''un référentiel documentaire et génération d''un code sécurisé'
+  category: software
+  url: https://thales.wd3.myworkdayjobs.com/Careers/job/Gennevilliers/stage-en-IA---automatisation-de-la-conformit-d-un-rfrentiel-documentaire-et-gnration-d-un-code-scuris_R0344649
+  location: Gennevilliers, France
+  remote: onsite
+  stack: [Coq, OCaml]
+  domain: [security, verified software]
+  seniority: intern
+  tags: [big-company]
+  notes: >-
+    Master's-level (Bac+4/5) internship. Despite the AI title, the task is a
+    data filter developed and proved correct in Coq, then extracted to OCaml.
+  posted: '2026-10-26'
+  last_verified: 2026-10-27
+
+- company: Thales
+  role: STAGE – Ingénieur Automatisation agentique d'analyse statique de code C – F/H
+  category: software
+  url: https://thales.wd3.myworkdayjobs.com/Careers/job/Toulouse/STAGE---Ingnieur-Automatisation-agentique-d-analyse-statique-de-code-C---F-H_R0344297-1
+  location: Toulouse, France
+  remote: onsite
+  stack: [Frama-C, C]
+  domain: [embedded security, static analysis]
+  seniority: intern
+  tags: [big-company]
+  notes: >-
+    Six-month engineering internship building an MCP server that exposes Frama-C
+    to an AI agent.
+  posted: '2026-10-21'
+  last_verified: 2026-10-27
 
 - company: Theorem (Theorem Labs)
-  role: ML research engineer / research scientist / SWE / research fellow
+  role: Systems Engineer / ML Researcher / research fellowship
+  category: ai-for-proof
   url: https://theorem.dev/careers/
   location: San Francisco, CA
   remote: onsite
@@ -193,15 +1997,204 @@
   seniority: any
   compensation: USD 200,000–500,000 plus equity; fellowship USD 125,000/yr pro rata
   notes: Built lf-lean, an AI-assisted verified Rocq-to-Lean translation.
-  last_verified: 2026-10-26
+  last_verified: 2026-10-27
+
+- company: Trail of Bits
+  role: Senior Security Engineer, Research & Engineering (United Kingdom)
+  category: software
+  url: https://apply.workable.com/trailofbits/j/82AEBAB99A/
+  location: United Kingdom
+  remote: remote
+  stack: [Lean, Rocq, F*, Dafny, Verus]
+  domain: [security assurance, verified systems]
+  seniority: senior
+  work_authorization: Remote within the United Kingdom
+  notes: >-
+    Attacks formally verified systems by mapping what a proof does and does not
+    establish, then demonstrating gaps with working exploits.
+  posted: '2026-09-02'
+  last_verified: 2026-10-27
+
+- company: TrustInSoft
+  role: AI Engineer
+  category: software
+  url: https://www.trust-in-soft.com/careers/hiring-ai-engineer
+  location: Paris, France
+  remote: onsite
+  stack: [formal methods, C, OCaml]
+  domain: [static analysis, AI for verification]
+  seniority: engineer
+  notes: >-
+    Joins the 15-person R&D team behind TrustInSoft Analyzer (a Frama-C
+    derivative); OCaml can be learned on the job. The posting promises a
+    "flexible working environment" but states no remote policy.
+  last_verified: 2026-10-27
+
+- company: TU Braunschweig
+  role: PhD Positions in Formal Methods for Trustworthy Systems and AI
+  category: academic
+  url: https://resources.illc.uva.nl/LogicList/newsitem.php?id=12655
+  location: Braunschweig, Germany
+  remote: onsite
+  stack: [model checking, automated reasoning, Rust]
+  domain: [AI, explainability]
+  seniority: phd
+  compensation: TV-L E13
+  notes: >-
+    New group led by Clemens Dubslaff, several full-time PhD positions. Apply by
+    email. Deadline 2026-12-07 (per ILLC listing).
+  last_verified: 2026-10-27
+
+- company: TU Delft
+  role: 'PhD Position: Systematic Derivation of Formal Languages and Their Correctness'
+  category: academic
+  url: https://careers.tudelft.nl/job/Delft-PhD-Position-Systematic-Derivation-of-Formal-Languages-and-Their-Correctness-2628-CD/1375074157/
+  location: Delft, Netherlands
+  remote: onsite
+  stack: [Agda, Rocq, Lean]
+  domain: [type theory, programming languages]
+  seniority: phd
+  compensation: EUR 3,204–4,051 gross/month (years 1–4)
+  notes: >-
+    AFOSR-funded SemSyn project (Benedikt Ahrens): dependent type theory,
+    two-level type theory, with formalization in Agda. 4 years (1.5 + 2.5).
+    Rolling review. Deadline 2026-11-29.
+  last_verified: 2026-10-27
+
+- company: University of East Anglia
+  role: 'PhD Studentship: Formalising the Local Langlands Correspondence for GL₂(F) in Lean'
+  category: academic
+  url: https://www.jobs.ac.uk/job/DSM956/phd-studentship-formalising-the-local-langlands-correspondence-for-glf-in-lean
+  location: Norwich, UK
+  remote: onsite
+  stack: [Lean]
+  domain: [formalized mathematics, number theory]
+  seniority: phd
+  notes: >-
+    Self-funded: no stipend, and a bench fee is payable. Supervisor Christopher
+    Birkbeck. Start 2027-02-01. Deadline 2026-11-30.
+  last_verified: 2026-10-27
+
+- company: University of Edinburgh (Quantum Software Lab)
+  role: Research Associate — RubberDUQ project (semantics and correct-by-construction compilation for hybrid quantum-classical programs)
+  category: academic
+  url: https://www.jobs.ac.uk/job/DTJ007/research-associate
+  location: Edinburgh, UK
+  remote: hybrid
+  stack: [categorical semantics, compiler correctness]
+  domain: [quantum computing, compilers]
+  seniority: postdoc
+  compensation: GBP 41,064–48,822
+  notes: 12-month fixed-term, to 31/12/2027. Job ref 15102. Deadline 2026-11-04.
+  posted: '2026-10-21'
+  last_verified: 2026-10-27
+
+- company: University of Exeter
+  role: PhD in End-to-End Verification of Security Protocols in Isabelle
+  category: academic
+  url: https://www.exeter.ac.uk/study/funding/award/?id=6011
+  location: Exeter, UK
+  remote: onsite
+  stack: [Isabelle/HOL, zero-knowledge proofs]
+  domain: [cryptography, compilers, security protocols]
+  seniority: phd
+  work_authorization: EPSRC Doctoral Landscape Award residence criteria apply. The jobs.ac.uk advert lists funding for UK, EU and international students.
+  compensation: UK tuition fees plus GBP 21,805/year stipend (3.5 years)
+  notes: >-
+    One of several projects competing in the EPSRC DLA studentship round for
+    September 2027 entry. Deadline 2026-12-08 (midday).
+  posted: '2026-10-27'
+  last_verified: 2026-10-27
+
+- company: University of Strathclyde (Mathematically Structured Programming group)
+  role: PhD scholarships 2027 (John Anderson Research Studentship Scheme)
+  category: academic
+  url: https://msp.cis.strath.ac.uk/phd2027-JARSS.html
+  location: Glasgow, UK
+  remote: onsite
+  stack: [dependent types, proof automation, model checking]
+  domain: [type theory, programming languages]
+  seniority: phd
+  work_authorization: Funding covers UK Home fees only ("not enough for non-UK tuition fees").
+  notes: >-
+    Competitive scheme with several fully funded places. Contact a potential
+    supervisor before 2026-12-01; candidacy decision 2026-12-11.
+  posted: '2026-10-26'
+  last_verified: 2026-10-27
+
+- company: Uppsala University
+  role: PhD student — Scalable Verification of Quantum Programs
+  category: academic
+  url: https://uu.varbi.com/en/what:job/jobID:961891/
+  location: Uppsala, Sweden
+  remote: onsite
+  stack: [program verification, automated theorem proving]
+  domain: [quantum computing]
+  seniority: phd
+  work_authorization: The position may be subject to security vetting ("Anställningen kan komma att säkerhetsprövas").
+  notes: >-
+    Department of Information Technology. Ad in Swedish. Start 2027-01-15.
+    Deadline 2026-11-15.
+  posted: '2026-08-21'
+  last_verified: 2026-10-27
+
+- company: Velaura
+  role: Senior Formal Verification Engineer
+  category: hardware
+  url: https://jobs.lever.co/velaura/3e86569f-990c-422a-ac98-6ef928160ddf
+  location: Santa Clara, CA / Bangalore, India
+  remote: onsite
+  stack: [SystemVerilog Assertions, JasperGold, VC Formal, Questa Formal, OneSpin, bounded model checking, equivalence checking]
+  domain: [hardware, robotics, physical AI]
+  seniority: senior
+  compensation: USD 200,000–300,000 base plus equity
+  notes: >-
+    Physical-AI SoC startup; formal for CPUs, FPUs (IEEE-754), vector/SIMD; 10+
+    years expected.
+  posted: '2026-07-25'
+  last_verified: 2026-10-27
 
 - company: Veridise
   role: Formal Methods Researcher for ZK
-  url: https://veridise.com/careers/formal-methods-researcher-for-zk/
+  category: cryptocurrency
+  url: https://veridise.com/careers/veridise-careers-formal-methods-researcher-for-zk/
   location: Flexible
   remote: remote
   stack: [Lean, Rocq, ACL2, SMT, Rust, C++]
   domain: [zero-knowledge, blockchain security]
   seniority: research-scientist
   notes: PhD or equivalent professional research experience requested.
-  last_verified: 2026-10-26
+  posted: '2026-01-21'
+  last_verified: 2026-10-27
+
+- company: Waymo
+  role: Senior Formal Verification Engineer
+  category: hardware
+  url: https://careers.withwaymo.com/jobs?gh_jid=7593534
+  location: Mountain View, CA
+  remote: hybrid
+  stack: [JasperGold, VC Formal, Questa Formal, SystemVerilog Assertions, bounded model checking, sequential equivalence checking]
+  domain: [hardware, automotive, autonomous vehicles]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 204,000–259,000 base
+  notes: Owns formal sign-off for Waymo's custom autonomous-driving silicon.
+  posted: '2026-02-09'
+  last_verified: 2026-10-27
+
+- company: YosysHQ
+  role: Synthesis or Formal Verification Developer at YosysHQ
+  category: hardware
+  url: https://join.com/companies/yosyshqcom/16850310-synthesis-or-formal-verification-developer-at-yosyshq
+  location: Anywhere
+  remote: remote-worldwide
+  stack: [Yosys, SymbiYosys, SAT, SMT, C++, Rust, Python]
+  domain: [EDA tools, open source]
+  seniority: engineer
+  work_authorization: Freelance contract with an Austrian company; candidates must not live in a sanctioned/export-restricted country or be barred from US-government work
+  compensation: EUR 6,000/month full-time (flat rate for everyone); part-time possible
+  notes: >-
+    Maintainers of Yosys and the open-source EDA stack. The posting has a formal
+    track (hardware model checking implementation) and a synthesis track.
+  posted: '2025-09-01'
+  last_verified: 2026-10-27

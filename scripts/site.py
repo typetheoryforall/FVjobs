@@ -15,7 +15,44 @@ import shutil
 
 import yaml
 
-from render import REMOTE_LABEL, SENIORITY_LABEL
+REMOTE_LABEL = {
+    "onsite": "On-site",
+    "hybrid": "Hybrid",
+    "remote": "Remote",
+    "remote-worldwide": "Remote (worldwide)",
+}
+SENIORITY_LABEL = {
+    "intern": "Intern",
+    "phd": "PhD",
+    "postdoc": "Postdoc",
+    "engineer": "Engineer",
+    "research-engineer": "Research engineer",
+    "research-scientist": "Research scientist",
+    "senior": "Senior",
+    "principal": "Principal",
+    "lead": "Lead",
+    "any": "Various",
+}
+# In the order the filter offers them.
+CATEGORY_LABEL = {
+    "academic": "Academic",
+    "ai-for-proof": "AI for proof & autoformalization",
+    "software": "Software",
+    "hardware": "Hardware",
+    "cryptocurrency": "Cryptocurrency",
+}
+# Postings name the same tool in different ways. Cards keep the posting's
+# wording; the proof-stack filter files each spelling under one name.
+STACK_ALIAS = {
+    "Coq": "Rocq",
+    "Isabelle/HOL": "Isabelle",
+    "Jasper": "JasperGold",
+    "Lean 4": "Lean",
+    "mathlib": "Mathlib",
+    "model checkers": "model checking",
+    "SystemVerilog Assertions": "SVA",
+    "theorem provers": "theorem proving",
+}
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / "site"
@@ -30,7 +67,7 @@ def load(name):
         return []
     entries = yaml.safe_load(path.read_text(encoding="utf-8")) or []
     for entry in entries:
-        for key in ("last_verified", "closed"):
+        for key in ("posted", "last_verified", "closed"):
             if isinstance(entry.get(key), dt.date):
                 entry[key] = entry[key].isoformat()
     return sorted(entries, key=lambda e: (e["company"].lower(), e["role"].lower()))
@@ -58,11 +95,15 @@ def details(e):
 
 
 def job(e, closed=False):
+    kind = CATEGORY_LABEL.get(e["category"], e["category"])
     data = {
-        "stack": "|".join(e["stack"]),
+        "stack": "|".join(dict.fromkeys(STACK_ALIAS.get(s, s) for s in e["stack"])),
         "remote": e["remote"],
         "seniority": e["seniority"],
-        "text": " ".join([e["company"], e["role"], e["location"], *e["stack"], *e["domain"]]).lower(),
+        "category": e["category"],
+        "big": "1" if "big-company" in e.get("tags", []) else "0",
+        "posted": e.get("posted", ""),
+        "text": " ".join([e["company"], e["role"], kind, e["location"], *e["stack"], *e["domain"]]).lower(),
     }
     attrs = " ".join(f'data-{k}="{esc(v)}"' for k, v in data.items())
     when = (
@@ -70,10 +111,12 @@ def job(e, closed=False):
         if closed
         else f'Checked <time datetime="{e["last_verified"]}">{e["last_verified"]}</time>'
     )
+    if e.get("posted"):
+        when = f'Posted <time datetime="{e["posted"]}">{e["posted"]}</time><br>{when}'
     return f"""
 <li class="job" {attrs}>
   <div class="job-head">
-    <p class="company">{esc(e["company"])}</p>
+    <p class="company">{esc(e["company"])} <span class="kind kind-{esc(e["category"])}">{esc(kind)}</span></p>
     <h3><a href="{esc(e["url"])}" rel="noopener">{esc(e["role"])}</a></h3>
   </div>
   <p class="where"><span class="remote remote-{esc(e["remote"])}">{esc(REMOTE_LABEL.get(e["remote"], e["remote"]))}</span>
@@ -86,6 +129,17 @@ def job(e, closed=False):
 </li>"""
 
 
+def categories(jobs):
+    """The kind-of-verification radios, with how many open roles each has."""
+    def option(value, label, n, checked=""):
+        return (f'<label><input type="radio" name="category" value="{value}"{checked}>'
+                f'<span>{esc(label)}<small>{n}</small></span></label>')
+    counts = {c: sum(e["category"] == c for e in jobs) for c in CATEGORY_LABEL}
+    return option("", "All", len(jobs), " checked") + "".join(
+        option(c, label, counts[c]) for c, label in CATEGORY_LABEL.items() if counts[c]
+    )
+
+
 def main():
     jobs, archive = load("jobs.yml"), load("archive.yml")
     latest = max((e["last_verified"] for e in jobs), default="")
@@ -94,6 +148,7 @@ def main():
         template.replace("{{count}}", str(len(jobs)))
         .replace("{{companies}}", str(len({e["company"] for e in jobs})))
         .replace("{{latest}}", latest)
+        .replace("{{categories}}", categories(jobs))
         .replace("{{repo}}", REPO)
         .replace("{{jobs}}", "".join(job(e) for e in jobs))
         .replace("{{archive_count}}", str(len(archive)))

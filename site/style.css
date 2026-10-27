@@ -7,6 +7,11 @@
   --accent: #3346c7;
   --accent-soft: #e6e9fb;
   --ok: #1f7a55;
+  --k-academic: #9a6700;
+  --k-ai-for-proof: #7a3fb8;
+  --k-software: #0e7490;
+  --k-hardware: #b4432c;
+  --k-cryptocurrency: #a0306e;
   --serif: "STIX Two Text", "STIX Two", Cambria, Georgia, serif;
   --sans: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", system-ui, sans-serif;
   color-scheme: light;
@@ -21,6 +26,11 @@
     --accent: #95a2ff;
     --accent-soft: #252a4a;
     --ok: #5cc79a;
+    --k-academic: #e0b25c;
+    --k-ai-for-proof: #c49bf0;
+    --k-software: #5ccbe0;
+    --k-hardware: #f08a72;
+    --k-cryptocurrency: #f08cc0;
     color-scheme: dark;
   }
 }
@@ -108,14 +118,14 @@ legend { font-weight: 600; font-size: .9rem; margin-bottom: .5rem; padding: 0; }
   padding: .3rem .75rem; border: 1px solid var(--rule); border-radius: 999px;
   font-size: .92rem; background: var(--raised);
 }
-#stacks small { color: var(--muted); font-size: .8em; margin-left: .3em; }
+#stacks small, .counted small { color: var(--muted); font-size: .8em; margin-left: .3em; }
 .seg input:checked + span, #stacks input:checked + span {
   background: var(--ink); color: var(--paper); border-color: var(--ink);
 }
-#stacks input:checked + span small { color: inherit; }
+#stacks input:checked + span small, .counted input:checked + span small { color: inherit; }
 .seg input:focus-visible + span, #stacks input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-.shown { color: var(--muted); font-size: .92rem; margin: 0 0 .5rem; }
+.shown, .undated { color: var(--muted); font-size: .92rem; margin: 0 0 .5rem; }
 
 /* Job list: rows under rules, not cards. */
 .jobs { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
@@ -134,6 +144,16 @@ legend { font-weight: 600; font-size: .9rem; margin-bottom: .5rem; padding: 0; }
 .job[hidden] { display: none; }
 .job-head { grid-area: head; }
 .company { margin: 0; color: var(--muted); font-size: .95rem; }
+.kind { white-space: nowrap; margin-left: .5em; font-size: .85rem; }
+.kind::before {
+  content: ""; display: inline-block; width: .55em; height: .55em; margin-right: .35em;
+  border-radius: 50%; background: var(--kind, var(--muted)); vertical-align: .05em;
+}
+.kind-academic { --kind: var(--k-academic); }
+.kind-ai-for-proof { --kind: var(--k-ai-for-proof); }
+.kind-software { --kind: var(--k-software); }
+.kind-hardware { --kind: var(--k-hardware); }
+.kind-cryptocurrency { --kind: var(--k-cryptocurrency); }
 .job h3 { margin: .1rem 0 .5rem; font: 600 1.3rem/1.3 var(--serif); }
 .job h3 a { color: var(--ink); text-decoration: none; }
 .job h3 a:hover { color: var(--accent); text-decoration: underline; }

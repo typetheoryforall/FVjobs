@@ -21,6 +21,17 @@ body:
       description: As the posting words it
       placeholder: Formal Verification Engineer
     validations: { required: true }
+  - type: dropdown
+    id: category
+    attributes:
+      label: Kind of verification
+      options:
+        - hardware
+        - software
+        - ai-for-proof (AI for proof and autoformalization)
+        - academic (university or research-institute post)
+        - cryptocurrency (blockchain, smart contracts, ZK)
+    validations: { required: true }
   - type: input
     id: url
     attributes:
@@ -75,6 +86,12 @@ body:
         - lead
         - any
     validations: { required: true }
+  - type: input
+    id: posted
+    attributes:
+      label: Date posted
+      description: When the employer published it, if the posting shows a date. Leave blank otherwise.
+      placeholder: 2026-10-27
   - type: input
     id: work_authorization
     attributes:

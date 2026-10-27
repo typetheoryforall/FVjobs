@@ -1,19 +1,24 @@
 name: pages
 
+# Pushes to main build the site and deploy it to GitHub Pages. Pull requests
+# only build it and attach _site as a downloadable artifact for review; they
+# never deploy, so a PR (including one from a fork) cannot change the live site.
+
 on:
   push:
     branches: [main]
+    paths: ["data/**", "scripts/**", "site/**", ".github/workflows/pages.yml"]
+  pull_request:
     paths: ["data/**", "scripts/**", "site/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  # One deploy at a time on main; a new push to a PR cancels its older preview build.
+  group: pages-${{ github.event_name == 'pull_request' && github.ref || 'deploy' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build:
@@ -26,13 +31,42 @@ jobs:
       - run: pip install pyyaml
       - name: Build the site
         run: python3 scripts/site.py
-      - uses: actions/upload-pages-artifact@v3
+
+      - if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
+      - if: github.event_name == 'pull_request'
+        id: preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-preview-pr-${{ github.event.number }}
+          path: _site
+          retention-days: 14
+      - if: github.event_name == 'pull_request'
+        name: Explain how to view the preview
+        run: |
+          cat >> "$GITHUB_STEP_SUMMARY" <<EOF
+          ### Site preview for #${{ github.event.number }}
+
+          [Download the built site](${{ steps.preview.outputs.artifact-url }}), or fetch and serve it with:
+
+          \`\`\`
+          gh run download ${{ github.run_id }} -R ${{ github.repository }} -n site-preview-pr-${{ github.event.number }} -D site-preview
+          python3 -m http.server -d site-preview
+          \`\`\`
+
+          then open http://localhost:8000. The site is deployed only after the PR is merged into main.
+          EOF
+
   deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

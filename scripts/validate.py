@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Validate data/jobs.yml and data/archive.yml against data/schema.json.
 
-Also checks for duplicate URLs and IDs, implausible dates, and entries that
-have not been verified recently. Exits non-zero on error.
+Also checks for duplicate URLs and IDs, implausible dates, entries that have
+not been verified recently, and issue forms GitHub would refuse to show.
+Exits non-zero on error.
 
     python3 scripts/validate.py --assign-ids
 
@@ -73,6 +74,26 @@ def assign_ids():
         path.write_text("".join(out), encoding="utf-8")
 
 
+def check_forms():
+    """GitHub silently drops an issue form whose text is not a string; an
+    unquoted date placeholder, which YAML reads as a date, is enough."""
+    errors = []
+    for path in sorted((ROOT / ".github" / "ISSUE_TEMPLATE").glob("*.yml")):
+        if path.name == "config.yml":
+            continue
+        form = yaml.safe_load(path.read_text(encoding="utf-8"))
+        texts = [("", k, form.get(k)) for k in ("name", "description")]
+        for item in form.get("body", []):
+            attrs = item.get("attributes", {})
+            where = item.get("id", item.get("type"))
+            texts += [(where, k, attrs[k]) for k in ("label", "description", "placeholder", "value") if k in attrs]
+            texts += [(where, "options", o.get("label") if isinstance(o, dict) else o)
+                      for o in attrs.get("options", [])]
+        errors += [f"{path.name}: {where} {key}: {v!r} is not text; put it in quotes"
+                   for where, key, v in texts if not isinstance(v, str)]
+    return errors
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--assign-ids", action="store_true",
@@ -134,6 +155,8 @@ def main():
                         f"{e.get('company')} — {e.get('role')}: not verified for "
                         f"{(today - d).days} days"
                     )
+
+    errors += check_forms()
 
     archived = {e.get("url") for e in load("archive.yml") if isinstance(e, dict)}
     for e in load("jobs.yml"):

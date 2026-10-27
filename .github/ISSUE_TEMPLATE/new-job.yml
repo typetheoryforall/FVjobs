@@ -91,7 +91,7 @@ body:
     attributes:
       label: Date posted
       description: When the employer published it, if the posting shows a date. Leave blank otherwise.
-      placeholder: 2026-10-27
+      placeholder: "2026-10-27"
   - type: input
     id: work_authorization
     attributes:

@@ -57,6 +57,9 @@ candidates in steps 2–4.
    `postedTs`, Personio `createdAt`, amazon.jobs `posted_date`, or the date on
    the page; never an "updated" date or a "~2 weeks ago" estimate), and write
    the run file.
+8. **Apply, after approval.** Add the approved roles without an `id` and run
+   `python3 scripts/validate.py --assign-ids`. Re-verified and archived roles
+   keep the ID they have. A `[stale] FV-…` issue names the role by that ID.
 
 ## Endpoint cookbook
 

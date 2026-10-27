@@ -85,6 +85,16 @@
     if (event.target.name === "order") order();
     apply();
   });
+  // A link to a closed role (…/#FV-141) has to open the archive to show it.
+  function reveal() {
+    const card = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (!card) return;
+    card.closest("details")?.setAttribute("open", "");
+    card.scrollIntoView();
+  }
+  addEventListener("hashchange", reveal);
+
   buildStacks();
   apply();
+  reveal();
 })();

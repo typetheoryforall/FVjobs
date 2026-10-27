@@ -1,8 +1,14 @@
 name: Report a closed or changed job
 description: Tell us a posting has gone, moved, or changed its details
-title: "[stale] Company — Role"
+title: "[stale] FV-xxx Company — Role"
 labels: ["stale"]
 body:
+  - type: input
+    id: listing
+    attributes:
+      label: Listing ID
+      description: The FV- number on the role's card
+      placeholder: FV-042
   - type: input
     id: url
     attributes:

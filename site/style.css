@@ -147,6 +147,13 @@ legend { font-weight: 600; font-size: .9rem; margin-bottom: .5rem; padding: 0; }
   border-bottom: 1px solid var(--rule);
 }
 .job[hidden] { display: none; }
+.job { scroll-margin-top: 1rem; }
+/* The role a #FV-042 link points at. The negative margin keeps the text in place. */
+.job:target {
+  background: var(--accent-soft); border-radius: 6px;
+  margin-inline: -.75rem; padding-inline: .75rem;
+}
+.job:target .tool { background: var(--raised); }
 .job-head { grid-area: head; }
 .company { margin: 0; color: var(--muted); font-size: .95rem; }
 .kind { white-space: nowrap; margin-left: .5em; font-size: .85rem; }
@@ -167,6 +174,9 @@ legend { font-weight: 600; font-size: .9rem; margin-bottom: .5rem; padding: 0; }
 .remote-remote-worldwide { color: var(--ok); }
 .level { grid-area: level; margin: 0; color: var(--muted); font-size: .95rem; }
 .checked { grid-area: checked; margin: 0; color: var(--muted); font-size: .85rem; align-self: end; }
+/* Serif, because the sans face's slashed zero reads as strikethrough at this size. */
+.ref { color: var(--ink); font: 600 .95rem var(--serif); text-decoration: none; letter-spacing: .02em; }
+.ref:hover { color: var(--accent); text-decoration: underline; }
 .stack, .domain { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem .35rem; }
 .stack { grid-area: stack; }
 .domain { grid-area: domain; margin-top: .4rem; }
@@ -184,10 +194,17 @@ legend { font-weight: 600; font-size: .9rem; margin-bottom: .5rem; padding: 0; }
 .job dd { margin: 0; }
 .report {
   grid-area: report; justify-self: start; align-self: start; margin-top: .6rem;
+  display: inline-flex; align-items: center; gap: .4em;
   padding: .15rem .65rem; border: 1px solid var(--rule); border-radius: 999px;
   font-size: .85rem; color: var(--muted); text-decoration: none; background: var(--raised);
 }
 .report:hover { color: var(--accent); border-color: var(--accent); }
+/* Warning triangle, drawn in the text colour so it follows hover and dark mode. */
+.report::before {
+  content: ""; flex: none; width: 1.1em; height: 1.1em; background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 3.2 22.4 21H1.6z' fill='none' stroke='black' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M12 9.5v5' stroke='black' stroke-width='2.2' stroke-linecap='round'/%3E%3Ccircle cx='12' cy='17.8' r='1.3'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 3.2 22.4 21H1.6z' fill='none' stroke='black' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M12 9.5v5' stroke='black' stroke-width='2.2' stroke-linecap='round'/%3E%3Ccircle cx='12' cy='17.8' r='1.3'/%3E%3C/svg%3E") center / contain no-repeat;
+}
 .empty { padding: 2rem 0; color: var(--muted); }
 
 .archive { padding: 3rem 0 1rem; }

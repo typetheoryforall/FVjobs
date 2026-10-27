@@ -98,7 +98,8 @@ def details(e):
 def report(e):
     """Link to the stale-job issue form, filled in with this listing."""
     query = urllib.parse.urlencode(
-        {"template": "stale-job.yml", "title": f"[stale] {e['company']} — {e['role']}", "url": e["url"]},
+        {"template": "stale-job.yml", "title": f"[stale] {e['id']} {e['company']} — {e['role']}",
+         "listing": e["id"], "url": e["url"]},
         quote_via=urllib.parse.quote,
     )
     label = f"Report a problem with {e['role']} at {e['company']}"
@@ -115,7 +116,7 @@ def job(e, closed=False):
         "category": e["category"],
         "big": "1" if "big-company" in e.get("tags", []) else "0",
         "posted": e.get("posted", ""),
-        "text": " ".join([e["company"], e["role"], kind, e["location"], *e["stack"], *e["domain"]]).lower(),
+        "text": " ".join([e["id"], e["company"], e["role"], kind, e["location"], *e["stack"], *e["domain"]]).lower(),
     }
     attrs = " ".join(f'data-{k}="{esc(v)}"' for k, v in data.items())
     when = (
@@ -125,8 +126,9 @@ def job(e, closed=False):
     )
     if e.get("posted"):
         when = f'Posted <time datetime="{e["posted"]}">{e["posted"]}</time><br>{when}'
+    when = f'<a class="ref" href="#{esc(e["id"])}" title="Link to this role">{esc(e["id"])}</a><br>{when}'
     return f"""
-<li class="job" {attrs}>
+<li class="job" id="{esc(e["id"])}" {attrs}>
   <div class="job-head">
     <p class="company">{esc(e["company"])} <span class="kind kind-{esc(e["category"])}">{esc(kind)}</span></p>
     <h3><a href="{esc(e["url"])}" target="_blank" rel="noopener">{esc(e["role"])}</a></h3>

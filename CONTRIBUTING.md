@@ -11,9 +11,11 @@ takes two minutes, and a maintainer moves it into the data file.
 
 ## Sending a pull request
 
-1. Add an entry to `data/jobs.yml`, keeping the file sorted by company.
+1. Add an entry to `data/jobs.yml`, keeping the file sorted by company. Leave
+   out `id`.
 2. Install the two dependencies: `pip install pyyaml jsonschema`.
-3. Run `python3 scripts/validate.py` and fix anything it reports.
+3. Run `python3 scripts/validate.py --assign-ids`. It gives your entry the next
+   free ID, then validates both files; fix anything it reports.
 
 CI runs the same validator and builds a preview of the site for every PR.
 
@@ -21,6 +23,7 @@ CI runs the same validator and builds a preview of the site for every PR.
 
 | Field | Required | Notes |
 |---|---|---|
+| `id` | yes | `FV-` and a number, e.g. `FV-042`. Don't pick one: leave it out and run `python3 scripts/validate.py --assign-ids`. Issues and links (`…/#FV-042`) refer to roles by it, so never change or reuse one, and keep it when a role moves to the archive |
 | `company` | yes | The employer, not the recruiting agency |
 | `role` | yes | The posting's own title |
 | `category` | yes | The kind of verification: `hardware`, `software`, `ai-for-proof` (AI for proof and autoformalization), `academic` (university and research-institute posts), or `cryptocurrency` (blockchain, smart contracts, ZK). Industry labs such as Microsoft Research go under the kind of work they do |
@@ -60,8 +63,8 @@ Please do not add:
 - When a role closes, move it to `data/archive.yml` with a `closed` date rather
   than deleting it.
 - Every open role on the site has a **Report a problem** button. It opens the
-  [stale job form](../../issues/new?template=stale-job.yml) with the role and
-  its link filled in, and the issue arrives labelled `stale`.
+  [stale job form](../../issues/new?template=stale-job.yml) with the role's
+  ID, title and link filled in, and the issue arrives labelled `stale`.
 - A weekly workflow checks every link and opens an issue listing failures. Note
   that single-page job boards (Google Careers, Workday) return a 200 even for a
   role that has been taken down, so a passing link check is necessary but not

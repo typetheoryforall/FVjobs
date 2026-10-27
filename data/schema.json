@@ -5,8 +5,12 @@
   "items": {
     "type": "object",
     "additionalProperties": false,
-    "required": ["company", "role", "category", "url", "location", "remote", "stack", "domain", "seniority", "last_verified"],
+    "required": ["id", "company", "role", "category", "url", "location", "remote", "stack", "domain", "seniority", "last_verified"],
     "properties": {
+      "id": {
+        "type": "string", "pattern": "^FV-[0-9]{3,}$",
+        "description": "Permanent listing ID. Leave it out on a new entry and run `python3 scripts/validate.py --assign-ids`. Never change or reuse one; it stays when the role moves to the archive"
+      },
       "company":  { "type": "string", "minLength": 1 },
       "role":     { "type": "string", "minLength": 1 },
       "category": {

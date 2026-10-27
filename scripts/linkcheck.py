@@ -34,12 +34,12 @@ def main():
 
     bad = [(e, s, err) for e, s, err in results if err or (s and s >= 400)]
     for e, status, err in results:
-        print(f"{status or 'ERR':>4}  {e['company']} — {e['role']}")
+        print(f"{status or 'ERR':>4}  {e['id']}  {e['company']} — {e['role']}")
 
     if bad:
         print("\n## Links needing attention\n")
         for e, status, err in bad:
-            print(f"- **{e['company']} — {e['role']}**: {err or f'HTTP {status}'}  \n  {e['url']}")
+            print(f"- **{e['id']} {e['company']} — {e['role']}**: {err or f'HTTP {status}'}  \n  {e['url']}")
         return 1
     return 0
 

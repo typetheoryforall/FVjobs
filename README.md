@@ -45,8 +45,10 @@ to `data/jobs.yml` and run:
 
 ```bash
 pip install pyyaml jsonschema
-python3 scripts/validate.py
+python3 scripts/validate.py --assign-ids
 ```
+
+Leave `id` out of the new entry; `--assign-ids` gives it the next `FV-` number.
 
 To preview the site locally, run `python3 scripts/site.py` and serve `_site/`.
 

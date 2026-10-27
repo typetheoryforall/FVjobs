@@ -1,13 +1,16 @@
 # FVjobs — open roles in formal verification.
 #
-# One entry per role. Required fields: company, role, category, url, location,
-# remote, stack, domain, seniority, last_verified. Optional: tags,
-# work_authorization, compensation, notes. CONTRIBUTING.md explains each one.
+# One entry per role. Required fields: id, company, role, category, url,
+# location, remote, stack, domain, seniority, last_verified. Optional: tags,
+# work_authorization, compensation, notes, posted. CONTRIBUTING.md explains
+# each one.
 #
-# Keep entries sorted by company. Run `python3 scripts/validate.py` before
-# opening a pull request.
+# Keep entries sorted by company. Leave `id` out of a new entry and run
+# `python3 scripts/validate.py --assign-ids`, which numbers it and validates
+# the file. Never change or reuse an id.
 
-- company: Access Softek Toolchains
+- id: FV-001
+  company: Access Softek Toolchains
   role: Compiler Developer (LLVM, C++)
   category: software
   url: https://jobs.lever.co/accesssoftek/55497b30-5fbc-4fda-81ce-91752ae1599a
@@ -20,7 +23,8 @@
   posted: '2019-11-18'
   last_verified: 2026-10-27
 
-- company: AdaCore
+- id: FV-002
+  company: AdaCore
   role: 'Internship - SPARK: Formally verify an ordered set/map library in SPARK'
   category: software
   url: https://app.hellotalent.com/vacancy/spark-formally-verify-an-ordered-setmap-library-in-spark-ee2361007
@@ -34,7 +38,8 @@
     SPARKlib's red-black-tree containers, with AI-assisted proof.
   last_verified: 2026-10-27
 
-- company: Advanced Micro Devices (AMD)
+- id: FV-003
+  company: Advanced Micro Devices (AMD)
   role: CPU Formal Verification Engineer
   category: hardware
   url: https://careers.amd.com/careers-home/jobs/77115?lang=en-us
@@ -50,7 +55,8 @@
   posted: '2026-07-16'
   last_verified: 2026-10-27
 
-- company: Advanced Micro Devices (AMD)
+- id: FV-004
+  company: Advanced Micro Devices (AMD)
   role: Lead Formal Verification Engineer
   category: hardware
   url: https://careers.amd.com/careers-home/jobs/93590?lang=en-us
@@ -68,7 +74,8 @@
   posted: '2026-10-09'
   last_verified: 2026-10-27
 
-- company: Advanced Micro Devices (AMD)
+- id: FV-005
+  company: Advanced Micro Devices (AMD)
   role: Staff Formal Verification Engineer (GPU)
   category: hardware
   url: https://careers.amd.com/careers-home/jobs/87249?lang=en-us
@@ -84,7 +91,8 @@
   posted: '2026-06-18'
   last_verified: 2026-10-27
 
-- company: Airbus
+- id: FV-006
+  company: Airbus
   role: STAGE 2027 Formalisation pour la spécification et l'architecture logicielle
   category: software
   url: https://ag.wd3.myworkdayjobs.com/Airbus/job/Toulouse-Area/STAGE-2027-Formalisation-pour-la-spcification-et-l-architecture-logicielle_JR10441502
@@ -100,7 +108,8 @@
   posted: '2026-09-24'
   last_verified: 2026-10-27
 
-- company: Alignerr
+- id: FV-007
+  company: Alignerr
   role: Lean 4 Proof Engineer - Mathematical Formalization
   category: ai-for-proof
   url: https://www.alignerr.com/jobs/f2064608-6c58-4aff-ba54-ed98171bf2ae
@@ -117,7 +126,8 @@
   posted: '2026-10-22'
   last_verified: 2026-10-27
 
-- company: Amazon (Amazon Leo)
+- id: FV-008
+  company: Amazon (Amazon Leo)
   role: Sr. Formal Verification Engineer, Amazon Leo
   category: hardware
   url: https://www.amazon.jobs/en/jobs/10515790/sr-formal-verification-engineer-amazon-leo
@@ -133,7 +143,8 @@
   posted: '2026-08-26'
   last_verified: 2026-10-27
 
-- company: Amazon (Annapurna Labs)
+- id: FV-009
+  company: Amazon (Annapurna Labs)
   role: ASIC Formal Verification Engineer I, Annapurna Labs
   category: hardware
   url: https://www.amazon.jobs/en/jobs/10586351/asic-formal-verification-engineer-i-annapurna-labs
@@ -150,7 +161,8 @@
   posted: '2026-10-22'
   last_verified: 2026-10-27
 
-- company: Amazon (Annapurna Labs)
+- id: FV-010
+  company: Amazon (Annapurna Labs)
   role: Senior Formal Verification Engineer, Annapurna Labs
   category: hardware
   url: https://www.amazon.jobs/en/jobs/10583054/senior-formal-verification-engineer-annapurna-labs
@@ -166,7 +178,8 @@
   posted: '2026-10-19'
   last_verified: 2026-10-27
 
-- company: Amazon Web Services
+- id: FV-011
+  company: Amazon Web Services
   role: 2027 Applied Science Internship - Automated Reasoning - United States, PhD Student Science Recruiting
   category: software
   url: https://www.amazon.jobs/en/jobs/10552930/2027-applied-science-internship-automated-reasoning-united-states-phd-student-science-recruiting-automated-reasoning
@@ -182,7 +195,8 @@
   posted: '2026-09-17'
   last_verified: 2026-10-27
 
-- company: Amazon Web Services
+- id: FV-012
+  company: Amazon Web Services
   role: Applied Scientist, Amazon Cryptographic Libraries
   category: software
   url: https://www.amazon.jobs/en/jobs/10522632/applied-scientist-amazon-cryptographic-libraries
@@ -201,7 +215,8 @@
   posted: '2026-08-31'
   last_verified: 2026-10-27
 
-- company: Amazon Web Services
+- id: FV-013
+  company: Amazon Web Services
   role: Applied Scientist, Automated Reasoning
   category: software
   url: https://www.amazon.jobs/en/jobs/10502706/applied-scientist-automated-reasoning
@@ -217,7 +232,8 @@
   posted: '2026-08-14'
   last_verified: 2026-10-27
 
-- company: Amazon Web Services
+- id: FV-014
+  company: Amazon Web Services
   role: Principal Applied Scientist, Neuro-Symbolic AI Labs
   category: software
   url: https://www.amazon.jobs/en/jobs/10404529/principal-applied-scientist-neuro-symbolic-ai-labs
@@ -235,7 +251,8 @@
   posted: '2026-04-27'
   last_verified: 2026-10-27
 
-- company: Amazon Web Services
+- id: FV-015
+  company: Amazon Web Services
   role: Senior Applied Scientist, AWS Quick
   category: ai-for-proof
   url: https://www.amazon.jobs/en/jobs/10428524/senior-applied-scientist-aws-quick
@@ -254,7 +271,8 @@
   posted: '2026-05-22'
   last_verified: 2026-10-27
 
-- company: Amazon Web Services
+- id: FV-016
+  company: Amazon Web Services
   role: Senior Applied Scientist, Neuro-Symbolic AI Labs
   category: software
   url: https://www.amazon.jobs/en/jobs/10503197/senior-applied-scientist-neuro-symbolic-ai-labs
@@ -270,7 +288,8 @@
   posted: '2026-08-18'
   last_verified: 2026-10-27
 
-- company: Amazon Web Services
+- id: FV-017
+  company: Amazon Web Services
   role: Sr Applied Scientist, Amazon Cryptographic Libraries
   category: software
   url: https://www.amazon.jobs/en/jobs/10522631/sr-applied-scientist-amazon-cryptographic-libraries
@@ -289,7 +308,8 @@
   posted: '2026-08-31'
   last_verified: 2026-10-27
 
-- company: Amazon Web Services
+- id: FV-018
+  company: Amazon Web Services
   role: Sr. Applied Scientist, Automated Reasoning in Identity
   category: software
   url: https://www.amazon.jobs/en/jobs/10522623/sr-applied-scientist-automated-reasoning-in-identity
@@ -307,7 +327,8 @@
   posted: '2026-08-31'
   last_verified: 2026-10-27
 
-- company: Amazon Web Services
+- id: FV-019
+  company: Amazon Web Services
   role: Sr. Software Development Engineer, Automated Reasoning Group
   category: software
   url: https://www.amazon.jobs/en/jobs/10475668/sr-software-development-engineer-automated-reasoning-group
@@ -325,7 +346,8 @@
   posted: '2026-07-15'
   last_verified: 2026-10-27
 
-- company: Antithesis
+- id: FV-020
+  company: Antithesis
   role: Senior/Staff Engineer - Bombadil
   category: software
   url: https://jobs.ashbyhq.com/antithesis/88f9ee26-c86f-4625-9ac2-cb268678044a
@@ -341,7 +363,8 @@
   posted: '2026-03-18'
   last_verified: 2026-10-27
 
-- company: Apple
+- id: FV-021
+  company: Apple
   role: Formal Verification Engineer
   category: hardware
   url: https://jobs.apple.com/en-us/details/200657422-0157/formal-verification-engineer
@@ -358,7 +381,8 @@
   posted: '2026-04-13'
   last_verified: 2026-10-27
 
-- company: Apple
+- id: FV-022
+  company: Apple
   role: Formal Verification Engineer
   category: hardware
   url: https://jobs.apple.com/de-de/details/200685650-1731/formal-verification-engineer
@@ -374,7 +398,8 @@
   posted: '2026-09-24'
   last_verified: 2026-10-27
 
-- company: Apple
+- id: FV-023
+  company: Apple
   role: GPU Formal Verification Engineer
   category: hardware
   url: https://jobs.apple.com/en-us/details/200684912-3760/gpu-formal-verification-engineer
@@ -391,7 +416,8 @@
   posted: '2026-10-26'
   last_verified: 2026-10-27
 
-- company: Arizona State University
+- id: FV-024
+  company: Arizona State University
   role: Professor (all ranks) in Verification, Validation, and Certification of AI-Enabled Complex Dynamical and Cyber-Physical Systems
   category: academic
   url: https://apply.interfolio.com/195699
@@ -405,7 +431,8 @@
     Deadline 2026-11-30; later applications go to a reserve pool.
   last_verified: 2026-10-27
 
-- company: Arm
+- id: FV-025
+  company: Arm
   role: Formal Verification Engineer
   category: hardware
   url: https://careers.arm.com/job/cambridge/formal-verification-engineer/33099/100739285472
@@ -422,7 +449,8 @@
   posted: '2026-09-16'
   last_verified: 2026-10-27
 
-- company: Arm
+- id: FV-026
+  company: Arm
   role: Staff Architecture Formal Engineer
   category: hardware
   url: https://careers.arm.com/job/cambridge/staff-architecture-formal-engineer/33099/89039360960
@@ -441,7 +469,8 @@
   posted: '2026-06-25'
   last_verified: 2026-10-27
 
-- company: Arm
+- id: FV-027
+  company: Arm
   role: Theorem Proving Engineer
   category: hardware
   url: https://careers.arm.com/job/austin/theorem-proving-engineer/33099/97584421536
@@ -459,7 +488,8 @@
   posted: '2026-07-09'
   last_verified: 2026-10-27
 
-- company: Astera Labs
+- id: FV-028
+  company: Astera Labs
   role: Distinguished Formal Verification
   category: hardware
   url: https://job-boards.greenhouse.io/asteralabs/jobs/4664853005
@@ -473,7 +503,8 @@
   posted: '2026-02-23'
   last_verified: 2026-10-27
 
-- company: Astera Labs
+- id: FV-029
+  company: Astera Labs
   role: Formal Verification and RTL Design Software Engineer
   category: hardware
   url: https://job-boards.greenhouse.io/asteralabs/jobs/4728001005
@@ -489,7 +520,8 @@
   posted: '2026-08-31'
   last_verified: 2026-10-27
 
-- company: Astera Labs
+- id: FV-030
+  company: Astera Labs
   role: Senior/ Staff Formal Verification Engineer
   category: hardware
   url: https://job-boards.greenhouse.io/asteralabs/jobs/4674496005
@@ -504,7 +536,8 @@
   posted: '2026-03-18'
   last_verified: 2026-10-27
 
-- company: Astera Labs
+- id: FV-031
+  company: Astera Labs
   role: Tech Lead, Formal Verification
   category: hardware
   url: https://job-boards.greenhouse.io/asteralabs/jobs/4720768005
@@ -516,7 +549,8 @@
   posted: '2026-08-03'
   last_verified: 2026-10-27
 
-- company: Axiom Math
+- id: FV-032
+  company: Axiom Math
   role: Member of Technical Staff
   category: ai-for-proof
   url: https://jobs.ashbyhq.com/axiommath/03aafabc-4156-4ba2-bb71-280f704bbcb2
@@ -533,7 +567,8 @@
   posted: '2026-04-03'
   last_verified: 2026-10-27
 
-- company: Axiomise
+- id: FV-033
+  company: Axiomise
   role: Graduate Formal Verification Engineer
   category: hardware
   url: https://axiomise.jobs.personio.de/job/2480767
@@ -547,7 +582,8 @@
   posted: '2026-01-08'
   last_verified: 2026-10-27
 
-- company: Axiomise
+- id: FV-034
+  company: Axiomise
   role: Senior Formal Verification Engineer
   category: hardware
   url: https://axiomise.jobs.personio.de/job/2607228
@@ -561,7 +597,8 @@
   posted: '2026-04-20'
   last_verified: 2026-10-27
 
-- company: Axiomise
+- id: FV-035
+  company: Axiomise
   role: Staff Formal Verification Engineer
   category: hardware
   url: https://axiomise.jobs.personio.de/job/2607253
@@ -574,7 +611,8 @@
   posted: '2026-04-20'
   last_verified: 2026-10-27
 
-- company: Bedrock Robotics
+- id: FV-036
+  company: Bedrock Robotics
   role: 2027 Internship Safety Engineer, Agentic Safety Case Assessment
   category: software
   url: https://jobs.ashbyhq.com/bedrock-robotics/cb06dc4f-3e78-4546-897d-b39ba12a9178
@@ -590,7 +628,8 @@
   posted: '2026-09-25'
   last_verified: 2026-10-27
 
-- company: Beneficial AI Foundation
+- id: FV-037
+  company: Beneficial AI Foundation
   role: AI Safety Research Scientist / Research Engineer (formal verification)
   category: software
   url: https://www.beneficialaifoundation.org/jobs
@@ -606,7 +645,8 @@
     github.com/Beneficial-AI-Foundation.
   last_verified: 2026-10-27
 
-- company: Cadence Design Systems
+- id: FV-038
+  company: Cadence Design Systems
   role: 'Software Engineer I: Jasper R&D'
   category: hardware
   url: https://cadence.wd1.myworkdayjobs.com/External_Careers/job/BELO-HORIZONTE/Software-Engineer-I--Jasper-R-D_R55752
@@ -622,7 +662,8 @@
   posted: '2026-08-24'
   last_verified: 2026-10-27
 
-- company: Cadence Design Systems
+- id: FV-039
+  company: Cadence Design Systems
   role: Software Engineer II
   category: hardware
   url: https://cadence.wd1.myworkdayjobs.com/External_Careers/job/AUSTIN/Software-Engineering-Director_R56213
@@ -638,7 +679,8 @@
   posted: '2026-09-23'
   last_verified: 2026-10-27
 
-- company: Cajal
+- id: FV-040
+  company: Cajal
   role: Open applications (Lean, verified code)
   category: ai-for-proof
   url: https://caj.al/careers
@@ -654,7 +696,8 @@
     say they do not look at CVs.
   last_verified: 2026-10-27
 
-- company: CertiK
+- id: FV-041
+  company: CertiK
   role: Software Engineer (III to Principal), Formal Methods
   category: cryptocurrency
   url: https://jobs.lever.co/certik/f8fbe497-34d2-49fa-9308-879f0ffd8fa8
@@ -668,7 +711,8 @@
   posted: '2022-07-30'
   last_verified: 2026-10-27
 
-- company: CertiK
+- id: FV-042
+  company: CertiK
   role: Solidity Compiler Frontend Engineer
   category: cryptocurrency
   url: https://jobs.lever.co/certik/93ff3247-b56b-40a1-a4a1-daa0456663bf
@@ -688,7 +732,8 @@
   posted: '2025-10-20'
   last_verified: 2026-10-27
 
-- company: CLEARSY
+- id: FV-043
+  company: CLEARSY
   role: Ingénieur développeur full stack Atelier B H/F
   category: software
   url: https://clearsy.nos-recrutements.fr/job/5883
@@ -700,7 +745,8 @@
   notes: Develops and modernises Atelier B (C/C++ back end, Qt front end). Published May 11, 2026.
   last_verified: 2026-10-27
 
-- company: CLEARSY
+- id: FV-044
+  company: CLEARSY
   role: Ingénieur Méthodes Formelles H/F
   category: software
   url: https://clearsy.nos-recrutements.fr/job/5906
@@ -718,7 +764,8 @@
   posted: '2026-08-17'
   last_verified: 2026-10-27
 
-- company: CLEARSY
+- id: FV-045
+  company: CLEARSY
   role: Ingénieur validation formelle de données sécuritaires H/F
   category: software
   url: https://clearsy.nos-recrutements.fr/job/5881
@@ -732,7 +779,8 @@
     validation of safety constraints on railway project data.
   last_verified: 2026-10-27
 
-- company: Code Metal
+- id: FV-046
+  company: Code Metal
   role: Research Engineer — Formal Methods
   category: software
   url: https://jobs.ashbyhq.com/code-metal/550aed7b-86d2-48c3-af27-e61671e2d493
@@ -746,7 +794,8 @@
   posted: '2026-05-22'
   last_verified: 2026-10-27
 
-- company: Cognichip
+- id: FV-047
+  company: Cognichip
   role: Formal Verification Engineer - AI
   category: hardware
   url: https://talent.octopyd.com/careers/cognichip/apply/6c53107d-1b6a-40b3-a2a5-3bc742b078f5
@@ -762,7 +811,8 @@
     at cognichip.ai/careers.
   last_verified: 2026-10-27
 
-- company: Cornell University
+- id: FV-048
+  company: Cornell University
   role: Postdoc in formal methods and programming languages (Alexandra Silva's group)
   category: academic
   url: https://lists.seas.upenn.edu/pipermail/types-announce/2026/012748.html
@@ -777,7 +827,8 @@
   posted: '2026-10-12'
   last_verified: 2026-10-27
 
-- company: eleQtron
+- id: FV-049
+  company: eleQtron
   role: Compiler Engineer (m/w/d)
   category: software
   url: https://eleqtron.com/en/jobs/compiler-engineer-m-w-d/
@@ -790,7 +841,8 @@
   posted: '2026-09-22'
   last_verified: 2026-10-27
 
-- company: EPFL
+- id: FV-050
+  company: EPFL
   role: Post-doc on formal verification and algorithm discovery for numerical analysis
   category: academic
   url: https://careers.epfl.ch/job/Lausanne-Post-doc-on-formal-verification-and-algorithm-discovery-for-numerical-analysis/1165456955/
@@ -806,7 +858,8 @@
     1-year contract, renewable.
   last_verified: 2026-10-27
 
-- company: EPFL
+- id: FV-051
+  company: EPFL
   role: 'Postdoc: Keystone Project (Machine-Verified LLM Inference)'
   category: academic
   url: https://careers.epfl.ch/job/Lausanne-Postdoc-Keystone-Project-(Machine-Verified-LLM-Inference)/1165508355/
@@ -822,7 +875,8 @@
     listed 3 Nov 2026, so treat it as urgent.
   last_verified: 2026-10-27
 
-- company: EPFL
+- id: FV-052
+  company: EPFL
   role: 'Postdoc: Networked Systems Abstractions Lab (LASeR)'
   category: academic
   url: https://careers.epfl.ch/job/Lausanne-Postdoc-Networked-Systems-Abstractions-Lab-%28LASeR%29/1165481555/
@@ -837,7 +891,8 @@
     2026-12-01. No deadline stated.
   last_verified: 2026-10-27
 
-- company: EPFL
+- id: FV-053
+  company: EPFL
   role: 'Software Engineer: Keystone Project (Machine-Verified LLM Inference)'
   category: academic
   url: https://careers.epfl.ch/job/Lausanne-Software-Engineer-Keystone-Project-%28Machine-Verified-LLM-Inference%29/1165508255/
@@ -852,7 +907,8 @@
     renewable, start 2026-12-01. No deadline stated.
   last_verified: 2026-10-27
 
-- company: Etched
+- id: FV-054
+  company: Etched
   role: Formal Verification - DV
   category: hardware
   url: https://jobs.ashbyhq.com/etched/07b00790-2817-4863-a330-b0caf2322460
@@ -867,7 +923,8 @@
   posted: '2026-06-10'
   last_verified: 2026-10-27
 
-- company: Galois
+- id: FV-055
+  company: Galois
   role: Principal Scientist
   category: software
   url: https://apply.workable.com/galois/j/165CC05D51/
@@ -883,7 +940,8 @@
   posted: '2026-04-13'
   last_verified: 2026-10-27
 
-- company: Galois
+- id: FV-056
+  company: Galois
   role: Research Engineer
   category: software
   url: https://apply.workable.com/galois/j/2E49DBE9CB/
@@ -899,7 +957,8 @@
   posted: '2026-01-05'
   last_verified: 2026-10-27
 
-- company: General Diffusion
+- id: FV-057
+  company: General Diffusion
   role: Member of Technical Staff, Safety & Formal Verification
   category: software
   url: https://www.generaldiffusion.com/careers/mts-safety-verification/
@@ -915,7 +974,8 @@
     monitors. Apply by email (careers@generaldiffusion.com).
   last_verified: 2026-10-27
 
-- company: Google
+- id: FV-058
+  company: Google
   role: ASIC Formal Verification Engineer, Google Cloud
   category: hardware
   url: https://www.google.com/about/careers/applications/jobs/results/104345785444770502-asic-formal-verification-engineer-google-cloud
@@ -928,7 +988,8 @@
   compensation: USD 138,000–197,000 base + 15% bonus target + equity
   last_verified: 2026-10-27
 
-- company: Google
+- id: FV-059
+  company: Google
   role: ASIC Formal Verification Engineer, TPU Compute
   category: hardware
   url: https://www.google.com/about/careers/applications/jobs/results/93401021752976070-asic-formal-verification-engineer-tpu-compute
@@ -944,7 +1005,8 @@
     Requires 8 years of experience, although Google labels the level "Mid".
   last_verified: 2026-10-27
 
-- company: Google
+- id: FV-060
+  company: Google
   role: Senior SoC Formal Verification Engineer, Google Cloud
   category: hardware
   url: https://www.google.com/about/careers/applications/jobs/results/89558689786012358-senior-soc-formal-verification-engineer-google-cloud
@@ -957,7 +1019,8 @@
   notes: Google's Israel team for custom server chips.
   last_verified: 2026-10-27
 
-- company: Google DeepMind
+- id: FV-061
+  company: Google DeepMind
   role: Lean Theorem Proving Engineer, Verified Code Generation, DeepMind
   category: ai-for-proof
   url: https://www.google.com/about/careers/applications/jobs/results/72320887935640262-lean-theorem-proving-engineer-verified-code-generation-deepmind
@@ -975,7 +1038,8 @@
     AI help, and builds infrastructure for proof search at scale.
   last_verified: 2026-10-27
 
-- company: Harmonic
+- id: FV-062
+  company: Harmonic
   role: Formal Verification Engineer (Aristotle)
   category: ai-for-proof
   url: https://jobs.ashbyhq.com/harmonic/5e759f93-e90c-43a9-8c88-af25428237ca
@@ -988,7 +1052,8 @@
   posted: '2026-08-13'
   last_verified: 2026-10-27
 
-- company: Harmonic
+- id: FV-063
+  company: Harmonic
   role: Research Engineer
   category: ai-for-proof
   url: https://jobs.ashbyhq.com/harmonic/700d7dd6-db2b-4693-9e11-40fb755a54c4
@@ -1004,7 +1069,8 @@
   posted: '2025-07-10'
   last_verified: 2026-10-27
 
-- company: Harmonic
+- id: FV-064
+  company: Harmonic
   role: Research Engineer, Formal Methods
   category: ai-for-proof
   url: https://jobs.ashbyhq.com/harmonic/74f2ed85-b1cc-40b1-825d-fefd2fcf557c
@@ -1016,7 +1082,8 @@
   posted: '2026-08-24'
   last_verified: 2026-10-27
 
-- company: IBM
+- id: FV-065
+  company: IBM
   role: Formal Verification Engineer
   category: hardware
   url: https://careers.ibm.com/careers/JobDetail?jobId=136675
@@ -1033,7 +1100,8 @@
   posted: '2026-10-13'
   last_verified: 2026-10-27
 
-- company: Inria (Argo team, Paris)
+- id: FV-066
+  company: Inria (Argo team, Paris)
   role: 'Advanced Research Position: AI for formal mathematics (quality, evaluation and translation of LLM-generated proofs)'
   category: academic
   url: https://jobs.inria.fr/public/classic/en/offres/2026-10606
@@ -1049,7 +1117,8 @@
     French. Deadline 2026-11-14.
   last_verified: 2026-10-27
 
-- company: Inria (Rennes)
+- id: FV-067
+  company: Inria (Rennes)
   role: 'PhD Position: Trustable Machine Learning: Analysis and Verification of Soft Automata'
   category: academic
   url: https://jobs.inria.fr/public/classic/en/offres/2026-10416
@@ -1064,7 +1133,8 @@
     contract. Deadline 2026-11-07.
   last_verified: 2026-10-27
 
-- company: Intel
+- id: FV-068
+  company: Intel
   role: Formal Verification Engineer
   category: hardware
   url: https://intel.wd1.myworkdayjobs.com/External/job/Israel-Haifa/Formal-Verification-Engineer_JR0287702
@@ -1078,7 +1148,8 @@
   posted: '2026-10-06'
   last_verified: 2026-10-27
 
-- company: Intel
+- id: FV-069
+  company: Intel
   role: Senior Formal Verification Engineer – AI SoC Development
   category: hardware
   url: https://intel.wd1.myworkdayjobs.com/External/job/US-California-Folsom/Senior-Formal-Verification-Engineer---AI-SoC-Development_JR0279196
@@ -1093,7 +1164,8 @@
   posted: '2026-02-20'
   last_verified: 2026-10-27
 
-- company: Jane Street
+- id: FV-070
+  company: Jane Street
   role: Formal Methods Engineer
   category: software
   url: https://www.janestreet.com/join-jane-street/apply/8588405002
@@ -1105,7 +1177,8 @@
   notes: New team; no OCaml or functional programming experience required.
   last_verified: 2026-10-27
 
-- company: Johns Hopkins Applied Physics Laboratory
+- id: FV-071
+  company: Johns Hopkins Applied Physics Laboratory
   role: 2027 PhD Graduate - Formal Verification and Software Assurance Engineer
   category: software
   url: https://careers.jhuapl.edu/jobs/59920
@@ -1120,7 +1193,8 @@
   posted: '2026-09-01'
   last_verified: 2026-10-27
 
-- company: LUBIS EDA
+- id: FV-072
+  company: LUBIS EDA
   role: Formal Verification Engineer - Professional Level
   category: hardware
   url: https://lubis-eda.jobs.personio.de/job/2573655
@@ -1133,7 +1207,8 @@
   posted: '2026-03-23'
   last_verified: 2026-10-27
 
-- company: LUBIS EDA
+- id: FV-073
+  company: LUBIS EDA
   role: Formal Verification Engineer - Senior Level
   category: hardware
   url: https://lubis-eda.jobs.personio.de/job/2642291
@@ -1145,7 +1220,8 @@
   posted: '2026-05-20'
   last_verified: 2026-10-27
 
-- company: LUBIS EDA
+- id: FV-074
+  company: LUBIS EDA
   role: Manager Formal Verification (m/f/d)
   category: hardware
   url: https://lubis-eda.jobs.personio.de/job/2811579
@@ -1160,7 +1236,8 @@
   posted: '2026-09-23'
   last_verified: 2026-10-27
 
-- company: Marvell
+- id: FV-075
+  company: Marvell
   role: Senior Engineer, Logic Equivalence CAD
   category: hardware
   url: https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Bangalore/Senior-Engineer--Logic-Equivalence-CAD_2604938-1
@@ -1174,7 +1251,8 @@
   posted: '2026-10-14'
   last_verified: 2026-10-27
 
-- company: Math, Inc.
+- id: FV-076
+  company: Math, Inc.
   role: Open applications (verified mathematics)
   category: ai-for-proof
   url: https://www.math.inc/careers
@@ -1190,7 +1268,8 @@
     are not stated. Third-party bios place the company in Palo Alto.
   last_verified: 2026-10-27
 
-- company: Mathlib Initiative
+- id: FV-077
+  company: Mathlib Initiative
   role: Open applications — part-time reviewers and autoformalization expert (Formal Frontier team)
   category: ai-for-proof
   url: https://mathlib-initiative.org/careers/
@@ -1206,7 +1285,8 @@
     formal-math libraries. The published contact is info@mathlib-initiative.org.
   last_verified: 2026-10-27
 
-- company: MatX
+- id: FV-078
+  company: MatX
   role: Formal Verification Engineer
   category: hardware
   url: https://jobs.ashbyhq.com/matx/20f2ce61-2e1e-4009-8539-b460344ee018
@@ -1223,7 +1303,8 @@
   posted: '2026-05-19'
   last_verified: 2026-10-27
 
-- company: Mercor
+- id: FV-079
+  company: Mercor
   role: Lean Engineer, Formal Mathematics (Lean 4, Mathlib, Theorem Proving)
   category: ai-for-proof
   url: https://work.mercor.com/jobs/list_AAABoPJ_fWgrIgAI-ilEL5S3
@@ -1242,7 +1323,8 @@
   posted: '2026-09-30'
   last_verified: 2026-10-27
 
-- company: Microsoft
+- id: FV-080
+  company: Microsoft
   role: Post Doc Researcher (FoSSE, Microsoft Research India)
   category: software
   url: https://apply.careers.microsoft.com/careers/job/1970393556972332
@@ -1258,7 +1340,8 @@
   posted: '2026-08-20'
   last_verified: 2026-10-27
 
-- company: Microsoft
+- id: FV-081
+  company: Microsoft
   role: Principal Design Verification Engineer - Formal
   category: hardware
   url: https://apply.careers.microsoft.com/careers/job/1970393557023199
@@ -1274,7 +1357,8 @@
   posted: '2026-10-23'
   last_verified: 2026-10-27
 
-- company: Microsoft
+- id: FV-082
+  company: Microsoft
   role: Principal Formal Design Verification Engineer
   category: hardware
   url: https://apply.careers.microsoft.com/careers/job/1970393557041180
@@ -1288,7 +1372,8 @@
   posted: '2026-10-15'
   last_verified: 2026-10-27
 
-- company: Microsoft
+- id: FV-083
+  company: Microsoft
   role: Principal Researcher and Senior Principal Researcher - Software Verification - Microsoft Research
   category: software
   url: https://apply.careers.microsoft.com/careers/job/1970393557040565
@@ -1305,7 +1390,8 @@
   posted: '2026-10-14'
   last_verified: 2026-10-27
 
-- company: Microsoft
+- id: FV-084
+  company: Microsoft
   role: Principal Software Engineer (AI-driven code transformation with formal verification)
   category: software
   url: https://apply.careers.microsoft.com/careers/job/1970393557045292
@@ -1322,7 +1408,8 @@
   posted: '2026-10-23'
   last_verified: 2026-10-27
 
-- company: Microsoft
+- id: FV-085
+  company: Microsoft
   role: Senior Researcher - Software Verification - Microsoft Research
   category: software
   url: https://apply.careers.microsoft.com/careers/job/1970393557040562
@@ -1339,7 +1426,8 @@
   posted: '2026-10-14'
   last_verified: 2026-10-27
 
-- company: Microsoft
+- id: FV-086
+  company: Microsoft
   role: Senior Software Engineer (AI-driven code transformation with formal verification)
   category: software
   url: https://apply.careers.microsoft.com/careers/job/1970393557045291
@@ -1355,7 +1443,8 @@
   posted: '2026-10-23'
   last_verified: 2026-10-27
 
-- company: Mistral AI
+- id: FV-087
+  company: Mistral AI
   role: Applied Scientist - Research Engineer (Formal Methods), EMEA
   category: ai-for-proof
   url: https://jobs.ashbyhq.com/mistral.ai/d722e1e1-dcc6-489b-a3b5-ecc6813ca374
@@ -1371,7 +1460,8 @@
   posted: '2026-10-20'
   last_verified: 2026-10-27
 
-- company: Mobileye
+- id: FV-088
+  company: Mobileye
   role: Experienced Formal Verification Engineer
   category: hardware
   url: https://careers.mobileye.com/jobs/formal-verification-engineer/422fa926-abc4-4da0-ba57-57ad102f2754
@@ -1384,7 +1474,8 @@
   notes: Automated Driving Hardware group; 5+ years of formal verification experience required.
   last_verified: 2026-10-27
 
-- company: National University of Singapore
+- id: FV-089
+  company: National University of Singapore
   role: Postdoctoral and PhD positions — Foundations for Testing and Verifying Concurrency in Go (Umang Mathur)
   category: academic
   url: https://lists.seas.upenn.edu/pipermail/types-announce/2026/012697.html
@@ -1400,7 +1491,8 @@
   posted: '2026-09-15'
   last_verified: 2026-10-27
 
-- company: Nuvacore
+- id: FV-090
+  company: Nuvacore
   role: Formal Verification Engineer
   category: hardware
   url: https://jobs.lever.co/nuvacore/c97cf60a-9758-4233-b94e-908094dc892e
@@ -1416,7 +1508,8 @@
   posted: '2026-09-18'
   last_verified: 2026-10-27
 
-- company: NVIDIA
+- id: FV-091
+  company: NVIDIA
   role: AI Compiler Formal Verification Intern
   category: ai-for-proof
   url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Switzerland-Zurich/AI-Compiler-Formal-Verification-Intern_JR2027025
@@ -1433,7 +1526,8 @@
   posted: '2026-10-20'
   last_verified: 2026-10-27
 
-- company: NVIDIA
+- id: FV-092
+  company: NVIDIA
   role: Engineering Manager, AI Compiler Analysis
   category: ai-for-proof
   url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Engineering-Manager--AI-Compiler-Analysis_JR2022377
@@ -1451,7 +1545,8 @@
   posted: '2026-10-16'
   last_verified: 2026-10-27
 
-- company: NVIDIA
+- id: FV-093
+  company: NVIDIA
   role: Formal Verification Engineer - New College Grad 2026
   category: hardware
   url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Formal-Verification-Engineer---New-College-Grad-2026_JR2020837
@@ -1465,7 +1560,8 @@
   posted: '2026-10-06'
   last_verified: 2026-10-27
 
-- company: NVIDIA
+- id: FV-094
+  company: NVIDIA
   role: Senior Compute System Software Engineer
   category: software
   url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/India-Bengaluru/Senior-Compute-System-Software-Engineer_JR2025828
@@ -1482,7 +1578,8 @@
   posted: '2026-09-21'
   last_verified: 2026-10-27
 
-- company: NVIDIA
+- id: FV-095
+  company: NVIDIA
   role: Senior Formal Verification Engineer
   category: hardware
   url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Formal-Verification-Engineer_JR2012844
@@ -1496,7 +1593,8 @@
   posted: '2026-09-23'
   last_verified: 2026-10-27
 
-- company: NVIDIA
+- id: FV-096
+  company: NVIDIA
   role: Senior Formal Verification Engineer - LPU
   category: hardware
   url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Remote/Senior-Formal-Verification-Engineer---LPU_JR2016647
@@ -1513,7 +1611,8 @@
   posted: '2026-07-06'
   last_verified: 2026-10-27
 
-- company: NVIDIA
+- id: FV-097
+  company: NVIDIA
   role: Senior Research Scientist, AI-Enabled Secure Systems
   category: hardware
   url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-MA-Westford/Senior-Research-Scientist--AI-Enabled-Secure-Systems_JR2028202
@@ -1531,7 +1630,8 @@
   posted: '2026-10-22'
   last_verified: 2026-10-27
 
-- company: Oath Technologies
+- id: FV-098
+  company: Oath Technologies
   role: Formal Methods Research Engineer
   category: software
   url: https://jobs.lever.co/convergentresearch/87a70993-3dbd-480a-9fe2-221628639f07
@@ -1548,7 +1648,8 @@
   posted: '2026-09-09'
   last_verified: 2026-10-27
 
-- company: Oath Technologies
+- id: FV-099
+  company: Oath Technologies
   role: Research Engineer, Tools & Infrastructure
   category: software
   url: https://jobs.lever.co/convergentresearch/a2e56f3e-09b0-402e-9566-6c7b235759d0
@@ -1563,7 +1664,8 @@
   posted: '2026-09-09'
   last_verified: 2026-10-27
 
-- company: Pramaana Labs
+- id: FV-100
+  company: Pramaana Labs
   role: Research Engineer
   category: ai-for-proof
   url: https://jobs.ashbyhq.com/pramaana-labs/c8176bd3-163d-4305-baae-fe585f573c4c
@@ -1579,7 +1681,8 @@
   posted: '2026-10-26'
   last_verified: 2026-10-27
 
-- company: Pramaana Labs
+- id: FV-101
+  company: Pramaana Labs
   role: Research Intern
   category: ai-for-proof
   url: https://jobs.ashbyhq.com/pramaana-labs/83f179da-9bc8-4146-b217-817b79e78fa0
@@ -1595,7 +1698,8 @@
   posted: '2026-09-23'
   last_verified: 2026-10-27
 
-- company: Pramaana Labs
+- id: FV-102
+  company: Pramaana Labs
   role: Research Scientist, AI
   category: ai-for-proof
   url: https://jobs.ashbyhq.com/pramaana-labs/bf2d1dbe-c8aa-4bc6-91f3-979681a82081
@@ -1611,7 +1715,8 @@
   posted: '2026-10-26'
   last_verified: 2026-10-27
 
-- company: Pramaana Labs
+- id: FV-103
+  company: Pramaana Labs
   role: Research Scientist, Reinforcement Learning
   category: ai-for-proof
   url: https://jobs.ashbyhq.com/pramaana-labs/725f2412-b0cc-4aeb-b5bd-bb225356f3e4
@@ -1628,7 +1733,8 @@
   posted: '2026-08-24'
   last_verified: 2026-10-27
 
-- company: Qualcomm
+- id: FV-104
+  company: Qualcomm
   role: CPU Formal Verification Engineer
   category: hardware
   url: https://careers.qualcomm.com/careers/job/446720301715
@@ -1646,7 +1752,8 @@
   posted: '2026-09-17'
   last_verified: 2026-10-27
 
-- company: Qualcomm
+- id: FV-105
+  company: Qualcomm
   role: Formal Verification Senior Engineer - Qualcomm, Cambridge, UK
   category: hardware
   url: https://careers.qualcomm.com/careers/job/446720960309
@@ -1662,7 +1769,8 @@
   posted: '2026-09-04'
   last_verified: 2026-10-27
 
-- company: Qualcomm
+- id: FV-106
+  company: Qualcomm
   role: Senior Staff Formal Verification Engineer
   category: hardware
   url: https://careers.qualcomm.com/careers/job/446715563691
@@ -1677,7 +1785,8 @@
   posted: '2026-09-17'
   last_verified: 2026-10-27
 
-- company: Quantinuum
+- id: FV-107
+  company: Quantinuum
   role: Advanced Quantum Compiler Engineer (925)
   category: software
   url: https://jobs.eu.lever.co/quantinuum/1e52f038-a161-4276-ab8f-5c0b9c2fc28e
@@ -1691,7 +1800,8 @@
   posted: '2026-08-03'
   last_verified: 2026-10-27
 
-- company: Resolution
+- id: FV-108
+  company: Resolution
   role: Lean Engineer
   category: ai-for-proof
   url: https://jobs.ashbyhq.com/resolution/55d2db0f-9484-4429-bdaa-d039a8f05217
@@ -1711,7 +1821,8 @@
   posted: '2026-10-06'
   last_verified: 2026-10-27
 
-- company: RTX BBN Technologies
+- id: FV-109
+  company: RTX BBN Technologies
   role: Research Software Engineer, Formal Methods (Hybrid) — Networking and Cyber Technologies
   category: software
   url: https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-MA-CAMBRIDGE-BBN06--10--50-Moulton-St--MOULTON-B6/Research-Software-Engineer--Formal-Methods--Hybrid-_01833650
@@ -1727,7 +1838,8 @@
   posted: '2026-04-01'
   last_verified: 2026-10-27
 
-- company: RTX BBN Technologies
+- id: FV-110
+  company: RTX BBN Technologies
   role: Research Software Engineer, Formal Methods (Hybrid) — Non-Kinetic Capabilities and Technologies
   category: software
   url: https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-MA-CAMBRIDGE-BBN05--10--50-Moulton-St--MOULTON-B5/Research-Software-Engineer--Formal-Methods--Hybrid-_01878215
@@ -1743,7 +1855,8 @@
   posted: '2026-09-29'
   last_verified: 2026-10-27
 
-- company: Runtime Verification
+- id: FV-111
+  company: Runtime Verification
   role: Open applications — verification engineering (K framework)
   category: cryptocurrency
   url: https://runtimeverification.com/careers
@@ -1754,7 +1867,8 @@
   seniority: any
   last_verified: 2026-10-27
 
-- company: RWTH Aachen University (Chair for Quantum Information Systems)
+- id: FV-112
+  company: RWTH Aachen University (Chair for Quantum Information Systems)
   role: PhD positions — Certified quantum compilation; Verification of quantum cryptography; Type systems for quantum programming languages (postdocs also welcome)
   category: academic
   url: https://qis.rwth-aachen.de/positions/
@@ -1770,7 +1884,8 @@
     is still unfilled.
   last_verified: 2026-10-27
 
-- company: Samsung Semiconductor (SARC/ACL)
+- id: FV-113
+  company: Samsung Semiconductor (SARC/ACL)
   role: Senior Staff Engineer, GPU Design Verification (Formal Verification)
   category: hardware
   url: https://sec.wd3.myworkdayjobs.com/Samsung_Careers/job/3655-N-1st-St-San-Jose-CA-USA/Senior-Staff-Engineer--GPU-Design-Verification--Formal-Verification-_R118078-1
@@ -1785,7 +1900,8 @@
   posted: '2026-10-08'
   last_verified: 2026-10-27
 
-- company: Samsung Semiconductor (SARC/ACL)
+- id: FV-114
+  company: Samsung Semiconductor (SARC/ACL)
   role: Staff GPU Design Verification Engineer – Formal Verification
   category: hardware
   url: https://sec.wd3.myworkdayjobs.com/Samsung_Careers/job/3900-N-Capital-of-Texas-Hwy-Austin-TX-USA/Staff-GPU-Design-Verification-Engineer---Formal-Verification_R119694
@@ -1801,7 +1917,8 @@
   posted: '2026-10-12'
   last_verified: 2026-10-27
 
-- company: Sandia National Laboratories
+- id: FV-115
+  company: Sandia National Laboratories
   role: Intern, R&D Graduate Year Round - Formal Verification
   category: software
   url: https://sandia.jobs/livermore-ca/intern-rd-graduate-year-round-formal-verification/B58BD1E76FCB47C886C291BFE0A6E633/job/
@@ -1814,7 +1931,8 @@
   notes: Req 699392. Enrolled full-time graduate students; up to 30 hours/week during term.
   last_verified: 2026-10-27
 
-- company: SF Tensor
+- id: FV-116
+  company: SF Tensor
   role: Member of Mathematical Staff
   category: software
   url: https://jobs.ashbyhq.com/sf-tensor/0b03b95d-3399-4080-9b11-0fcffcbcc963
@@ -1832,7 +1950,8 @@
   posted: '2026-09-27'
   last_verified: 2026-10-27
 
-- company: SiFive
+- id: FV-117
+  company: SiFive
   role: Distinguished Formal Verification Architect
   category: hardware
   url: https://sifive.wd1.myworkdayjobs.com/sifivecareers/job/Santa-Clara-California-United-States/Distinguished-Formal-Verification-Architect_R-101444-1
@@ -1849,7 +1968,8 @@
   posted: '2026-09-21'
   last_verified: 2026-10-27
 
-- company: SiFive
+- id: FV-118
+  company: SiFive
   role: Senior CPU Formal Verification Engineer
   category: hardware
   url: https://sifive.wd1.myworkdayjobs.com/sifivecareers/job/Hyderabad-India/Senior-CPU-Formal-Verification-Engineer_R-101476
@@ -1861,7 +1981,8 @@
   posted: '2026-10-26'
   last_verified: 2026-10-27
 
-- company: SiFive
+- id: FV-119
+  company: SiFive
   role: Staff Design Verification Engineer – CPU Core Formal Verification
   category: hardware
   url: https://sifive.wd1.myworkdayjobs.com/sifivecareers/job/Austin-Texas-United-States/Staff-Design-Verification-Engineer---CPU-Core-Formal-Verification_R-101466
@@ -1878,7 +1999,8 @@
   posted: '2026-09-13'
   last_verified: 2026-10-27
 
-- company: Snowflake
+- id: FV-120
+  company: Snowflake
   role: Principal / Staff Applied Research Scientist
   category: software
   url: https://jobs.ashbyhq.com/snowflake/31fdda97-2347-4031-8cb3-0d78207b58b4
@@ -1897,7 +2019,8 @@
   posted: '2026-09-02'
   last_verified: 2026-10-27
 
-- company: Sorbonne Paris North University (LIPN)
+- id: FV-121
+  company: Sorbonne Paris North University (LIPN)
   role: PhD Position in Strategy Logics (verification and synthesis for multi-agent systems)
   category: academic
   url: https://www.illc.uva.nl/NewsandEvents/News/Positions/newsitem/16326/PhD-Position-in-Strategy-Logics-at-Sorbonne-Paris-North-University-FR-
@@ -1909,7 +2032,8 @@
   notes: Supervisor Munyque Mittelmann. Apply by email. Deadline 2026-11-15.
   last_verified: 2026-10-27
 
-- company: Synopsys
+- id: FV-122
+  company: Synopsys
   role: Principal Application Engineer, VC Formal
   category: hardware
   url: https://careers.synopsys.com/job/bengaluru/principal-application-engineer-vc-formal/44408/100930292880
@@ -1922,7 +2046,8 @@
   posted: '2026-09-20'
   last_verified: 2026-10-27
 
-- company: Synopsys
+- id: FV-123
+  company: Synopsys
   role: Senior Staff Formal Verification Applications Engineer
   category: hardware
   url: https://careers.synopsys.com/job/sunnyvale/senior-staff-formal-verification-applications-engineer/44408/101288479376
@@ -1939,7 +2064,8 @@
   posted: '2026-09-27'
   last_verified: 2026-10-27
 
-- company: Tenstorrent
+- id: FV-124
+  company: Tenstorrent
   role: Formal Verification Engineer
   category: hardware
   url: https://job-boards.greenhouse.io/tenstorrent/jobs/5239971007
@@ -1954,7 +2080,8 @@
   posted: '2026-10-05'
   last_verified: 2026-10-27
 
-- company: Thales
+- id: FV-125
+  company: Thales
   role: 'Stage en IA : automatisation de la conformité d''un référentiel documentaire et génération d''un code sécurisé'
   category: software
   url: https://thales.wd3.myworkdayjobs.com/Careers/job/Gennevilliers/stage-en-IA---automatisation-de-la-conformit-d-un-rfrentiel-documentaire-et-gnration-d-un-code-scuris_R0344649
@@ -1970,7 +2097,8 @@
   posted: '2026-10-26'
   last_verified: 2026-10-27
 
-- company: Thales
+- id: FV-126
+  company: Thales
   role: STAGE – Ingénieur Automatisation agentique d'analyse statique de code C – F/H
   category: software
   url: https://thales.wd3.myworkdayjobs.com/Careers/job/Toulouse/STAGE---Ingnieur-Automatisation-agentique-d-analyse-statique-de-code-C---F-H_R0344297-1
@@ -1986,7 +2114,8 @@
   posted: '2026-10-21'
   last_verified: 2026-10-27
 
-- company: Theorem (Theorem Labs)
+- id: FV-127
+  company: Theorem (Theorem Labs)
   role: Systems Engineer / ML Researcher / research fellowship
   category: ai-for-proof
   url: https://theorem.dev/careers/
@@ -1999,7 +2128,8 @@
   notes: Built lf-lean, an AI-assisted verified Rocq-to-Lean translation.
   last_verified: 2026-10-27
 
-- company: Trail of Bits
+- id: FV-128
+  company: Trail of Bits
   role: Senior Security Engineer, Research & Engineering (United Kingdom)
   category: software
   url: https://apply.workable.com/trailofbits/j/82AEBAB99A/
@@ -2015,7 +2145,8 @@
   posted: '2026-09-02'
   last_verified: 2026-10-27
 
-- company: TrustInSoft
+- id: FV-129
+  company: TrustInSoft
   role: AI Engineer
   category: software
   url: https://www.trust-in-soft.com/careers/hiring-ai-engineer
@@ -2030,7 +2161,8 @@
     "flexible working environment" but states no remote policy.
   last_verified: 2026-10-27
 
-- company: TU Braunschweig
+- id: FV-130
+  company: TU Braunschweig
   role: PhD Positions in Formal Methods for Trustworthy Systems and AI
   category: academic
   url: https://resources.illc.uva.nl/LogicList/newsitem.php?id=12655
@@ -2045,7 +2177,8 @@
     email. Deadline 2026-12-07 (per ILLC listing).
   last_verified: 2026-10-27
 
-- company: TU Delft
+- id: FV-131
+  company: TU Delft
   role: 'PhD Position: Systematic Derivation of Formal Languages and Their Correctness'
   category: academic
   url: https://careers.tudelft.nl/job/Delft-PhD-Position-Systematic-Derivation-of-Formal-Languages-and-Their-Correctness-2628-CD/1375074157/
@@ -2061,7 +2194,8 @@
     Rolling review. Deadline 2026-11-29.
   last_verified: 2026-10-27
 
-- company: University of East Anglia
+- id: FV-132
+  company: University of East Anglia
   role: 'PhD Studentship: Formalising the Local Langlands Correspondence for GL₂(F) in Lean'
   category: academic
   url: https://www.jobs.ac.uk/job/DSM956/phd-studentship-formalising-the-local-langlands-correspondence-for-glf-in-lean
@@ -2075,7 +2209,8 @@
     Birkbeck. Start 2027-02-01. Deadline 2026-11-30.
   last_verified: 2026-10-27
 
-- company: University of Edinburgh (Quantum Software Lab)
+- id: FV-133
+  company: University of Edinburgh (Quantum Software Lab)
   role: Research Associate — RubberDUQ project (semantics and correct-by-construction compilation for hybrid quantum-classical programs)
   category: academic
   url: https://www.jobs.ac.uk/job/DTJ007/research-associate
@@ -2089,7 +2224,8 @@
   posted: '2026-10-21'
   last_verified: 2026-10-27
 
-- company: University of Exeter
+- id: FV-134
+  company: University of Exeter
   role: PhD in End-to-End Verification of Security Protocols in Isabelle
   category: academic
   url: https://www.exeter.ac.uk/study/funding/award/?id=6011
@@ -2106,7 +2242,8 @@
   posted: '2026-10-27'
   last_verified: 2026-10-27
 
-- company: University of Strathclyde (Mathematically Structured Programming group)
+- id: FV-135
+  company: University of Strathclyde (Mathematically Structured Programming group)
   role: PhD scholarships 2027 (John Anderson Research Studentship Scheme)
   category: academic
   url: https://msp.cis.strath.ac.uk/phd2027-JARSS.html
@@ -2122,7 +2259,8 @@
   posted: '2026-10-26'
   last_verified: 2026-10-27
 
-- company: Uppsala University
+- id: FV-136
+  company: Uppsala University
   role: PhD student — Scalable Verification of Quantum Programs
   category: academic
   url: https://uu.varbi.com/en/what:job/jobID:961891/
@@ -2138,7 +2276,8 @@
   posted: '2026-08-21'
   last_verified: 2026-10-27
 
-- company: Velaura
+- id: FV-137
+  company: Velaura
   role: Senior Formal Verification Engineer
   category: hardware
   url: https://jobs.lever.co/velaura/3e86569f-990c-422a-ac98-6ef928160ddf
@@ -2154,7 +2293,8 @@
   posted: '2026-07-25'
   last_verified: 2026-10-27
 
-- company: Veridise
+- id: FV-138
+  company: Veridise
   role: Formal Methods Researcher for ZK
   category: cryptocurrency
   url: https://veridise.com/careers/veridise-careers-formal-methods-researcher-for-zk/
@@ -2167,7 +2307,8 @@
   posted: '2026-01-21'
   last_verified: 2026-10-27
 
-- company: Waymo
+- id: FV-139
+  company: Waymo
   role: Senior Formal Verification Engineer
   category: hardware
   url: https://careers.withwaymo.com/jobs?gh_jid=7593534
@@ -2182,7 +2323,8 @@
   posted: '2026-02-09'
   last_verified: 2026-10-27
 
-- company: YosysHQ
+- id: FV-140
+  company: YosysHQ
   role: Synthesis or Formal Verification Developer at YosysHQ
   category: hardware
   url: https://join.com/companies/yosyshqcom/16850310-synthesis-or-formal-verification-developer-at-yosyshq

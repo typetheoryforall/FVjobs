@@ -1,8 +1,10 @@
 # Roles that were on the board and have closed. Kept because "this company
 # hired for Lean work six months ago" is useful even when the posting is gone.
 # Same fields as jobs.yml, plus `closed` (the date it was found to be gone).
+# A role keeps its id when it moves here.
 
-- company: Cryspen
+- id: FV-141
+  company: Cryspen
   role: Open applications (Rust verification, hax)
   category: software
   url: https://cryspen.com/jobs
@@ -15,7 +17,8 @@
   last_verified: 2026-10-26
   closed: 2026-10-27
 
-- company: Google DeepMind
+- id: FV-142
+  company: Google DeepMind
   role: Research Scientist, Verified Code Generation
   category: ai-for-proof
   url: https://www.google.com/about/careers/applications/jobs/results/138630831110267590-research-scientist-verified-code-generation-deepmind
@@ -32,7 +35,8 @@
   last_verified: 2026-09-25
   closed: 2026-10-26
 
-- company: Imandra
+- id: FV-143
+  company: Imandra
   role: Open applications — R&D (automated reasoning)
   category: software
   url: https://apply.workable.com/imandra/

@@ -4,6 +4,9 @@ A job board for **formal verification**: proof assistants, automated reasoning,
 verified compilation, hardware verification, and the growing set of roles where
 AI writes proofs and something has to check them.
 
+**Browse the board at [typetheoryforall.github.io/FVjobs](https://typetheoryforall.github.io/FVjobs/)**,
+with search and proof-stack filters, or read the table below.
+
 Maintained alongside [Type Theory Forall](https://typetheoryforall.com).
 
 ## Why this exists

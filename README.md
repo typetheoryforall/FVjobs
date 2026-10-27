@@ -21,7 +21,7 @@ tell you up front:
 Every entry carries the date someone last checked that the posting was live.
 
 <!-- BEGIN JOBS -->
-*17 open roles. Table generated from `data/jobs.yml` on 2026-10-26.*
+*17 open roles, most recently verified 2026-10-26. Table generated from `data/jobs.yml`.*
 
 | Company | Role | Location | Remote | Proof stack | Domain | Seniority | Last verified |
 |---|---|---|---|---|---|---|---|

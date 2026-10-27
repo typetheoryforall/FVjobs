@@ -59,9 +59,12 @@ def table(entries):
     )
     lines = [head] + [row(e) for e in entries]
     count = len(entries)
-    stamp = dt.date.today().isoformat()
+    # Stamp with the newest last_verified date rather than today, so the output
+    # depends only on the data and --check doesn't go stale overnight.
+    stamp = max((e["last_verified"] for e in entries), default="never")
     return (
-        f"\n*{count} open roles. Table generated from `data/jobs.yml` on {stamp}.*\n\n"
+        f"\n*{count} open roles, most recently verified {stamp}. "
+        "Table generated from `data/jobs.yml`.*\n\n"
         + "\n".join(lines)
         + "\n"
     )

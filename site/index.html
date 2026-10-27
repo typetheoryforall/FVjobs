@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FVjobs — formal verification jobs</title>
+<meta name="description" content="{{count}} open roles in formal verification: proof assistants, automated reasoning, verified compilation and AI-for-proof, with the proof stack and work authorization recorded for each.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600&family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text x='4' y='26' font-size='28' font-family='serif'>⊢</text></svg>">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="./">FVjobs</a>
+  <nav>
+    <a href="{{repo}}/issues/new?template=new-job.yml">Add a job</a>
+    <a href="jobs.json">Data</a>
+    <a href="{{repo}}">GitHub</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <figure class="rule" aria-label="Inference rule: if you know a proof stack and the posting is live, there exists a job you fit.">
+    <div class="premises">
+      <span>Γ ⊢ <i>you</i> : Lean ∨ Rocq ∨ Isabelle ∨ SMT</span>
+      <span>Γ ⊢ live(<i>posting</i>, {{latest}})</span>
+    </div>
+    <div class="line"><span class="name">apply</span></div>
+    <div class="conclusion">Γ ⊢ ∃ <i>j</i> ∈ jobs. <i>you</i> fit <i>j</i></div>
+  </figure>
+  <div class="intro">
+    <h1>Jobs in formal verification</h1>
+    <p>Proof assistants, automated reasoning, verified compilation, hardware
+    verification, and the growing set of roles where AI writes proofs and
+    something has to check them. Each entry says which proof stack the job
+    uses, whether you can take it from where you live, and when someone last
+    checked that it was open.</p>
+    <p class="stats">{{count}} open roles at {{companies}} companies. Maintained alongside
+    <a href="https://typetheoryforall.com">Type Theory Forall</a>.</p>
+  </div>
+</section>
+
+<section class="board" aria-labelledby="roles">
+  <h2 id="roles" class="visually-hidden">Open roles</h2>
+  <form class="filters" role="search" onsubmit="return false">
+    <label class="search">
+      <span class="visually-hidden">Search roles</span>
+      <input type="search" id="q" placeholder="Search company, role, tool or domain" autocomplete="off">
+    </label>
+    <fieldset class="stack-filter" hidden>
+      <legend>Proof stack</legend>
+      <div id="stacks"></div>
+    </fieldset>
+    <fieldset>
+      <legend>Where</legend>
+      <div class="seg">
+        <label><input type="radio" name="remote" value="" checked><span>Anywhere</span></label>
+        <label><input type="radio" name="remote" value="remote-worldwide"><span>Remote, worldwide</span></label>
+        <label><input type="radio" name="remote" value="remote"><span>Remote, regional</span></label>
+        <label><input type="radio" name="remote" value="hybrid"><span>Hybrid</span></label>
+        <label><input type="radio" name="remote" value="onsite"><span>On-site</span></label>
+      </div>
+    </fieldset>
+  </form>
+  <p class="shown" id="shown" aria-live="polite"></p>
+  <ol class="jobs" id="jobs">{{jobs}}
+  </ol>
+  <p class="empty" id="empty" hidden>No role matches these filters. Clear the search or pick another proof stack.</p>
+</section>
+
+<section class="archive">
+  <details>
+    <summary>Closed roles ({{archive_count}})</summary>
+    <p>Kept because knowing a company hired for Lean work six months ago is useful even when the posting is gone.</p>
+    <ol class="jobs closed">{{archive}}
+    </ol>
+  </details>
+</section>
+</main>
+
+<footer>
+  <p>Know of a role? <a href="{{repo}}/issues/new?template=new-job.yml">Open a new job issue</a>, no Git needed,
+  or send a pull request against <a href="{{repo}}/blob/main/data/jobs.yml"><code>data/jobs.yml</code></a>.
+  Spotted a dead posting? <a href="{{repo}}/issues/new?template=stale-job.yml">Report it</a>.</p>
+  <p>Job data is <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>; take it from
+  <a href="jobs.json"><code>jobs.json</code></a>. Code is MIT.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

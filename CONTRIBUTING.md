@@ -69,3 +69,9 @@ Please do not add:
   that single-page job boards (Google Careers, Workday) return a 200 even for a
   role that has been taken down, so a passing link check is necessary but not
   sufficient — a human still has to look.
+
+## Suggesting a change to the site
+
+Ideas for the layout, filters or wording are very welcome. Open a
+[site change issue](../../issues/new?template=site-change.yml), or send a pull
+request against `site/` and `scripts/site.py`.

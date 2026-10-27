@@ -1,0 +1,21 @@
+name: Suggest a change to the site
+description: An idea for the board's layout, filters, wording or anything else
+title: "[site] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping shape the board. Small ideas are as welcome as big
+        ones, and screenshots help: paste them into either box.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you change?
+      description: A filter, the layout, some wording, something that was hard to find…
+    validations: { required: true }
+  - type: textarea
+    id: why
+    attributes:
+      label: What would it help with?
+      description: Optional. What you were trying to do when you thought of it

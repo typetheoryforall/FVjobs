@@ -99,10 +99,14 @@ h1 { font: 600 clamp(2rem, 5vw, 3rem)/1.1 var(--serif); margin: 0 0 1rem; letter
 .intro p { margin: 0 0 1rem; font: 1.13rem/1.6 var(--serif); }
 .intro .stats { color: var(--muted); font: 1rem/1.5 var(--sans); }
 .intro .ask {
-  font: .95rem/1.5 var(--sans); color: var(--muted);
+  font: .98rem/1.5 var(--sans);
   border-left: 3px solid var(--accent); padding-left: .85rem;
 }
-.intro .ask b { color: var(--ink); font-weight: 600; }
+.intro .ask p { font: inherit; margin: 0 0 .35rem; }
+.intro .ask p:last-child { margin: .35rem 0 0; color: var(--muted); }
+.intro .ask ul { margin: 0; padding-left: 1.1rem; }
+.intro .ask li + li { margin-top: .2rem; }
+.intro .ask b { font-weight: 600; }
 
 /* Filters */
 .board { padding-top: 2rem; }

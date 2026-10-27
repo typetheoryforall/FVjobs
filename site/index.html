@@ -40,9 +40,18 @@
     checked that it was open.</p>
     <p class="stats">{{count}} open roles at {{companies}} companies. Maintained alongside
     <a href="https://typetheoryforall.com">Type Theory Forall</a>.</p>
-    <p class="ask">Postings close without notice. If you see one that has closed, moved
-    or no longer matches its listing here, press <b>Report a problem</b> on its card.
-    One report is enough: it opens a short GitHub form with the listing already filled in.</p>
+    <div class="ask">
+      <p><b>FVjobs is maintained by the community, and you are very welcome to help.</b></p>
+      <ul>
+        <li><a href="{{repo}}/issues/new?template=new-job.yml">Submit a new job</a> you have
+        seen posted.</li>
+        <li>Press <b>Report a problem</b> on any card whose posting has closed, moved or
+        changed. One report is enough.</li>
+        <li><a href="{{repo}}/issues/new?template=site-change.yml">Suggest a change to the
+        site</a>: a filter, the layout, anything that would make it more useful.</li>
+      </ul>
+      <p>Each one is a short GitHub form.</p>
+    </div>
   </div>
 </section>
 
@@ -109,7 +118,8 @@
   <p>Know of a role? <a href="{{repo}}/issues/new?template=new-job.yml">Open a new job issue</a>, no Git needed,
   or send a pull request against <a href="{{repo}}/blob/main/data/jobs.yml"><code>data/jobs.yml</code></a>.
   Spotted a closed or changed posting? Use <b>Report a problem</b> on its card, or
-  <a href="{{repo}}/issues/new?template=stale-job.yml">open a report</a> yourself.</p>
+  <a href="{{repo}}/issues/new?template=stale-job.yml">open a report</a> yourself.
+  Ideas for the site? <a href="{{repo}}/issues/new?template=site-change.yml">Suggest a change</a>.</p>
   <p>Job data is <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>; take it from
   <a href="jobs.json"><code>jobs.json</code></a>. Code is MIT.</p>
 </footer>

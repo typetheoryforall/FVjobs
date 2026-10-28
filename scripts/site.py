@@ -99,7 +99,7 @@ def report(e):
     """Link to the stale-job issue form, filled in with this listing."""
     query = urllib.parse.urlencode(
         {"template": "stale-job.yml", "title": f"[stale] {e['id']} {e['company']} — {e['role']}",
-         "listing": e["id"], "url": e["url"]},
+         "listing": e["id"]},
         quote_via=urllib.parse.quote,
     )
     label = f"Report a problem with {e['role']} at {e['company']}"

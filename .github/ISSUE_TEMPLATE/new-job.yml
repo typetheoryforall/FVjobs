@@ -56,13 +56,56 @@ body:
         - remote (within a stated region)
         - remote-worldwide
     validations: { required: true }
-  - type: input
+  - type: dropdown
     id: stack
     attributes:
       label: Proof stack
-      description: Comma-separated verification tools the posting names
-      placeholder: Lean, SMT
+      description: Every verification tool the posting names. Pick as many as apply; choose Other for any that are missing and name them below
+      multiple: true
+      options:
+        - ACL2
+        - Agda
+        - automated reasoning
+        - B method
+        - C
+        - C++
+        - Dafny
+        - equivalence checking
+        - F*
+        - formal methods
+        - Haskell
+        - HOL
+        - Isabelle
+        - JasperGold
+        - Lean
+        - LLVM
+        - Mathlib
+        - model checking
+        - OCaml
+        - program verification
+        - proof assistants
+        - PSL
+        - Python
+        - Questa Formal
+        - Rocq
+        - Rust
+        - SAT
+        - SMT
+        - static analysis
+        - SVA
+        - SystemVerilog
+        - theorem proving
+        - TLA+
+        - VC Formal
+        - Verus
+        - Other
     validations: { required: true }
+  - type: input
+    id: stack_other
+    attributes:
+      label: Other tools
+      description: Comma-separated, if you chose Other above
+      placeholder: Kani, Frama-C
   - type: input
     id: domain
     attributes:

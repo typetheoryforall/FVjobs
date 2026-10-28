@@ -9,10 +9,6 @@ body:
       label: Listing ID
       description: The FV- number on the role's card
       placeholder: FV-042
-  - type: input
-    id: url
-    attributes:
-      label: The posting's URL as listed on the board
     validations: { required: true }
   - type: dropdown
     id: what

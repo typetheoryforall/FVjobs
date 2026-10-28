@@ -64,7 +64,7 @@ Please do not add:
   than deleting it.
 - Every open role on the site has a **Report a problem** button. It opens the
   [stale job form](../../issues/new?template=stale-job.yml) with the role's
-  ID, title and link filled in, and the issue arrives labelled `stale`.
+  ID and title filled in, and the issue arrives labelled `stale`.
 - A weekly workflow checks every link and opens an issue listing failures. Note
   that single-page job boards (Google Careers, Workday) return a 200 even for a
   role that has been taken down, so a passing link check is necessary but not

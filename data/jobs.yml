@@ -549,6 +549,23 @@
   posted: '2026-08-03'
   last_verified: 2026-10-27
 
+- id: FV-144
+  company: Atalanta
+  role: Formal Methods Engineer
+  category: software
+  url: https://jobs.ashbyhq.com/atalanta/88df9536-3cee-4c89-a323-c413b58d5d86
+  location: Washington, DC
+  remote: onsite
+  stack: [Lean, Z3, automated reasoning, model checking, Rust, SMT, static analysis, theorem proving]
+  domain: [defense, space, energy, AI for verification, hardware, software, cryptography, security, AI safety]
+  seniority: senior
+  work_authorization: U.S. citizenship required; must be eligible for a TS/SCI security clearance
+  compensation: USD 225,000–275,000 plus equity
+  notes: >-
+    Leads the reasoning engine behind Atalanta's Argo platform and serves as PI
+    on US Government-funded research; PhD required.
+  last_verified: 2026-10-28
+
 - id: FV-032
   company: Axiom Math
   role: Member of Technical Staff

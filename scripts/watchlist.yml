@@ -31,6 +31,7 @@
 - {employer: Atalanta, ats: ashby, slug: atalanta}
 - {employer: Ethereum Foundation, ats: ashby, slug: ethereum-foundation}
 - {employer: Category Labs, ats: ashby, slug: category-labs}
+- {employer: Bluerock Security, ats: ashby, slug: bluerocksecurity}
 
 # Lever
 - {employer: Oath Technologies (Convergent Research), ats: lever, slug: convergentresearch}
@@ -39,6 +40,7 @@
 - {employer: Velaura, ats: lever, slug: velaura}
 - {employer: Access Softek, ats: lever, slug: accesssoftek}
 - {employer: Quantinuum, ats: lever-eu, slug: quantinuum}
+- {employer: Mobileye, ats: lever-eu, slug: mobileye}
 
 # Greenhouse
 - {employer: Jane Street, ats: greenhouse, slug: janestreet}
@@ -46,6 +48,8 @@
 - {employer: Astera Labs, ats: greenhouse, slug: asteralabs}
 - {employer: Waymo, ats: greenhouse, slug: waymo}
 - {employer: Logical Intelligence, ats: greenhouse, slug: logicalintelligence}
+- {employer: DensityAI, ats: greenhouse, slug: densityai}
+- {employer: Lagrange Labs, ats: greenhouse, slug: lagrange}
 
 # Workable rate-limits after about 60 requests, for hours. check.py spaces
 # its calls; don't run the watchlist twice in a row.
@@ -57,6 +61,8 @@
 - {employer: LUBIS EDA, ats: personio, slug: lubis-eda}
 - {employer: Certora, ats: teamtailor, host: careers.certora.com}
 - {employer: Huawei UK, ats: teamtailor, host: huaweiuk.teamtailor.com}
+- {employer: Huawei Research Center Germany & Austria, ats: teamtailor, host: huaweiresearchcentergermanyaustria.teamtailor.com}
+- {employer: Huawei Zurich Research Center, ats: teamtailor, host: careers.huaweirc.ch}
 
 # Workday
 - {employer: NVIDIA, ats: workday, host: nvidia.wd5.myworkdayjobs.com, site: NVIDIAExternalCareerSite}
@@ -68,6 +74,8 @@
 - {employer: RTX BBN, ats: workday, host: globalhr.wd5.myworkdayjobs.com, site: REC_RTX_Ext_Gateway}
 - {employer: Thales, ats: workday, host: thales.wd3.myworkdayjobs.com, site: Careers}
 - {employer: Airbus, ats: workday, host: ag.wd3.myworkdayjobs.com, site: Airbus}
+- {employer: GE Aerospace, ats: workday, host: geaerospace.wd5.myworkdayjobs.com, site: GE_ExternalSite}
+- {employer: NASA JPL, ats: workday, host: citjpl.wd5.myworkdayjobs.com, site: Jobs}
 
 # Other big-company systems
 - employer: Amazon
@@ -86,9 +94,8 @@
 - {employer: IBM, ats: manual, how: careers search API (playbook cookbook)}
 - {employer: AdaCore, ats: manual, how: AdaCore careers API with X-Requested-With}
 - {employer: Sandia, ats: manual, how: sandia.jobs needs a browser}
-- {employer: CLEARSY, ats: manual, how: clearsy.nos-recrutements.fr needs a browser}
+- {employer: CLEARSY, ats: manual, how: 'clearsy.nos-recrutements.fr: POST /api/job/list {"page":N,"size":10}, GET /api/job/{id}'}
 - {employer: TrustInSoft, ats: manual, how: trust-in-soft.com/careers}
-- {employer: Mobileye, ats: manual, how: careers.mobileye.com}
 - {employer: Cognichip, ats: manual, how: cognichip.ai/careers list; Octopyd detail needs a browser}
 - {employer: General Diffusion, ats: manual, how: generaldiffusion.com/careers}
 - {employer: YosysHQ, ats: manual, how: join.com/companies/yosyshqcom}
@@ -101,6 +108,15 @@
 - {employer: Cajal, ats: manual, how: caj.al/careers}
 - {employer: 'Math, Inc.', ats: manual, how: math.inc/careers}
 - {employer: Mathlib Initiative, ats: manual, how: mathlib-initiative.org/careers}
+- {employer: Meta, ats: manual, how: metacareers.com needs a browser; search "formal verification"}
+- {employer: MediaTek, ats: manual, how: careers.mediatek.com needs a browser}
+- {employer: Systerel, ats: manual, how: systerel.fr/actualites/offre-emploi (B method, proof)}
+- {employer: Prover Technology, ats: manual, how: prover.com/job-openings}
+- {employer: Riverside Research, ats: manual, how: careers-riversideresearch.icims.com (iCIMS)}
+- {employer: Kry10, ats: manual, how: kry10.com careers page (postings are PDFs)}
+- {employer: Amalent, ats: manual, how: amalent.com/careers}
+- {employer: CEA-List, ats: manual, how: emploi.cea.fr search}
+- {employer: KIT (KASTEL), ats: manual, how: jobs.pse.kit.edu}
 - {employer: Mercor, ats: manual, how: 'work.mercor.com/jobs/list_{id} ("status":"active")'}
 - {employer: Alignerr, ats: manual, how: 'alignerr.com/jobs/{uuid} (isActive)'}
 - {employer: ARIA, ats: manual, how: aria.pinpointhq.com/postings.json}

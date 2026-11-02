@@ -43,8 +43,10 @@ useful even when the posting is gone.
 
 ## Adding a job
 
-Open a [new job issue](../../issues/new?template=new-job.yml) — it is a short
-form, and no Git required. 
+Open a [new issue](../../issues/new) with the link to the posting and anything
+else you think is relevant. That is enough for us to add the role to the board,
+and no Git is required. We use AI to read the posting and draft the entry, and a
+maintainer checks it before it goes up.
 
 If you would rather send a pull request, add an entry
 to `data/jobs.yml` and run:

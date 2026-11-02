@@ -1359,6 +1359,27 @@
   posted: '2026-09-30'
   last_verified: 2026-10-27
 
+- id: FV-149
+  company: Mercor
+  role: Mathematician Talent Network
+  category: ai-for-proof
+  url: https://work.mercor.com/jobs/list_AAABnJ0BfkepVYhBI7hH_5wP
+  location: Remote
+  remote: remote-worldwide
+  stack: [mathematical proof]
+  domain: [AI training data, AI for mathematics]
+  seniority: any
+  work_authorization: Mercor states it cannot support H-1B or STEM OPT candidates
+  compensation: USD 60–80/hour, part-time (15–30 hours/week)
+  notes: >-
+    An open application to Mercor's mathematician network rather than a
+    specific opening: experts are matched to future contract projects training
+    and evaluating AI models in mathematics, including proof and theory work.
+    Independent contracting, paid weekly. Unlike Mercor's Lean listing, the
+    posting names no proof assistant.
+  posted: '2026-02-27'
+  last_verified: 2026-11-02
+
 - id: FV-080
   company: Microsoft
   role: Post Doc Researcher (FoSSE, Microsoft Research India)
@@ -2163,6 +2184,26 @@
   compensation: USD 200,000–500,000 plus equity; fellowship USD 125,000/yr pro rata
   notes: Built lf-lean, an AI-assisted verified Rocq-to-Lean translation.
   last_verified: 2026-10-27
+
+- id: FV-150
+  company: Topos Institute
+  role: Research Software Engineer [UK-2026-RSE-1]
+  category: software
+  url: https://topos.institute/community/jobs/uk-2026-rse-1/
+  location: Oxford, UK
+  remote: onsite
+  stack: [type theory, category theory, categorical logic, Rust, Haskell, TypeScript]
+  domain: [scientific modelling, applied category theory, research software]
+  seniority: any
+  work_authorization: Topos will consider sponsoring UK visas
+  compensation: GBP 65,000–85,000 depending on level
+  notes: >-
+    One posting for two hires on a new research software engineering team at
+    the non-profit's Oxford office, hiring from entry level to experienced.
+    Client-driven work plus CatColab, a Rust and TypeScript platform for
+    modelling in domain-specific categorical logics. Apply by email with a CV
+    and cover letter; applications are reviewed on a rolling basis.
+  last_verified: 2026-11-02
 
 - id: FV-128
   company: Trail of Bits

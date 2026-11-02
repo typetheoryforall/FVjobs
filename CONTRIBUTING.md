@@ -6,8 +6,10 @@ actually take each job.
 
 ## The fastest way
 
-Open a [new job issue](../../issues/new?template=new-job.yml). It is a form, it
-takes two minutes, and a maintainer moves it into the data file.
+Open a [new issue](../../issues/new) and paste the link to the posting, with
+anything else you think is relevant. That is enough: we fill in the fields below
+from the posting. We use AI to read the posting and draft the entry, and a
+maintainer checks it before it reaches the board.
 
 ## Sending a pull request
 
@@ -73,5 +75,5 @@ Please do not add:
 ## Suggesting a change to the site
 
 Ideas for the layout, filters or wording are very welcome. Open a
-[site change issue](../../issues/new?template=site-change.yml), or send a pull
-request against `site/` and `scripts/site.py`.
+[new issue](../../issues/new) describing it, or send a pull request against
+`site/` and `scripts/site.py`.

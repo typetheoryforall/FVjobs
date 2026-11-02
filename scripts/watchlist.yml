@@ -92,19 +92,19 @@
 - {employer: Cognichip, ats: manual, how: cognichip.ai/careers list; Octopyd detail needs a browser}
 - {employer: General Diffusion, ats: manual, how: generaldiffusion.com/careers}
 - {employer: YosysHQ, ats: manual, how: join.com/companies/yosyshqcom}
-- {employer: Zeroth Research, ats: manual, how: zeroth.org/careers (one page, one section per role)}
+- {employer: Zeroth Research, ats: manual, how: 'zeroth.org/careers (one page, one section per role)'}
 - {employer: Topos Institute, ats: manual, how: topos.institute/community/jobs}
 - {employer: Beneficial AI Foundation, ats: manual, how: beneficialaifoundation.org/jobs}
 - {employer: Theorem, ats: manual, how: theorem.dev/careers}
 - {employer: Runtime Verification, ats: manual, how: runtimeverification.com/careers}
 - {employer: Veridise, ats: manual, how: veridise.com/careers}
 - {employer: Cajal, ats: manual, how: caj.al/careers}
-- {employer: Math, Inc., ats: manual, how: math.inc/careers}
+- {employer: 'Math, Inc.', ats: manual, how: math.inc/careers}
 - {employer: Mathlib Initiative, ats: manual, how: mathlib-initiative.org/careers}
 - {employer: Mercor, ats: manual, how: 'work.mercor.com/jobs/list_{id} ("status":"active")'}
 - {employer: Alignerr, ats: manual, how: 'alignerr.com/jobs/{uuid} (isActive)'}
 - {employer: ARIA, ats: manual, how: aria.pinpointhq.com/postings.json}
-- {employer: Lean FRO, ats: manual, how: lean-fro.org; historically via Convergent's Lever}
+- {employer: Lean FRO, ats: manual, how: "lean-fro.org; historically via Convergent's Lever"}
 - {employer: Renaissance Philanthropy, ats: manual, how: their careers page}
 - {employer: MAISI, ats: manual, how: their careers page}
 - {employer: 'Tarides, Bluerock, Nomadic Labs, Formal Land, zkSecurity, Reilabs', ats: manual, how: each careers page}

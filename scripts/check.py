@@ -211,6 +211,9 @@ def mercor(f, u):
     m = re.search(r'\\?"status\\?":\\?"(\w+)', body)
     if s != 200 or not m:
         return CHECK, f"Mercor page: HTTP {s}, no status field"
+    # A listing can stay "active" after Mercor stops taking applications.
+    if re.search(r'\\?"disableApplications\\?":true', body):
+        return CLOSED, "Mercor disableApplications is true"
     return (OPEN, "Mercor status active") if m[1] == "active" else (CLOSED, f"Mercor status {m[1]}")
 
 

@@ -2,7 +2,9 @@
 
 How we look for open formal verification roles, and what we learned doing it.
 Read this before a search run and update it after one. Each run's audit list
-lives in [`docs/search-runs/`](search-runs/).
+lives in [`docs/search-runs/`](search-runs/). In Claude Code, the
+[`fv-deep-search`](../.claude/skills/fv-deep-search/SKILL.md) skill runs the
+whole method.
 
 ## Ground rules
 
@@ -32,12 +34,14 @@ Best yield per minute first. The 2026-10-27 run found about 80% of its
 candidates in steps 2–4.
 
 1. **Re-verify the board.** Run the `recheck-jobs` skill
-   (`.claude/skills/recheck-jobs/`). `scripts/recheck.py check` queries each
+   (`.claude/skills/recheck-jobs/`). `scripts/check.py board` queries each
    entry's ATS API (see the cookbook) and flags the rest for reading by hand;
-   `scripts/recheck.py apply` bumps `last_verified` and moves closed roles to
+   `scripts/check.py apply` bumps `last_verified` and moves closed roles to
    `archive.yml`. Note changed locations, titles and redirects.
-2. **Sweep the watchlist.** Query every employer in the [watchlist](#watchlist)
-   through its endpoint and grep descriptions with the [FV regex](#keyword-filters).
+2. **Sweep the watchlist.** `scripts/check.py watchlist` queries every
+   employer in [`scripts/watchlist.yml`](../scripts/watchlist.yml) and greps
+   descriptions with the [FV regex](#keyword-filters). Its `[NEW]` lines are
+   keyword hits to read, not candidates.
 3. **Big-company careers search.** NVIDIA, Intel, SiFive, Samsung, Cadence and
    Marvell (Workday); AMD (Jibe); Qualcomm, then Microsoft, slowly (Eightfold);
    Arm and Synopsys (TalentBrew); Apple, Google and Amazon (search pages).
@@ -143,56 +147,18 @@ mis-titled roles such as Cadence's "Software Engineer II" on Conformal LEC.
 
 ## Watchlist
 
-Employers that had in-scope roles on 2026-10-27, or have posted them recently,
-and where to look. "FV now" counts in-scope roles open on that date.
+The watchlist lives in [`scripts/watchlist.yml`](../scripts/watchlist.yml),
+where `scripts/check.py watchlist` reads it. Each employer is listed with its ATS and slug, or
+with `ats: manual` and a note on how to check it by hand. It includes
+employers with nothing open that have posted Lean, Rocq or FV roles in the
+past year. Add every employer a run discovers.
 
-| Employer | Where | FV now |
-|---|---|---|
-| Harmonic | Ashby `harmonic` | 3 |
-| Pramaana Labs | Ashby `pramaana-labs` | 4 |
-| Mistral AI | Ashby `mistral.ai` | 1 |
-| Axiom Math | Ashby `axiommath` | 1 |
-| Resolution | Ashby `resolution` | 1 |
-| Code Metal | Ashby `code-metal` | 1 |
-| MatX, Etched | Ashby `matx`, `etched` | 1 each |
-| SF Tensor, Snowflake, Bedrock Robotics | Ashby `sf-tensor`, `snowflake`, `bedrock-robotics` | 1 each |
-| Oath Technologies (Convergent Research) | Lever `convergentresearch` | 2 |
-| CertiK | Lever `certik` | 2 |
-| Nuvacore, Velaura | Lever `nuvacore`, `velaura` | 1 each |
-| Quantinuum | Lever EU `quantinuum` | 1 |
-| Jane Street | Greenhouse `janestreet` | 1 (London and NY reqs) |
-| Tenstorrent, Astera Labs, Waymo | Greenhouse `tenstorrent`, `asteralabs`, `waymo` | 1, 4, 1 |
-| Galois, Trail of Bits | Workable `galois`, `trailofbits` | 2, 1 |
-| Axiomise, LUBIS EDA | Personio `axiomise`, `lubis-eda` | 4, 3 |
-| AWS (Automated Reasoning, Crypto Libraries, Annapurna, Leo) | amazon.jobs search.json | ~10 software, ~5 hardware |
-| Microsoft (MSR software verification, silicon) | Eightfold PCSX | 4 software, 2 hardware |
-| Google / DeepMind | Google Careers search | 1 Lean, ~4 hardware |
-| NVIDIA | Workday | 3 software/compiler, ~13 hardware |
-| Apple, Arm, AMD, Qualcomm, Intel, SiFive, Samsung, Synopsys, Cadence, Marvell, IBM | see cookbook | 2–10 each, hardware |
-| RTX BBN, Thales, Airbus | Workday (see cookbook) | 2, 2, 1 |
-| JHU APL | Jibe API | 1 |
-| Sandia | sandia.jobs (JS only; browser) | 1 |
-| CLEARSY | clearsy.nos-recrutements.fr (JS only; browser) | 2–3 |
-| AdaCore | AdaCore careers API | 1 |
-| TrustInSoft | trust-in-soft.com/careers | 1 |
-| Mobileye | careers.mobileye.com | 1 |
-| Cognichip | cognichip.ai/careers (list), Octopyd (detail, JS) | 1 |
-| General Diffusion | generaldiffusion.com/careers | 1 |
-| YosysHQ | join.com `yosyshqcom` | 1 |
-| Beneficial AI Foundation, Theorem, Runtime Verification, Veridise | their careers pages | open applications or single pages |
+On 2026-10-27, the in-scope roles were spread like this:
 
-Watch these even though they had nothing open. They have posted Lean, Rocq or FV
-roles in the past year:
-
-- Ashby `ethereum-foundation` and `category-labs`.
-- Certora's Teamtailor RSS.
-- Greenhouse `logicalintelligence`.
-- Lean FRO (historically via Convergent's Lever).
-- ARIA's Pinpoint feed (`aria.pinpointhq.com/postings.json`).
-- Huawei UK Teamtailor RSS (`huaweiuk.teamtailor.com/jobs.rss`).
-- Renaissance Philanthropy careers.
-- MAISI.
-- Tarides, Bluerock, Nomadic Labs, Formal Land, zkSecurity, Reilabs.
+- Several each at Harmonic, Pramaana Labs, Astera Labs, Axiomise, LUBIS EDA,
+  AWS and Microsoft.
+- The most hardware roles at NVIDIA, about 13, and 2–10 each at Apple, Arm,
+  AMD, Qualcomm, Intel, SiFive, Samsung, Synopsys, Cadence, Marvell and IBM.
 
 ## Dead ends and blocked sources
 
@@ -275,10 +241,8 @@ Mistral, and the national labs and universities.
 
 ## Ideas for the next run
 
-- **Script the watchlist sweep.** Most of steps 1–3 is deterministic API calls.
-  A `scripts/sweep.py` that reads the watchlist and prints FV-matching postings
-  with dates would cut a run from hours to minutes, leaving people for
-  discovery and triage.
+- **Extend `check.py watchlist`** to the TalentBrew (Arm, Synopsys), Apple, Google and
+  IBM search pages, which are still done by hand.
 - **Cover employers skipped this run for time:**
   - Rail and automotive: Siemens (jobs.siemens.com), Alstom, Hitachi Rail,
     Volvo / Zenseact.

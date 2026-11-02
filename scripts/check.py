@@ -1,22 +1,33 @@
 #!/usr/bin/env python3
-"""Re-check whether every role in data/jobs.yml is still open.
+"""Check job postings: the roles on the board, and the watchlist's boards.
 
-    python3 scripts/recheck.py check [--json report.json] [--only FV-001,FV-002]
+    python3 scripts/check.py board [--json report.json] [--only FV-001,FV-002]
 
-asks each posting's ATS API where there is one (Ashby, Lever, Greenhouse,
-Workday, Personio, Workable, Eightfold, Jibe, Mercor, Alignerr) and reports
-OPEN or CLOSED. Everything else, and any API answer that is not conclusive, is
-CHECK: a person (or Claude) has to read the page, so the report carries a hint
-(HTTP status, redirect, "no longer accepting", a deadline) to start from.
+asks each role in data/jobs.yml whether it is still open, through its ATS API
+where there is one (Ashby, Lever, Greenhouse, Workday, Personio, Workable,
+Eightfold, Jibe, Mercor, Alignerr), and reports OPEN or CLOSED. Everything
+else, and any API answer that is not conclusive, is CHECK: a person (or
+Claude) has to read the page, so the report carries a hint (HTTP status,
+redirect, "no longer accepting", a deadline) to start from.
 
-    python3 scripts/recheck.py apply --open FV-001,FV-002 --closed FV-003
+    python3 scripts/check.py apply --open FV-001,FV-002 --closed FV-003
 
 then sets `last_verified` to today on the open roles and moves the closed ones
 to data/archive.yml with a `closed` date, keeping their IDs. Both files are
 edited as text, so comments and formatting are left alone.
+
+    python3 scripts/check.py watchlist [--json leads.json] [--only NVIDIA,Harmonic]
+
+lists every posting on the boards in scripts/watchlist.yml whose description
+matches the FV regex in docs/search-playbook.md, marking those already on the
+board. Matches are keyword hits for a person to read, not candidates.
+
+The recheck-jobs skill runs `board` and `apply`; the fv-deep-search skill runs
+all three. Everything here is read-only towards the employers' sites.
 """
 import argparse
 import datetime as dt
+import html
 import json
 import pathlib
 import re
@@ -25,6 +36,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 
@@ -33,6 +45,7 @@ import yaml
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 JOBS = ROOT / "data" / "jobs.yml"
 ARCHIVE = ROOT / "data" / "archive.yml"
+WATCHLIST = ROOT / "scripts" / "watchlist.yml"
 UA = "Mozilla/5.0 (compatible; FVjobs link checker)"
 TIMEOUT = 25
 # Seconds between requests to the same host. Workable and Microsoft rate-limit
@@ -81,6 +94,18 @@ class Fetcher:
             return None, url, str(e)[:120]
 
 
+# Ashby's GraphQL endpoint, behind its job pages, answers for unlisted
+# postings and for boards whose posting API is switched off.
+ASHBY_GQL = "https://jobs.ashbyhq.com/api/non-user-graphql?op={op}"
+
+
+def ashby_posting_query(org, job):
+    return {"operationName": "ApiJobPosting", "variables": {"organizationHostedJobsPageName": org, "jobPostingId": job},
+            "query": "query ApiJobPosting($organizationHostedJobsPageName: String!, $jobPostingId: String!) {"
+                     " jobPosting(organizationHostedJobsPageName: $organizationHostedJobsPageName,"
+                     " jobPostingId: $jobPostingId) { id title publishedDate locationName descriptionHtml } }"}
+
+
 def ashby(f, u):
     org, job = u.path.strip("/").split("/")[:2]
     s, _, body = f.get(f"https://api.ashbyhq.com/posting-api/job-board/{org}")
@@ -90,12 +115,7 @@ def ashby(f, u):
         return OPEN, "listed on the Ashby board"
     # Unlisted postings drop off the board but stay reachable; only a null
     # jobPosting proves the role is gone.
-    query = ("query ApiJobPosting($organizationHostedJobsPageName: String!, $jobPostingId: String!) "
-             "{ jobPosting(organizationHostedJobsPageName: $organizationHostedJobsPageName, "
-             "jobPostingId: $jobPostingId) { id } }")
-    s, _, body = f.get("https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobPosting", data={
-        "operationName": "ApiJobPosting", "query": query,
-        "variables": {"organizationHostedJobsPageName": org, "jobPostingId": job}})
+    s, _, body = f.get(ASHBY_GQL.format(op="ApiJobPosting"), data=ashby_posting_query(org, job))
     if s == 200 and json.loads(body).get("data", {}).get("jobPosting") is None:
         return CLOSED, f"not on Ashby board {org}, and the posting API returns null"
     return CHECK, f"not on Ashby board {org} but the posting still resolves (unlisted?)"
@@ -344,6 +364,274 @@ def check(entries):
     return sorted(results, key=lambda r: order[r["id"]])
 
 
+# The watchlist: every posting on each employer's board, grepped for FV work.
+
+# The playbook's FV regex. Tool names are case-sensitive ("Lean" is not "lean
+# team"); phrases are not.
+FV_TOOLS = re.compile(r"\bLean ?4\b|\bLean\b|\bCoq\b|\bRocq\b|Isabelle|\bDafny\b|\bVerus\b|TLA\+"
+                      r"|JasperGold|VC Formal|SymbiYosys|ACL2|Frama-C|SPARK|Atelier B")
+FV_PHRASES = re.compile(r"formal verification|formal method|theorem prov|proof assistant|autoformali"
+                        r"|formal proof|formal math|mathlib", re.I)
+# Default search terms for boards that only search, never list everything.
+QUERIES = {
+    "workday": ["formal verification", "theorem prover"],
+    "eightfold": ["formal verification", "theorem proving", "formal methods"],
+    "jibe": ["formal verification"],
+    "amazon": ["formal verification"],
+}
+
+
+def get_json(f, url, data=None, headers=None):
+    s, _, body = f.get(url, data=data, headers=headers)
+    if s != 200:
+        raise RuntimeError(f"HTTP {s} from {url}")
+    return json.loads(body)
+
+
+def plain(markup):
+    return " ".join(html.unescape(re.sub(r"<[^>]+>", " ", markup or "")).split())
+
+
+def day(value):
+    """An ISO date from the shapes ATSs use (ISO, epoch seconds or ms, RSS, "October 20, 2026"), or ''."""
+    if not value:
+        return ""
+    if isinstance(value, (int, float)):
+        return dt.datetime.fromtimestamp(value / (1000 if value > 1e11 else 1), dt.timezone.utc).date().isoformat()
+    value = str(value).strip()
+    if re.match(r"\d{4}-\d{2}-\d{2}", value):
+        return value[:10]
+    for fmt in ("%B %d, %Y", "%a, %d %b %Y %H:%M:%S %z", "%a, %d %b %Y %H:%M:%S %Z"):
+        try:
+            return dt.datetime.strptime(value, fmt).date().isoformat()
+        except ValueError:
+            pass
+    return ""
+
+
+# Each lister returns the board's postings as dicts with title, url, location,
+# posted and text.
+
+def list_ashby(f, w):
+    data = get_json(f, f"https://api.ashbyhq.com/posting-api/job-board/{w['slug']}")
+    jobs = [{
+        "title": j["title"], "url": j["jobUrl"], "posted": day(j.get("publishedAt")),
+        "location": " / ".join([j.get("location") or ""] + [s["location"] for s in j.get("secondaryLocations", [])]),
+        "text": j.get("descriptionPlain") or plain(j.get("descriptionHtml")),
+    } for j in data.get("jobs", [])]
+    if jobs:
+        return jobs
+    board = get_json(f, ASHBY_GQL.format(op="ApiJobBoardWithTeams"), data={
+        "operationName": "ApiJobBoardWithTeams", "variables": {"organizationHostedJobsPageName": w["slug"]},
+        "query": "query ApiJobBoardWithTeams($organizationHostedJobsPageName: String!) { jobBoard:"
+                 " jobBoardWithTeams(organizationHostedJobsPageName: $organizationHostedJobsPageName)"
+                 " { jobPostings { id title } } }"})
+    for p in ((board.get("data") or {}).get("jobBoard") or {}).get("jobPostings", []):
+        j = get_json(f, ASHBY_GQL.format(op="ApiJobPosting"),
+                     data=ashby_posting_query(w["slug"], p["id"]))["data"]["jobPosting"] or {}
+        jobs.append({"title": p["title"], "url": f"https://jobs.ashbyhq.com/{w['slug']}/{p['id']}",
+                     "posted": day(j.get("publishedDate")), "location": j.get("locationName", ""),
+                     "text": plain(j.get("descriptionHtml"))})
+    return jobs
+
+
+def list_lever(f, w, eu=False):
+    api = "api.eu.lever.co" if eu else "api.lever.co"
+    return [{
+        "title": j["text"], "url": j["hostedUrl"], "posted": day(j.get("createdAt")),
+        "location": (j.get("categories") or {}).get("location", ""),
+        "text": " ".join([j.get("descriptionPlain", ""), j.get("additionalPlain", "")]
+                         + [plain(x.get("content")) for x in j.get("lists", [])]),
+    } for j in get_json(f, f"https://{api}/v0/postings/{w['slug']}?mode=json")]
+
+
+def list_greenhouse(f, w):
+    data = get_json(f, f"https://boards-api.greenhouse.io/v1/boards/{w['slug']}/jobs?content=true")
+    return [{
+        "title": j["title"], "url": j["absolute_url"], "posted": day(j.get("first_published")),
+        "location": (j.get("location") or {}).get("name", ""), "text": plain(html.unescape(j.get("content", ""))),
+    } for j in data.get("jobs", [])]
+
+
+def list_workable(f, w):
+    data = get_json(f, f"https://apply.workable.com/api/v1/widget/accounts/{w['slug']}?details=true")
+    return [{
+        "title": j["title"], "url": f"https://apply.workable.com/{w['slug']}/j/{j['shortcode']}/",
+        "posted": day(j.get("published_on")), "location": ", ".join(x for x in (j.get("city"), j.get("country")) if x),
+        "text": plain(j.get("description")),
+    } for j in data.get("jobs", [])]
+
+
+def list_personio(f, w):
+    s, _, body = f.get(f"https://{w['slug']}.jobs.personio.de/xml?language=en")
+    if s != 200:
+        raise RuntimeError(f"Personio feed: HTTP {s}")
+    return [{
+        "title": p.findtext("name", ""), "url": f"https://{w['slug']}.jobs.personio.de/job/{p.findtext('id')}",
+        "posted": day(p.findtext("createdAt")), "location": p.findtext("office", ""),
+        "text": plain(" ".join(v.text or "" for v in p.iter("value"))),
+    } for p in ET.fromstring(body).iter("position")]
+
+
+def list_teamtailor(f, w):
+    s, _, body = f.get(f"https://{w['host']}/jobs.rss")
+    if s != 200:
+        raise RuntimeError(f"Teamtailor RSS: HTTP {s}")
+    return [{
+        "title": i.findtext("title", ""), "url": i.findtext("link", ""), "posted": day(i.findtext("pubDate")),
+        "location": "", "text": plain(i.findtext("description")),
+    } for i in ET.fromstring(body).iter("item")]
+
+
+def list_workday(f, w):
+    host, site = w["host"], w["site"]
+    base = f"https://{host}/wday/cxs/{host.split('.')[0]}/{site}"
+    paths = {}
+    for q in w.get("queries", QUERIES["workday"]):
+        for offset in range(0, 200, 20):
+            page = get_json(f, f"{base}/jobs", data={"searchText": q, "limit": 20, "offset": offset, "appliedFacets": {}})
+            for p in page.get("jobPostings", []):
+                paths.setdefault(p["externalPath"], p.get("title", ""))
+            if offset + 20 >= page.get("total", 0):
+                break
+    jobs = []
+    for path, title in paths.items():
+        info = get_json(f, base + path).get("jobPostingInfo", {})
+        if info.get("canApply") is not False:
+            jobs.append({"title": info.get("title", title), "url": f"https://{host}/{site}{path}",
+                         "posted": day(info.get("startDate")), "location": info.get("location", ""),
+                         "text": plain(info.get("jobDescription"))})
+    return jobs
+
+
+def list_amazon(f, w):
+    jobs = {}
+    for q in w.get("queries", QUERIES["amazon"]):
+        query = urllib.parse.urlencode({"base_query": q, "result_limit": 100, "sort": "recent"})
+        for j in get_json(f, f"https://www.amazon.jobs/en/search.json?{query}").get("jobs", []):
+            jobs.setdefault(j["id_icims"], {
+                "title": j["title"], "url": "https://www.amazon.jobs" + j["job_path"],
+                "posted": day(j.get("posted_date")), "location": j.get("normalized_location", ""),
+                "text": plain(" ".join(j.get(k) or "" for k in
+                                       ("description", "basic_qualifications", "preferred_qualifications"))),
+            })
+    return list(jobs.values())
+
+
+def list_jibe(f, w):
+    jobs = {}
+    for q in w.get("queries", QUERIES["jibe"]):
+        query = urllib.parse.urlencode({"keywords": q, "limit": 100})
+        for j in get_json(f, f"https://{w['host']}/api/jobs?{query}").get("jobs", []):
+            d = j["data"]
+            jobs.setdefault(d["slug"], {
+                "title": d["title"], "url": w["job_url"].format(slug=d["slug"]), "posted": day(d.get("posted_date")),
+                "location": d.get("full_location", ""),
+                "text": plain(" ".join(d.get(k) or "" for k in ("description", "qualifications", "responsibilities"))),
+            })
+    return list(jobs.values())
+
+
+def list_eightfold(f, w):
+    host, domain = w["host"], w["domain"]
+    headers = {"Referer": f"https://{host}/careers?domain={domain}"}
+    found = {}
+    for q in w.get("queries", QUERIES["eightfold"]):
+        query = urllib.parse.urlencode({"domain": domain, "query": q, "start": 0, "sort_by": "relevance"})
+        for p in get_json(f, f"https://{host}/api/pcsx/search?{query}", headers=headers)["data"]["positions"]:
+            found.setdefault(p["id"], p)
+    jobs = []
+    for pid, p in found.items():
+        d = get_json(f, f"https://{host}/api/pcsx/position_details?position_id={pid}&domain={domain}&hl=en",
+                     headers=headers)["data"]
+        jobs.append({"title": p["name"], "url": f"https://{host}/careers/job/{pid}", "posted": day(p.get("postedTs")),
+                     "location": " / ".join(p.get("locations", [])), "text": plain(d.get("jobDescription"))})
+    return jobs
+
+
+LISTERS = {
+    "ashby": list_ashby, "lever": list_lever, "lever-eu": lambda f, w: list_lever(f, w, eu=True),
+    "greenhouse": list_greenhouse, "workable": list_workable, "personio": list_personio,
+    "teamtailor": list_teamtailor, "workday": list_workday, "amazon": list_amazon, "jibe": list_jibe,
+    "eightfold": list_eightfold,
+}
+# The host each lister talks to, so employers on one ATS are queried in turn.
+API_HOST = {
+    "ashby": lambda w: "api.ashbyhq.com", "lever": lambda w: "api.lever.co", "lever-eu": lambda w: "api.eu.lever.co",
+    "greenhouse": lambda w: "boards-api.greenhouse.io", "workable": lambda w: "apply.workable.com",
+    "personio": lambda w: f"{w['slug']}.jobs.personio.de", "amazon": lambda w: "www.amazon.jobs",
+}
+
+
+def posting_key(url):
+    """A posting's ID as its URL shows it (Greenhouse's gh_jid, else the last
+    path segment), or the bare URL when that segment has no digits."""
+    u = urllib.parse.urlsplit(url)
+    gh = urllib.parse.parse_qs(u.query).get("gh_jid")
+    tail = gh[0] if gh else u.path.rstrip("/").rsplit("/", 1)[-1]
+    return tail if re.search(r"\d", tail) else f"{u.netloc}{u.path.rstrip('/')}"
+
+
+def fv_hits(job):
+    text = f"{job['title']} {job['text']}"
+    terms = {m[0] for m in FV_TOOLS.finditer(text)} | {m[0].lower() for m in FV_PHRASES.finditer(text)}
+    return sorted(terms), len(re.findall(r"\bformal", text, re.I))
+
+
+def watch(employers):
+    on_board = {}
+    for path in (JOBS, ARCHIVE):
+        for e in yaml.safe_load(path.read_text(encoding="utf-8")) or []:
+            on_board[posting_key(e["url"])] = e["id"]
+    f = Fetcher()
+
+    def run_one(w):
+        try:
+            jobs = LISTERS[w["ats"]](f, w)
+        except Exception as ex:  # noqa: BLE001 - one broken board shouldn't stop the run
+            return {"employer": w["employer"], "error": str(ex)[:160]}
+        unique = {}  # some boards list a posting once per location
+        for j in jobs:
+            if j["url"] not in unique:
+                unique[j["url"]] = dict(j)
+            elif j["location"] and j["location"] not in unique[j["url"]]["location"]:
+                unique[j["url"]]["location"] += " / " + j["location"]
+        matches = []
+        for j in unique.values():
+            terms, formal = fv_hits(j)
+            if terms:
+                matches.append({k: j[k] for k in ("title", "url", "location", "posted")}
+                               | {"hits": terms, "formal_mentions": formal, "on_board": on_board.get(posting_key(j["url"]))})
+        return {"employer": w["employer"], "postings": len(unique), "matches": matches}
+
+    by_host = defaultdict(list)
+    for w in employers:
+        if w["ats"] != "manual":
+            by_host[API_HOST.get(w["ats"], lambda w: w.get("host", w["employer"]))(w)].append(w)
+    with ThreadPoolExecutor(8) as pool:
+        results = [r for group in pool.map(lambda g: [run_one(w) for w in g], by_host.values()) for r in group]
+    return results + [{"employer": w["employer"], "manual": w.get("how", "")} for w in employers if w["ats"] == "manual"]
+
+
+def print_watch(results):
+    new = 0
+    for r in results:
+        if "error" in r:
+            print(f"\n## {r['employer']}: ERROR {r['error']}")
+        elif "matches" in r:
+            print(f"\n## {r['employer']}: {len(r['matches'])} FV matches in {r['postings']} postings\n")
+            # Strongest first: the playbook takes three or more "formal" mentions as worth a look.
+            for m in sorted(r["matches"], key=lambda m: (m["formal_mentions"], m["posted"]), reverse=True):
+                new += not m["on_board"]
+                print(f"- [{m['on_board'] or 'NEW'}] {m['title']} | {m['location']} | posted {m['posted'] or '?'}"
+                      f" | formal x{m['formal_mentions']} | {', '.join(m['hits'])}\n  {m['url']}")
+    manual = [r for r in results if "manual" in r]
+    print(f"\n## By hand ({len(manual)})\n")
+    for r in manual:
+        print(f"- {r['employer']}: {r['manual']}")
+    print(f"\n{new} matches not on the board; {sum('error' in r for r in results)} boards failed")
+
+
 def blocks(text):
     """Split a data file into its header and one text block per entry, keyed by id."""
     parts = re.split(r"(?m)^(?=- id: )", text)
@@ -391,9 +679,12 @@ def ids(arg):
 def main():
     p = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     sub = p.add_subparsers(dest="cmd", required=True)
-    c = sub.add_parser("check", help="ask every posting whether it is still open")
+    c = sub.add_parser("board", help="ask every role on the board whether it is still open")
     c.add_argument("--json", help="also write the results to this file")
     c.add_argument("--only", help="comma-separated IDs to check instead of all")
+    w = sub.add_parser("watchlist", help="list FV postings on the watchlist's boards")
+    w.add_argument("--json", help="also write the results to this file")
+    w.add_argument("--only", help="comma-separated employers (or parts of names) instead of all")
     a = sub.add_parser("apply", help="record the outcome in the data files")
     a.add_argument("--open", default="", help="IDs confirmed open: last_verified becomes today")
     a.add_argument("--closed", default="", help="IDs confirmed closed: moved to archive.yml")
@@ -405,6 +696,17 @@ def main():
         if set(o) & set(c):
             sys.exit(f"error: both open and closed: {', '.join(sorted(set(o) & set(c)))}")
         apply(o, c, args.date)
+        return 0
+
+    if args.cmd == "watchlist":
+        employers = yaml.safe_load(WATCHLIST.read_text(encoding="utf-8"))
+        if args.only:
+            wanted = [s.strip().lower() for s in args.only.split(",") if s.strip()]
+            employers = [w for w in employers if any(s in w["employer"].lower() for s in wanted)]
+        results = watch(employers)
+        print_watch(results)
+        if args.json:
+            pathlib.Path(args.json).write_text(json.dumps(results, indent=2, ensure_ascii=False), encoding="utf-8")
         return 0
 
     entries = yaml.safe_load(JOBS.read_text(encoding="utf-8")) or []

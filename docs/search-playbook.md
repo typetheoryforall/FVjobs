@@ -31,31 +31,42 @@ whole method.
 ## Run order
 
 Best yield per minute first. The 2026-10-27 run found about 80% of its
-candidates in steps 2–4.
+candidates in steps 1–3.
 
-1. **Re-verify the board.** Run the `recheck-jobs` skill
-   (`.claude/skills/recheck-jobs/`). `scripts/check.py board` queries each
-   entry's ATS API (see the cookbook) and flags the rest for reading by hand;
-   `scripts/check.py apply` bumps `last_verified` and moves closed roles to
-   `archive.yml`. Note changed locations, titles and redirects.
-2. **Sweep the watchlist.** `scripts/check.py watchlist` queries every
+A search run looks for roles the board doesn't have. Re-verifying the roles
+already on it is a separate job: the `recheck-jobs` skill
+(`.claude/skills/recheck-jobs/`), which the maintainer runs on its own
+schedule. Before searching, list what is already triaged (the board, the
+archive, the watchlist and every earlier run file in
+[`search-runs/`](search-runs/)), so the run spends its time elsewhere.
+
+1. **Sweep the watchlist.** `scripts/check.py watchlist` queries every
    employer in [`scripts/watchlist.yml`](../scripts/watchlist.yml) and greps
    descriptions with the [FV regex](#keyword-filters). Its `[NEW]` lines are
    keyword hits to read, not candidates.
-3. **Big-company careers search.** NVIDIA, Intel, SiFive, Samsung, Cadence and
+2. **Big-company careers search.** NVIDIA, Intel, SiFive, Samsung, Cadence and
    Marvell (Workday); AMD (Jibe); Qualcomm, then Microsoft, slowly (Eightfold);
    Arm and Synopsys (TalentBrew); Apple, Google and Amazon (search pages).
-4. **Discovery, for employers nobody thought of.**
-   - LinkedIn guest search with exact phrases.
-   - Getro VC boards.
-   - aisafety.com/jobs.
-   - Each new employer found here: find its ATS slug and add it to the watchlist.
-5. **Academic channels.**
+3. **Discovery, for roles and employers nobody thought of.** The watchlist
+   only knows employers we have already seen, so give this step the most
+   time.
+   - Open boards: LinkedIn guest search with exact phrases, the Getro VC
+     boards, YC's Work at a Startup, Wellfound and aisafety.com/jobs.
+   - Employer rosters: sponsors and industry papers at CAV, FMCAD, ITP, POPL,
+     CPP, DVCon and Lean Together; performers on FV research programmes
+     (ARIA Safeguarded AI, DARPA); companies whose public repositories use
+     Lean, Rocq, Isabelle, Dafny, Verus, TLA+ or SymbiYosys.
+   - Web searches pairing the FV phrases with ATS domains (Ashby, Lever,
+     Greenhouse, Workable, Personio, Teamtailor).
+   - Each new employer found here: find its ATS slug and add it to the
+     watchlist, even if it has nothing open today.
+4. **Academic channels.**
    - TYPES-announce, Rocq Discourse jobs, ILLC positions, Logic List.
    - Then jobs.ac.uk, Inria, EPFL / TU Delft and AcademicTransfer.
-6. **Hacker News "Who is hiring".** Low yield (0 in October 2026), but takes 30
+5. **Hacker News "Who is hiring".** Low yield (0 in October 2026), but takes 30
    seconds with the items API.
-7. **Triage.** Merge, de-duplicate by URL, re-check each candidate
+6. **Triage.** Merge, de-duplicate by URL, drop candidates an earlier run file
+   already lists unless something material changed, re-check each candidate
    independently, sort into recommend / your call / skip, give each one a
    [category and, where it applies, the big-company tag](#categories-and-tags),
    record the employer's posting date as `posted` (Ashby `publishedAt`, Lever
@@ -63,9 +74,9 @@ candidates in steps 2–4.
    `postedTs`, Personio `createdAt`, amazon.jobs `posted_date`, or the date on
    the page; never an "updated" date or a "~2 weeks ago" estimate), and write
    the run file.
-8. **Apply, after approval.** Add the approved roles without an `id` and run
-   `python3 scripts/validate.py --assign-ids`. Re-verified and archived roles
-   keep the ID they have. A `[stale] FV-…` issue names the role by that ID.
+7. **Apply, after approval.** Add the approved roles without an `id` and run
+   `python3 scripts/validate.py --assign-ids`. Archived roles keep the ID
+   they have. A `[stale] FV-…` issue names the role by that ID.
 
 ## Endpoint cookbook
 

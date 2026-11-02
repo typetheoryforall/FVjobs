@@ -23,7 +23,7 @@ matches the FV regex in docs/search-playbook.md, marking those already on the
 board. Matches are keyword hits for a person to read, not candidates.
 
 The recheck-jobs skill runs `board` and `apply`; the fv-deep-search skill runs
-all three. Everything here is read-only towards the employers' sites.
+`watchlist`. Everything here is read-only towards the employers' sites.
 """
 import argparse
 import datetime as dt

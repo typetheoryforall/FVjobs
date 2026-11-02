@@ -7,7 +7,7 @@ AI writes proofs and something has to check them.
 **Browse the board at [jobs.typetheoryforall.com](https://jobs.typetheoryforall.com/)**,
 with search and filters for the kind of verification (hardware, software, AI for
 proof and autoformalization, academic, cryptocurrency), proof stack, remote work
-and employer size.
+and employer size, shown 20, 50 or 100 roles to a page.
 
 Maintained alongside [Type Theory Forall](https://typetheoryforall.com).
 

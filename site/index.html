@@ -99,10 +99,20 @@
       </div>
     </fieldset>
   </form>
-  <p class="shown" id="shown" aria-live="polite"></p>
+  <p class="shown" id="shown" tabindex="-1" aria-live="polite"></p>
   <p class="undated" id="undated" hidden>Roles whose posting gives no date are listed last.</p>
   <ol class="jobs" id="jobs">{{jobs}}
   </ol>
+  <div class="paging">
+    <nav class="pager" id="pager" aria-label="Pages" hidden></nav>
+    <label class="per" hidden>Per page
+      <select id="per">
+        <option>20</option>
+        <option>50</option>
+        <option>100</option>
+      </select>
+    </label>
+  </div>
   <p class="empty" id="empty" hidden>No role matches these filters. Clear the search or loosen a filter.</p>
 </section>
 

@@ -162,11 +162,24 @@
     if (event.target.name === "order") order();
     apply();
   });
-  // A link to a role (…/#FV-042) has to turn to the page that holds it, and a
-  // link to a closed one (…/#FV-141) has to open the archive.
+  // Back to every open role. The order stays, as it hides nothing.
+  function clearFilters() {
+    q.value = "";
+    for (const name of ["category", "remote", "big"]) {
+      document.querySelector(`input[name="${name}"][value=""]`).checked = true;
+    }
+    for (const i of stackBox.querySelectorAll("input:checked")) i.checked = false;
+    buildStacks();
+    apply();
+  }
+
+  // A link to a role (…/#FV-042) has to turn to the page that holds it,
+  // clearing any filter that hides it, and a link to a closed one (…/#FV-141)
+  // has to open the archive.
   function reveal() {
     const card = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
     if (!card) return;
+    if (card.parentElement === list && !matching.includes(card)) clearFilters();
     const at = matching.indexOf(card);
     if (at >= 0) {
       page = Math.floor(at / Number(per.value)) + 1;

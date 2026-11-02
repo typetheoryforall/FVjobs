@@ -44,7 +44,9 @@ useful even when the posting is gone.
 ## Adding a job
 
 Open a [new job issue](../../issues/new?template=new-job.yml) — it is a short
-form, and no Git required. If you would rather send a pull request, add an entry
+form, and no Git required. 
+
+If you would rather send a pull request, add an entry
 to `data/jobs.yml` and run:
 
 ```bash

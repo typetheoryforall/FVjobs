@@ -2,17 +2,19 @@
 """Build the static GitHub Pages site from data/jobs.yml and data/archive.yml.
 
 Writes _site/index.html (every role pre-rendered, so the page works without
-JavaScript), copies the assets from site/, and publishes the data as
-_site/jobs.json. The Pages workflow runs this; locally:
+JavaScript), copies the assets from site/, publishes the data as
+_site/jobs.json, and the open roles as an RSS feed in _site/feed.xml. The Pages workflow runs this; locally:
 
     python3 scripts/site.py && python3 -m http.server -d _site
 """
 import datetime as dt
+import email.utils
 import html
 import json
 import pathlib
 import shutil
 import urllib.parse
+import xml.etree.ElementTree as ET
 
 import yaml
 
@@ -59,6 +61,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / "site"
 OUT = ROOT / "_site"
 REPO = "https://github.com/typetheoryforall/FVjobs"
+SITE = "https://typetheoryforall.github.io/FVjobs/"
 
 
 def load(name):
@@ -155,6 +158,58 @@ def categories(jobs):
     )
 
 
+def rfc822(day):
+    """An ISO date as the RFC 822 date RSS wants, at midnight UTC."""
+    when = dt.datetime.fromisoformat(day).replace(tzinfo=dt.timezone.utc)
+    return email.utils.format_datetime(when)
+
+
+def feed(jobs, latest):
+    """RSS 2.0 feed of the open roles, newest listing first.
+
+    Listing IDs are assigned in the order roles join the board, so they order
+    the feed and serve as the guid. pubDate is the employer's posting date and
+    is left out when the posting gives none.
+    """
+    ET.register_namespace("atom", "http://www.w3.org/2005/Atom")
+    rss = ET.Element("rss", version="2.0")
+    channel = ET.SubElement(rss, "channel")
+    ET.SubElement(channel, "title").text = "FVjobs — formal verification jobs"
+    ET.SubElement(channel, "link").text = SITE
+    ET.SubElement(channel, "description").text = (
+        "Open roles in formal verification across hardware, software, AI for proof, "
+        "academia and cryptocurrency."
+    )
+    ET.SubElement(channel, "language").text = "en"
+    ET.SubElement(channel, "{http://www.w3.org/2005/Atom}link",
+                  href=SITE + "feed.xml", rel="self", type="application/rss+xml")
+    if latest:
+        ET.SubElement(channel, "lastBuildDate").text = rfc822(latest)
+    for e in sorted(jobs, key=lambda e: int(e["id"].removeprefix("FV-")), reverse=True):
+        item = ET.SubElement(channel, "item")
+        ET.SubElement(item, "title").text = f"{e['role']} at {e['company']}"
+        ET.SubElement(item, "link").text = f"{SITE}#{e['id']}"
+        ET.SubElement(item, "guid", isPermaLink="false").text = e["id"]
+        if e.get("posted"):
+            ET.SubElement(item, "pubDate").text = rfc822(e["posted"])
+        ET.SubElement(item, "category").text = CATEGORY_LABEL.get(e["category"], e["category"])
+        rows = [
+            ("Where", f"{e['location']} · {REMOTE_LABEL.get(e['remote'], e['remote'])}"),
+            ("Level", SENIORITY_LABEL.get(e["seniority"], e["seniority"])),
+            ("Proof stack", ", ".join(e["stack"])),
+            ("Domain", ", ".join(e["domain"])),
+            ("Pay", e.get("compensation")),
+            ("Work authorization", e.get("work_authorization")),
+            ("Notes", e.get("notes")),
+        ]
+        body = "".join(f"<dt>{k}</dt><dd>{esc(v)}</dd>" for k, v in rows if v)
+        ET.SubElement(item, "description").text = (
+            f'<dl>{body}</dl><p><a href="{esc(e["url"])}">Read the posting</a></p>'
+        )
+    ET.indent(rss)
+    return ET.tostring(rss, encoding="unicode", xml_declaration=True)
+
+
 def main():
     jobs, archive = load("jobs.yml"), load("archive.yml")
     latest = max((e["last_verified"] for e in jobs), default="")
@@ -176,6 +231,7 @@ def main():
     (OUT / "jobs.json").write_text(
         json.dumps({"jobs": jobs, "archive": archive}, ensure_ascii=False, indent=2), encoding="utf-8"
     )
+    (OUT / "feed.xml").write_text(feed(jobs, latest), encoding="utf-8")
     print(f"wrote {OUT.relative_to(ROOT)}/ with {len(jobs)} roles and {len(archive)} archived")
 
 

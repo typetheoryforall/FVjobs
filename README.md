@@ -33,6 +33,10 @@ from it. Besides the proof stack and work authorization, each entry records the
 kind of verification, location and remote policy, seniority, published pay, the
 date the employer posted it, and the date someone last checked it was live.
 
+To hear about new roles, subscribe to the
+[RSS feed](https://typetheoryforall.github.io/FVjobs/feed.xml) in any feed
+reader; it lists every open role, newest listing first.
+
 Closed roles move to [`data/archive.yml`](data/archive.yml) rather than being
 deleted: knowing that a company was hiring for Lean work six months ago is
 useful even when the posting is gone.

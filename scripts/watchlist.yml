@@ -1,0 +1,126 @@
+# Employers to check on every search run. `scripts/check.py watchlist` reads this file;
+# the playbook (docs/search-playbook.md) explains each source.
+#
+# Each entry has `employer` and `ats`. What else it needs depends on the ats:
+#   ashby, lever, lever-eu, greenhouse, workable, personio:  slug
+#   teamtailor:  host (the board's RSS is https://{host}/jobs.rss)
+#   workday:     host, site, and optional queries
+#   jibe:        host, job_url (with {slug}), and optional queries
+#   eightfold:   host, domain, and optional queries
+#   amazon:      optional queries
+#   manual:      how, for the person or agent doing it by hand
+#
+# Add every new employer a run discovers, with its ATS slug. Keep employers
+# with nothing open if they have posted in-scope roles in the past year.
+
+# Ashby
+- {employer: Harmonic, ats: ashby, slug: harmonic}
+- {employer: Pramaana Labs, ats: ashby, slug: pramaana-labs}
+- {employer: Mistral AI, ats: ashby, slug: mistral.ai}
+- {employer: Axiom Math, ats: ashby, slug: axiommath}
+- {employer: Resolution, ats: ashby, slug: resolution}
+- {employer: Code Metal, ats: ashby, slug: code-metal}
+- {employer: MatX, ats: ashby, slug: matx}
+- {employer: Etched, ats: ashby, slug: etched}
+- {employer: SF Tensor, ats: ashby, slug: sf-tensor}
+- {employer: Snowflake, ats: ashby, slug: snowflake}
+- {employer: Bedrock Robotics, ats: ashby, slug: bedrock-robotics}
+- {employer: '&Truth', ats: ashby, slug: andtruth}
+# Atalanta's posting is unlisted: the board is empty but the posting is live.
+# Re-verification finds it; the sweep only catches new listed roles.
+- {employer: Atalanta, ats: ashby, slug: atalanta}
+- {employer: Ethereum Foundation, ats: ashby, slug: ethereum-foundation}
+- {employer: Category Labs, ats: ashby, slug: category-labs}
+- {employer: Bluerock Security, ats: ashby, slug: bluerocksecurity}
+
+# Lever
+- {employer: Oath Technologies (Convergent Research), ats: lever, slug: convergentresearch}
+- {employer: CertiK, ats: lever, slug: certik}
+- {employer: Nuvacore, ats: lever, slug: nuvacore}
+- {employer: Velaura, ats: lever, slug: velaura}
+- {employer: Access Softek, ats: lever, slug: accesssoftek}
+- {employer: Quantinuum, ats: lever-eu, slug: quantinuum}
+- {employer: Mobileye, ats: lever-eu, slug: mobileye}
+
+# Greenhouse
+- {employer: Jane Street, ats: greenhouse, slug: janestreet}
+- {employer: Tenstorrent, ats: greenhouse, slug: tenstorrent}
+- {employer: Astera Labs, ats: greenhouse, slug: asteralabs}
+- {employer: Waymo, ats: greenhouse, slug: waymo}
+- {employer: Logical Intelligence, ats: greenhouse, slug: logicalintelligence}
+- {employer: DensityAI, ats: greenhouse, slug: densityai}
+- {employer: Lagrange Labs, ats: greenhouse, slug: lagrange}
+
+# Workable rate-limits after about 60 requests, for hours. check.py spaces
+# its calls; don't run the watchlist twice in a row.
+- {employer: Galois, ats: workable, slug: galois}
+- {employer: Trail of Bits, ats: workable, slug: trailofbits}
+
+# Personio and Teamtailor
+- {employer: Axiomise, ats: personio, slug: axiomise}
+- {employer: LUBIS EDA, ats: personio, slug: lubis-eda}
+- {employer: Certora, ats: teamtailor, host: careers.certora.com}
+- {employer: Huawei UK, ats: teamtailor, host: huaweiuk.teamtailor.com}
+- {employer: Huawei Research Center Germany & Austria, ats: teamtailor, host: huaweiresearchcentergermanyaustria.teamtailor.com}
+- {employer: Huawei Zurich Research Center, ats: teamtailor, host: careers.huaweirc.ch}
+
+# Workday
+- {employer: NVIDIA, ats: workday, host: nvidia.wd5.myworkdayjobs.com, site: NVIDIAExternalCareerSite}
+- {employer: Intel, ats: workday, host: intel.wd1.myworkdayjobs.com, site: External}
+- {employer: Samsung US, ats: workday, host: sec.wd3.myworkdayjobs.com, site: Samsung_Careers}
+- {employer: Cadence, ats: workday, host: cadence.wd1.myworkdayjobs.com, site: External_Careers}
+- {employer: SiFive, ats: workday, host: sifive.wd1.myworkdayjobs.com, site: sifivecareers}
+- {employer: Marvell, ats: workday, host: marvell.wd1.myworkdayjobs.com, site: MarvellCareers}
+- {employer: RTX BBN, ats: workday, host: globalhr.wd5.myworkdayjobs.com, site: REC_RTX_Ext_Gateway}
+- {employer: Thales, ats: workday, host: thales.wd3.myworkdayjobs.com, site: Careers}
+- {employer: Airbus, ats: workday, host: ag.wd3.myworkdayjobs.com, site: Airbus}
+- {employer: GE Aerospace, ats: workday, host: geaerospace.wd5.myworkdayjobs.com, site: GE_ExternalSite}
+- {employer: NASA JPL, ats: workday, host: citjpl.wd5.myworkdayjobs.com, site: Jobs}
+
+# Other big-company systems
+- employer: Amazon
+  ats: amazon
+  queries: [automated reasoning, formal methods, '"formal verification"', Isabelle, Dafny, Lean theorem, neuro-symbolic, Zelkova]
+- {employer: Microsoft, ats: eightfold, host: apply.careers.microsoft.com, domain: microsoft.com}
+- {employer: Qualcomm, ats: eightfold, host: careers.qualcomm.com, domain: qualcomm.com}
+- {employer: AMD, ats: jibe, host: careers.amd.com, job_url: 'https://careers.amd.com/careers-home/jobs/{slug}', queries: [formal]}
+- {employer: JHU APL, ats: jibe, host: careers.jhuapl.edu, job_url: 'https://careers.jhuapl.edu/jobs/{slug}', queries: [formal verification, formal methods]}
+
+# By hand (a browser, a search page, or a single careers page)
+- {employer: Apple, ats: manual, how: 'jobs.apple.com search, parse __staticRouterHydrationData (playbook cookbook)'}
+- {employer: Google / DeepMind, ats: manual, how: 'Google Careers search; theorem proving, proof assistant, verified code'}
+- {employer: Arm, ats: manual, how: 'TalentBrew org 33099; also search theorem and ACL2'}
+- {employer: Synopsys, ats: manual, how: TalentBrew org 44408}
+- {employer: IBM, ats: manual, how: careers search API (playbook cookbook)}
+- {employer: AdaCore, ats: manual, how: AdaCore careers API with X-Requested-With}
+- {employer: Sandia, ats: manual, how: sandia.jobs needs a browser}
+- {employer: CLEARSY, ats: manual, how: 'clearsy.nos-recrutements.fr: POST /api/job/list {"page":N,"size":10}, GET /api/job/{id}'}
+- {employer: TrustInSoft, ats: manual, how: trust-in-soft.com/careers}
+- {employer: Cognichip, ats: manual, how: cognichip.ai/careers list; Octopyd detail needs a browser}
+- {employer: General Diffusion, ats: manual, how: generaldiffusion.com/careers}
+- {employer: YosysHQ, ats: manual, how: join.com/companies/yosyshqcom}
+- {employer: Zeroth Research, ats: manual, how: 'zeroth.org/careers (one page, one section per role)'}
+- {employer: Topos Institute, ats: manual, how: topos.institute/community/jobs}
+- {employer: Beneficial AI Foundation, ats: manual, how: beneficialaifoundation.org/jobs}
+- {employer: Theorem, ats: manual, how: theorem.dev/careers}
+- {employer: Runtime Verification, ats: manual, how: runtimeverification.com/careers}
+- {employer: Veridise, ats: manual, how: veridise.com/careers}
+- {employer: Cajal, ats: manual, how: caj.al/careers}
+- {employer: 'Math, Inc.', ats: manual, how: math.inc/careers}
+- {employer: Mathlib Initiative, ats: manual, how: mathlib-initiative.org/careers}
+- {employer: Meta, ats: manual, how: metacareers.com needs a browser; search "formal verification"}
+- {employer: MediaTek, ats: manual, how: careers.mediatek.com needs a browser}
+- {employer: Systerel, ats: manual, how: systerel.fr/actualites/offre-emploi (B method, proof)}
+- {employer: Prover Technology, ats: manual, how: prover.com/job-openings}
+- {employer: Riverside Research, ats: manual, how: careers-riversideresearch.icims.com (iCIMS)}
+- {employer: Kry10, ats: manual, how: kry10.com careers page (postings are PDFs)}
+- {employer: Amalent, ats: manual, how: amalent.com/careers}
+- {employer: CEA-List, ats: manual, how: emploi.cea.fr search}
+- {employer: KIT (KASTEL), ats: manual, how: jobs.pse.kit.edu}
+- {employer: Mercor, ats: manual, how: 'work.mercor.com/jobs/list_{id} ("status":"active")'}
+- {employer: Alignerr, ats: manual, how: 'alignerr.com/jobs/{uuid} (isActive)'}
+- {employer: ARIA, ats: manual, how: aria.pinpointhq.com/postings.json}
+- {employer: Lean FRO, ats: manual, how: "lean-fro.org; historically via Convergent's Lever"}
+- {employer: Renaissance Philanthropy, ats: manual, how: their careers page}
+- {employer: MAISI, ats: manual, how: their careers page}
+- {employer: 'Tarides, Bluerock, Nomadic Labs, Formal Land, zkSecurity, Reilabs', ats: manual, how: each careers page}

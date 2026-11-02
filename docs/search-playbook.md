@@ -2,7 +2,9 @@
 
 How we look for open formal verification roles, and what we learned doing it.
 Read this before a search run and update it after one. Each run's audit list
-lives in [`docs/search-runs/`](search-runs/).
+lives in [`docs/search-runs/`](search-runs/). In Claude Code, the
+[`fv-deep-search`](../.claude/skills/fv-deep-search/SKILL.md) skill runs the
+whole method.
 
 ## Ground rules
 
@@ -29,29 +31,42 @@ lives in [`docs/search-runs/`](search-runs/).
 ## Run order
 
 Best yield per minute first. The 2026-10-27 run found about 80% of its
-candidates in steps 2–4.
+candidates in steps 1–3.
 
-1. **Re-verify the board.** Run the `recheck-jobs` skill
-   (`.claude/skills/recheck-jobs/`). `scripts/recheck.py check` queries each
-   entry's ATS API (see the cookbook) and flags the rest for reading by hand;
-   `scripts/recheck.py apply` bumps `last_verified` and moves closed roles to
-   `archive.yml`. Note changed locations, titles and redirects.
-2. **Sweep the watchlist.** Query every employer in the [watchlist](#watchlist)
-   through its endpoint and grep descriptions with the [FV regex](#keyword-filters).
-3. **Big-company careers search.** NVIDIA, Intel, SiFive, Samsung, Cadence and
+A search run looks for roles the board doesn't have. Re-verifying the roles
+already on it is a separate job: the `recheck-jobs` skill
+(`.claude/skills/recheck-jobs/`), which the maintainer runs on its own
+schedule. Before searching, list what is already triaged (the board, the
+archive, the watchlist and every earlier run file in
+[`search-runs/`](search-runs/)), so the run spends its time elsewhere.
+
+1. **Sweep the watchlist.** `scripts/check.py watchlist` queries every
+   employer in [`scripts/watchlist.yml`](../scripts/watchlist.yml) and greps
+   descriptions with the [FV regex](#keyword-filters). Its `[NEW]` lines are
+   keyword hits to read, not candidates.
+2. **Big-company careers search.** NVIDIA, Intel, SiFive, Samsung, Cadence and
    Marvell (Workday); AMD (Jibe); Qualcomm, then Microsoft, slowly (Eightfold);
    Arm and Synopsys (TalentBrew); Apple, Google and Amazon (search pages).
-4. **Discovery, for employers nobody thought of.**
-   - LinkedIn guest search with exact phrases.
-   - Getro VC boards.
-   - aisafety.com/jobs.
-   - Each new employer found here: find its ATS slug and add it to the watchlist.
-5. **Academic channels.**
+3. **Discovery, for roles and employers nobody thought of.** The watchlist
+   only knows employers we have already seen, so give this step the most
+   time.
+   - Open boards: LinkedIn guest search with exact phrases, the Getro VC
+     boards, YC's Work at a Startup, Wellfound and aisafety.com/jobs.
+   - Employer rosters: sponsors and industry papers at CAV, FMCAD, ITP, POPL,
+     CPP, DVCon and Lean Together; performers on FV research programmes
+     (ARIA Safeguarded AI, DARPA); companies whose public repositories use
+     Lean, Rocq, Isabelle, Dafny, Verus, TLA+ or SymbiYosys.
+   - Web searches pairing the FV phrases with ATS domains (Ashby, Lever,
+     Greenhouse, Workable, Personio, Teamtailor).
+   - Each new employer found here: find its ATS slug and add it to the
+     watchlist, even if it has nothing open today.
+4. **Academic channels.**
    - TYPES-announce, Rocq Discourse jobs, ILLC positions, Logic List.
    - Then jobs.ac.uk, Inria, EPFL / TU Delft and AcademicTransfer.
-6. **Hacker News "Who is hiring".** Low yield (0 in October 2026), but takes 30
+5. **Hacker News "Who is hiring".** Low yield (0 in October 2026), but takes 30
    seconds with the items API.
-7. **Triage.** Merge, de-duplicate by URL, re-check each candidate
+6. **Triage.** Merge, de-duplicate by URL, drop candidates an earlier run file
+   already lists unless something material changed, re-check each candidate
    independently, sort into recommend / your call / skip, give each one a
    [category and, where it applies, the big-company tag](#categories-and-tags),
    record the employer's posting date as `posted` (Ashby `publishedAt`, Lever
@@ -59,9 +74,9 @@ candidates in steps 2–4.
    `postedTs`, Personio `createdAt`, amazon.jobs `posted_date`, or the date on
    the page; never an "updated" date or a "~2 weeks ago" estimate), and write
    the run file.
-8. **Apply, after approval.** Add the approved roles without an `id` and run
-   `python3 scripts/validate.py --assign-ids`. Re-verified and archived roles
-   keep the ID they have. A `[stale] FV-…` issue names the role by that ID.
+7. **Apply, after approval.** Add the approved roles without an `id` and run
+   `python3 scripts/validate.py --assign-ids`. Archived roles keep the ID
+   they have. A `[stale] FV-…` issue names the role by that ID.
 
 ## Endpoint cookbook
 
@@ -100,6 +115,9 @@ all wrong or stale.
 | IBM | `POST https://www-api.ibm.com/search/api/v2` (appId `careers`, scope `careers2`) | Posting pages sit behind a bot challenge; the search API returns the full text. |
 | Oracle Recruiting Cloud | Oracle OCI `eeho.fa.us2.oraclecloud.com/...recruitingCEJobRequisitions` (site `CX_45001`); SDU (site `CX_1001`) | OCI's hits are distributed-systems roles with a single TLA+ bullet, so all were skipped. |
 | AdaCore | `https://www.adacore.com/api/careers` with `X-Requested-With: XMLHttpRequest` | Postings link to HelloTalent. |
+| Meta | metacareers.com, in a browser | Plain fetches return only the page shell. LinkedIn guest search finds Meta's FV roles; confirm them in the browser pane (2 ASIC FV reqs on 2026-11-02). |
+| iCIMS | Riverside Research `careers-riversideresearch.icims.com`, Peraton `careers-peraton.icims.com` | No lister in `check.py` yet; read the posting page. |
+| Avature | Siemens `jobs.siemens.com/.../SearchJobs/{query}` | Pages of 6 via `folderOffset`; Siemens, Bloomberg and Two Sigma take `?search=`, not `?keyword=`. |
 
 ### Academic sources
 
@@ -115,6 +133,10 @@ all wrong or stale.
 | AcademicTransfer (NL) | `https://www.academictransfer.com/en/jobs/?q=proof%20assistant` |
 | AAR newsletter | Latest issue linked from `https://aarinc.org/` (13 job ads in September 2026). |
 | Terence Tao's blog | Carries AI-plus-Lean academic adverts (found the EPFL numerical-analysis postdoc). |
+| MathJobs | `https://www.mathjobs.org/jobs?action=joblist&id=fulltext:{query}` (fetch with `--compressed`) | Faculty and postdoc ads in AI for maths and formal reasoning (Alberta, CMU ICARM, CU Boulder in November 2026). |
+| Varbi (Swedish universities) | `https://{uu,lu,kth}.varbi.com/en/` | Job lists for Uppsala, Lund and KTH; found the Uppsala numerical-verification postdoc. |
+| Interfolio | `https://logic.interfolio.com/dossier-api/positions/{id}` | Returns `is_open` without a browser, for JS-only Interfolio postings. |
+| Institute pages | ISTA group pages, MPI-SWS research careers | Standing PhD and postdoc calls that never reach the lists. |
 
 ### Discovery sources
 
@@ -124,7 +146,8 @@ all wrong or stale.
 | Getro VC boards | `https://{board}/jobs?q=formal%20verification`, then parse `__NEXT_DATA__` | Working boards: jobs.accel.com, jobs.generalcatalyst.com, jobs.khoslaventures.com, jobs.electriccapital.com, careers.rainfall.com, jobs.luxcapital.com, jobs.dcvc.com, jobs.8vc.com. Found Pramaana, Bedrock Robotics, Mistral. |
 | aisafety.com/jobs | WebFetch in chunks (~227k chars) | Found Resolution's Lean Engineer. |
 | HN Who is hiring | `curl https://hn.algolia.com/api/v1/items/{story_id}` and grep locally | Algolia keyword search is too fuzzy. Find the story id with `search_by_date?tags=story,author_whoishiring`. |
-| Mercor / Alignerr | `work.mercor.com/jobs/list_{id}` (`"status":"active"`), `alignerr.com/jobs/{uuid}` (`isActive`) | Contract AI-training gigs; see scope calls. |
+| Mercor / Alignerr | `work.mercor.com/jobs/list_{id}` (`"status":"active"`, and `disableApplications` must be false), `alignerr.com/jobs/{uuid}` (`isActive`); search with `alignerr.com/api/jobs?search=…` | Contract AI-training gigs; see scope calls. Alignerr's ~160 active Lean pages are city and retitled copies of a few listings. |
+| CLEARSY | `POST https://clearsy.nos-recrutements.fr/api/job/list` with `{"page":N,"size":10}`; `GET /api/job/{id}` | Reads the board without a browser. Several roles are posted once per city. |
 | Lean Zulip archive | `https://leanprover-community.github.io/archive/stream/284757-job-postings/index.html` | **Stale since 2026-02-28.** Still a good roster of employers to add to the watchlist. |
 
 ## Keyword filters
@@ -143,56 +166,18 @@ mis-titled roles such as Cadence's "Software Engineer II" on Conformal LEC.
 
 ## Watchlist
 
-Employers that had in-scope roles on 2026-10-27, or have posted them recently,
-and where to look. "FV now" counts in-scope roles open on that date.
+The watchlist lives in [`scripts/watchlist.yml`](../scripts/watchlist.yml),
+where `scripts/check.py watchlist` reads it. Each employer is listed with its ATS and slug, or
+with `ats: manual` and a note on how to check it by hand. It includes
+employers with nothing open that have posted Lean, Rocq or FV roles in the
+past year. Add every employer a run discovers.
 
-| Employer | Where | FV now |
-|---|---|---|
-| Harmonic | Ashby `harmonic` | 3 |
-| Pramaana Labs | Ashby `pramaana-labs` | 4 |
-| Mistral AI | Ashby `mistral.ai` | 1 |
-| Axiom Math | Ashby `axiommath` | 1 |
-| Resolution | Ashby `resolution` | 1 |
-| Code Metal | Ashby `code-metal` | 1 |
-| MatX, Etched | Ashby `matx`, `etched` | 1 each |
-| SF Tensor, Snowflake, Bedrock Robotics | Ashby `sf-tensor`, `snowflake`, `bedrock-robotics` | 1 each |
-| Oath Technologies (Convergent Research) | Lever `convergentresearch` | 2 |
-| CertiK | Lever `certik` | 2 |
-| Nuvacore, Velaura | Lever `nuvacore`, `velaura` | 1 each |
-| Quantinuum | Lever EU `quantinuum` | 1 |
-| Jane Street | Greenhouse `janestreet` | 1 (London and NY reqs) |
-| Tenstorrent, Astera Labs, Waymo | Greenhouse `tenstorrent`, `asteralabs`, `waymo` | 1, 4, 1 |
-| Galois, Trail of Bits | Workable `galois`, `trailofbits` | 2, 1 |
-| Axiomise, LUBIS EDA | Personio `axiomise`, `lubis-eda` | 4, 3 |
-| AWS (Automated Reasoning, Crypto Libraries, Annapurna, Leo) | amazon.jobs search.json | ~10 software, ~5 hardware |
-| Microsoft (MSR software verification, silicon) | Eightfold PCSX | 4 software, 2 hardware |
-| Google / DeepMind | Google Careers search | 1 Lean, ~4 hardware |
-| NVIDIA | Workday | 3 software/compiler, ~13 hardware |
-| Apple, Arm, AMD, Qualcomm, Intel, SiFive, Samsung, Synopsys, Cadence, Marvell, IBM | see cookbook | 2–10 each, hardware |
-| RTX BBN, Thales, Airbus | Workday (see cookbook) | 2, 2, 1 |
-| JHU APL | Jibe API | 1 |
-| Sandia | sandia.jobs (JS only; browser) | 1 |
-| CLEARSY | clearsy.nos-recrutements.fr (JS only; browser) | 2–3 |
-| AdaCore | AdaCore careers API | 1 |
-| TrustInSoft | trust-in-soft.com/careers | 1 |
-| Mobileye | careers.mobileye.com | 1 |
-| Cognichip | cognichip.ai/careers (list), Octopyd (detail, JS) | 1 |
-| General Diffusion | generaldiffusion.com/careers | 1 |
-| YosysHQ | join.com `yosyshqcom` | 1 |
-| Beneficial AI Foundation, Theorem, Runtime Verification, Veridise | their careers pages | open applications or single pages |
+On 2026-10-27, the in-scope roles were spread like this:
 
-Watch these even though they had nothing open. They have posted Lean, Rocq or FV
-roles in the past year:
-
-- Ashby `ethereum-foundation` and `category-labs`.
-- Certora's Teamtailor RSS.
-- Greenhouse `logicalintelligence`.
-- Lean FRO (historically via Convergent's Lever).
-- ARIA's Pinpoint feed (`aria.pinpointhq.com/postings.json`).
-- Huawei UK Teamtailor RSS (`huaweiuk.teamtailor.com/jobs.rss`).
-- Renaissance Philanthropy careers.
-- MAISI.
-- Tarides, Bluerock, Nomadic Labs, Formal Land, zkSecurity, Reilabs.
+- Several each at Harmonic, Pramaana Labs, Astera Labs, Axiomise, LUBIS EDA,
+  AWS and Microsoft.
+- The most hardware roles at NVIDIA, about 13, and 2–10 each at Apple, Arm,
+  AMD, Qualcomm, Intel, SiFive, Samsung, Synopsys, Cadence, Marvell and IBM.
 
 ## Dead ends and blocked sources
 
@@ -215,6 +200,33 @@ Skip these, or handle them differently, next time.
 - **No signal this run:** web3.career tag pages, cryptocurrencyjobs.co,
   cryptojobslist, useweb3 (defunct), EuroProofNet jobs (stale since May 2025),
   ocaml.org/jobs, and the HN October 2026 thread.
+- **No signal on 2026-11-02:**
+  - Getro boards: 12 queries across 8 boards found only roles already on the
+    board or FV as a nice-to-have, which the 2026-11-02 rule now includes, so
+    search them again. Getro renders only the first 20 results, and its
+    search API answers 406, so use narrow keywords.
+  - aisafety.com/jobs: its FV roles were all on the board already.
+  - Rail, automotive and defence: Siemens, Alstom, Hitachi Rail, Volvo,
+    Zenseact, Peraton Labs, GrammaTech, JPL and NASA.
+  - French and German firms: OCamlPro, AbsInt and Hensoldt.
+  - Quant firms: HRT, DRW, Optiver, IMC, Jump, Tower, Two Sigma, Citadel and
+    Bloomberg. FV is at most a bonus bullet there. The nice-to-have rule now
+    includes those roles (Jump's Bristol verification engineer was added on
+    2026-11-02), so read these boards again next run.
+  - Teams with nothing open: Tarides, zkSecurity, Formal Land, Nomadic Labs,
+    Reilabs and Bluerock. Ethereum Foundation's board is empty. Lean FRO has no
+    jobs page.
+- **Unreachable on 2026-11-02:**
+  - Kestrel (connection refused again).
+  - Informal Systems (server error in a browser).
+  - Brevis (its careers link points to a missing Ashby board).
+  - Ceva (`ceva-ip.com` doesn't resolve).
+  - Columbia's `academicjobs.columbia.edu` doesn't resolve. It carries a Lean
+    postdoc on agentic AI verification; check it by hand.
+- **Google DeepMind's Greenhouse board is gone (404).** DeepMind roles are now
+  only on Google Careers.
+- **The HN "Who is hiring" thread** appears around 15:00–16:00 UTC on the
+  first weekday of the month. A run earlier that day has to come back for it.
 - **`site:` filters are ignored by the search tool.** Query ATS APIs directly
   instead.
 
@@ -223,8 +235,13 @@ Skip these, or handle them differently, next time.
 How borderline cases were sorted on 2026-10-27. These follow the README scope.
 Reuse them so triage stays consistent.
 
-- **Skip** when FV is a "nice to have" bullet in a general SWE, DV, ML or
-  protocol role (OpenAI chip design, Anthropic RL, Oracle OCI TLA+, most crypto
+- **Include nice-to-have FV.** A role counts when the posting names formal
+  verification, formal methods or a proof tool in its duties or among its
+  preferred, desired or bonus qualifications, even if the rest of the job is
+  general DV, SWE, ML, cryptography or protocol work. Say in `notes` that FV
+  is a nice-to-have. On 2026-11-02 the maintainer asked for this more
+  permissive rule. It replaces the 2026-10-27 rule, which skipped these
+  roles (OpenAI chip design, Anthropic RL, Oracle OCI TLA+, most crypto
   auditor roles).
 - **Fold** twin requisitions of the same role into one entry with several
   locations (Jane Street London/NY, Cognichip, Velaura, AWS twin reqs).
@@ -235,15 +252,26 @@ Reuse them so triage stays consistent.
   mailing-list message, and faculty calls. These were "your call" on
   2026-10-27 and the maintainer took all of them, so recommend them from now
   on. Keep "your call" for kinds of borderline case not listed here.
-- **Skip** duplicate requisitions, posts closing within about a week, roles
-  where FV is incidental, and stale pages. The maintainer dropped every
-  "recommended skip" on 2026-10-27, which confirms these rules.
-- **Hardware FV is in scope.** It dominates by volume, so the search caps at
-  about 3 roles per employer and records the rest as counts with the search
-  that finds them.
+- **Skip** duplicate requisitions, posts closing within about a week, stale
+  pages, and roles where FV is incidental: named only in the company blurb or
+  a team description, not in the job's duties or qualifications. A
+  nice-to-have bullet is not incidental (see above). The maintainer dropped
+  every "recommended skip" on 2026-10-27, which confirms the other rules.
+- **Hardware FV is in scope.** It dominates by volume, so the search caps it
+  at 5 roles per employer: the board's open hardware roles plus the run's
+  additions. Count by parent company (Amazon Leo and Annapurna Labs are both
+  Amazon). Record the rest as counts with the search that finds them. The
+  maintainer raised the cap from about 3 to 5 on 2026-11-02.
 - **Open-application entries** stay only while the employer's page still
   invites applications. Empty boards (Imandra's Workable, Cryspen's JOIN)
   mean archive.
+- **Over the cap means counted, not listed.** The cap covers roles found on
+  employers' own sites as well as in the sweep. Give over-the-cap roles IDs
+  in the audit list so the maintainer can pull one in. To fill an employer
+  up to the cap, prefer core FV roles, then locations and levels the board
+  doesn't have yet, and fold twin requisitions into one entry.
+- **Evergreen postings** (Prover's 2023 rail role, Huawei Dresden's 2023
+  intern ad) are live but old. Flag the first-published date in `notes`.
 
 ## Categories and tags
 
@@ -275,24 +303,19 @@ Mistral, and the national labs and universities.
 
 ## Ideas for the next run
 
-- **Script the watchlist sweep.** Most of steps 1–3 is deterministic API calls.
-  A `scripts/sweep.py` that reads the watchlist and prints FV-matching postings
-  with dates would cut a run from hours to minutes, leaving people for
-  discovery and triage.
-- **Cover employers skipped this run for time:**
-  - Rail and automotive: Siemens (jobs.siemens.com), Alstom, Hitachi Rail,
-    Volvo / Zenseact.
-  - French and German formal-methods firms: Systerel, Prover Technology,
-    OCamlPro, AbsInt, Hensoldt Cyber.
-  - US defence research: Riverside Research, Peraton Labs, GrammaTech.
-  - Huawei (Edinburgh, Paris, Munich).
-  - NASA / JPL.
-  - Quant firms.
-- **Try Lagrange and Brevis in a browser**, and retry Informal Systems and
-  Kestrel (connection refused all day).
+- **Extend `check.py watchlist`** to the TalentBrew (Arm, Synopsys), Apple, Google and
+  IBM search pages, which are still done by hand.
+- **Add listers** for iCIMS (Riverside Research, Peraton), Avature (Siemens)
+  and SuccessFactors (EPFL, TU Delft, Alstom, Volvo, Hensoldt), the CLEARSY
+  JSON API, and LinkedIn guest search. These are the sources still read by
+  hand.
+- **Run the HN November thread** once it is posted (see dead ends).
+- **Retry Kestrel and Informal Systems**, and check Columbia's Lean postdoc by
+  hand.
 
 ## Run log
 
 | Date | Candidates | Recommended | Added to the board | Run file |
 |---|---|---|---|---|
 | 2026-10-27 | 149 | 100 (+25 your call) | 125 (all recommended and your call; 2 archived) | [2026-10-27](search-runs/2026-10-27.md) |
+| 2026-11-02 | 73 | 25 (+17 your call, 12 over the cap) | 61 (all recommended and your call, 17 filling the new cap of 5, 2 under the nice-to-have rule; 1 archived) | [2026-11-02](search-runs/2026-11-02.md) |

@@ -13,7 +13,7 @@ evidence; anything you can't settle stays as it is and goes in the report.
 
 ```bash
 git switch main && git pull --ff-only
-python3 scripts/recheck.py check --json <scratchpad>/recheck.json
+python3 scripts/check.py board --json <scratchpad>/board.json
 ```
 
 It takes a few minutes, because it pauses between requests to the same host.
@@ -91,7 +91,7 @@ open-application page that just went quiet.
 ## 4. Apply, check, publish
 
 ```bash
-python3 scripts/recheck.py apply --open FV-001,FV-002,... --closed FV-010,...
+python3 scripts/check.py apply --open FV-001,FV-002,... --closed FV-010,...
 python3 scripts/validate.py
 python3 scripts/site.py
 ```
@@ -116,5 +116,5 @@ this time; otherwise open a PR.
 - **Microsoft's API** wants about 5 seconds between calls, which the script
   already does.
 - **New employers or ATS types.** If one keeps landing in CHECK, add a checker
-  to `scripts/recheck.py`, following the existing ones, and note the endpoint in
+  to `scripts/check.py`, following the existing ones, and note the endpoint in
   the cookbook in `docs/search-playbook.md`.

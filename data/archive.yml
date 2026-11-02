@@ -192,6 +192,27 @@
   last_verified: 2026-10-26
   closed: 2026-10-27
 
+- id: FV-079
+  company: Mercor
+  role: Lean Engineer, Formal Mathematics (Lean 4, Mathlib, Theorem Proving)
+  category: ai-for-proof
+  url: https://work.mercor.com/jobs/list_AAABoPJ_fWgrIgAI-ilEL5S3
+  location: Remote
+  remote: remote-worldwide
+  stack: [Lean, mathlib]
+  domain: [AI for mathematics, AI training data]
+  seniority: engineer
+  work_authorization: Mercor states it cannot support H-1B or STEM OPT candidates
+  compensation: USD 90–110/hour, part-time (20–40 hours/week)
+  notes: >-
+    Placement at an unnamed "leading AI lab". Write and review Lean 4 proofs,
+    formalize informal mathematics, and check whether AI-generated proofs prove
+    the right statement. The posting calls it both W-2 employment through
+    Cincinnatus LLC (or an international entity) and independent contracting.
+  posted: '2026-09-30'
+  last_verified: 2026-11-02
+  closed: 2026-11-02
+
 - id: FV-081
   company: Microsoft
   role: Principal Design Verification Engineer - Formal

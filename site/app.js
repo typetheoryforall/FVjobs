@@ -173,9 +173,15 @@
       paginate();
     }
     card.closest("details")?.setAttribute("open", "");
+    // On a reload the browser would put back the old scroll position, which
+    // pointed into whatever page was showing before.
+    history.scrollRestoration = "manual";
     card.scrollIntoView();
   }
+  // Pasting the link that is already in the address bar fires only popstate,
+  // since the hash does not change.
   addEventListener("hashchange", reveal);
+  addEventListener("popstate", reveal);
 
   buildStacks();
   apply();

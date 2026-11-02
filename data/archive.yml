@@ -3,6 +3,135 @@
 # Same fields as jobs.yml, plus `closed` (the date it was found to be gone).
 # A role keeps its id when it moves here.
 
+- id: FV-002
+  company: AdaCore
+  role: 'Internship - SPARK: Formally verify an ordered set/map library in SPARK'
+  category: software
+  url: https://app.hellotalent.com/vacancy/spark-formally-verify-an-ordered-setmap-library-in-spark-ee2361007
+  location: Toulouse, France
+  remote: onsite
+  stack: [SPARK, Ada]
+  domain: [safety-critical software, verified libraries]
+  seniority: intern
+  notes: >-
+    Six months during 2027. Proves the absence of runtime errors and more in
+    SPARKlib's red-black-tree containers, with AI-assisted proof.
+  last_verified: 2026-10-27
+  closed: 2026-11-02
+
+- id: FV-015
+  company: Amazon Web Services
+  role: Senior Applied Scientist, AWS Quick
+  category: ai-for-proof
+  url: https://www.amazon.jobs/en/jobs/10428524/senior-applied-scientist-aws-quick
+  location: Santa Clara, CA
+  remote: onsite
+  stack: [SMT, model checking, Lean, automated reasoning]
+  domain: [AI safety, generative AI guardrails]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 192,200–260,000 (Santa Clara)
+  notes: >-
+    Neuro-symbolic team behind Automated Reasoning checks. Builds formal
+    reasoning into GenAI and agent products for hallucination detection, policy
+    verification and guardrails. Different team from the Automated Reasoning
+    Applied Scientist role already on the board.
+  posted: '2026-05-22'
+  last_verified: 2026-10-27
+  closed: 2026-11-02
+
+- id: FV-016
+  company: Amazon Web Services
+  role: Senior Applied Scientist, Neuro-Symbolic AI Labs
+  category: software
+  url: https://www.amazon.jobs/en/jobs/10503197/senior-applied-scientist-neuro-symbolic-ai-labs
+  location: Boston, MA / Santa Clara, CA
+  remote: onsite
+  stack: [proof assistants, Lean, Dafny]
+  domain: [AI for reasoning, AI for mathematics]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: US-based; sponsorship not stated
+  compensation: USD 167,100–226,100 (Boston); USD 192,200–260,000 (Santa Clara)
+  notes: A twin requisition, 10503196, has identical text.
+  posted: '2026-08-18'
+  last_verified: 2026-10-27
+  closed: 2026-11-02
+
+- id: FV-018
+  company: Amazon Web Services
+  role: Sr. Applied Scientist, Automated Reasoning in Identity
+  category: software
+  url: https://www.amazon.jobs/en/jobs/10522623/sr-applied-scientist-automated-reasoning-in-identity
+  location: Santa Clara, CA
+  remote: onsite
+  stack: [SAT, SMT, BDDs, theorem proving, model checking]
+  domain: [cloud, identity and access management]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: US-based; sponsorship not stated
+  compensation: USD 192,200–260,000
+  notes: >-
+    Builds tools that prove the absence of security problems in customer IAM
+    configurations; PhD or equivalent research experience required.
+  posted: '2026-08-31'
+  last_verified: 2026-10-27
+  closed: 2026-11-02
+
+- id: FV-019
+  company: Amazon Web Services
+  role: Sr. Software Development Engineer, Automated Reasoning Group
+  category: software
+  url: https://www.amazon.jobs/en/jobs/10475668/sr-software-development-engineer-automated-reasoning-group
+  location: New York, NY
+  remote: onsite
+  stack: [automated reasoning, formal methods]
+  domain: [AI safety, cloud]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: US-based; sponsorship not stated
+  compensation: USD 184,900–250,200
+  notes: >-
+    Builds Automated Reasoning Checks (ARc), which uses logic to verify
+    generative-AI outputs. Formal methods experience is preferred, not required.
+  posted: '2026-07-15'
+  last_verified: 2026-10-27
+  closed: 2026-11-02
+
+- id: FV-027
+  company: Arm
+  role: Theorem Proving Engineer
+  category: hardware
+  url: https://careers.arm.com/job/austin/theorem-proving-engineer/33099/97584421536
+  location: Austin, TX
+  remote: hybrid
+  stack: [ACL2, SLEC, C, Verilog]
+  domain: [hardware, CPU, floating point]
+  seniority: research-engineer
+  tags: [big-company]
+  compensation: USD 198,100–268,000
+  notes: >-
+    Datapath RTL is proved equivalent to C models (SLEC), and the C models are
+    proved correct against the architecture spec in ACL2. Requires an MS or PhD
+    in CS or Mathematics.
+  posted: '2026-07-09'
+  last_verified: 2026-10-27
+  closed: 2026-11-02
+
+- id: FV-031
+  company: Astera Labs
+  role: Tech Lead, Formal Verification
+  category: hardware
+  url: https://job-boards.greenhouse.io/asteralabs/jobs/4720768005
+  location: Bengaluru, India
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, interconnect, AI infrastructure]
+  seniority: lead
+  posted: '2026-08-03'
+  last_verified: 2026-10-27
+  closed: 2026-11-02
+
 - id: FV-141
   company: Cryspen
   role: Open applications (Rust verification, hax)
@@ -16,6 +145,21 @@
   notes: No individual postings listed; speculative applications via info@cryspen.com.
   last_verified: 2026-10-26
   closed: 2026-10-27
+
+- id: FV-058
+  company: Google
+  role: ASIC Formal Verification Engineer, Google Cloud
+  category: hardware
+  url: https://www.google.com/about/careers/applications/jobs/results/104345785444770502-asic-formal-verification-engineer-google-cloud
+  location: Sunnyvale, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA, Jasper, VC Formal, Questa Formal, 360-DV]
+  domain: [hardware, AI accelerators]
+  seniority: engineer
+  tags: [big-company]
+  compensation: USD 138,000–197,000 base + 15% bonus target + equity
+  last_verified: 2026-10-27
+  closed: 2026-11-02
 
 - id: FV-142
   company: Google DeepMind
@@ -47,3 +191,58 @@
   seniority: any
   last_verified: 2026-10-26
   closed: 2026-10-27
+
+- id: FV-081
+  company: Microsoft
+  role: Principal Design Verification Engineer - Formal
+  category: hardware
+  url: https://apply.careers.microsoft.com/careers/job/1970393557023199
+  location: Raleigh, NC / Austin, TX / Hillsboro, OR / Mountain View, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, cloud, interconnect]
+  seniority: principal
+  tags: [big-company]
+  work_authorization: 'Export-controlled (ITAR/EAR) access: proof of citizenship or US residency/protected status required; Microsoft Cloud Background Check'
+  compensation: USD 142,800–274,800 base (US typical); USD 188,000–304,200 (SF Bay Area / NYC)
+  notes: SCHIE / Compute Silicon (Azure Cobalt); formal verification of fabric interconnect IP.
+  posted: '2026-10-23'
+  last_verified: 2026-10-27
+  closed: 2026-11-02
+
+- id: FV-092
+  company: NVIDIA
+  role: Engineering Manager, AI Compiler Analysis
+  category: ai-for-proof
+  url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Engineering-Manager--AI-Compiler-Analysis_JR2022377
+  location: Santa Clara, CA / Austin, TX / Seattle, WA
+  remote: onsite
+  stack: [Lean, SMT, theorem proving, fuzzing]
+  domain: [compilers, AI infrastructure]
+  seniority: lead
+  tags: [big-company]
+  compensation: USD 168,000–270,250 (Level 2); USD 200,000–322,000 (Level 3)
+  notes: >-
+    Leads AI-compiler quality work. Includes setting formal-verification
+    requirements for compiler transformations and generated GPU programs,
+    alongside fuzzing and differential testing.
+  posted: '2026-10-16'
+  last_verified: 2026-10-27
+  closed: 2026-11-02
+
+- id: FV-099
+  company: Oath Technologies
+  role: Research Engineer, Tools & Infrastructure
+  category: software
+  url: https://jobs.lever.co/convergentresearch/a2e56f3e-09b0-402e-9566-6c7b235759d0
+  location: Berkeley, CA
+  remote: onsite
+  stack: [developer tooling, language servers, agent scaffolding]
+  domain: [AI safety, developer tools]
+  seniority: research-engineer
+  notes: >-
+    IDE integrations, language servers, CLI and build-system work for formal
+    methods tools. Prior formal methods depth is explicitly not required.
+  posted: '2026-09-09'
+  last_verified: 2026-10-27
+  closed: 2026-11-02

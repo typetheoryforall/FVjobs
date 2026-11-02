@@ -4,7 +4,7 @@ A job board for **formal verification**: proof assistants, automated reasoning,
 verified compilation, hardware verification, and the growing set of roles where
 AI writes proofs and something has to check them.
 
-**Browse the board at [typetheoryforall.github.io/FVjobs](https://typetheoryforall.github.io/FVjobs/)**,
+**Browse the board at [jobs.typetheoryforall.com](https://jobs.typetheoryforall.com/)**,
 with search and filters for the kind of verification (hardware, software, AI for
 proof and autoformalization, academic, cryptocurrency), proof stack, remote work
 and employer size.
@@ -28,13 +28,13 @@ Every entry carries the date someone last checked that the posting was live.
 ## The data
 
 [`data/jobs.yml`](data/jobs.yml) is the source of truth; the site and its
-[`jobs.json`](https://typetheoryforall.github.io/FVjobs/jobs.json) are built
+[`jobs.json`](https://jobs.typetheoryforall.com/jobs.json) are built
 from it. Besides the proof stack and work authorization, each entry records the
 kind of verification, location and remote policy, seniority, published pay, the
 date the employer posted it, and the date someone last checked it was live.
 
 To hear about new roles, subscribe to the
-[RSS feed](https://typetheoryforall.github.io/FVjobs/feed.xml) in any feed
+[RSS feed](https://jobs.typetheoryforall.com/feed.xml) in any feed
 reader; it lists every open role, newest listing first.
 
 Closed roles move to [`data/archive.yml`](data/archive.yml) rather than being

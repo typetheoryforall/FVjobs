@@ -61,7 +61,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / "site"
 OUT = ROOT / "_site"
 REPO = "https://github.com/typetheoryforall/FVjobs"
-SITE = "https://typetheoryforall.github.io/FVjobs/"
+SITE = "https://jobs.typetheoryforall.com/"
 
 
 def load(name):

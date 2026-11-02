@@ -9,7 +9,7 @@ with search and filters for the kind of verification (hardware, software, AI for
 proof and autoformalization, academic, cryptocurrency), proof stack, remote work
 and employer size, shown 20, 50 or 100 roles to a page.
 
-Maintained alongside [Type Theory Forall](https://typetheoryforall.com).
+Maintained by [Type Theory Forall](https://typetheoryforall.com).
 
 ## Why this exists
 

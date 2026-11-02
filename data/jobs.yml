@@ -2071,6 +2071,28 @@
   posted: '2026-09-15'
   last_verified: 2026-10-27
 
+- id: FV-212
+  company: Northeastern University
+  role: Assistant/Associate/Full Professor- Khoury College of Computer Sciences
+  category: academic
+  url: https://northeastern.wd1.myworkdayjobs.com/careers/job/Boston-MA-Main-Campus/Assistant-Associate-Full-Professor--Khoury-College-of-Computer-Sciences_R142434
+  location: Boston, MA / Oakland, CA / Arlington, VA
+  remote: onsite
+  stack: [formal methods, formal verification]
+  domain: [AI for code, AI safety, programming languages, software engineering, AI]
+  seniority: lead
+  compensation: USD 131,000–163,000 (assistant); USD 161,000–193,000 (associate); USD 176,000–255,000 (full)
+  notes: >-
+    Tenure-track and tenured posts at all ranks in the Khoury College of
+    Computer Sciences, starting 2027-28 or 2028-29. Any area of computer
+    science qualifies if the research connects to AI; the named areas include
+    formal methods for the correctness of AI-generated code and formal
+    verification of AI systems. Submitted by a member of the Programming
+    Research Laboratory (PRL), which hopes to grow through this search. Review
+    starts 2026-11-15 and runs until the posts are filled.
+  posted: '2026-09-24'
+  last_verified: 2026-11-02
+
 - id: FV-090
   company: Nuvacore
   role: Formal Verification Engineer

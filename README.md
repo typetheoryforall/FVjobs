@@ -37,6 +37,11 @@ To hear about new roles, subscribe to the
 [RSS feed](https://jobs.typetheoryforall.com/feed.xml) in any feed
 reader; it lists every open role, newest listing first.
 
+If you want inspiration for using the board with AI in your own job search,
+[Keeping Track of My Job Search with Claude and Notion](https://pedroabreu0.github.io/blog/2026/11/02/AI-Job-Search-With-Notion)
+shows one setup: an agent reads the feed, matches new roles against a checked
+record of your experience, and helps prepare and track the applications.
+
 Closed roles move to [`data/archive.yml`](data/archive.yml) rather than being
 deleted: knowing that a company was hiring for Lean work six months ago is
 useful even when the posting is gone.

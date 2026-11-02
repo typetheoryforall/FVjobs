@@ -31,9 +31,11 @@ lives in [`docs/search-runs/`](search-runs/).
 Best yield per minute first. The 2026-10-27 run found about 80% of its
 candidates in steps 2–4.
 
-1. **Re-verify the board.** For every `jobs.yml` entry, query its ATS API (see
-   the cookbook). Note changed locations, titles and redirects. Move closed
-   roles to `archive.yml`.
+1. **Re-verify the board.** Run the `recheck-jobs` skill
+   (`.claude/skills/recheck-jobs/`). `scripts/recheck.py check` queries each
+   entry's ATS API (see the cookbook) and flags the rest for reading by hand;
+   `scripts/recheck.py apply` bumps `last_verified` and moves closed roles to
+   `archive.yml`. Note changed locations, titles and redirects.
 2. **Sweep the watchlist.** Query every employer in the [watchlist](#watchlist)
    through its endpoint and grep descriptions with the [FV regex](#keyword-filters).
 3. **Big-company careers search.** NVIDIA, Intel, SiFive, Samsung, Cadence and

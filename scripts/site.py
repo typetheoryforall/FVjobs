@@ -3,7 +3,8 @@
 
 Writes _site/index.html (every role pre-rendered, so the page works without
 JavaScript), copies the assets from site/, publishes the data as
-_site/jobs.json, and the open roles as an RSS feed in _site/feed.xml. The Pages workflow runs this; locally:
+_site/jobs.json, and the open roles as an RSS feed in _site/feed.xml, with
+robots.txt and sitemap.xml for search engines. The Pages workflow runs this; locally:
 
     python3 scripts/site.py && python3 -m http.server -d _site
 """
@@ -210,12 +211,25 @@ def feed(jobs, latest):
     return ET.tostring(rss, encoding="unicode", xml_declaration=True)
 
 
+def sitemap(updated):
+    """The board is a single page, dated by the last time a role was checked or closed."""
+    urlset = ET.Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
+    url = ET.SubElement(urlset, "url")
+    ET.SubElement(url, "loc").text = SITE
+    if updated:
+        ET.SubElement(url, "lastmod").text = updated
+    ET.indent(urlset)
+    return ET.tostring(urlset, encoding="unicode", xml_declaration=True)
+
+
 def main():
     jobs, archive = load("jobs.yml"), load("archive.yml")
     latest = max((e["last_verified"] for e in jobs), default="")
+    updated = max([latest, *(e["closed"] for e in archive)])
     template = (SRC / "index.html").read_text(encoding="utf-8")
     page = (
-        template.replace("{{count}}", str(len(jobs)))
+        template.replace("{{site}}", SITE)
+        .replace("{{count}}", str(len(jobs)))
         .replace("{{companies}}", str(len({e["company"] for e in jobs})))
         .replace("{{latest}}", latest)
         .replace("{{categories}}", categories(jobs))
@@ -232,6 +246,8 @@ def main():
         json.dumps({"jobs": jobs, "archive": archive}, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     (OUT / "feed.xml").write_text(feed(jobs, latest), encoding="utf-8")
+    (OUT / "sitemap.xml").write_text(sitemap(updated), encoding="utf-8")
+    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}sitemap.xml\n", encoding="utf-8")
     print(f"wrote {OUT.relative_to(ROOT)}/ with {len(jobs)} roles and {len(archive)} archived")
 
 

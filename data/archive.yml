@@ -58,6 +58,27 @@
   last_verified: 2026-10-27
   closed: 2026-11-02
 
+- id: FV-017
+  company: Amazon Web Services
+  role: Sr Applied Scientist, Amazon Cryptographic Libraries
+  category: software
+  url: https://www.amazon.jobs/en/jobs/10522631/sr-applied-scientist-amazon-cryptographic-libraries
+  location: Seattle, WA
+  remote: onsite
+  stack: [HOL Light, Verus, CBMC, Lean]
+  domain: [cryptography, post-quantum cryptography]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: US-based; sponsorship not stated
+  compensation: USD 167,100–226,100
+  notes: >-
+    Senior version of the AWS-LC proof role; Rust, C and assembly verification
+    with AI-assisted proof development. A twin requisition, 10524925, has
+    identical text.
+  posted: '2026-08-31'
+  last_verified: 2026-11-02
+  closed: 2026-11-05
+
 - id: FV-018
   company: Amazon Web Services
   role: Sr. Applied Scientist, Automated Reasoning in Identity
@@ -146,6 +167,24 @@
   last_verified: 2026-10-26
   closed: 2026-10-27
 
+- id: FV-050
+  company: EPFL
+  role: Post-doc on formal verification and algorithm discovery for numerical analysis
+  category: academic
+  url: https://careers.epfl.ch/job/Lausanne-Post-doc-on-formal-verification-and-algorithm-discovery-for-numerical-analysis/1165456955/
+  location: Lausanne, Switzerland
+  remote: onsite
+  stack: [Lean]
+  domain: [numerical analysis, AI for mathematics]
+  seniority: postdoc
+  notes: >-
+    Chair of Numerical Modelling and Simulation (Annalisa Buffa). Possible
+    projects: formalizing finite-element stability and error estimates in Lean,
+    or AI-assisted discovery of discretizations that are then verified formally.
+    1-year contract, renewable.
+  last_verified: 2026-11-02
+  closed: 2026-11-05
+
 - id: FV-058
   company: Google
   role: ASIC Formal Verification Engineer, Google Cloud
@@ -192,6 +231,24 @@
   last_verified: 2026-10-26
   closed: 2026-10-27
 
+- id: FV-184
+  company: Logical Intelligence
+  role: AI Researcher - Frontiers & Reasoning
+  category: ai-for-proof
+  url: https://job-boards.greenhouse.io/logicalintelligence/jobs/4117912009
+  location: San Francisco, CA
+  remote: onsite
+  stack: [Lean]
+  domain: [AI for verification, smart contracts]
+  seniority: research-scientist
+  notes: >-
+    Research on reasoning models at a company whose AI agents formally verify
+    Rust, Go and smart-contract code. Lean formal verification is a
+    nice-to-have.
+  posted: '2026-02-05'
+  last_verified: 2026-11-02
+  closed: 2026-11-05
+
 - id: FV-079
   company: Mercor
   role: Lean Engineer, Formal Mathematics (Lean 4, Mathlib, Theorem Proving)
@@ -231,6 +288,44 @@
   last_verified: 2026-10-27
   closed: 2026-11-02
 
+- id: FV-083
+  company: Microsoft
+  role: Principal Researcher and Senior Principal Researcher - Software Verification - Microsoft Research
+  category: software
+  url: https://apply.careers.microsoft.com/careers/job/1970393557040565
+  location: Redmond, WA
+  remote: onsite
+  stack: [formal methods, systems software verification, AI agents]
+  domain: [systems software, AI for verification]
+  seniority: principal
+  tags: [big-company]
+  compensation: USD 142,800–274,800 (Principal) / 165,600–296,400 (Senior Principal); higher bands in SF Bay Area and NYC
+  notes: >-
+    Req 200061832. Research on AI and agents for "rapid development of vast
+    amounts of verified systems code".
+  posted: '2026-10-14'
+  last_verified: 2026-11-02
+  closed: 2026-11-05
+
+- id: FV-085
+  company: Microsoft
+  role: Senior Researcher - Software Verification - Microsoft Research
+  category: software
+  url: https://apply.careers.microsoft.com/careers/job/1970393557040562
+  location: Redmond, WA
+  remote: onsite
+  stack: [SMT, automated reasoning, program verification]
+  domain: [systems software, AI for verification]
+  seniority: research-scientist
+  tags: [big-company]
+  compensation: USD 119,800–234,700 (US); USD 160,200–261,000 (SF Bay Area, NYC)
+  notes: >-
+    Req 200061829. Develops automated reasoning tools including SMT solvers (the
+    Z3 / RiSE lineage, though the posting does not name Z3).
+  posted: '2026-10-14'
+  last_verified: 2026-11-02
+  closed: 2026-11-05
+
 - id: FV-092
   company: NVIDIA
   role: Engineering Manager, AI Compiler Analysis
@@ -267,3 +362,171 @@
   posted: '2026-09-09'
   last_verified: 2026-10-27
   closed: 2026-11-02
+
+- id: FV-104
+  company: Qualcomm
+  role: CPU Formal Verification Engineer
+  category: hardware
+  url: https://careers.qualcomm.com/careers/job/446720301715
+  location: Santa Clara, CA
+  remote: onsite
+  stack: [JasperGold, VC Formal, ACL2, HOL]
+  domain: [hardware, CPU]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 147,900–221,900
+  notes: >-
+    End-to-end formalisation of the refinement from architecture to
+    microarchitecture. Domain knowledge wanted in ISA, floating point, memory
+    consistency and coherency.
+  posted: '2026-09-17'
+  last_verified: 2026-11-02
+  closed: 2026-11-05
+
+- id: FV-113
+  company: Samsung Semiconductor (SARC/ACL)
+  role: Senior Staff Engineer, GPU Design Verification (Formal Verification)
+  category: hardware
+  url: https://sec.wd3.myworkdayjobs.com/Samsung_Careers/job/3655-N-1st-St-San-Jose-CA-USA/Senior-Staff-Engineer--GPU-Design-Verification--Formal-Verification-_R118078-1
+  location: San Jose, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, GPU]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: May require access to US export-controlled information; must be authorized or eligible for government authorization
+  compensation: USD 198,200–297,200 base
+  posted: '2026-10-08'
+  last_verified: 2026-11-02
+  closed: 2026-11-05
+
+- id: FV-114
+  company: Samsung Semiconductor (SARC/ACL)
+  role: Staff GPU Design Verification Engineer – Formal Verification
+  category: hardware
+  url: https://sec.wd3.myworkdayjobs.com/Samsung_Careers/job/3900-N-Capital-of-Texas-Hwy-Austin-TX-USA/Staff-GPU-Design-Verification-Engineer---Formal-Verification_R119694
+  location: Austin, TX
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, GPU]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: May require access to US export-controlled information; must be authorized or eligible for government authorization
+  compensation: USD 151,000–226,600 base
+  notes: Xclipse mobile GPU; clock/power-gating formal.
+  posted: '2026-10-12'
+  last_verified: 2026-11-02
+  closed: 2026-11-05
+
+- id: FV-120
+  company: Snowflake
+  role: Principal / Staff Applied Research Scientist
+  category: software
+  url: https://jobs.ashbyhq.com/snowflake/31fdda97-2347-4031-8cb3-0d78207b58b4
+  location: Menlo Park, CA
+  remote: onsite
+  stack: [model checking, theorem proving, SAT/SMT, program verification, program analysis]
+  domain: [databases, distributed systems, cloud]
+  seniority: principal
+  tags: [big-company]
+  compensation: USD 236,000–339,200
+  notes: >-
+    New applied-research line on "verified data infrastructure": formal methods
+    and automated reasoning applied to Snowflake's distributed systems and
+    developer tooling. Hiring at Staff or Principal level; PhD (or equivalent)
+    and 8+ years expected. Workplace arrangement not stated.
+  posted: '2026-09-02'
+  last_verified: 2026-11-02
+  closed: 2026-11-05
+
+- id: FV-201
+  company: Synopsys
+  role: ASIC Digital Design, Sr Engineer
+  category: hardware
+  url: https://careers.synopsys.com/job/bengaluru/asic-digital-design-sr-engineer/44408/102627959600
+  location: Bengaluru, India
+  remote: onsite
+  stack: [SVA, SystemVerilog, model checking, Python, Tcl]
+  domain: [hardware, EDA tools]
+  seniority: engineer
+  tags: [big-company]
+  notes: >-
+    Despite the title, a formal verification role on a team of FV engineers:
+    writing SVA, closing verification with formal, and shaping formal tool
+    features. For 2026 MSc graduates with 0–2 years of experience.
+  posted: '2026-10-26'
+  last_verified: 2026-11-02
+  closed: 2026-11-05
+
+- id: FV-202
+  company: Synopsys
+  role: Formal Verification Internship
+  category: hardware
+  url: https://careers.synopsys.com/job/bengaluru/formal-verification-internship/44408/102756615200
+  location: Bengaluru, India
+  remote: onsite
+  stack: [SVA, SystemVerilog, Python, Tcl]
+  domain: [hardware, EDA tools]
+  seniority: intern
+  tags: [big-company]
+  notes: >-
+    A 12-month in-office internship on a formal verification team, for
+    B.E./B.Tech/M.Tech students (2027 graduates preferred). Starts in October
+    or November 2026.
+  posted: '2026-10-20'
+  last_verified: 2026-11-02
+  closed: 2026-11-05
+
+- id: FV-133
+  company: University of Edinburgh (Quantum Software Lab)
+  role: Research Associate — RubberDUQ project (semantics and correct-by-construction compilation for hybrid quantum-classical programs)
+  category: academic
+  url: https://www.jobs.ac.uk/job/DTJ007/research-associate
+  location: Edinburgh, UK
+  remote: hybrid
+  stack: [categorical semantics, compiler correctness]
+  domain: [quantum computing, compilers]
+  seniority: postdoc
+  compensation: GBP 41,064–48,822
+  notes: 12-month fixed-term, to 31/12/2027. Job ref 15102. Deadline 2026-11-04.
+  posted: '2026-10-21'
+  last_verified: 2026-11-02
+  closed: 2026-11-05
+
+- id: FV-210
+  company: University of Massachusetts Lowell
+  role: Research Scientist or Postdoctoral Associate in Formal Methods for Security and Machine Learning
+  category: academic
+  url: https://careers.massachusetts.edu/en-us/job/529198/research-scientist-or-postdoctoral-associate-in-formal-methods-for-security-and-machine-learning
+  location: Lowell, MA
+  remote: onsite
+  stack: [formal methods]
+  domain: [security, machine learning, programming languages]
+  seniority: postdoc
+  compensation: USD 70,000–85,000 (research scientist); USD 60,000–70,000 (postdoc)
+  notes: >-
+    PLOW group. Formal methods is the topic but sits under "additional
+    considerations" in the qualifications. Advertised 2025-12-03 with no
+    close date.
+  posted: '2025-12-03'
+  last_verified: 2026-11-02
+  closed: 2026-11-05
+
+- id: FV-140
+  company: YosysHQ
+  role: Synthesis or Formal Verification Developer at YosysHQ
+  category: hardware
+  url: https://join.com/companies/yosyshqcom/16850310-synthesis-or-formal-verification-developer-at-yosyshq
+  location: Anywhere
+  remote: remote-worldwide
+  stack: [Yosys, SymbiYosys, SAT, SMT, C++, Rust, Python]
+  domain: [EDA tools, open source]
+  seniority: engineer
+  work_authorization: Freelance contract with an Austrian company; candidates must not live in a sanctioned/export-restricted country or be barred from US-government work
+  compensation: EUR 6,000/month full-time (flat rate for everyone); part-time possible
+  notes: >-
+    Maintainers of Yosys and the open-source EDA stack. The posting has a formal
+    track (hardware model checking implementation) and a synthesis track.
+  posted: '2025-09-01'
+  last_verified: 2026-11-02
+  closed: 2026-11-05

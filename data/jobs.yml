@@ -2158,7 +2158,7 @@
   domain: [chiplet PHY mixed-signal IP]
   seniority: senior
   notes: >-
-    AMS modelling DV for chiplet PHY IP (Bay Area, Vancouver, Toronto).
+    FV is a nice-to-have. AMS modelling DV for chiplet PHY IP (Bay Area, Vancouver, Toronto).
   posted: '2026-05-20'
   last_verified: 2026-11-05
 
@@ -2173,7 +2173,7 @@
   domain: [SerDes IP]
   seniority: senior
   notes: >-
-    SerDes IP DV (Bay Area, Vancouver, Toronto).
+    FV is a nice-to-have. SerDes IP DV (Bay Area, Vancouver, Toronto).
   posted: '2026-04-08'
   last_verified: 2026-11-05
 

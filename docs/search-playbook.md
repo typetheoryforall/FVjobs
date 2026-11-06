@@ -93,6 +93,9 @@ archive, the watchlist and every earlier run file in
 | Teamtailor | `https://{host}/jobs.rss` (e.g. careers.certora.com) | Full list with `pubDate`. |
 | JOIN | `https://join.com/companies/{slug}` | "No available jobs" when empty; archived jobs return 410. |
 | Rippling | `https://api.rippling.com/platform/api/ats/v1/board/{slug}/jobs` | Slug is in the careers HTML as `data-job-board-id`. |
+| SmartRecruiters | `https://api.smartrecruiters.com/v1/companies/{company}/postings?q=...` (Bosch `BoschGroup`, `ServiceNow`, `AFRY`) | `.../postings/{id}` returns `active`. `q` is fuzzy, so grep the postings. No lister in `check.py` yet. |
+| PageUp | `https://careers.pageuppeople.com/{instance}/cw/en/listing/?page=1&page-items=100` (Imagination: 774) | Postings show "Apply now" while open. |
+| BambooHR | `https://{org}.bamboohr.com/careers/list` with `Accept: application/json` (Codasip) | |
 
 Slugs are not always the company name: `mistral.ai` (with the dot),
 `pramaana-labs`, `convergentresearch` (Oath, and historically Lean FRO),
@@ -105,8 +108,8 @@ all wrong or stale.
 
 | System | Employers | How |
 |---|---|---|
-| Workday CXS | NVIDIA `nvidia.wd5` / `NVIDIAExternalCareerSite`; Intel `intel.wd1` / `External`; Samsung US `sec.wd3` / `Samsung_Careers`; Cadence `cadence.wd1` / `External_Careers`; SiFive `sifive.wd1` / `sifivecareers`; Marvell `marvell.wd1` / `MarvellCareers`; RTX/BBN `globalhr.wd5` / `REC_RTX_Ext_Gateway`; Thales `thales.wd3` / `Careers`; Airbus `ag.wd3` / `Airbus` | `POST https://{host}/wday/cxs/{tenant}/{site}/jobs` with `{"searchText":"formal verification","limit":20,"offset":0,"appliedFacets":{}}`. Detail: `GET https://{host}/wday/cxs/{tenant}/{site}{externalPath}` → `jobPostingInfo.canApply`, `startDate`, pay. Search is word-level and fuzzy ("formal" alone matches), so filter on the description. HTTP 422 = wrong tenant; S21 404 = right tenant, wrong site. |
-| Eightfold PCSX | Qualcomm `careers.qualcomm.com`, Microsoft `apply.careers.microsoft.com` | `GET /api/pcsx/search?domain={domain}&query=...&start=0&sort_by=relevance` with a `Referer: https://{host}/careers?...` header; detail `/api/pcsx/position_details?position_id={id}&domain={domain}&hl=en`; public URL `/careers/job/{id}`. Microsoft rate-limits hard, so space calls 5 s or more. Ignore Microsoft postings whose only match is the boilerplate "formal validation of security invariants". |
+| Workday CXS | NVIDIA `nvidia.wd5` / `NVIDIAExternalCareerSite`; Intel `intel.wd1` / `External`; Samsung US `sec.wd3` / `Samsung_Careers`; Cadence `cadence.wd1` / `External_Careers`; SiFive `sifive.wd1` / `sifivecareers`; Marvell `marvell.wd1` / `MarvellCareers`; RTX/BBN `globalhr.wd5` / `REC_RTX_Ext_Gateway`; Thales `thales.wd3` / `Careers`; Airbus `ag.wd3` / `Airbus`; since 2026-11-05 also NXP `nxp.wd3` / `careers`, HPE `hpe.wd5` / `Jobsathpe`, Analog Devices `analogdevices.wd1` / `External`, Cisco `cisco.wd5` / `Cisco_Careers`, Broadcom `broadcom.wd1` / `External_Career`, Micron `micron.wd1` / `External`, GlobalFoundries `globalfoundries.wd1` / `External`, Altera `altera.wd1` / `Altera`. Wrong tenants (422): `renesas.wd3`, `lattice.wd1`, `ericsson.wd3` | `POST https://{host}/wday/cxs/{tenant}/{site}/jobs` with `{"searchText":"formal verification","limit":20,"offset":0,"appliedFacets":{}}`. Detail: `GET https://{host}/wday/cxs/{tenant}/{site}{externalPath}` → `jobPostingInfo.canApply`, `startDate`, pay. Search is word-level and fuzzy ("formal" alone matches), so filter on the description. HTTP 422 = wrong tenant; S21 404 = right tenant, wrong site. |
+| Eightfold PCSX | Qualcomm `careers.qualcomm.com`, Microsoft `apply.careers.microsoft.com` | `GET /api/pcsx/search?domain={domain}&query=...&start=0&sort_by=relevance` with a `Referer: https://{host}/careers?...` header; detail `/api/pcsx/position_details?position_id={id}&domain={domain}&hl=en`; public URL `/careers/job/{id}`. Microsoft rate-limits hard: on 2026-11-05 it answered 429 about every third call at 6 s spacing, and 12 s spacing with a 90 s back-off on 429 worked. Qualcomm answered 429 on page 2 and recovered after about 15 minutes. Ignore Microsoft postings whose only match is the boilerplate "formal validation of security invariants"; `Coq`, `Isabelle`, `Lean` and `F*` match hundreds of unrelated Microsoft jobs. |
 | Jibe | AMD `careers.amd.com/api/jobs?keywords=formal&limit=100`; JHU APL `careers.jhuapl.edu/api/jobs?keywords=...` | Full descriptions. AMD pay is in `tags2`/`tags3`. |
 | TalentBrew | Arm (org 33099, careers.arm.com), Synopsys (org 44408, careers.synopsys.com) | `GET /search-jobs/results?...&Keywords=formal&RecordsPerPage=100&SearchType=5` with `X-Requested-With: XMLHttpRequest`. Arm's ACL2 role only shows up for `theorem` or `ACL2`. Closed jobs 404 (Arm) or redirect home (Synopsys). Arm has reused a job ID for an unrelated role, so check the title. |
 | Apple | `https://jobs.apple.com/en-us/search?search=%22formal%20verification%22&sort=newest&page=N` | Parse `window.__staticRouterHydrationData`; pay is in `postingFooters`. |
@@ -137,13 +140,15 @@ all wrong or stale.
 | Varbi (Swedish universities) | `https://{uu,lu,kth}.varbi.com/en/` | Job lists for Uppsala, Lund and KTH; found the Uppsala numerical-verification postdoc. |
 | Interfolio | `https://logic.interfolio.com/dossier-api/positions/{id}` | Returns `is_open` without a browser, for JS-only Interfolio postings. |
 | Institute pages | ISTA group pages, MPI-SWS research careers | Standing PhD and postdoc calls that never reach the lists. |
+| IACR jobs board | `https://iacr.org/jobs/` (one page) | Cryptography posts, some asking for formal verification. The best new academic source on 2026-11-05 (found CWI's PhD). |
+| ReachMee (Chalmers) | `web103.reachmee.com/ext/I003/304/main?site=5&lang=UK` | The job list loads with a plain GET. |
 
 ### Discovery sources
 
 | Source | How | Notes |
 |---|---|---|
-| LinkedIn guest search | `https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=...&location=Worldwide&start=0` | No login. 429 after ~3 quick pages; wait 8–10 s between pages. Use exact phrases: `formal verification`, `formal methods`, `theorem proving`, `formal methods researcher` (15/15 relevant). Single tokens (`Lean`, `Coq`, `TLA+`, `proof engineer`) are noise. |
-| Getro VC boards | `https://{board}/jobs?q=formal%20verification`, then parse `__NEXT_DATA__` | Working boards: jobs.accel.com, jobs.generalcatalyst.com, jobs.khoslaventures.com, jobs.electriccapital.com, careers.rainfall.com, jobs.luxcapital.com, jobs.dcvc.com, jobs.8vc.com. Found Pramaana, Bedrock Robotics, Mistral. |
+| LinkedIn guest search | `https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=...&location=Worldwide&start=0` | No login. 429 after ~3 quick pages; wait 8–10 s between pages. Stops at 100 results a query. Use exact phrases: `formal verification`, `formal methods`, `theorem proving`, `formal methods researcher` (15/15 relevant). Quotes are ignored on single tokens, so `Lean`, `Lean 4`, `Coq`, `Rocq`, `Isabelle`, `Dafny`, `TLA+` and `proof engineer` are noise. |
+| Getro VC boards | `https://{board}/jobs?q=formal%20verification`, then parse `__NEXT_DATA__`. Since 2026-11-05 curl gets 403; WebFetch still works. | Working boards: jobs.accel.com, jobs.generalcatalyst.com, jobs.khoslaventures.com, jobs.electriccapital.com, careers.rainfall.com, jobs.luxcapital.com, jobs.dcvc.com, jobs.8vc.com. Found Pramaana, Bedrock Robotics, Mistral. |
 | aisafety.com/jobs | WebFetch in chunks (~227k chars) | Found Resolution's Lean Engineer. |
 | HN Who is hiring | `curl https://hn.algolia.com/api/v1/items/{story_id}` and grep locally | Algolia keyword search is too fuzzy. Find the story id with `search_by_date?tags=story,author_whoishiring`. |
 | Mercor / Alignerr | `work.mercor.com/jobs/list_{id}` (`"status":"active"`, and `disableApplications` must be false), `alignerr.com/jobs/{uuid}` (`isActive`); search with `alignerr.com/api/jobs?search=…` | Contract AI-training gigs; see scope calls. Alignerr's ~160 active Lean pages are city and retitled copies of a few listings. |
@@ -223,6 +228,23 @@ Skip these, or handle them differently, next time.
   - Ceva (`ceva-ip.com` doesn't resolve).
   - Columbia's `academicjobs.columbia.edu` doesn't resolve. It carries a Lean
     postdoc on agentic AI verification; check it by hand.
+- **On 2026-11-05:**
+  - Blocked or JS-only: Citadel 403, Two Sigma (TLS failure), Cognichip's
+    Octopyd API 403, AdaCore's `/api/careers` now 400 to curl (read it in the
+    browser), KU Leuven and DTU (JS-only), cra.org/ads 403, CNRS emploi and TU
+    Wien (search only by submitting a form), DAMO Academy's API 403,
+    ByteDance's 405.
+  - Still unreachable: Kestrel (timeout), Ceva (DNS), Columbia's PeopleAdmin
+    host (no A record), Siemens EDA's Avature search (timeout).
+  - No FV today, so don't search them again soon: xAI, Poolside, Reflection
+    AI, Thinking Machines, Magic, Cursor, Cognition, Imbue, Shield AI, Zoox,
+    Skydio, Wayve, Databricks, Cloudflare, Stripe, SambaNova, d-Matrix,
+    Cerebras, Quadric, Axelera AI, PsiQuantum, IonQ, PQShield, Consensys,
+    Matter Labs, Aztec Labs, Offchain Labs, Uniswap Labs, Leidos, Northrop
+    Grumman, Boeing and MITRE (V&V in the systems-engineering sense only).
+  - The quant firms (HRT, DRW, Optiver, IMC, Tower, Bloomberg) have no FV in
+    any description; they are on the watchlist so the sweep catches a change.
+  - Chipstack now redirects to Cadence, which acquired it.
 - **Google DeepMind's Greenhouse board is gone (404).** DeepMind roles are now
   only on Google Careers.
 - **The HN "Who is hiring" thread** appears around 15:00–16:00 UTC on the
@@ -272,6 +294,18 @@ Reuse them so triage stays consistent.
   doesn't have yet, and fold twin requisitions into one entry.
 - **Evergreen postings** (Prover's 2023 rail role, Huawei Dresden's 2023
   intern ad) are live but old. Flag the first-published date in `notes`.
+- **Core or nice-to-have** (used to split the audit list from 2026-11-05):
+  core when FV, formal methods or a proof tool is in the duties or the
+  required qualifications, even as one DV bullet; nice-to-have when it is
+  only preferred or a bonus. FV as one of about five or more alternatives,
+  or only as context, goes to "your call".
+- **AI for hardware design** roles (AMD's AI-for-RTL roles, FV-173, FV-190)
+  are `hardware`, so they count toward the employer's cap.
+- **Filling a cap when several lanes found roles:** recommended core first,
+  then recommended nice-to-have, then "your call"; within each, prefer
+  locations and levels the board doesn't have.
+- **Reposted or re-dated postings** keep their first `posted` date (Systerel,
+  2026-11-05).
 
 ## Categories and tags
 
@@ -297,9 +331,13 @@ Tag `big-company` on big tech, the major chip, EDA and aerospace groups, and
 their subsidiaries (roughly 5,000 staff or more). On 2026-10-27: Airbus,
 Amazon/AWS (including Annapurna and Leo), AMD, Apple, Arm, Cadence, Google
 (including DeepMind and Waymo), IBM, Intel, Marvell, Microsoft, Mobileye,
-NVIDIA, Qualcomm, RTX BBN, Samsung, Snowflake, Synopsys and Thales. Not
-tagged: Jane Street (about 3,000 staff), Astera Labs, SiFive, Tenstorrent,
-Mistral, and the national labs and universities.
+NVIDIA, Qualcomm, RTX BBN, Samsung, Snowflake, Synopsys and Thales. The
+2026-11-05 run added Oracle, NXP, HPE, Bosch, Analog Devices, Cisco, Micron,
+GlobalFoundries, Altera, Broadcom, AFRY and ServiceNow, and the maintainer added
+Anthropic, OpenAI and Anduril. Not tagged: Jane
+Street (about 3,000 staff), Astera Labs, SiFive, Tenstorrent, Mistral,
+Imagination, Graphcore, Codasip, Mirafra, Riverlane, and the national labs and
+universities.
 
 ## Ideas for the next run
 
@@ -309,9 +347,20 @@ Mistral, and the national labs and universities.
   and SuccessFactors (EPFL, TU Delft, Alstom, Volvo, Hensoldt), the CLEARSY
   JSON API, and LinkedIn guest search. These are the sources still read by
   hand.
-- **Run the HN November thread** once it is posted (see dead ends).
-- **Retry Kestrel and Informal Systems**, and check Columbia's Lean postdoc by
-  hand.
+- **Add listers** for SmartRecruiters (Bosch, ServiceNow, AFRY), PageUp
+  (Imagination) and Oracle Recruiting Cloud, now that the watchlist has
+  employers on them.
+- **Read the unvetted keyword matches** at the new Workday employers (NXP 38,
+  Cisco 23, Analog Devices 22, HPE 22, GlobalFoundries 18, Broadcom 17,
+  Micron 7, Altera 6). Most name FV once among DV skills.
+- **Follow up lane 4's leads:** Hashberg and GLAIVE (ARIA TA1.1), Ferrous
+  Systems, Entropy42, Qualitest (Bucharest), TTTech, and the GitHub orgs
+  Portofino, Eigen Labs, Paradigm, Physical Superintelligence, Proofinity and
+  Oraclizer.
+- **Re-check AWS Provable Security** (10595783, deadline 2026-11-08; 10518451
+  extended twice) in case the deadline moves again.
+- **Retry Kestrel, Ceva and Columbia's Lean postdoc** (all unreachable twice).
+  Informal Systems answered on 2026-11-05: not hiring.
 
 ## Run log
 
@@ -319,3 +368,4 @@ Mistral, and the national labs and universities.
 |---|---|---|---|---|
 | 2026-10-27 | 149 | 100 (+25 your call) | 125 (all recommended and your call; 2 archived) | [2026-10-27](search-runs/2026-10-27.md) |
 | 2026-11-02 | 73 | 25 (+17 your call, 12 over the cap) | 61 (all recommended and your call, 17 filling the new cap of 5, 2 under the nice-to-have rule; 1 archived) | [2026-11-02](search-runs/2026-11-02.md) |
+| 2026-11-05 | 297 | 179: 88 core FV, 91 FV as a nice-to-have (+43 your call, 51 over the cap) | 179 (all recommended; FV-213 to FV-391) | [2026-11-05](search-runs/2026-11-05.md) |

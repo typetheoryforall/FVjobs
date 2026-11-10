@@ -153,6 +153,42 @@
   last_verified: 2026-10-27
   closed: 2026-11-02
 
+- id: FV-249
+  company: Bosch (Robert Bosch Robotics)
+  role: Tech Lead (f/m/div.)
+  category: software
+  url: https://jobs.smartrecruiters.com/BoschGroup/744000159868749-tech-lead-f-m-div-
+  location: Renningen, Germany
+  remote: onsite
+  stack: [formal verification, model checking, safety/security assurance]
+  domain: [safety-security agent harness for robotics/physical AI]
+  seniority: lead
+  tags: [big-company]
+  notes: >-
+    Tech lead for a safety-security agent harness for robotics and physical AI
+    at Bosch Corporate Research, Renningen.
+  posted: '2026-11-05'
+  last_verified: 2026-11-05
+  closed: 2026-11-09
+
+- id: FV-250
+  company: Bosch (Robert Bosch Robotics)
+  role: Technical Product Owner (f/m/div.)
+  category: software
+  url: https://jobs.smartrecruiters.com/BoschGroup/744000159867534-technical-product-owner-f-m-div-
+  location: Renningen, Germany
+  remote: onsite
+  stack: [formal verification, tool assurance]
+  domain: [same safety-security agent harness]
+  seniority: lead
+  tags: [big-company]
+  notes: >-
+    Technical product owner for the same agent-harness project as the Tech Lead;
+    a management role on an FV effort.
+  posted: '2026-11-05'
+  last_verified: 2026-11-05
+  closed: 2026-11-09
+
 - id: FV-141
   company: Cryspen
   role: Open applications (Rust verification, hax)
@@ -218,6 +254,41 @@
   last_verified: 2026-09-25
   closed: 2026-10-26
 
+- id: FV-065
+  company: IBM
+  role: Formal Verification Engineer
+  category: hardware
+  url: https://careers.ibm.com/en_US/careers/JobDetail?jobId=136675
+  location: Bangalore, India
+  remote: hybrid
+  stack: [SVA, Verilog, VHDL, Python]
+  domain: [hardware, CPU]
+  seniority: senior
+  tags: [big-company]
+  notes: >-
+    The posting body calls the role "Formal Verification Lead". The work covers
+    IBM server-class processors, SoCs and ASICs, using IBM internal formal
+    tools.
+  posted: '2026-10-13'
+  last_verified: 2026-11-05
+  closed: 2026-11-09
+
+- id: FV-291
+  company: Imagination Technologies
+  role: Graduate GPU Verification Engineer (Pune, India)
+  category: hardware
+  url: https://careers.pageuppeople.com/774/cw/en/job/502883
+  location: Pune, India
+  remote: onsite
+  stack: [SystemVerilog, UVM or formal]
+  domain: [GPU IP]
+  seniority: engineer
+  notes: >-
+    FV is a nice-to-have. Graduate role in Pune.
+  posted: '2026-11-03'
+  last_verified: 2026-11-05
+  closed: 2026-11-09
+
 - id: FV-143
   company: Imandra
   role: Open applications — R&D (automated reasoning)
@@ -230,6 +301,23 @@
   seniority: any
   last_verified: 2026-10-26
   closed: 2026-10-27
+
+- id: FV-067
+  company: Inria (Rennes)
+  role: 'PhD Position: Trustable Machine Learning: Analysis and Verification of Soft Automata'
+  category: academic
+  url: https://jobs.inria.fr/public/classic/en/offres/2026-10416
+  location: Rennes, France
+  remote: onsite
+  stack: [neural network verification, automata learning]
+  domain: [trustworthy ML]
+  seniority: phd
+  compensation: EUR 2,300 gross/month
+  notes: >-
+    Part of the SAIF ("Safe AI through Formal methods") project. 3-year
+    contract. Deadline 2026-11-07.
+  last_verified: 2026-11-05
+  closed: 2026-11-09
 
 - id: FV-184
   company: Logical Intelligence
@@ -248,6 +336,23 @@
   posted: '2026-02-05'
   last_verified: 2026-11-02
   closed: 2026-11-05
+
+- id: FV-303
+  company: MatX
+  role: Methodology Engineer (Silicon)
+  category: hardware
+  url: https://jobs.ashbyhq.com/matx/b04424eb-af8d-4b06-b125-bca8d6b5ca9e
+  location: Mountain View, CA or Remote
+  remote: hybrid
+  stack: [lint, CDC, formal tools, SVA]
+  domain: [silicon methodology, AI chips]
+  seniority: engineer
+  compensation: USD 160,000–275,000 (early career), 175,000–400,000 (mid), 250,000–600,000 (senior), plus equity
+  notes: >-
+    FV is a nice-to-have. Silicon methodology (lint, CDC, formal) at MatX.
+  posted: '2026-10-07'
+  last_verified: 2026-11-05
+  closed: 2026-11-09
 
 - id: FV-079
   company: Mercor
@@ -383,6 +488,24 @@
   last_verified: 2026-11-02
   closed: 2026-11-05
 
+- id: FV-357
+  company: Qualcomm
+  role: RTL Synthesis Methodology Principal/ Sr Staff Engineer
+  category: hardware
+  url: https://careers.qualcomm.com/careers/job/446717261607
+  location: Bangalore, India
+  remote: onsite
+  stack: [Conformal LEC, Synopsys Formality, Fusion Compiler, Genus]
+  domain: [synthesis and netlist signoff methodology]
+  seniority: principal
+  tags: [big-company]
+  notes: >-
+    Synthesis and netlist sign-off methodology lead; equivalence checking is the
+    formal part. Takes Qualcomm to 5.
+  posted: '2026-11-02'
+  last_verified: 2026-11-05
+  closed: 2026-11-09
+
 - id: FV-113
   company: Samsung Semiconductor (SARC/ACL)
   role: Senior Staff Engineer, GPU Design Verification (Formal Verification)
@@ -438,6 +561,26 @@
   posted: '2026-09-02'
   last_verified: 2026-11-02
   closed: 2026-11-05
+
+- id: FV-200
+  company: Synopsys
+  role: Applications Engineering, Staff Engineer
+  category: hardware
+  url: https://careers.synopsys.com/job/hsinchu/applications-engineering-staff-engineer/44408/100063255136
+  location: Hsinchu, Taiwan
+  remote: onsite
+  stack: [VC Formal, SVA, Python, Tcl]
+  domain: [EDA tools, hardware]
+  seniority: senior
+  tags: [big-company]
+  notes: >-
+    Despite the generic title, the job is formal: building assertion IP for
+    AMBA and DDR protocols and validating VC Formal apps (FPV, sequential
+    equivalence, connectivity). Asks for 2–14 years in formal verification or
+    EDA tool validation.
+  posted: '2026-08-31'
+  last_verified: 2026-11-05
+  closed: 2026-11-09
 
 - id: FV-201
   company: Synopsys
@@ -511,6 +654,23 @@
   posted: '2025-12-03'
   last_verified: 2026-11-02
   closed: 2026-11-05
+
+- id: FV-139
+  company: Waymo
+  role: Senior Formal Verification Engineer
+  category: hardware
+  url: https://careers.withwaymo.com/jobs?gh_jid=7593534
+  location: Mountain View, CA
+  remote: hybrid
+  stack: [JasperGold, VC Formal, Questa Formal, SystemVerilog Assertions, bounded model checking, sequential equivalence checking]
+  domain: [hardware, automotive, autonomous vehicles]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 204,000–259,000 base
+  notes: Owns formal sign-off for Waymo's custom autonomous-driving silicon.
+  posted: '2026-02-09'
+  last_verified: 2026-11-05
+  closed: 2026-11-09
 
 - id: FV-140
   company: YosysHQ

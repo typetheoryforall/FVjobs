@@ -26,7 +26,7 @@
     formal verification, theorem proving, programming languages and Lean as the
     foundation, alongside product, forward-deployed and go-to-market roles.
   posted: '2026-10-27'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-151
   company: Aarhus University
@@ -42,7 +42,7 @@
     Tenure-track assistant, associate and full professors; software
     verification and secure programming languages are 2 of 13 priority
     topics. Deadline 2026-12-14.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-152
   company: Accenture
@@ -59,7 +59,7 @@
     Consultancy seat in Accenture's silicon engineering practice: formal
     environments, model checking and equivalence checking; 3+ years of SoC
     verification.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-001
   company: Access Softek Toolchains
@@ -73,7 +73,7 @@
   seniority: engineer
   work_authorization: No restriction stated; "work from anywhere in the world"
   posted: '2019-11-18'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-003
   company: Advanced Micro Devices (AMD)
@@ -90,7 +90,7 @@
     CPU IP formal methodology, FPV/X-prop/DPV/SEC apps. The scope includes
     exploring formalisation of the ISA and memory models.
   posted: '2026-07-16'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-004
   company: Advanced Micro Devices (AMD)
@@ -109,7 +109,7 @@
     Sets formal strategy for AMD graphics/GPU IP, including datapath,
     equivalence and security verification.
   posted: '2026-10-09'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-005
   company: Advanced Micro Devices (AMD)
@@ -126,7 +126,7 @@
     Primary point of contact for formal across AMD's graphics IP. The scope
     includes exploring formalisation of the GPU ISA and memory model.
   posted: '2026-06-18'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-153
   company: Advanced Micro Devices (AMD)
@@ -143,7 +143,7 @@
   compensation: USD 126,700–181,000
   notes: Engineer-level role on AMD's central formal verification methodology team.
   posted: '2026-04-09'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-154
   company: Advanced Micro Devices (AMD)
@@ -160,7 +160,7 @@
     Technical lead for formal verification of high-performance CPU cores:
     strategy, convergence and sign-off.
   posted: '2026-10-30'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-155
   company: Advanced Micro Devices (AMD)
@@ -179,7 +179,7 @@
     pillar and one of the duties. Twin requisitions 89874 (SDE, USD
     178,500–255,000) and 91724 say no visa sponsorship.
   posted: '2026-08-13'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-213
   company: AFRY
@@ -187,7 +187,7 @@
   category: hardware
   url: https://jobs.smartrecruiters.com/AFRY/744000150681479-uvm-verification-specialist
   location: Pune, India
-  remote: onsite
+  remote: hybrid
   stack: [UVM, SystemVerilog, assertions, formal]
   domain: [ASIC/FPGA engineering services]
   seniority: engineer
@@ -197,7 +197,7 @@
     (2026-04-23). Other requisitions:
     https://jobs.smartrecruiters.com/AFRY/744000122391959.
   posted: '2026-09-21'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-214
   company: AheadComputing
@@ -211,7 +211,7 @@
   seniority: engineer
   notes: >-
     Guadalajara-based engineer on the same FV team.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-215
   company: AheadComputing
@@ -225,7 +225,7 @@
   seniority: senior
   notes: >-
     High-performance RISC-V CPU FV team; apply on the employer's own form.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-006
   company: Airbus
@@ -242,7 +242,7 @@
     Six months starting around March 2027, in the Avionics Software department
     (flight controls and related critical software).
   posted: '2026-09-24'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-216
   company: Airbus
@@ -259,7 +259,7 @@
     Internship applying agentic AI to systems engineering at Airbus in
     Bangalore; formal methods exposure is required.
   posted: '2026-10-25'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-217
   company: Airbus
@@ -276,7 +276,7 @@
     FV is a nice-to-have: model-level formal verification of safety properties
     is a preferred skill. DAL-A avionics software lead with SCADE and Simulink.
   posted: '2026-07-08'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-007
   company: Alignerr
@@ -294,7 +294,7 @@
     Translate informal proofs into Lean 4 and document where automated provers
     fail. Asks for a Master's or higher in mathematics, logic or theoretical CS.
   posted: '2026-10-22'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-218
   company: Altera
@@ -311,7 +311,43 @@
   notes: >-
     FPGA silicon DV lead; USD 231,500–330,000.
   posted: '2026-11-05'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-392
+  company: Altera
+  role: Senior Debug Verification Engineer
+  category: hardware
+  url: https://altera.wd1.myworkdayjobs.com/Altera/job/San-Jose-California-United-States/Senior-Debug-Verification-Engineer_R03260
+  location: San Jose, CA
+  remote: onsite
+  stack: [UVM, formal verification]
+  domain: [FPGA verification]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: Must be eligible for any required US export authorizations
+  compensation: USD 149,100–215,000 (Bay Area)
+  notes: >-
+    FPGA debug verification; the minimum qualifications ask for 8+ years of UVM
+    and formal verification.
+  posted: '2026-10-23'
+  last_verified: 2026-11-09
+
+- id: FV-393
+  company: Altera
+  role: Design Verification Engineer
+  category: hardware
+  url: https://altera.wd1.myworkdayjobs.com/Altera/job/Regus-Madhapur/Design-Verification-Engineer_R02799
+  location: Hyderabad, India
+  remote: onsite
+  stack: [SVA, formal verification, UVM]
+  domain: [FPGA verification]
+  seniority: engineer
+  tags: [big-company]
+  notes: >-
+    FPGA design verification; uses SVA and formal methods to verify complex
+    properties.
+  posted: '2026-07-29'
+  last_verified: 2026-11-09
 
 - id: FV-156
   company: Amalent
@@ -328,7 +364,7 @@
     A formal verification services firm: formal test plans, sign-off
     testbenches, proofs and bug hunting on client designs. The careers page
     lists the role with an application form and no dates.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-008
   company: Amazon (Amazon Leo)
@@ -345,7 +381,7 @@
   compensation: USD 185,200–250,000 (Austin, San Diego, Redmond); USD 213,000–287,500 (Sunnyvale)
   notes: Modem SoCs for the Amazon Leo (formerly Kuiper) LEO satellite constellation.
   posted: '2026-08-26'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-219
   company: Amazon (Amazon Robotics)
@@ -364,7 +400,7 @@
     hybrid systems (control barrier functions), not proof assistants. The
     arguments support third-party safety certification.
   posted: '2026-10-12'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-220
   company: Amazon (Amazon Robotics)
@@ -382,7 +418,7 @@
     FV is a nice-to-have: formal verification of learned controllers is a
     preferred qualification.
   posted: '2026-05-07'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-221
   company: Amazon (Amazon Robotics)
@@ -401,7 +437,7 @@
     Pasadena, 73% the same text). Other requisitions:
     https://www.amazon.jobs/en/jobs/10519865.
   posted: '2026-09-08'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-222
   company: Amazon (Amazon Robotics)
@@ -418,7 +454,7 @@
   notes: >-
     FV is a nice-to-have. Senior level of the Safe Autonomy team.
   posted: '2026-09-08'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-009
   company: Amazon (Annapurna Labs)
@@ -436,7 +472,7 @@
     New-grad role on the Machine Learning Acceleration (Trainium/Inferentia)
     team; coursework or internship in formal methods required.
   posted: '2026-10-22'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-010
   company: Amazon (Annapurna Labs)
@@ -454,7 +490,7 @@
     includes AI/agentic formal flows. An L5 posting with the same text,
     10583059, is also open.
   posted: '2026-10-19'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-157
   company: Amazon (Annapurna Labs)
@@ -471,7 +507,7 @@
     Owns block-level formal verification (FPV, SEC, connectivity, X-prop,
     security, liveness) for Graviton and Nitro subsystems, through sign-off.
   posted: '2026-10-15'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-158
   company: Amazon (Annapurna Labs)
@@ -490,7 +526,7 @@
     for Inferentia and other ML-acceleration IP; 7+ years of formal
     verification. The senior counterpart of FV-009.
   posted: '2026-07-25'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-011
   company: Amazon Web Services
@@ -507,7 +543,7 @@
   compensation: USD 135,660 annualized (Seattle)
   notes: Minimum 12 weeks at 40 hours/week.
   posted: '2026-09-17'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-012
   company: Amazon Web Services
@@ -528,7 +564,7 @@
     requisition, 10524924, has identical text, and a third, 10476858, nearly
     the same.
   posted: '2026-08-31'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-013
   company: Amazon Web Services
@@ -545,7 +581,7 @@
   compensation: USD 167,100–260,000 depending on location
   notes: Requires a PhD or equivalent research experience.
   posted: '2026-08-14'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-014
   company: Amazon Web Services
@@ -564,7 +600,7 @@
     Team includes an Amazon Scholar in mathematics and collaborates with MIT,
     Berkeley and CMU.
   posted: '2026-04-27'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-159
   company: Amazon Web Services
@@ -583,7 +619,7 @@
     and reasoning; the basic qualifications are mostly ML. The live twin of
     the archived FV-016.
   posted: '2026-08-18'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-223
   company: Amazon Web Services
@@ -604,7 +640,7 @@
     https://www.amazon.jobs/en/jobs/10505803;
     https://www.amazon.jobs/en/jobs/10505801.
   posted: '2026-10-30'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-224
   company: Amazon Web Services
@@ -622,7 +658,7 @@
     A new Seattle requisition aimed at agentic AI and AI-generated code. About
     two-thirds of its text overlaps FV-013 (10502706), which stays open.
   posted: '2026-10-30'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-225
   company: Amazon Web Services
@@ -641,7 +677,7 @@
     Customer Experiences, 89% the same text). Other requisitions:
     https://www.amazon.jobs/en/jobs/10570524/software-development-engineer-ii-aws-proactive-security-aws-piezo-aws-piezo-customer-experiences.
   posted: '2026-10-06'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-226
   company: Amazon Web Services
@@ -659,7 +695,7 @@
     Software development manager for AWS Proactive Security (Piezo); management
     on an FV-using team.
   posted: '2026-10-02'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-227
   company: Amazon Web Services
@@ -678,7 +714,7 @@
     and SLH-DSA, with AI-assisted proof development. Identical twin of FV-017
     (req 10522631), which closed on 2026-11-05.
   posted: '2026-09-01'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-228
   company: Amazon Web Services
@@ -697,7 +733,7 @@
     Other requisitions:
     https://www.amazon.jobs/en/jobs/10570576/sr-software-development-engineer-piezo.
   posted: '2026-10-06'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-229
   company: Amazon Web Services
@@ -715,7 +751,27 @@
     FV is a nice-to-have: formal methods or automated reasoning for access
     control. Amazon S3 security.
   posted: '2026-10-13'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-394
+  company: Amazon Web Services
+  role: Software Development Engineer, Automated Reasoning Group
+  category: software
+  url: https://www.amazon.jobs/en/jobs/10559739/software-development-engineer-automated-reasoning-group
+  location: Seattle, WA
+  remote: onsite
+  stack: [interactive theorem proving, functional programming, proof automation]
+  domain: [formally verified AI infrastructure, cloud services]
+  seniority: engineer
+  tags: [big-company]
+  compensation: USD 143,700–194,400 (Seattle)
+  notes: >-
+    Neuron Automated Reasoning group at Annapurna Labs. Builds a production AWS
+    service around "a leading open-source functional programming language and
+    interactive theorem prover", to make formal verification usable at AWS
+    scale.
+  posted: '2026-09-24'
+  last_verified: 2026-11-09
 
 - id: FV-230
   company: Analog Devices
@@ -731,7 +787,7 @@
   notes: >-
     DSP and processor subsystems in Edinburgh. First published 2025-11-13.
   posted: '2025-11-13'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-231
   company: Analog Devices
@@ -749,7 +805,7 @@
     requisitions:
     https://analogdevices.wd1.myworkdayjobs.com/External/job/India-Bangalore-RMZ/Principal-Engineer--Design-Verification-Engineering_R265647.
   posted: '2026-09-28'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-232
   company: Analog Devices
@@ -765,7 +821,7 @@
   notes: >-
     SoC verification in Bangalore.
   posted: '2026-07-29'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-233
   company: Analog Devices
@@ -781,7 +837,26 @@
   notes: >-
     FV is a nice-to-have. Mixed-signal SoC verification in Dublin.
   posted: '2026-08-26'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-395
+  company: Analog Devices
+  role: Staff Engineer, Design Verification Engineering
+  category: hardware
+  url: https://analogdevices.wd1.myworkdayjobs.com/External/job/US-AZ-Chandler-East-Elliot/Staff-Engineer--Design-Verification-Engineering_R262387-1
+  location: Chandler, AZ
+  remote: hybrid
+  stack: [SVA, formal verification, UVM]
+  domain: [mixed-signal SoC verification]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 172,390–199,229
+  notes: >-
+    Mixed-signal SoC verification; SystemVerilog assertions for dynamic and
+    formal verification are required. Two days a week from home. The posting
+    is in labour-certification format.
+  posted: '2026-05-12'
+  last_verified: 2026-11-09
 
 - id: FV-234
   company: Anduril Industries
@@ -801,7 +876,25 @@
     eligibility required. Folds the senior requisition. Other requisitions:
     https://job-boards.greenhouse.io/andurilindustries/jobs/5228707007.
   posted: '2026-08-19'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-396
+  company: Anduril Industries
+  role: Senior FPGA Verification Engineer, Air Dominance and Strike
+  category: hardware
+  url: https://boards.greenhouse.io/andurilindustries/jobs/5228707007
+  location: Costa Mesa, CA
+  remote: onsite
+  stack: [SVA, UVM, formal or CDC tools, DO-254]
+  domain: [defence avionics FPGAs]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: Must be eligible to obtain and hold a US Secret clearance
+  compensation: USD 166,000–220,000
+  notes: >-
+    FV is a nice-to-have: formal verification or CDC tools are preferred.
+  posted: '2026-09-02'
+  last_verified: 2026-11-09
 
 - id: FV-235
   company: Anthropic
@@ -819,7 +912,7 @@
     Generalist silicon role on Anthropic's accelerator work; FV methodology is
     one duty among several.
   posted: '2026-08-04'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-236
   company: Anthropic
@@ -837,7 +930,7 @@
     FV is a nice-to-have: formal methods is part of the DV background it asks
     for.
   posted: '2026-10-21'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-237
   company: Anthropic
@@ -855,7 +948,7 @@
     FV is a nice-to-have. Platform and firmware security (silicon root of
     trust).
   posted: '2026-06-15'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-238
   company: Anthropic
@@ -873,7 +966,7 @@
     FV is a nice-to-have. The 2026-11-02 rule names Anthropic RL as now in
     scope.
   posted: '2026-06-11'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-239
   company: Anthropic
@@ -891,7 +984,7 @@
     FV is a nice-to-have: formal methods is one of several depth areas. USD
     320,000–485,000.
   posted: '2026-10-05'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-020
   company: Antithesis
@@ -908,7 +1001,7 @@
     Maintains Bombadil, Antithesis's open-source specification language and
     verifier for web UIs.
   posted: '2026-03-18'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-021
   company: Apple
@@ -926,7 +1019,7 @@
     Entry-level (0 years required). The role focuses on the Secure Enclave and
     security-requirement verification.
   posted: '2026-04-13'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-022
   company: Apple
@@ -943,7 +1036,7 @@
     Posting says Apple is hiring all levels from junior to senior; description
     reads as a formal verification architect role.
   posted: '2026-09-24'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-023
   company: Apple
@@ -961,7 +1054,7 @@
     Apple Silicon formal team. The work covers formal micro-architecture
     specifications and security-attack modelling.
   posted: '2026-10-26'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-160
   company: Apple
@@ -980,7 +1073,7 @@
     against proof convergence. For students enrolled in CS or a related
     degree.
   posted: '2026-10-14'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-161
   company: Apple
@@ -998,7 +1091,7 @@
     micro-architecture, and property proofs. Apple says it is hiring all
     levels. The UK counterpart of the Munich role FV-022.
   posted: '2026-03-30'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-240
   company: Apple
@@ -1015,7 +1108,7 @@
     Pipeline requisition (PIPE-200676086) in Paris on Apple's SEAR cryptography
     team.
   posted: '2026-08-18'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-241
   company: Apple
@@ -1033,7 +1126,7 @@
     FV is a nice-to-have. A separate Cupertino requisition with different text
     from the Paris role; USD 150,400–277,600.
   posted: '2026-11-05'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-242
   company: Apple
@@ -1049,7 +1142,40 @@
   notes: >-
     FV is a nice-to-have. Secure kernel internship in Sydney.
   posted: '2026-08-27'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-397
+  company: Architect Labs
+  role: Member of Technical Staff - Formal Methods
+  category: hardware
+  url: https://jobs.ashbyhq.com/architect/94933dd1-3047-4a22-8131-b57721d02eb1
+  location: Palo Alto, CA
+  remote: onsite
+  stack: [model checking, SMT, temporal logic, refinement, TLA+, Lean, Coq]
+  domain: [AI-generated chip design]
+  seniority: senior
+  notes: >-
+    Owns the formal layer of an AI chip-design flow: spec-to-assertion
+    entailment and RTL refinement claims, discharged by SMT solvers, model
+    checkers and proof assistants. A PhD in formal methods is preferred.
+  posted: '2026-05-13'
+  last_verified: 2026-11-09
+
+- id: FV-398
+  company: Architect Labs
+  role: Member of Technical Staff - Formal Verification
+  category: hardware
+  url: https://jobs.ashbyhq.com/architect/22ee8ef4-e588-431f-9362-48ea35442276
+  location: Palo Alto, CA
+  remote: onsite
+  stack: [SVA, JasperGold, VC Formal, Questa Formal]
+  domain: [AI-generated chip design]
+  seniority: engineer
+  notes: >-
+    Formal verification of AI-generated RTL: spec-to-SVA flows, formal
+    testbenches and proof convergence.
+  posted: '2026-08-17'
+  last_verified: 2026-11-09
 
 - id: FV-024
   company: Arizona State University
@@ -1065,7 +1191,7 @@
     Faculty position (tenure-track or tenured, any rank), start August 2027.
     Deadline 2026-11-30; later applications go to a reserve pool.
   posted: '2026-10-20'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-025
   company: Arm
@@ -1083,7 +1209,7 @@
     Solutions Group. The posting asks for assume-guarantee reasoning, invariants
     and abstraction skills.
   posted: '2026-09-16'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-026
   company: Arm
@@ -1103,7 +1229,7 @@
     formal description of ASL (the language of the Arm ARM). Builds lightweight
     verification tools.
   posted: '2026-06-25'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-162
   company: Arm
@@ -1120,7 +1246,7 @@
   compensation: GBP 73,500–99,500
   notes: CPU group formal verification team; 5+ years of formal verification required.
   posted: '2026-10-28'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-163
   company: Arm
@@ -1138,7 +1264,7 @@
     Cortex-A memory-system verification, building both UVM and formal
     verification environments. Simulation is the larger part of the job.
   posted: '2026-10-30'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-164
   company: Arm
@@ -1156,7 +1282,7 @@
     and power-aware equivalence checking for Arm's Solutions Engineering
     group; 5+ years of experience.
   posted: '2026-09-29'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-243
   company: Arm
@@ -1173,7 +1299,7 @@
   notes: >-
     FV is a nice-to-have. A software role, so Arm's hardware cap doesn't apply.
   posted: '2026-09-21'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-028
   company: Astera Labs
@@ -1188,7 +1314,7 @@
   compensation: USD 230,000–285,000
   notes: Company-wide technical authority on formal for PCIe/CXL/Ethernet/UCIe/UALink products.
   posted: '2026-02-23'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-029
   company: Astera Labs
@@ -1205,7 +1331,7 @@
     AppliedAI team building LLM agents for formal proof convergence, lint and
     static verification flows.
   posted: '2026-08-31'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-030
   company: Astera Labs
@@ -1221,7 +1347,7 @@
     Founding member of Astera's new Israel R&D centre; owns formal environments
     from scratch to sign-off.
   posted: '2026-03-18'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-244
   company: Astera Labs
@@ -1237,7 +1363,7 @@
     Probably succeeds the archived Bengaluru FV lead (FV-031); the board's open
     Astera roles are in San Jose and Tel Aviv.
   posted: '2026-11-05'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-245
   company: Astera Labs
@@ -1253,7 +1379,7 @@
     Director-level SoC verification management in Bengaluru, with formal among
     the methodologies it drives.
   posted: '2026-06-24'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-144
   company: Atalanta
@@ -1271,7 +1397,7 @@
     Leads the reasoning engine behind Atalanta's Argo platform and serves as PI
     on US Government-funded research; PhD required.
   posted: '2025-11-18'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-246
   company: Atom Computing
@@ -1287,7 +1413,7 @@
   notes: >-
     FV is a nice-to-have. Quantum-computer control ASICs; USD 180,000–220,000.
   posted: '2026-10-08'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-032
   company: Axiom Math
@@ -1305,7 +1431,7 @@
     formal proof systems. Axiom makes AxiomProver and is moving into verified
     code generation.
   posted: '2026-04-03'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-165
   company: Axiom Math
@@ -1323,7 +1449,7 @@
     accepted backgrounds. The posting names no proof assistant; Axiom's
     prover works in Lean.
   posted: '2026-10-28'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-033
   company: Axiomise
@@ -1338,7 +1464,7 @@
   work_authorization: For recent UK-based graduates; Graduate-visa holders sponsored for a Skilled Worker visa after the programme
   notes: The graduate programme cohort starts in 2026.
   posted: '2026-01-08'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-034
   company: Axiomise
@@ -1353,7 +1479,7 @@
   work_authorization: Visa sponsorship offered for exceptional candidates, on conditional terms
   notes: Includes line-management responsibilities.
   posted: '2026-04-20'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-035
   company: Axiomise
@@ -1367,7 +1493,7 @@
   seniority: principal
   work_authorization: Visa sponsorship "for exceptional candidates"
   posted: '2026-04-20'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-166
   company: Axiomise
@@ -1384,7 +1510,42 @@
     The mid-level role between Axiomise's graduate and senior postings.
     Evergreen: first published 2018-10-22 and still in the live feed.
   posted: '2018-10-22'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-399
+  company: Axis Communications
+  role: Senior ASIC Verification Engineer, Lund
+  category: hardware
+  url: https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Senior-ASIC-Verification-Engineer--Lund_R-124014
+  location: Lund, Sweden
+  remote: onsite
+  stack: [UVM, formal property verification, CDC]
+  domain: [camera SoCs (ARTPEC)]
+  seniority: senior
+  tags: [big-company]
+  notes: >-
+    FV is a nice-to-have: the team uses simulation and formal methods, with
+    bonus points for end-to-end formal verification and FPV.
+  posted: '2026-10-20'
+  last_verified: 2026-11-09
+
+- id: FV-400
+  company: Baya Systems
+  role: Hardware Verification Engineer
+  category: hardware
+  url: https://job-boards.greenhouse.io/bayasystems/jobs/5166143008
+  location: Austin, TX / Cambridge, UK / Bengaluru, India
+  remote: onsite
+  stack: [UVM, formal verification, emulation]
+  domain: [chiplet interconnect and coherency IP]
+  seniority: engineer
+  notes: >-
+    FV is a nice-to-have ("is a plus"). Folds the Cambridge (2025-07-26) and
+    Bengaluru (2025-02-14) postings, which share the text. Other requisitions:
+    https://job-boards.greenhouse.io/bayasystems/jobs/4809362008;
+    https://job-boards.greenhouse.io/bayasystems/jobs/4511816008.
+  posted: '2026-03-25'
+  last_verified: 2026-11-09
 
 - id: FV-036
   company: Bedrock Robotics
@@ -1401,7 +1562,7 @@
     proves a checker in Lean, runs it on fleet data, and builds audit tooling
     for LLM-assisted proving. Students only.
   posted: '2026-09-25'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-037
   company: Beneficial AI Foundation
@@ -1418,7 +1579,7 @@
     Max Tegmark's foundation. Verifies production cryptographic Rust in Lean
     (curve25519-dalek, Signal protocols) — see
     github.com/Beneficial-AI-Foundation.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-247
   company: Blockstream
@@ -1433,7 +1594,7 @@
   notes: >-
     FV is a nice-to-have. Evergreen: first published 2025-09-19.
   posted: '2025-09-19'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-248
   company: Bosch (Bosch Sensortec)
@@ -1441,7 +1602,7 @@
   category: hardware
   url: https://jobs.smartrecruiters.com/BoschGroup/744000154430929-junior-digital-verification-engineer
   location: Milan, Italy
-  remote: onsite
+  remote: hybrid
   stack: [UVM, formal, VHDL/Verilog]
   domain: [MEMS sensor ICs]
   seniority: engineer
@@ -1453,41 +1614,43 @@
     requisitions:
     https://jobs.smartrecruiters.com/BoschGroup/744000154431199-senior-digital-verification-engineer.
   posted: '2026-10-08'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
-- id: FV-249
-  company: Bosch (Robert Bosch Robotics)
-  role: Tech Lead (f/m/div.)
-  category: software
-  url: https://jobs.smartrecruiters.com/BoschGroup/744000159868749-tech-lead-f-m-div-
-  location: Renningen, Germany
+- id: FV-401
+  company: Broadcom
+  role: Design Verification Engineer
+  category: hardware
+  url: https://broadcom.wd1.myworkdayjobs.com/External_Career/job/USA-CO-Broomfield/Design-Verification-Engineer_R026745
+  location: Broomfield, CO / Fort Collins, CO / San Diego, CA / San Jose, CA / Irvine, CA
   remote: onsite
-  stack: [formal verification, model checking, safety/security assurance]
-  domain: [safety-security agent harness for robotics/physical AI]
-  seniority: lead
+  stack: [UVM, emulation, formal verification]
+  domain: [SoC verification, iJTAG]
+  seniority: engineer
   tags: [big-company]
+  compensation: USD 143,800–230,000
   notes: >-
-    Tech lead for a safety-security agent harness for robotics and physical AI
-    at Bosch Corporate Research, Renningen.
-  posted: '2026-11-05'
-  last_verified: 2026-11-05
+    FV is a nice-to-have: formal verification concepts or experience "is a
+    plus".
+  posted: '2026-08-04'
+  last_verified: 2026-11-09
 
-- id: FV-250
-  company: Bosch (Robert Bosch Robotics)
-  role: Technical Product Owner (f/m/div.)
-  category: software
-  url: https://jobs.smartrecruiters.com/BoschGroup/744000159867534-technical-product-owner-f-m-div-
-  location: Renningen, Germany
+- id: FV-402
+  company: Broadcom
+  role: Verification Engineer
+  category: hardware
+  url: https://broadcom.wd1.myworkdayjobs.com/External_Career/job/USA-CA-San-Jose-Innovation-Drive/Verification-Engineer_R026363
+  location: San Jose, CA / Fort Collins, CO
   remote: onsite
-  stack: [formal verification, tool assurance]
-  domain: [same safety-security agent harness]
-  seniority: lead
+  stack: [UVM, formal verification]
+  domain: [SerDes PHY verification]
+  seniority: engineer
   tags: [big-company]
+  compensation: USD 121,900–195,000
   notes: >-
-    Technical product owner for the same agent-harness project as the Tech Lead;
-    a management role on an FV effort.
-  posted: '2026-11-05'
-  last_verified: 2026-11-05
+    FV is a nice-to-have: familiarity with formal verification methodologies
+    is preferred.
+  posted: '2026-07-13'
+  last_verified: 2026-11-09
 
 - id: FV-038
   company: Cadence Design Systems
@@ -1504,7 +1667,7 @@
     Develops the Jasper formal tool itself, working on formal engines, HDL
     synthesis and graph modelling.
   posted: '2026-08-24'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-039
   company: Cadence Design Systems
@@ -1521,7 +1684,7 @@
     Conformal team building the Conformal Logical Equivalence Checking, ECO and
     Low Power tools. The generic title hides the formal content.
   posted: '2026-09-23'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-251
   company: Cadence Design Systems
@@ -1539,7 +1702,7 @@
     AI for chip verification (ChipStack). Folds twin R53564. Other requisitions:
     https://cadence.wd1.myworkdayjobs.com/External_Careers/job/SAN-JOSE/Applied-ML---Functional-Verification-Engineer_R53564.
   posted: '2026-03-06'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-252
   company: Cadence Design Systems
@@ -1559,7 +1722,7 @@
     https://cadence.wd1.myworkdayjobs.com/External_Careers/job/AUSTIN/Principal-Design-Engineer_R56619;
     https://cadence.wd1.myworkdayjobs.com/External_Careers/job/BANGALORE/Principal-Design-Engineer_R54817-1.
   posted: '2026-10-01'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-253
   company: Cadence Design Systems
@@ -1579,7 +1742,7 @@
     https://cadence.wd1.myworkdayjobs.com/External_Careers/job/MOUNT-ROYAL-Montreal/Lead-Digital-Verification-Engineer_R56134;
     https://cadence.wd1.myworkdayjobs.com/External_Careers/job/MOUNT-ROYAL-Montreal/Lead-Digital-Verification-Engineer_R54714.
   posted: '2026-11-03'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-040
   company: Cajal
@@ -1596,7 +1759,7 @@
     that each version behaves like the original. To apply, open a PR to Talos
     (their open-source Lean Wasm interpreter), then email careers@caj.al. They
     say they do not look at CVs.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-167
   company: Carnegie Mellon University (ICARM)
@@ -1612,7 +1775,7 @@
     Research on formal methods and AI for mathematics, and helping
     mathematicians use interactive theorem provers. Rolling until filled.
   posted: '2026-10-01'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-168
   company: CEA-List
@@ -1630,7 +1793,7 @@
     jointly with Inria Rennes. The stated start date, 2026-10-01, has passed
     but applications are open.
   posted: '2026-08-24'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-254
   company: CEA-List
@@ -1645,7 +1808,7 @@
   notes: >-
     Permanent (CDI) research engineer on the quantum software stack, delivering
     proof artefacts for quantum algorithms and error-correcting codes.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-255
   company: CEA-List
@@ -1661,7 +1824,7 @@
     18-month fixed-term contract, renewable once, on CEA-List's formally
     verified quantum programming environment Qbricks. Reference 2025-36045, so
     first posted in 2025.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-256
   company: CEA-List
@@ -1678,7 +1841,7 @@
     Master's internship (about EUR 1,400/month) with a possible PhD
     continuation. The page gives a start of 01/03/2026, probably a typo for
     2027. Title as posted reads 'cirtical'.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-257
   company: CEA-List
@@ -1693,7 +1856,7 @@
   notes: >-
     5–6 month final-year engineering internship in security evaluation (Common
     Criteria) at Grenoble.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-258
   company: CEA-List
@@ -1708,7 +1871,7 @@
   notes: >-
     Six-month M2 internship combining cryptology and formal methods, starting
     February 2027.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-259
   company: CEA-List
@@ -1723,7 +1886,7 @@
   notes: >-
     4–6 month internship on neural-network verification in PyRAT, starting
     February 2027.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-260
   company: CEA-List
@@ -1739,7 +1902,7 @@
     FV is a nice-to-have. Internship on experimentally grounded fault models for
     pre-silicon security verification (CEA-List with CEA-Leti), starting
     February 2027.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-041
   company: CertiK
@@ -1754,7 +1917,7 @@
   compensation: USD 115,000–230,000 (US)
   notes: Wants model checking (BMC, CEGAR, IC3/PDR); publications at POPL/CAV/TACAS preferred.
   posted: '2022-07-30'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-042
   company: CertiK
@@ -1775,7 +1938,38 @@
     theorem provers. Sits alongside CertiK's Formal Methods SWE role, which is
     already on the board.
   posted: '2025-10-20'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-403
+  company: Ceva
+  role: Formal verification engineer
+  category: hardware
+  url: https://www.ceva-ip.com/career/position/5E.173/
+  location: Ra'anana, Israel
+  remote: hybrid
+  stack: [SVA, JasperGold]
+  domain: [NPU and AI accelerator IP]
+  seniority: engineer
+  notes: >-
+    Joins the AI division's Formal Verification team: FV strategy through
+    sign-off, formal testbenches and SVA properties. 3–5 years of experience;
+    Jasper is an advantage. The page shows no posting date.
+  last_verified: 2026-11-09
+
+- id: FV-404
+  company: Ceva
+  role: Senior Verification Engineer-WIOT
+  category: hardware
+  url: https://www.ceva-ip.com/career/position/9C.27E/
+  location: Belgrade, Serbia
+  remote: hybrid
+  stack: [UVM, SVA, formal verification]
+  domain: [Bluetooth, Wi-Fi and 802.15.4 IP]
+  seniority: senior
+  notes: >-
+    FV is a nice-to-have: formal verification experience is listed under
+    advantages. 7+ years of experience.
+  last_verified: 2026-11-09
 
 - id: FV-261
   company: ChainSecurity
@@ -1792,7 +1986,7 @@
     FV is a nice-to-have. DeFi audits in Zurich; apply by email
     (jobs@chainsecurity.com). Found in HN Who is hiring, November 2026.
   posted: '2026-09-21'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-262
   company: Chalmers University of Technology
@@ -1809,7 +2003,7 @@
   notes: >-
     FV is a nice-to-have. PhD in web and emerging-application security (Andrei
     Sabelfeld). Deadline 2026-11-27.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-263
   company: ChipAgents (Alpha Design AI)
@@ -1826,7 +2020,77 @@
     FV is a nice-to-have. Agentic AI for chip verification; USD 180,000–300,000
     plus equity.
   posted: '2026-10-29'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-405
+  company: Cirrus Logic
+  role: Senior Formal Verification Engineer (CH-64001149)
+  category: hardware
+  url: https://jobs.eu.lever.co/cirrus/37d8ca48-3156-422f-ad6a-183e8f67d2f0
+  location: Austin, TX
+  remote: hybrid
+  stack: [SVA, formal property verification, model checking]
+  domain: [audio and mixed-signal ICs]
+  seniority: senior
+  work_authorization: No visa sponsorship or export licences for this role
+  notes: >-
+    Builds formal environments for complex IP, rolls out formal methodology
+    and mentors engineers in FV. Asks for an MS and 8+ years, or a PhD and 5+
+    years, of FV.
+  posted: '2026-01-21'
+  last_verified: 2026-11-09
+
+- id: FV-406
+  company: Cirrus Logic
+  role: 2027 Internship - Formal Verification Engineer
+  category: hardware
+  url: https://jobs.eu.lever.co/cirrus/533c9938-3d35-48a6-b08b-1dd1675d2bdf
+  location: Austin, TX
+  remote: hybrid
+  stack: [SVA, property-based model checking]
+  domain: [audio and mixed-signal ICs]
+  seniority: intern
+  work_authorization: No visa sponsorship or export licences for this role
+  notes: >-
+    Internship on the Formal Verification team for master's or PhD students.
+    The title says 2027, but the body still says "Fall 2026 intern".
+  posted: '2026-10-27'
+  last_verified: 2026-11-09
+
+- id: FV-407
+  company: Cirrus Logic
+  role: Design Verification Engineer (EDI)
+  category: hardware
+  url: https://jobs.eu.lever.co/cirrus/945291b1-7cb5-4dba-bed3-9322b381086a
+  location: Edinburgh, UK / Newbury, UK
+  remote: hybrid
+  stack: [SVA, UVM, formal verification]
+  domain: [mixed-signal ICs]
+  seniority: engineer
+  work_authorization: No visa sponsorship or export licences for this role
+  notes: >-
+    FV is a nice-to-have: formal verification is under preferred skills.
+    Folds the Newbury (NWB) posting, which shares the text. Other requisitions:
+    https://jobs.eu.lever.co/cirrus/805db2a1-dd05-4340-862a-8ac3ce6d7ad3.
+  posted: '2026-02-06'
+  last_verified: 2026-11-09
+
+- id: FV-408
+  company: Cirrus Logic
+  role: Design Verification Manager
+  category: hardware
+  url: https://jobs.eu.lever.co/cirrus/e13047c3-d22b-42bc-884a-5add550704c3
+  location: Newbury, UK
+  remote: hybrid
+  stack: [SVA, UVM, formal verification]
+  domain: [mixed-signal ICs]
+  seniority: lead
+  work_authorization: No visa sponsorship or export licences for this role
+  notes: >-
+    FV is a nice-to-have: formal verification is a preferred qualification.
+    Manages a design verification team.
+  posted: '2026-03-23'
+  last_verified: 2026-11-09
 
 - id: FV-264
   company: Cisco
@@ -1845,7 +2109,7 @@
     requisitions:
     https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/San-Jose-California-US/ASIC-Design-Verification-Engineer_2006886.
   posted: '2026-10-14'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-265
   company: Cisco
@@ -1862,7 +2126,7 @@
   notes: >-
     FV is a nice-to-have. USD 186,900–267,700.
   posted: '2026-10-01'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-266
   company: Cisco
@@ -1879,7 +2143,42 @@
   notes: >-
     FV is a nice-to-have. Networking ASICs; USD 167,700–245,200 (San Jose band).
   posted: '2026-10-21'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-409
+  company: Cisco
+  role: ASIC Design Verification Technical Leader
+  category: hardware
+  url: https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/Carlsbad-California-US/ASIC-Design-Verification-Technical-Leader_2012214
+  location: Carlsbad, CA / Allentown, PA
+  remote: onsite
+  stack: [UVM, formal verification, emulation]
+  domain: [networking ASICs]
+  seniority: lead
+  tags: [big-company]
+  compensation: USD 166,300–238,300 (starting; higher in some states)
+  notes: >-
+    FV is a nice-to-have: prior formal verification experience is preferred.
+    Applications close 2027-01-18.
+  posted: '2026-11-04'
+  last_verified: 2026-11-09
+
+- id: FV-410
+  company: Cisco
+  role: ASIC Verification Technical Leader || Verilog, System Verilog, Testbench, UVM || Exp - 10+ years
+  category: hardware
+  url: https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/Bangalore-India/ASIC-Verification-Technical-Leader_2023398
+  location: Bangalore, India
+  remote: onsite
+  stack: [UVM, IEV, VC Formal]
+  domain: [networking ASICs]
+  seniority: lead
+  tags: [big-company]
+  notes: >-
+    FV is a nice-to-have: formal verification knowledge (IEV, VC Formal) is
+    preferred. 10+ years of experience.
+  posted: '2026-09-03'
+  last_verified: 2026-11-09
 
 - id: FV-043
   company: CLEARSY
@@ -1894,7 +2193,7 @@
   notes: >-
     Develops and modernises Atelier B (C/C++ back end, Qt front end). Published
     May 11, 2026. Lyon copy: https://clearsy.nos-recrutements.fr/job/5895.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-044
   company: CLEARSY
@@ -1913,7 +2212,7 @@
     https://clearsy.nos-recrutements.fr/job/5914. French-language posting; Bac+5
     engineering profile. Teleworking agreement available.
   posted: '2026-08-17'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-045
   company: CLEARSY
@@ -1929,7 +2228,7 @@
     Long-running posting (published July 22, 2025) still listed; formal
     validation of safety constraints on railway project data. Lyon copy:
     https://clearsy.nos-recrutements.fr/job/5902.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-169
   company: CLEARSY
@@ -1946,7 +2245,7 @@
     for CLEARSY's provers, plus design verification, test scenarios and
     safety analyses. Related to FV-045. French-language posting.
   posted: '2025-07-22'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-046
   company: Code Metal
@@ -1961,7 +2260,7 @@
   work_authorization: US Top Secret clearance eligibility listed as required
   compensation: USD 180,000–266,800 plus equity
   posted: '2026-05-22'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-267
   company: Code Metal
@@ -1980,7 +2279,7 @@
     requisitions, which share one text and both pay tiers. Other requisitions:
     https://jobs.ashbyhq.com/code-metal/cdaf3cfe-477a-4194-9d9e-477e5a211e49.
   posted: '2026-11-04'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-268
   company: Code Metal
@@ -1999,7 +2298,7 @@
     the product: the role brings formal verification into Code Metal's pipeline
     with specialists. Same company as FV-046.
   posted: '2026-05-22'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-269
   company: Code Metal
@@ -2016,7 +2315,7 @@
     FV is a nice-to-have. Compiler and systems validation for Code Metal's
     code-translation product.
   posted: '2026-10-06'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-047
   company: Cognichip
@@ -2033,7 +2332,7 @@
     AI-for-chip-design startup. Open to people from pure maths/physics;
     mentorship and structured ramp-up into formal methods offered. Listing also
     at cognichip.ai/careers.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-048
   company: Cornell University
@@ -2065,7 +2364,7 @@
   notes: >-
     PhD in CWI's Computer Security group; model checking, SAT/SMT or theorem
     proving an advantage. Deadline 2026-12-31, evaluated on a rolling basis.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-170
   company: DensityAI
@@ -2083,7 +2382,7 @@
     Block- and SoC-level formal verification and proof convergence, plus AI
     agents that guide proofs.
   posted: '2026-06-02'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-271
   company: DensityAI
@@ -2101,7 +2400,7 @@
     FV is a nice-to-have. AI-core datapath verification; USD 180,000–275,000;
     sponsors visas.
   posted: '2026-06-02'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-272
   company: DensityAI
@@ -2117,7 +2416,7 @@
   notes: >-
     FV is a nice-to-have (optional). AI-hardware DV.
   posted: '2026-05-19'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-049
   company: eleQtron
@@ -2130,7 +2429,7 @@
   domain: [quantum, compilers]
   seniority: engineer
   posted: '2026-09-22'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-273
   company: Eliyan
@@ -2145,7 +2444,7 @@
   notes: >-
     Director of DV for chiplet interconnect IP (UCIe, D2D).
   posted: '2026-02-16'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-274
   company: Eliyan
@@ -2160,7 +2459,7 @@
   notes: >-
     FV is a nice-to-have. AMS modelling DV for chiplet PHY IP (Bay Area, Vancouver, Toronto).
   posted: '2026-05-20'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-275
   company: Eliyan
@@ -2175,7 +2474,7 @@
   notes: >-
     FV is a nice-to-have. SerDes IP DV (Bay Area, Vancouver, Toronto).
   posted: '2026-04-08'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-051
   company: EPFL
@@ -2192,7 +2491,7 @@
     engine (contact: Nate Foster). 1-year renewable contract, start 2026-12-01
     or later. The EPFL page states no deadline; one third-party aggregator
     listed 3 Nov 2026, so treat it as urgent.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-052
   company: EPFL
@@ -2208,7 +2507,7 @@
     Nate Foster's lab: languages and formal reasoning tools for networks
     (NetKAT, routing algebras, packet scheduling). 1-year renewable, start
     2026-12-01. No deadline stated.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-053
   company: EPFL
@@ -2224,7 +2523,7 @@
     Engineering role on the same ARIA-funded verified-inference project. Prior
     formal verification experience is welcome but not required. 1-year
     renewable, start 2026-12-01. No deadline stated.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-054
   company: Etched
@@ -2240,7 +2539,7 @@
     Covers the full ASIC (compute arrays, NoC, PCIe, Ethernet). Includes a
     housing subsidy for living near the office.
   posted: '2026-06-10'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-276
   company: Etched
@@ -2258,7 +2557,7 @@
     Austin (2026-04-16) requisitions. Other requisitions:
     https://jobs.ashbyhq.com/etched/77f0497f-086e-4d89-bbcd-bac7a79bf9a1.
   posted: '2025-06-11'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-277
   company: Etched
@@ -2273,7 +2572,24 @@
   notes: >-
     FV is a nice-to-have. DV internship in San Jose.
   posted: '2026-02-07'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-411
+  company: Etched
+  role: DFT (Design For Test) Engineer
+  category: hardware
+  url: https://jobs.ashbyhq.com/etched/ca25e600-e2e8-4111-b672-ee3a830a8ecf
+  location: San Jose, CA
+  remote: onsite
+  stack: [DFT, formal verification]
+  domain: [AI accelerator ASICs]
+  seniority: engineer
+  compensation: USD 150,000–350,000, plus equity
+  notes: >-
+    DFT for a transformer ASIC; applies simulation-based and formal
+    verification to DFT logic.
+  posted: '2026-02-28'
+  last_verified: 2026-11-09
 
 - id: FV-278
   company: Fractile
@@ -2288,7 +2604,7 @@
   notes: >-
     FV is a nice-to-have. AI inference chips (London or Bristol).
   posted: '2026-10-28'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-279
   company: FuriosaAI
@@ -2304,7 +2620,7 @@
     FV is a nice-to-have. NPU hardware engineer (Master's or PhD); the posting
     is in Korean.
   posted: '2026-10-13'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-055
   company: Galois
@@ -2321,7 +2637,7 @@
     Leads externally funded research programs; PhD or equivalent with a
     publication record in FV.
   posted: '2026-04-13'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-056
   company: Galois
@@ -2339,7 +2655,7 @@
     published per posting. A near-identical posting, DF61ADAF3A (2026-10-29),
     adds one bullet on formal methods for AI.
   posted: '2026-01-05'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-171
   company: GE Aerospace
@@ -2359,7 +2675,7 @@
     to requirements, architecture and functional correctness of flight
     systems. Expected to close around 2026-12-30.
   posted: '2026-10-22'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-057
   company: General Diffusion
@@ -2376,7 +2692,65 @@
     AI-proposed compute actions: machine-checkable safety invariants,
     refinement/semantic-equivalence validation of generated kernels, runtime
     monitors. Apply by email (careers@generaldiffusion.com).
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-412
+  company: General Dynamics Mission Systems
+  role: Lead ASIC Verification Engineer
+  category: hardware
+  url: https://careers-gdms.icims.com/jobs/78149/lead-asic-verification-engineer/job
+  location: Boise, ID / Salt Lake City, UT / Scottsdale, AZ / San Jose, CA / US telework
+  remote: remote
+  stack: [UVM, formal verification, emulation, CDC/RDC]
+  domain: [defence ASICs]
+  seniority: lead
+  tags: [big-company]
+  work_authorization: US citizenship required; DoD Secret clearance (obtainable)
+  compensation: USD 173,032–190,000
+  notes: >-
+    Idaho Scientific unit. Plans and runs simulation, regression, formal
+    verification and emulation; FV experience is also preferred.
+  posted: '2026-11-03'
+  last_verified: 2026-11-09
+
+- id: FV-413
+  company: General Dynamics Mission Systems
+  role: Advanced ASIC FPGA Verification Engineer
+  category: hardware
+  url: https://careers-gdms.icims.com/jobs/75057/advanced-asic-fpga-verification-engineer/job
+  location: Scottsdale, AZ
+  remote: onsite
+  stack: [UVM, property checking, connectivity checking, equivalence checking]
+  domain: [defence and cryptographic ASICs/FPGAs]
+  seniority: engineer
+  tags: [big-company]
+  work_authorization: US citizenship required; DoD Secret clearance required at hire
+  compensation: USD 135,396–150,205
+  notes: >-
+    Supports formal verification, including property, connectivity and
+    equivalence checking.
+  posted: '2026-09-17'
+  last_verified: 2026-11-09
+
+- id: FV-414
+  company: General Dynamics Mission Systems
+  role: Advanced ASIC FPGA Verification Engineer (Sign-on Bonus Available)
+  category: hardware
+  url: https://careers-gdms.icims.com/jobs/75738/advanced-asic-fpga-verification-engineer-%28sign-on-bonus-available%29/job
+  location: US telework / Scottsdale, AZ
+  remote: remote
+  stack: [UVM, SVA, formal verification tools]
+  domain: [defence ASICs/FPGAs]
+  seniority: engineer
+  tags: [big-company]
+  work_authorization: US citizenship required; TS/SCI clearance (obtainable)
+  compensation: USD 122,785–136,215
+  notes: >-
+    FV is a nice-to-have: familiarity with formal verification tools is
+    preferred. Folds the Scottsdale (hybrid) posting. Other requisitions:
+    https://careers-gdms.icims.com/jobs/75739/advanced-asic-fpga-verification-engineer-%28sign-on-bonus-available%29/job.
+  posted: '2026-10-22'
+  last_verified: 2026-11-09
 
 - id: FV-280
   company: GlobalFoundries
@@ -2393,7 +2767,62 @@
   notes: >-
     Design manager for power-management IP in Pavia; FV understanding required.
   posted: '2026-10-29'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-415
+  company: GlobalFoundries
+  role: Foundation IP Design Verification Intern (Summer 2027)
+  category: hardware
+  url: https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---California---Santa-Clara/Foundation-IP-Design-Verification-Intern--Summer-2027-_JR-2604356
+  location: Santa Clara, CA
+  remote: onsite
+  stack: [Verilog, formal verification, SPICE]
+  domain: [foundation IP (memories, standard cells)]
+  seniority: intern
+  tags: [big-company]
+  compensation: USD 20–40 an hour
+  notes: >-
+    Summer 2027 internship; contributes to formal verification of foundation
+    IP and analyses the results.
+  posted: '2026-10-16'
+  last_verified: 2026-11-09
+
+- id: FV-416
+  company: GlobalFoundries
+  role: Senior MTS - IP Engineering
+  category: hardware
+  url: https://globalfoundries.wd1.myworkdayjobs.com/External/job/Netherlands/Senior-MTS---IP-Engineering_JR-2605515
+  location: Netherlands
+  remote: onsite
+  stack: [RTL, simulation, formal verification]
+  domain: [processor IP]
+  seniority: senior
+  tags: [big-company]
+  compensation: EUR 81,907–122,861
+  notes: >-
+    Processor IP engineering; expertise in formal verification is required.
+    A same-text MTS level (EUR 69,466–104,198) lists FV among several areas.
+    Other requisitions:
+    https://globalfoundries.wd1.myworkdayjobs.com/External/job/Netherlands/MTS---IP-Engineering_JR-2605517.
+  posted: '2026-09-15'
+  last_verified: 2026-11-09
+
+- id: FV-417
+  company: GlobalFoundries
+  role: Senior Staff Design Verification Engineer
+  category: hardware
+  url: https://globalfoundries.wd1.myworkdayjobs.com/External/job/IND---Karnataka---Bengaluru---Central/Senior-Staff-Design-Verification-Engineer_JR-2603641
+  location: Bengaluru, India / Pune, India
+  remote: onsite
+  stack: [UVM, formal verification, low-power verification]
+  domain: [automotive and radar mixed-signal SoCs]
+  seniority: senior
+  tags: [big-company]
+  notes: >-
+    FV is a nice-to-have: knowledge of formal verification techniques is
+    preferred.
+  posted: '2026-09-28'
+  last_verified: 2026-11-09
 
 - id: FV-059
   company: Google
@@ -2410,7 +2839,7 @@
   notes: >-
     The work includes formally proving floating-point adders and multipliers.
     Requires 8 years of experience, although Google labels the level "Mid".
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-060
   company: Google
@@ -2424,7 +2853,7 @@
   seniority: senior
   tags: [big-company]
   notes: Google's Israel team for custom server chips.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-172
   company: Google
@@ -2441,7 +2870,7 @@
     Leads formal property verification strategy and sign-off for Edge-AI SoC
     blocks; 8 years of formal verification required. A different team and
     requisition from FV-060.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-281
   company: Google
@@ -2458,7 +2887,7 @@
     FV is a nice-to-have. Customer-facing Google Cloud architect for Web3 and
     digital assets in Hong Kong.
   posted: '2026-10-16'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-061
   company: Google DeepMind
@@ -2477,7 +2906,7 @@
     Requires a PhD or equivalent, 3 years with Lean and 3 years using AI agents.
     The work formalizes C/C++/Rust semantics and correctness specs in Lean with
     AI help, and builds infrastructure for proof search at scale.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-173
   company: Google DeepMind
@@ -2496,7 +2925,7 @@
     systems with formal methods and constraint programming, and putting formal
     methods in the loop of ML hardware-optimization flows. The qualifications
     don't ask for formal methods.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-282
   company: Graphcore
@@ -2511,7 +2940,7 @@
   notes: >-
     Director of silicon verification in Bristol. First published 2025-12-10.
   posted: '2025-12-10'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-062
   company: Harmonic
@@ -2525,7 +2954,7 @@
   seniority: engineer
   notes: Customer-facing; scope properties, run proofs with Aristotle, diagnose failures.
   posted: '2026-08-13'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-063
   company: Harmonic
@@ -2542,7 +2971,7 @@
     for mathematical theorem proving behind Aristotle (Lean 4). Separate from
     the two Harmonic roles already on the board.
   posted: '2025-07-10'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-064
   company: Harmonic
@@ -2555,7 +2984,7 @@
   domain: [AI for mathematics, theorem proving]
   seniority: research-engineer
   posted: '2026-08-24'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-283
   company: Hewlett Packard Enterprise
@@ -2572,7 +3001,7 @@
   notes: >-
     Manager of networking-ASIC verification; USD 174,000–352,500.
   posted: '2026-09-16'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-284
   company: Hewlett Packard Enterprise
@@ -2589,7 +3018,7 @@
   notes: >-
     ASIC verification; USD 158,500–321,000.
   posted: '2026-10-08'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-285
   company: Hewlett Packard Enterprise
@@ -2608,7 +3037,7 @@
     requisitions:
     https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Chippewa-Falls-Wisconsin-United-States-of-America/VLSI-Logic-Design-Intern_1213411.
   posted: '2026-10-12'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-286
   company: Hewlett Packard Enterprise
@@ -2625,7 +3054,7 @@
   notes: >-
     FV is a nice-to-have. USD 153,500–310,500.
   posted: '2026-09-16'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-287
   company: Hewlett Packard Enterprise
@@ -2642,7 +3071,7 @@
   notes: >-
     FV is a nice-to-have. ASIC methodology; USD 174,000–352,500.
   posted: '2026-09-16'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-174
   company: Huawei (Edinburgh Research Center)
@@ -2661,7 +3090,7 @@
     verification experience is a nice-to-have. Requires professional English
     and Mandarin.
   posted: '2026-09-30'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-175
   company: Huawei (Hilbert Research Center, Dresden)
@@ -2679,7 +3108,7 @@
     focused on systems and formal methods. Evergreen: first published
     2023-02-01, still in the live feed.
   posted: '2023-02-01'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-288
   company: Huawei (Hilbert Research Center, Dresden)
@@ -2696,7 +3125,7 @@
     Web-engine and compiler work at the Dresden research centre, with
     formal-methods tooling in the duties. Same centre as FV-175.
   posted: '2026-08-04'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-176
   company: Huawei (Zurich Research Center)
@@ -2713,26 +3142,9 @@
     Builds a contract layer whose annotations generate proof obligations, and
     correctness gates (combinational and sequential equivalence, model
     checking) so agent-proposed RTL edits are committed only once proven.
+    Employment type: contract.
   posted: '2026-10-13'
-  last_verified: 2026-11-05
-
-- id: FV-065
-  company: IBM
-  role: Formal Verification Engineer
-  category: hardware
-  url: https://careers.ibm.com/en_US/careers/JobDetail?jobId=136675
-  location: Bangalore, India
-  remote: hybrid
-  stack: [SVA, Verilog, VHDL, Python]
-  domain: [hardware, CPU]
-  seniority: senior
-  tags: [big-company]
-  notes: >-
-    The posting body calls the role "Formal Verification Lead". The work covers
-    IBM server-class processors, SoCs and ASICs, using IBM internal formal
-    tools.
-  posted: '2026-10-13'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-289
   company: IBM
@@ -2749,7 +3161,25 @@
     IBM Z and Power I/O validation in Bangalore. Confirmed through IBM's search
     API; the posting page is behind a bot check.
   posted: '2026-10-13'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-418
+  company: IBM
+  role: AI Foundations - Research Scientist
+  category: software
+  url: https://careers.ibm.com/careers/JobDetail?jobId=118292
+  location: San Francisco, CA / Cambridge, MA / New York, NY
+  remote: hybrid
+  stack: [programming languages, compilers, formal verification]
+  domain: [AI foundations, model inference]
+  seniority: research-scientist
+  tags: [big-company]
+  notes: >-
+    Asks for a record of leading projects in compilers, programming languages,
+    formal verification or similar, including proving properties of formal
+    systems; POPL, PLDI and CAV are named venues.
+  posted: '2026-06-02'
+  last_verified: 2026-11-09
 
 - id: FV-290
   company: Imagination Technologies
@@ -2764,22 +3194,7 @@
   notes: >-
     FV is a nice-to-have. GPU IP in Bristol.
   posted: '2026-09-23'
-  last_verified: 2026-11-05
-
-- id: FV-291
-  company: Imagination Technologies
-  role: Graduate GPU Verification Engineer (Pune, India)
-  category: hardware
-  url: https://careers.pageuppeople.com/774/cw/en/job/502883
-  location: Pune, India
-  remote: onsite
-  stack: [SystemVerilog, UVM or formal]
-  domain: [GPU IP]
-  seniority: engineer
-  notes: >-
-    FV is a nice-to-have. Graduate role in Pune.
-  posted: '2026-11-03'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-292
   company: Imagination Technologies
@@ -2794,7 +3209,7 @@
   notes: >-
     FV is a nice-to-have. GPU IP.
   posted: '2026-06-11'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-293
   company: Imagination Technologies
@@ -2810,7 +3225,7 @@
     FV is a nice-to-have. GPU IP; folds the Hyderabad twin (502609). Other
     requisitions: https://careers.pageuppeople.com/774/cw/en/job/502609.
   posted: '2026-09-23'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-294
   company: Imagination Technologies
@@ -2825,7 +3240,109 @@
   notes: >-
     FV is a nice-to-have. GPU IP.
   posted: '2026-09-24'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-419
+  company: Imagination Technologies
+  role: GPU Hardware Datapath Design Engineer
+  category: hardware
+  url: https://careers.pageuppeople.com/774/cw/en/job/502857/gpu-hardware-datapath-design-engineer
+  location: Kings Langley, UK
+  remote: onsite
+  stack: [computer-assisted proof, automated theorem provers, floating point]
+  domain: [GPU datapath design]
+  seniority: engineer
+  notes: >-
+    FV is a nice-to-have: experience with computer-assisted proof or automated
+    theorem provers is desired. Early-career and experienced applicants.
+  posted: '2026-08-03'
+  last_verified: 2026-11-09
+
+- id: FV-420
+  company: Infineon Technologies
+  role: Principal Engineer Verification (f/m/div)
+  category: hardware
+  url: https://jobs.infineon.com/careers/job/563808972332937
+  location: Munich, Germany
+  remote: hybrid
+  stack: [UVM, UPF, formal verification, PSS]
+  domain: [automotive and industrial ICs]
+  seniority: principal
+  tags: [big-company]
+  notes: >-
+    Applying formal verification methodologies is part of the profile; the
+    duties name formal verification among best-in-class methods.
+  posted: '2026-11-06'
+  last_verified: 2026-11-09
+
+- id: FV-421
+  company: Infineon Technologies
+  role: Staff Engineer Digital Verification and Methodology
+  category: hardware
+  url: https://jobs.infineon.com/careers/job/563808972143960
+  location: Lexington, KY
+  remote: hybrid
+  stack: [constrained-random, formal verification, ABV]
+  domain: [microcontroller ICs]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: Export control; US citizenship, permanent residency or protected status required
+  compensation: USD 98,560–147,840 (indicative)
+  notes: >-
+    Applies constrained-random, metric-driven and formal verification
+    techniques; formal and assertion-based experience is preferred.
+  posted: '2026-10-09'
+  last_verified: 2026-11-09
+
+- id: FV-422
+  company: Infineon Technologies
+  role: Working Student - Digital Functional Verification (f/m/div)
+  category: hardware
+  url: https://jobs.infineon.com/careers/job/563808972249019
+  location: Dresden, Germany
+  remote: hybrid
+  stack: [UVM, formal verification, AI for verification]
+  domain: [IC verification]
+  seniority: intern
+  tags: [big-company]
+  notes: >-
+    Working-student role; researches formal verification and AI-based methods
+    for functional and formal verification.
+  posted: '2026-10-20'
+  last_verified: 2026-11-09
+
+- id: FV-423
+  company: Infineon Technologies
+  role: Staff Engineer Verification -IP Digital Functional Verification
+  category: hardware
+  url: https://jobs.infineon.com/careers/job/563808972118487
+  location: Bangalore, India
+  remote: onsite
+  stack: [UVM, formal verification environments]
+  domain: [IP and SoC verification]
+  seniority: senior
+  tags: [big-company]
+  notes: >-
+    Develops UVM testbenches and formal verification environments.
+  posted: '2026-10-06'
+  last_verified: 2026-11-09
+
+- id: FV-424
+  company: Infineon Technologies
+  role: Senior Manager Verification
+  category: hardware
+  url: https://jobs.infineon.com/careers/job/563808972011559
+  location: Bangalore, India
+  remote: hybrid
+  stack: [property checking, sequential equivalence]
+  domain: [SoC verification]
+  seniority: lead
+  tags: [big-company]
+  notes: >-
+    Expected expertise includes formal property checking and sequential
+    equivalence, "knowing when formal beats simulation".
+  posted: '2026-11-02'
+  last_verified: 2026-11-09
 
 - id: FV-066
   company: Inria (Argo team, Paris)
@@ -2842,23 +3359,7 @@
     AI-generated Lean code, the BELLE-Prefs dataset and GRPO fine-tuning, and
     supervises a postdoc. 12-month renewable contract, start 2026-12-01. Ad in
     French. Deadline 2026-11-14.
-  last_verified: 2026-11-05
-
-- id: FV-067
-  company: Inria (Rennes)
-  role: 'PhD Position: Trustable Machine Learning: Analysis and Verification of Soft Automata'
-  category: academic
-  url: https://jobs.inria.fr/public/classic/en/offres/2026-10416
-  location: Rennes, France
-  remote: onsite
-  stack: [neural network verification, automata learning]
-  domain: [trustworthy ML]
-  seniority: phd
-  compensation: EUR 2,300 gross/month
-  notes: >-
-    Part of the SAIF ("Safe AI through Formal methods") project. 3-year
-    contract. Deadline 2026-11-07.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-177
   company: Inria (SYCOMORES team, Lille)
@@ -2874,7 +3375,7 @@
     Nine-month contract from 2027-01-01 on Mopsa, a sound static analyser
     based on abstract interpretation. Deadline 2026-11-30. Inria's page cuts
     the title off.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-178
   company: Institute of Science and Technology Austria (ISTA)
@@ -2890,7 +3391,7 @@
     Foundational verification of realistic low-level code with Iris. PhD
     applicants go through the ISTA graduate school, whose deadline is
     2027-01-08; postdoc applications are rolling.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-068
   company: Intel
@@ -2905,7 +3406,7 @@
   tags: [big-company]
   notes: Intel Networking (Ethernet) team.
   posted: '2026-10-06'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-069
   company: Intel
@@ -2921,7 +3422,7 @@
   work_authorization: 'Position of Trust: extended background investigation required'
   compensation: USD 220,920–311,890
   posted: '2026-02-20'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-179
   company: Intel
@@ -2940,7 +3441,7 @@
     Despite the title, the description is a formal verification engineer role:
     model checking, equivalence checking, abstraction and formal proofs.
   posted: '2026-10-27'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-295
   company: Intel
@@ -2957,7 +3458,7 @@
   notes: >-
     Interconnect, cache and memory verification; USD 164,470–311,890.
   posted: '2026-07-16'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-296
   company: Intel
@@ -2975,7 +3476,7 @@
     NIC/IPU/AI IP verification in Leixlip, a new location for the board; EUR
     75,200–117,500.
   posted: '2026-10-08'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-070
   company: Jane Street
@@ -2989,7 +3490,7 @@
   seniority: engineer
   compensation: USD 250,000–300,000 (New York posting)
   notes: New team; no OCaml or functional programming experience required.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-297
   company: Jane Street
@@ -3006,7 +3507,7 @@
     requisitions. First published 2025-10-29. Other requisitions:
     https://www.janestreet.com/join-jane-street/apply/8213653002.
   posted: '2025-10-29'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-298
   company: Jane Street
@@ -3024,7 +3525,25 @@
     a formal methods team (FV-070). Other requisitions:
     https://www.janestreet.com/join-jane-street/apply/8922042002.
   posted: '2026-11-03'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-425
+  company: Jane Street
+  role: Formal Methods Research and Development
+  category: software
+  url: https://www.janestreet.com/join-jane-street/apply/8927052002
+  location: London, UK / New York, NY
+  remote: onsite
+  stack: [OCaml, refinement types, model checking, property-based testing]
+  domain: [program verification, verification of agent-generated code]
+  seniority: intern
+  notes: >-
+    The first internships in the Formal Methods group of the OCaml Language
+    team, for PhD students, postdocs and master's students. Folds the New York
+    posting. Other requisitions:
+    https://www.janestreet.com/join-jane-street/apply/8927083002.
+  posted: '2026-11-09'
+  last_verified: 2026-11-09
 
 - id: FV-299
   company: Jito Labs
@@ -3041,7 +3560,7 @@
     FV is a nice-to-have. Solana MEV infrastructure security; remote in the US
     or Europe.
   posted: '2026-10-02'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-071
   company: Johns Hopkins Applied Physics Laboratory
@@ -3057,7 +3576,7 @@
   compensation: USD 105,000–245,000
   notes: For PhD graduates (2027 start). Rolling applications.
   posted: '2026-09-01'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-300
   company: Johns Hopkins Applied Physics Laboratory
@@ -3076,7 +3595,7 @@
     citizenship and an Interim Secret clearance by start. FV-071 is APL's
     separate PhD-level FV posting.
   posted: '2026-10-19'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-301
   company: Johns Hopkins Applied Physics Laboratory
@@ -3094,7 +3613,60 @@
     FV is a nice-to-have. Internship for Bachelor's or Master's students (3.0
     GPA); US citizenship and an Interim Secret clearance by start.
   posted: '2026-10-26'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-426
+  company: JPMorganChase
+  role: Artificial Intelligence Research Lead - Vice President
+  category: software
+  url: https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210768154
+  location: New York, NY
+  remote: onsite
+  stack: [Coq, Isabelle, Lean, TLA+, Alloy, Z3]
+  domain: [AI research, agents and planning]
+  seniority: lead
+  tags: [big-company]
+  notes: >-
+    FV is a nice-to-have: formal verification tools (Coq, Isabelle, Lean,
+    TLA+, Alloy, Z3) are preferred, depending on specialisation.
+  posted: '2026-08-13'
+  last_verified: 2026-11-09
+
+- id: FV-427
+  company: JPMorganChase
+  role: Artificial Intelligence Research - Senior Associate
+  category: software
+  url: https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210768164
+  location: New York, NY
+  remote: onsite
+  stack: [Coq, Isabelle, Lean, TLA+, Alloy, Z3]
+  domain: [AI research, neuro-symbolic methods]
+  seniority: research-scientist
+  tags: [big-company]
+  notes: >-
+    FV is a nice-to-have: formal verification tools are preferred; formal
+    logic, solvers and neuro-symbolic approaches are among the research areas.
+  posted: '2026-08-13'
+  last_verified: 2026-11-09
+
+- id: FV-428
+  company: JPMorganChase
+  role: 2027 AI Research Associate Program - Internship
+  category: software
+  url: https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210800354
+  location: New York, NY / London, UK
+  remote: onsite
+  stack: [Coq, Isabelle, Lean, TLA+, Alloy, Z3]
+  domain: [AI research]
+  seniority: intern
+  tags: [big-company]
+  notes: >-
+    FV is a nice-to-have: formal verification tools are preferred. For current
+    PhD students; the New York posting closes 2026-12-31. Folds the London
+    posting. Other requisitions:
+    https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210800615.
+  posted: '2026-10-14'
+  last_verified: 2026-11-09
 
 - id: FV-180
   company: Jump Trading
@@ -3110,7 +3682,7 @@
     Formal verification is a nice-to-have: a "bonus points" item in a
     simulation-based verification role on Jump's ASIC team.
   posted: '2026-09-18'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-181
   company: Karlsruhe Institute of Technology (André Platzer group)
@@ -3126,7 +3698,7 @@
   notes: >-
     A standing group ad, last edited 2025-08-20, with no dated vacancy.
     Requires a strong background in logic, theorem proving or formal methods.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-182
   company: Karlsruhe Institute of Technology (KASTEL)
@@ -3143,7 +3715,7 @@
     PhD on modelling and verifying security properties, especially access
     control, of local-first systems such as Matrix (Prof. Hannes
     Hartenstein). Deadline 2026-11-19. German-language posting.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-183
   company: Kry10
@@ -3164,6 +3736,22 @@
   posted: '2026-10-06'
   last_verified: 2026-11-02
 
+- id: FV-429
+  company: LMU Munich (Software and Computational Systems Lab)
+  role: Doctoral Researcher on Formal Methods/Automated Software Analysis; Doctoral Researcher on Cooperative Software Verification
+  category: academic
+  url: https://www.sosy-lab.org/positions.php
+  location: Munich, Germany
+  remote: hybrid
+  stack: [model checking, static analysis, CPAchecker]
+  domain: [software verification, cooperative verification]
+  seniority: phd
+  compensation: TV-L E13, full time
+  notes: >-
+    Dirk Beyer's group; two standing doctoral calls, rolling, apply by email.
+    Remote work by prior agreement.
+  last_verified: 2026-11-09
+
 - id: FV-072
   company: LUBIS EDA
   role: Formal Verification Engineer - Professional Level
@@ -3176,7 +3764,7 @@
   seniority: engineer
   notes: Formal verification consultancy for clients' RTL.
   posted: '2026-03-23'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-073
   company: LUBIS EDA
@@ -3189,7 +3777,7 @@
   domain: [hardware, EDA services]
   seniority: senior
   posted: '2026-05-20'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-074
   company: LUBIS EDA
@@ -3205,7 +3793,7 @@
     Leads a team of 10–15 formal verification engineers. This is a people and
     customer management role.
   posted: '2026-09-23'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-185
   company: LUBIS EDA
@@ -3222,7 +3810,23 @@
     consulting business and its Verification Managers, rather than doing
     verification hands-on.
   posted: '2026-09-23'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-430
+  company: Lucid Computing
+  role: Member of Technical Staff
+  category: software
+  url: https://jobs.ashbyhq.com/lucidcomputing/a19cd7c3-6ed2-4659-bf9a-1c27200319d7
+  location: San Francisco, CA / London, UK / Remote
+  remote: hybrid
+  stack: [Rust, C/C++, Go, formal methods]
+  domain: [hardware-backed verification of AI compute]
+  seniority: engineer
+  compensation: USD 100,000–450,000, plus equity
+  notes: >-
+    FV is a nice-to-have: "Formal methods or verification tooling" is a bonus.
+  posted: '2026-08-07'
+  last_verified: 2026-11-09
 
 - id: FV-075
   company: Marvell
@@ -3237,7 +3841,7 @@
   tags: [big-company]
   notes: CAD role owning company-wide RTL-to-gate and gate-to-gate equivalence checking flows.
   posted: '2026-10-14'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-302
   company: Marvell
@@ -3255,7 +3859,7 @@
     CAD role building agentic AI flows for ASIC design verification; formal
     verification experience required.
   posted: '2026-09-28'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-076
   company: Math, Inc.
@@ -3269,10 +3873,10 @@
   seniority: any
   notes: >-
     Makers of Gauss, an autoformalization agent that works in Lean. The page is
-    a general application form asking for "evidence of extraordinary ability";
-    internships go through math.inc/careers/intern. Location and remote policy
+    a general application form asking for a brief CV and a note on mission
+    alignment; internships go through math.inc/careers/intern. Location and remote policy
     are not stated. Third-party bios place the company in Palo Alto.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-077
   company: Mathlib Initiative
@@ -3289,7 +3893,7 @@
     contract reviewers and a part-time autoformalization expert on the Formal
     Frontier team. Successful applicants usually already contribute to major
     formal-math libraries. The published contact is info@mathlib-initiative.org.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-078
   company: MatX
@@ -3307,7 +3911,7 @@
     Combines RTL model checking with HDL embeddings in interactive theorem
     provers and machine-checked compiler-lowering proofs.
   posted: '2026-05-19'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-186
   company: MatX
@@ -3327,23 +3931,7 @@
     verified-compiler experience are bonuses. Formal is one of four areas of
     the job.
   posted: '2026-10-23'
-  last_verified: 2026-11-05
-
-- id: FV-303
-  company: MatX
-  role: Methodology Engineer (Silicon)
-  category: hardware
-  url: https://jobs.ashbyhq.com/matx/b04424eb-af8d-4b06-b125-bca8d6b5ca9e
-  location: Mountain View, CA or Remote
-  remote: hybrid
-  stack: [lint, CDC, formal tools, SVA]
-  domain: [silicon methodology, AI chips]
-  seniority: engineer
-  compensation: USD 160,000–275,000 (early career), 175,000–400,000 (mid), 250,000–600,000 (senior), plus equity
-  notes: >-
-    FV is a nice-to-have. Silicon methodology (lint, CDC, formal) at MatX.
-  posted: '2026-10-07'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-304
   company: MatX
@@ -3361,7 +3949,7 @@
     FV is a nice-to-have; a separate MatX team does the FV. Differential testing
     of RTL against the simulator in Rust.
   posted: '2026-04-13'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-187
   company: Max Planck Institute for Software Systems (MPI-SWS)
@@ -3376,7 +3964,7 @@
   notes: >-
     A standing postdoc call that names programming languages and verification
     first; not a project-specific ad. Rolling.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-188
   company: MediaTek
@@ -3394,7 +3982,7 @@
     abstraction and state-space reduction; 8+ years of experience. The
     requisition dates from 2025-03-25 and was republished on 2025-11-18.
   posted: '2025-11-18'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-305
   company: MediaTek
@@ -3411,7 +3999,7 @@
     GPU and DSP IP verification in Hsinchu, with exploring formal technology
     among the duties.
   posted: '2026-11-02'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-306
   company: MediaTek
@@ -3427,7 +4015,7 @@
   notes: >-
     2027 campus hire in Singapore; formal verification is one of the DV duties.
   posted: '2026-08-25'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-307
   company: MediaTek
@@ -3444,7 +4032,7 @@
     Builds AI tooling for chip design, including formal testbench generation; FV
     knowledge required.
   posted: '2026-03-17'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-308
   company: MediaTek
@@ -3461,7 +4049,7 @@
     FV is a nice-to-have (assertions and formal verification, optional).
     Data-centre SerDes and SoC DV in Hsinchu.
   posted: '2026-02-23'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-149
   company: Mercor
@@ -3482,7 +4070,7 @@
     Independent contracting, paid weekly. Unlike Mercor's Lean listing, the
     posting names no proof assistant.
   posted: '2026-02-27'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-189
   company: Meta
@@ -3501,7 +4089,7 @@
     X-prop, connectivity); 5+ years of formal verification. Bangalore is a
     separate requisition, 873697069067092, posted 2026-10-05.
   posted: '2026-10-20'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-309
   company: Meta
@@ -3518,7 +4106,7 @@
   notes: >-
     DFT verification for data-centre ASICs, with formal proofs of DFT logic.
   posted: '2026-10-13'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-310
   company: Meta
@@ -3537,7 +4125,7 @@
     12–16 week internship on data-centre AI accelerators; USD 6,660–12,014 per
     month.
   posted: '2026-11-03'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-311
   company: Meta
@@ -3555,7 +4143,7 @@
     Reality Labs accelerators; formal is one of the options the verification
     strategy draws on.
   posted: '2026-11-03'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-312
   company: Meta
@@ -3574,7 +4162,92 @@
     2026-09-02). Other requisitions:
     https://www.metacareers.com/profile/job_details/1489379243208886.
   posted: '2026-10-19'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-431
+  company: Microchip Technology
+  role: Engineer II - Verification
+  category: hardware
+  url: https://microchiphr.wd5.myworkdayjobs.com/External/job/AZ---Chandler/Engineer-II---Verification_R4372-26
+  location: Chandler, AZ
+  remote: onsite
+  stack: [UVM, formal properties, formal coverage]
+  domain: [microcontrollers (dsPIC)]
+  seniority: engineer
+  tags: [big-company]
+  notes: >-
+    Builds UVM and/or formal verification environments; develops formal
+    properties and drives formal coverage closure.
+  posted: '2026-10-26'
+  last_verified: 2026-11-09
+
+- id: FV-432
+  company: Microchip Technology
+  role: Technical Staff Engineer - Verification
+  category: hardware
+  url: https://microchiphr.wd5.myworkdayjobs.com/External/job/AZ---Chandler/Technical-Staff-Engineer---Verification_R3660-26
+  location: Chandler, AZ / San Jose, CA / Roseville, CA / Austin, TX
+  remote: onsite
+  stack: [SystemVerilog, UVM, formal verification]
+  domain: [FPGA SoC verification]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 91,000–232,000
+  notes: >-
+    Expertise in formal verification methodologies is required. Folds the
+    same-text req R2774-25. Other requisitions:
+    https://microchiphr.wd5.myworkdayjobs.com/External/job/AZ---Chandler/Technical-Staff-Engineer---Verification_R2774-25.
+  posted: '2026-08-26'
+  last_verified: 2026-11-09
+
+- id: FV-433
+  company: Microchip Technology
+  role: Principal Verification Engineer
+  category: hardware
+  url: https://microchiphr.wd5.myworkdayjobs.com/External/job/Ireland---Dublin/Principal-Verification-Engineer_R3321-26
+  location: Dublin, Ireland
+  remote: onsite
+  stack: [SystemVerilog, UVM, formal verification]
+  domain: [SoC verification]
+  seniority: principal
+  tags: [big-company]
+  notes: >-
+    Expertise in formal verification methodologies is required.
+  posted: '2026-08-13'
+  last_verified: 2026-11-09
+
+- id: FV-434
+  company: Microchip Technology
+  role: FPGA Verification Engineer II
+  category: hardware
+  url: https://microchiphr.wd5.myworkdayjobs.com/External/job/Ireland---Dublin/FPGA-Verification-Engineer-II_R3325-26
+  location: Dublin, Ireland
+  remote: onsite
+  stack: [SystemVerilog, UVM, formal verification]
+  domain: [FPGA SoCs (Arm, RISC-V)]
+  seniority: engineer
+  tags: [big-company]
+  notes: >-
+    Formal verification methodologies are required; 2+ years of experience.
+  posted: '2026-08-13'
+  last_verified: 2026-11-09
+
+- id: FV-435
+  company: Microchip Technology
+  role: Sr. Engineer II – Verification
+  category: hardware
+  url: https://microchiphr.wd5.myworkdayjobs.com/External/job/India---Bangalore/Sr-Engineer-II---Verification_R2522-26
+  location: Bangalore, India
+  remote: onsite
+  stack: [UVM, ABV, JasperGold, VC Formal]
+  domain: [storage and memory controllers]
+  seniority: senior
+  tags: [big-company]
+  notes: >-
+    Verifies designs with assertion-based and formal verification; JasperGold
+    or VC Formal is preferred.
+  posted: '2026-06-17'
+  last_verified: 2026-11-09
 
 - id: FV-313
   company: Micron
@@ -3592,7 +4265,26 @@
     FV is a nice-to-have. Memory and storage controller ASICs; USD
     186,000–407,000.
   posted: '2026-09-24'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-436
+  company: Micron
+  role: Member Of Technical Staff TLP  - HBM Verification
+  category: hardware
+  url: https://micron.wd1.myworkdayjobs.com/External/job/Hyderabad---Phoenix-Aquila-India/Member-Of-Technical-Staff---HBM-Verification_JR91001-1
+  location: Hyderabad, India
+  remote: onsite
+  stack: [UVM, formal verification]
+  domain: [HBM memory]
+  seniority: principal
+  tags: [big-company]
+  notes: >-
+    Applies formal verification to critical HBM blocks; strong FV experience
+    is required. A Principal Engineer req (2026-09-09) has near-identical
+    text. Other requisitions:
+    https://micron.wd1.myworkdayjobs.com/External/job/Hyderabad---Phoenix-Aquila-India/Principal-Engineer--HBM-Design-Verification_JR109967.
+  posted: '2026-09-30'
+  last_verified: 2026-11-09
 
 - id: FV-080
   company: Microsoft
@@ -3609,7 +4301,7 @@
     Req 200049580. FoSSE team works on code migration, translation and static
     analysis "using AI and formal methods".
   posted: '2026-08-20'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-082
   company: Microsoft
@@ -3624,7 +4316,7 @@
   tags: [big-company]
   work_authorization: 'Export-controlled information: proof of citizenship/residency for eligibility assessment; Microsoft Cloud Background Check'
   posted: '2026-10-15'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-084
   company: Microsoft
@@ -3642,7 +4334,7 @@
     code migration backed by Verus proofs and spec inference. A Senior Software
     Engineer twin is req 200063310 (job/1970393557045291).
   posted: '2026-10-23'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-086
   company: Microsoft
@@ -3659,7 +4351,7 @@
     Req 200063310 (posting title is just "Senior Software Engineer"). Same team
     as req 200063311.
   posted: '2026-10-23'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-314
   company: Microsoft
@@ -3678,7 +4370,7 @@
     Microsoft silicon DV; export-control eligibility required; three days a week
     in the office.
   posted: '2026-10-12'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-315
   company: Microsoft
@@ -3695,7 +4387,7 @@
     A second India requisition, 1970393556957365 (India, multiple locations,
     same title and date), may be a twin; it was not fetched.
   posted: '2026-11-02'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-316
   company: Microsoft
@@ -3713,7 +4405,7 @@
   notes: >-
     FV is a nice-to-have. AI/ML SoC DV; export-control eligibility required.
   posted: '2026-11-02'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-317
   company: Microsoft
@@ -3731,7 +4423,7 @@
   notes: >-
     FV is a nice-to-have. Export-control eligibility required.
   posted: '2026-10-16'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-318
   company: Microsoft
@@ -3749,7 +4441,7 @@
     FV is a nice-to-have. Research internship on foundation models and agents
     (Applied Sciences Group).
   posted: '2026-11-02'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-319
   company: Mirafra Technologies
@@ -3764,7 +4456,7 @@
   notes: >-
     Hardware services firm; the role sits in a modal on the careers page with no
     per-job URL. Hyderabad only; a Bengaluru LinkedIn card was not confirmed.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-087
   company: Mistral AI
@@ -3781,7 +4473,7 @@
     software-verification datasets, evaluators and benchmarks. RL from Lean
     verifiable rewards is a plus. The posting does not state a workplace type.
   posted: '2026-10-20'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-088
   company: Mobileye
@@ -3796,7 +4488,7 @@
   tags: [big-company]
   notes: Automated Driving Hardware group; 5+ years of formal verification experience required.
   posted: '2024-03-25'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-320
   company: Mysten Labs
@@ -3812,7 +4504,7 @@
   notes: >-
     FV is a nice-to-have. DeFi security on Sui; remote in the US or Canada.
   posted: '2026-09-23'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-321
   company: Mythic
@@ -3827,7 +4519,7 @@
   notes: >-
     FV is a nice-to-have. Evergreen: first published 2025-10-08.
   posted: '2025-10-08'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-322
   company: Mythic
@@ -3842,7 +4534,7 @@
   notes: >-
     FV is a nice-to-have. First published 2025-12-12.
   posted: '2025-12-12'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-089
   company: National University of Singapore
@@ -3861,6 +4553,22 @@
   posted: '2026-09-15'
   last_verified: 2026-10-27
 
+- id: FV-437
+  company: Neurophos
+  role: Design Verification Lead
+  category: hardware
+  url: https://jobs.ashbyhq.com/neurophos/ea20f64d-0622-4c4c-9f17-11aad602080a
+  location: Austin, TX / Sunnyvale, CA
+  remote: onsite
+  stack: [UVM, formal verification, emulation]
+  domain: [optical AI inference chips]
+  seniority: lead
+  notes: >-
+    Owns testbench architecture, formal verification and coverage; 8–15 years
+    of experience.
+  posted: '2026-09-16'
+  last_verified: 2026-11-09
+
 - id: FV-323
   company: Normal Computing
   role: Hardware Engineer, RTL
@@ -3875,7 +4583,7 @@
   notes: >-
     USD 200,000–400,000 plus equity.
   posted: '2026-08-10'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-324
   company: Normal Computing
@@ -3891,7 +4599,7 @@
   notes: >-
     RTL lead for AI ASICs; USD 274,000–350,000 plus equity.
   posted: '2026-10-29'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-325
   company: Normal Computing
@@ -3907,7 +4615,7 @@
   notes: >-
     FV is a nice-to-have. USD 200,000–400,000 plus equity.
   posted: '2026-07-15'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-212
   company: Northeastern University
@@ -3929,7 +4637,7 @@
     Research Laboratory (PRL), which hopes to grow through this search. Review
     starts 2026-11-15 and runs until the posts are filled.
   posted: '2026-09-24'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-090
   company: Nuvacore
@@ -3946,7 +4654,7 @@
     CPU startup; Senior (4+ yrs) to Principal (15+ yrs); cache coherence, memory
     consistency, speculation. Theorem proving listed as a plus.
   posted: '2026-09-18'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-326
   company: Nuvacore
@@ -3963,7 +4671,7 @@
     New-college-grad CPU design and verification role with formal methods in the
     duties.
   posted: '2026-09-30'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-327
   company: Nuvacore
@@ -3979,7 +4687,7 @@
   notes: >-
     FV is a nice-to-have. CPU fabric and interconnect verification.
   posted: '2026-09-18'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-328
   company: Nuvacore
@@ -3995,7 +4703,7 @@
   notes: >-
     FV is a nice-to-have. x86 CPU verification.
   posted: '2026-09-18'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-091
   company: NVIDIA
@@ -4013,7 +4721,7 @@
     lowerings, using AI and semantic verification. A strong formal-methods
     background (preferably a PhD) is expected.
   posted: '2026-10-20'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-093
   company: NVIDIA
@@ -4028,7 +4736,7 @@
   tags: [big-company]
   compensation: USD 100,000–166,750 (L1) / 116,000–189,750 (L2) base + equity
   posted: '2026-10-06'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-094
   company: NVIDIA
@@ -4046,7 +4754,7 @@
     Tegra user-mode compute drivers, and defines a company-wide formal
     verification process.
   posted: '2026-09-21'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-095
   company: NVIDIA
@@ -4061,7 +4769,7 @@
   tags: [big-company]
   compensation: USD 136,000–218,500 (L3) / 168,000–264,500 (L4) base + equity
   posted: '2026-09-23'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-096
   company: NVIDIA
@@ -4079,7 +4787,7 @@
     LPU (the Groq-derived inference architecture). Two more LPU formal reqs are
     open, one remote US and one remote Canada.
   posted: '2026-07-06'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-097
   company: NVIDIA
@@ -4098,7 +4806,7 @@
     synthesis to design and verify secure hardware and software, including
     building and checking proofs.
   posted: '2026-10-22'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-190
   company: NVIDIA
@@ -4117,7 +4825,7 @@
     equivalence checking) and LLM agents around them, rather than applying
     formal to designs.
   posted: '2026-10-30'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-329
   company: NVIDIA
@@ -4134,7 +4842,7 @@
   notes: >-
     Architect for the Halos core and robotics platform.
   posted: '2026-10-30'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-330
   company: NVIDIA
@@ -4151,7 +4859,7 @@
     Automotive PCIe/NVMe driver team in Bengaluru; Workday also lists India
     remote.
   posted: '2026-09-02'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-331
   company: NVIDIA
@@ -4167,7 +4875,7 @@
   notes: >-
     DRIVE OS platform team in Bengaluru.
   posted: '2026-09-02'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-332
   company: NVIDIA
@@ -4186,7 +4894,7 @@
     as JR2021313, JR2021341, JR2021297 (Santa Clara) and JR2025421 (Bengaluru,
     2026-09-29); fold them.
   posted: '2026-10-30'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-333
   company: NVIDIA
@@ -4204,7 +4912,7 @@
     FV is a nice-to-have. Deep-learning compiler verification (correctness
     testing of LLVM/MLIR/TVM/XLA stacks).
   posted: '2026-10-31'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-334
   company: NVIDIA
@@ -4221,7 +4929,7 @@
   notes: >-
     FV is a nice-to-have. 2027 systems software internships in Santa Clara.
   posted: '2026-10-30'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-335
   company: NVIDIA
@@ -4238,7 +4946,7 @@
   notes: >-
     FV is a nice-to-have. Policy enforcement for AI agents; US remote possible.
   posted: '2026-10-30'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-336
   company: NVIDIA
@@ -4256,7 +4964,7 @@
     FV is a nice-to-have. Agentic compiler systems (LLVM/MLIR); US remote
     possible.
   posted: '2026-11-03'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-337
   company: NVIDIA
@@ -4273,7 +4981,7 @@
   notes: >-
     FV is a nice-to-have. GPU firmware security.
   posted: '2026-10-30'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-338
   company: NVIDIA
@@ -4290,7 +4998,7 @@
   notes: >-
     FV is a nice-to-have. RTOS and virtualization security; US remote possible.
   posted: '2026-10-30'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-339
   company: NVIDIA
@@ -4306,7 +5014,7 @@
   notes: >-
     FV is a nice-to-have. Functional-safety engineer for Halos in Bengaluru.
   posted: '2026-09-29'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-340
   company: NXP Semiconductors
@@ -4407,7 +5115,7 @@
     or a record of moving formal methods into deployed systems. Hiring runs
     through Convergent Research's board.
   posted: '2026-09-09'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-345
   company: OpenAI
@@ -4425,7 +5133,7 @@
   notes: >-
     FV is a nice-to-have. Evergreen: first published 2025-10-29.
   posted: '2025-10-29'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-346
   company: OpenAI
@@ -4444,7 +5152,7 @@
     FV is a nice-to-have. The 2026-11-02 rule names OpenAI chip design as now in
     scope; export-control status may apply.
   posted: '2026-09-11'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-347
   company: OpenAI
@@ -4462,7 +5170,7 @@
   notes: >-
     FV is a nice-to-have. Export-control status may apply.
   posted: '2026-09-08'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-348
   company: OpenZeppelin
@@ -4478,7 +5186,7 @@
     FV is a nice-to-have. Evergreen: first published 2021-01-05. Remote
     worldwide.
   posted: '2021-01-05'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-349
   company: Oracle
@@ -4495,7 +5203,7 @@
   notes: >-
     FV is a nice-to-have. A management role in Responsible AI research.
   posted: '2026-11-05'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-350
   company: Oracle (OCI)
@@ -4514,7 +5222,7 @@
     verification. Folds 342865, 346021 and the similar 342768 ('Director,
     Platform Software Engineering').
   posted: '2026-10-28'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-351
   company: Oracle (OCI)
@@ -4534,7 +5242,7 @@
     Infrastructure') and 348947 (Bengaluru, 'Lead Principal Software
     Developer').
   posted: '2026-10-27'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-352
   company: Oracle (OCI)
@@ -4550,7 +5258,7 @@
   notes: >-
     FV is a nice-to-have. OCI network telemetry in Bengaluru.
   posted: '2026-10-19'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-353
   company: Oracle (OCI)
@@ -4568,7 +5276,25 @@
     FV is a nice-to-have. Network control systems; folds 347636 ('Lead Principal
     Software Engineer, Core Infrastructure', Nashville).
   posted: '2026-10-14'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-438
+  company: Oracle (OCI)
+  role: Senior Director, Core Infrastructure Engineering
+  category: software
+  url: https://careers.oracle.com/en/sites/jobsearch/job/349790
+  location: United States
+  remote: onsite
+  stack: [formal verification of system designs, TLA+]
+  domain: [cloud infrastructure, distributed systems]
+  seniority: lead
+  tags: [big-company]
+  compensation: USD 193,600–414,400
+  notes: >-
+    Drives the use of formal verification to verify system designs and sets up
+    processes for formally verifying complex features. A level above FV-350.
+  posted: '2026-11-05'
+  last_verified: 2026-11-09
 
 - id: FV-100
   company: Pramaana Labs
@@ -4585,7 +5311,7 @@
     the formal-methods engineers. The posting says prior formal verification
     experience is not required.
   posted: '2026-10-26'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-101
   company: Pramaana Labs
@@ -4602,7 +5328,7 @@
     and benchmarks. Includes designing harnesses for autoformalization and
     prover systems.
   posted: '2026-09-23'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-102
   company: Pramaana Labs
@@ -4619,7 +5345,7 @@
     autoformalizer and prover. Works with formal-methods experts on whether
     model outputs are faithful to the source.
   posted: '2026-10-26'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-103
   company: Pramaana Labs
@@ -4637,7 +5363,7 @@
     model". This role scales RLVR with the Lean kernel as reward and pushes
     autoformalization and proof search.
   posted: '2026-08-24'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-191
   company: Pramaana Labs
@@ -4654,7 +5380,7 @@
     output to proof viewers. Asks for QA or LLM-evaluation experience, not
     formal verification.
   posted: '2026-10-22'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-354
   company: Pramaana Labs
@@ -4671,7 +5397,7 @@
     legal, tax and other regulated workflows. Same employer as FV-100 to FV-103
     and FV-191.
   posted: '2026-11-04'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-355
   company: Prime Intellect
@@ -4688,7 +5414,7 @@
     FV is a nice-to-have. RL environments for semiconductor design; remote
     possible.
   posted: '2026-10-19'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-192
   company: Prover Technology
@@ -4706,7 +5432,7 @@
     Prover's customers. Evergreen: first published 2023-03-18, still listed
     under available positions.
   posted: '2023-03-18'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-356
   company: Prover Technology
@@ -4723,7 +5449,7 @@
     for railway signalling. Apply by email (jobs@prover.com). Same employer as
     FV-192.
   posted: '2026-03-10'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-105
   company: Qualcomm
@@ -4740,7 +5466,7 @@
     Requires 2+ years of FV experience. DPV and C2RTL/RTL2RTL sequential
     equivalence experience is a plus.
   posted: '2026-09-04'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-106
   company: Qualcomm
@@ -4756,7 +5482,7 @@
   compensation: USD 203,700–305,500
   notes: Adreno GPU.
   posted: '2026-09-17'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-193
   company: Qualcomm
@@ -4771,7 +5497,7 @@
   tags: [big-company]
   notes: A six-month formal verification internship in Cambridge, for the 2027 financial year.
   posted: '2026-10-28'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-194
   company: Qualcomm
@@ -4789,24 +5515,24 @@
     apps, convergence strategies and methodology work; 2+ years of formal
     verification.
   posted: '2026-09-28'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
-- id: FV-357
+- id: FV-439
   company: Qualcomm
-  role: RTL Synthesis Methodology Principal/ Sr Staff Engineer
+  role: CAD Verification Director
   category: hardware
-  url: https://careers.qualcomm.com/careers/job/446717261607
+  url: https://careers.qualcomm.com/careers/job/446721220107
   location: Bangalore, India
   remote: onsite
-  stack: [Conformal LEC, Synopsys Formality, Fusion Compiler, Genus]
-  domain: [synthesis and netlist signoff methodology]
-  seniority: principal
+  stack: [JasperGold, VC Formal, property checking, equivalence checking, model checking]
+  domain: [semiconductor CAD]
+  seniority: lead
   tags: [big-company]
   notes: >-
-    Synthesis and netlist sign-off methodology lead; equivalence checking is the
-    formal part. Takes Qualcomm to 5.
-  posted: '2026-11-02'
-  last_verified: 2026-11-05
+    Architects and deploys formal verification flows (property, equivalence
+    and model checking) and evaluates formal tools.
+  posted: '2026-09-24'
+  last_verified: 2026-11-09
 
 - id: FV-107
   company: Quantinuum
@@ -4821,7 +5547,7 @@
   work_authorization: US Person required (citizen, green card, refugee or asylee)
   compensation: USD 138,000–173,000
   posted: '2026-08-03'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-358
   company: Quantinuum
@@ -4837,7 +5563,7 @@
     FV is a nice-to-have. A new Cambridge requisition, separate from FV-107
     (Broomfield).
   posted: '2026-11-04'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-195
   company: Queen's University (CritLab)
@@ -4871,7 +5597,7 @@
     Works with partner engineering teams on verification deployments (Verus,
     Dafny, Viper, TLA+, Lean, Rocq, Isabelle).
   posted: '2026-06-03'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-360
   company: Reasonable AI
@@ -4890,7 +5616,110 @@
     https://apply.workable.com/reasonable/j/0D00FBFA1E/;
     https://apply.workable.com/reasonable/j/374A4756A2/.
   posted: '2026-04-14'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-440
+  company: Reasonable AI
+  role: Student Researcher Program
+  category: ai-for-proof
+  url: https://apply.workable.com/reasonable/j/383AD7E2BA/
+  location: Budapest, Hungary
+  remote: onsite
+  stack: [Lean, Dafny, Verus, LLMs, reinforcement learning]
+  domain: [AI for verified software]
+  seniority: intern
+  compensation: '"Generous compensation" (no figure)'
+  notes: >-
+    A 12–24 week research project for PhD students, connected to Reasonable's
+    work in machine learning and formal verification; open-source Lean, Dafny
+    or Verus work is a bonus.
+  posted: '2026-11-09'
+  last_verified: 2026-11-09
+
+- id: FV-441
+  company: Renesas Electronics
+  role: Senior Digital Verification Engineer
+  category: hardware
+  url: https://jobs.smartrecruiters.com/RenesasElectronics/744000145455839
+  location: Athens (Kallithea), Greece
+  remote: onsite
+  stack: [UVM, SVA, formal verification]
+  domain: [mixed-signal and power ICs]
+  seniority: senior
+  tags: [big-company]
+  notes: >-
+    Uses constrained-random testing, SVA and formal methods to prove design
+    correctness.
+  posted: '2026-08-25'
+  last_verified: 2026-11-09
+
+- id: FV-442
+  company: Renesas Electronics
+  role: Senior/Staff Verification Engineer
+  category: hardware
+  url: https://jobs.smartrecruiters.com/RenesasElectronics/744000156578874
+  location: Prague, Czechia
+  remote: onsite
+  stack: [UVM, SVA, formal verification]
+  domain: [digital IP verification]
+  seniority: senior
+  tags: [big-company]
+  notes: >-
+    Designs assertion-based and formal verification test scenarios; SVA or FV
+    experience is a plus.
+  posted: '2026-10-20'
+  last_verified: 2026-11-09
+
+- id: FV-443
+  company: Renesas Electronics
+  role: Principal Engineer - Design Verification
+  category: hardware
+  url: https://jobs.smartrecruiters.com/RenesasElectronics/744000156251920
+  location: Hyderabad, India
+  remote: onsite
+  stack: [UVM, assertions, formal verification]
+  domain: [MCU and SoC verification]
+  seniority: principal
+  tags: [big-company]
+  notes: >-
+    Knowledge of formal verification methodologies is required; hybrid
+    formal-simulation flows are preferred.
+  posted: '2026-10-19'
+  last_verified: 2026-11-09
+
+- id: FV-444
+  company: Renesas Electronics
+  role: Senior Staff Digital Verification Engineer (f/m/d)
+  category: hardware
+  url: https://jobs.smartrecruiters.com/RenesasElectronics/744000136747860
+  location: Dresden, Germany
+  remote: onsite
+  stack: [SVA, formal verification, UVM, AMS]
+  domain: [mixed-signal ICs]
+  seniority: senior
+  tags: [big-company]
+  notes: >-
+    Mainly UVM and AMS verification; at least basic formal verification and
+    SVA knowledge is required.
+  posted: '2026-07-09'
+  last_verified: 2026-11-09
+
+- id: FV-445
+  company: Renesas Electronics
+  role: Design Verification Engineer（SoC機能検証エンジニア）(1)
+  category: hardware
+  url: https://jobs.smartrecruiters.com/RenesasElectronics/744000150277759
+  location: Kodaira, Tokyo, Japan
+  remote: onsite
+  stack: [UVM, JasperGold, VC Formal]
+  domain: [SoC verification (Arm CPU subsystems)]
+  seniority: engineer
+  tags: [big-company]
+  notes: >-
+    FV is a nice-to-have: formal verification with JasperGold or VC Formal is
+    preferred. The posting is in Japanese; 3+ years of experience.
+  posted: '2026-09-18'
+  last_verified: 2026-11-09
 
 - id: FV-108
   company: Resolution
@@ -4911,7 +5740,7 @@
     scale. The posting says the job is mostly not writing Lean by hand. Based in
     Berkeley; remote only in exceptional cases.
   posted: '2026-10-06'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-361
   company: Resolution
@@ -4930,7 +5759,7 @@
     track builds autoformalization tooling. Same employer as FV-108; Resolution
     sponsors visas for relocation to Berkeley.
   posted: '2026-06-27'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-362
   company: River AI
@@ -4946,7 +5775,7 @@
   notes: >-
     AI hardware DV; USD 200,000–420,000.
   posted: '2026-05-15'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-363
   company: Riverlane
@@ -4954,7 +5783,7 @@
   category: hardware
   url: https://www.riverlane.com/jobs?gh_jid=4772973101
   location: Cambridge, UK
-  remote: onsite
+  remote: hybrid
   stack: [RTL/FPGA verification, formal verification]
   domain: [quantum error-correction hardware]
   seniority: engineer
@@ -4962,7 +5791,7 @@
   notes: >-
     FV is a nice-to-have. Quantum error-correction hardware; GBP 60,000–88,000.
   posted: '2026-02-04'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-196
   company: Riverside Research
@@ -4980,7 +5809,7 @@
     Summer 2027 internship: specifications and proofs in Rocq and Lean for
     systems software, verified tools in Rust and OCaml.
   posted: '2026-10-28'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-197
   company: Riverside Research
@@ -4999,7 +5828,7 @@
     Riverside's formal methods researchers. Experience formally verifying
     cryptographic implementations is a nice-to-have.
   posted: '2026-09-17'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-364
   company: Riverside Research
@@ -5017,7 +5846,7 @@
     FV is a nice-to-have (formal methods a plus; seL4 desired). US citizenship
     and eligibility for a Top Secret clearance required.
   posted: '2026-07-24'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-365
   company: RTX (Raytheon)
@@ -5036,7 +5865,7 @@
     FV is a nice-to-have. Defence FPGA firmware verification; security clearance
     eligibility required. Same Workday tenant as RTX BBN.
   posted: '2026-09-14'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-109
   company: RTX BBN Technologies
@@ -5053,7 +5882,7 @@
   compensation: USD 86,800–165,200
   notes: Same title as req 01878215 but a different BBN group, and no existing clearance required.
   posted: '2026-04-01'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-110
   company: RTX BBN Technologies
@@ -5070,7 +5899,7 @@
   compensation: USD 86,800–165,200
   notes: The title says Hybrid but the posting body lists the role type as onsite.
   posted: '2026-09-29'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-111
   company: Runtime Verification
@@ -5082,7 +5911,7 @@
   stack: [K framework, executable semantics]
   domain: [blockchain, language semantics]
   seniority: any
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-112
   company: RWTH Aachen University (Chair for Quantum Information Systems)
@@ -5099,7 +5928,7 @@
     Dominique Unruh's group. The soft deadline (end of September 2026) has
     passed; the pages say later applications are considered only if the position
     is still unfilled.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-366
   company: Samsung (Samsung Semiconductor India Research)
@@ -5116,7 +5945,7 @@
     IP DV for high-speed serial and security IP in Bangalore; FV expertise
     required (5–6 years).
   posted: '2026-05-18'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-115
   company: Sandia National Laboratories
@@ -5130,7 +5959,25 @@
   seniority: intern
   work_authorization: US citizens, permanent residents, asylees or refugees; nationals of China, Iran, North Korea or Russia barred unless also US citizens; no clearance required
   notes: Req 699392. Enrolled full-time graduate students; up to 30 hours/week during term.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-446
+  company: SASH
+  role: Research Engineer / Research Scientist, Zero-Knowledge Verification
+  category: software
+  url: https://jobs.ashbyhq.com/SASH/8407d60d-ea29-4414-834a-998343af4863
+  location: London, UK / Remote
+  remote: remote
+  stack: [zero-knowledge proofs, Halo2, Plonky3, STARKs]
+  domain: [verifiable AI compute, AI governance]
+  seniority: any
+  work_authorization: Can sponsor UK visas
+  compensation: USD 100,000–200,000
+  notes: >-
+    FV is a nice-to-have: formal verification of a verifier codebase or
+    protocol is listed among strong extras.
+  posted: '2026-09-22'
+  last_verified: 2026-11-09
 
 - id: FV-116
   company: SF Tensor
@@ -5149,7 +5996,7 @@
     low-precision formalisation. PhD in maths strongly recommended but not
     required.
   posted: '2026-09-27'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-367
   company: SF Tensor
@@ -5166,7 +6013,7 @@
     GPU compiler role whose duties include the formal correctness proofs behind
     aggressive search. Same team family as FV-116.
   posted: '2026-08-29'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-368
   company: SF Tensor
@@ -5183,7 +6030,7 @@
     FV is a nice-to-have: formal methods, SMT solvers or verified compilation.
     The optimiser's reward includes a formal correctness proof.
   posted: '2026-08-29'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-369
   company: SF Tensor
@@ -5200,7 +6047,7 @@
     FV is a nice-to-have; the kernels this role writes are proved correct by the
     formal correctness team (FV-116).
   posted: '2026-08-29'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-117
   company: SiFive
@@ -5218,7 +6065,7 @@
     Functional programming (Scala/OCaml/Haskell) and theorem-prover familiarity
     are nice-to-haves.
   posted: '2026-09-21'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-118
   company: SiFive
@@ -5231,7 +6078,7 @@
   domain: [hardware, CPU, RISC-V]
   seniority: senior
   posted: '2026-10-26'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-119
   company: SiFive
@@ -5249,7 +6096,7 @@
     issue/commit and the load-store unit. Three identical reqs are open
     (R-101462, R-101463, R-101466).
   posted: '2026-09-13'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-198
   company: SiFive
@@ -5266,7 +6113,7 @@
     RISC-V blocks; 7+ years of formal verification. Requisition R-101233 is a
     twin with the same text.
   posted: '2026-09-02'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-199
   company: SiFive
@@ -5282,7 +6129,7 @@
     Formal verification of RISC-V IP (IOMMU), with properties written in
     Chisel and Scala; 7+ years of formal verification.
   posted: '2026-09-16'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-370
   company: SiFive
@@ -5299,7 +6146,7 @@
     FV is a nice-to-have (SPARK, Frama-C named). A software role, so SiFive's
     hardware cap doesn't apply.
   posted: '2026-07-23'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-121
   company: Sorbonne Paris North University (LIPN)
@@ -5312,7 +6159,7 @@
   domain: [multi-agent systems]
   seniority: phd
   notes: Supervisor Munyque Mittelmann. Apply by email. Deadline 2026-11-15.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-371
   company: Swarm Aero
@@ -5330,7 +6177,7 @@
     Flight-software systems engineering for autonomous military aircraft; DO-333
     is DO-178C's formal-methods supplement. US clearance eligibility required.
   posted: '2026-10-02'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-122
   company: Synopsys
@@ -5344,7 +6191,7 @@
   seniority: principal
   tags: [big-company]
   posted: '2026-09-20'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-123
   company: Synopsys
@@ -5362,26 +6209,7 @@
     Customer-facing VC Formal deployment role covering property checking, DPV,
     SEQ and connectivity.
   posted: '2026-09-27'
-  last_verified: 2026-11-05
-
-- id: FV-200
-  company: Synopsys
-  role: Applications Engineering, Staff Engineer
-  category: hardware
-  url: https://careers.synopsys.com/job/hsinchu/applications-engineering-staff-engineer/44408/100063255136
-  location: Hsinchu, Taiwan
-  remote: onsite
-  stack: [VC Formal, SVA, Python, Tcl]
-  domain: [EDA tools, hardware]
-  seniority: senior
-  tags: [big-company]
-  notes: >-
-    Despite the generic title, the job is formal: building assertion IP for
-    AMBA and DDR protocols and validating VC Formal apps (FPV, sequential
-    equivalence, connectivity). Asks for 2–14 years in formal verification or
-    EDA tool validation.
-  posted: '2026-08-31'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-372
   company: Synopsys
@@ -5398,7 +6226,7 @@
   notes: >-
     Synthesis and Formality applications engineering; USD 129,000–193,000.
   posted: '2026-10-21'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-373
   company: Synopsys
@@ -5414,7 +6242,25 @@
   notes: >-
     Staff level next to FV-122 (Principal AE, also Bengaluru).
   posted: '2026-09-20'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-447
+  company: Synopsys
+  role: SOC Engineering, Principal Engineer
+  category: hardware
+  url: https://careers.synopsys.com/job/austin/soc-engineering-principal-engineer/44408/102901939600
+  location: Austin, TX
+  remote: onsite
+  stack: [VC Formal, assertion-based verification]
+  domain: [SoC verification]
+  seniority: principal
+  tags: [big-company]
+  compensation: USD 171,200–256,800
+  notes: >-
+    FV is a nice-to-have: formal and assertion-based verification experience
+    and VC Formal are preferred.
+  posted: '2026-11-04'
+  last_verified: 2026-11-09
 
 - id: FV-203
   company: Systerel
@@ -5431,7 +6277,7 @@
     development, and formal-methods processes that meet rail standards.
     French-language posting; permanent contract.
   posted: '2026-09-17'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-204
   company: Systerel
@@ -5449,7 +6295,7 @@
     partly in B: proof obligations, automatic and interactive proof, model
     rework. French-language posting.
   posted: '2026-10-09'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-205
   company: Systerel
@@ -5466,7 +6312,7 @@
     for formal methods (analysers, translators, provers); the rest is client
     Eclipse tools and scripting. French-language posting.
   posted: '2026-09-17'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-206
   company: Systerel
@@ -5484,7 +6330,7 @@
     modelling language for formal validation, then functional and formal
     validation of a safety PLC. French-language posting.
   posted: '2026-10-09'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-124
   company: Tenstorrent
@@ -5500,7 +6346,7 @@
   compensation: USD 100k–500k company-wide engineer range (base + variable); role-specific band not given
   notes: Posting says candidates at various experience levels are welcome; 6+ years listed.
   posted: '2026-10-05'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-374
   company: Tenstorrent
@@ -5518,7 +6364,7 @@
     Verification leadership for RISC-V high-performance CPUs; FV is a required
     strand. Export-controlled.
   posted: '2026-05-28'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-375
   company: Tenstorrent
@@ -5534,7 +6380,7 @@
     Lead-level DV for automotive and robotics SoCs in Munich; FV familiarity is
     required.
   posted: '2026-03-02'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-376
   company: Tenstorrent
@@ -5550,7 +6396,7 @@
   notes: >-
     FV is a nice-to-have. Evergreen: first published 2023-10-25 and still open.
   posted: '2023-10-25'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-125
   company: Thales
@@ -5567,7 +6413,7 @@
     Master's-level (Bac+4/5) internship. Despite the AI title, the task is a
     data filter developed and proved correct in Coq, then extracted to OCaml.
   posted: '2026-10-26'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-126
   company: Thales
@@ -5584,7 +6430,7 @@
     Six-month engineering internship building an MCP server that exposes Frama-C
     to an AI agent.
   posted: '2026-10-21'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-127
   company: Theorem (Theorem Labs)
@@ -5598,7 +6444,7 @@
   seniority: any
   compensation: USD 200,000–500,000 plus equity; fellowship USD 125,000/yr pro rata
   notes: Built lf-lean, an AI-assisted verified Rocq-to-Lean translation.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-150
   company: Topos Institute
@@ -5618,7 +6464,7 @@
     Client-driven work plus CatColab, a Rust and TypeScript platform for
     modelling in domain-specific categorical logics. Apply by email with a CV
     and cover letter; applications are reviewed on a rolling basis.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-128
   company: Trail of Bits
@@ -5635,7 +6481,7 @@
     Attacks formally verified systems by mapping what a proof does and does not
     establish, then demonstrating gaps with working exploits.
   posted: '2026-09-02'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-129
   company: TrustInSoft
@@ -5651,7 +6497,7 @@
     Joins the 15-person R&D team behind TrustInSoft Analyzer (a Frama-C
     derivative); OCaml can be learned on the job. The posting promises a
     "flexible working environment" but states no remote policy.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-130
   company: TU Braunschweig
@@ -5684,7 +6530,7 @@
     AFOSR-funded SemSyn project (Benedikt Ahrens): dependent type theory,
     two-level type theory, with formalization in Agda. 4 years (1.5 + 2.5).
     Rolling review. Deadline 2026-11-29.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-377
   company: TU Delft
@@ -5701,7 +6547,7 @@
     One-year postdoc in the Algorithmics group (Anna Lukina). Deadline
     2026-11-23.
   posted: '2026-11-05'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-207
   company: University of Alberta
@@ -5719,7 +6565,7 @@
     formalization of mathematics in Lean and automated theorem proving.
     Review begins 2026-12-01; the posting closes 2027-01-20.
   posted: '2026-10-19'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-208
   company: University of Colorado Boulder
@@ -5736,7 +6582,7 @@
     Department of Mathematics; "formalization and automated reasoning" is one
     of four named areas. Closes 2026-11-11.
   posted: '2026-10-12'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-132
   company: University of East Anglia
@@ -5751,7 +6597,26 @@
   notes: >-
     Self-funded: no stipend, and a bench fee is payable. Supervisor Christopher
     Birkbeck. Start 2027-02-01. Deadline 2026-11-30.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
+
+- id: FV-448
+  company: University of East Anglia
+  role: 'PhD Studentship: Studying the Langlands program via formalisation and AI'
+  category: academic
+  url: https://www.jobs.ac.uk/job/DTP041/phd-studentship-studying-the-langlands-program-via-formalisation-and-ai
+  location: Norwich, UK
+  remote: onsite
+  stack: [Lean 4, AI tools]
+  domain: [formalised mathematics, local Langlands correspondence]
+  seniority: phd
+  work_authorization: Funding is for students eligible for Home fee status
+  compensation: GBP 20,409 a year stipend (2026/27), Home fees and GBP 3,000 a year for research
+  notes: >-
+    Four years from 2027-10-01; deadline 2027-02-24. Formalises the local
+    Langlands correspondence in Lean 4 with AI tools. Supervisor Christopher
+    Birkbeck; separate from FV-132, his self-funded studentship.
+  posted: '2026-11-09'
+  last_verified: 2026-11-09
 
 - id: FV-134
   company: University of Exeter
@@ -5769,7 +6634,7 @@
     One of several projects competing in the EPSRC DLA studentship round for
     September 2027 entry. Deadline 2026-12-08 (midday).
   posted: '2026-10-27'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-209
   company: University of Exeter
@@ -5787,7 +6652,7 @@
     proof assistants. The same EPSRC DLA competition as FV-134. Deadline
     2026-12-08.
   posted: '2026-10-27'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-135
   company: University of Strathclyde (Mathematically Structured Programming group)
@@ -5806,7 +6671,7 @@
     Competitive scheme with several fully funded places. Contact a potential
     supervisor before 2026-12-01; candidacy decision 2026-12-11.
   posted: '2026-10-26'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-136
   company: Uppsala University
@@ -5823,7 +6688,7 @@
     Department of Information Technology. Start 2027-01-15. Deadline
     2026-11-15.
   posted: '2026-08-21'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-211
   company: Uppsala University
@@ -5841,7 +6706,7 @@
     programs, with specification inference and fault localisation. Deadline
     2026-11-13.
   posted: '2026-09-29'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-378
   company: Upscale AI
@@ -5857,7 +6722,7 @@
   notes: >-
     AI networking ASICs in Santa Clara; USD 212,000–246,000.
   posted: '2026-07-01'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-379
   company: Upscale AI
@@ -5873,7 +6738,7 @@
     AI networking SoCs in Bengaluru; a twin posting dated 2026-07-14 has the
     same text.
   posted: '2026-10-14'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-380
   company: Upscale AI
@@ -5888,7 +6753,7 @@
   notes: >-
     FV is a nice-to-have; a twin posting dated 2026-07-14 has the same text.
   posted: '2026-10-14'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-137
   company: Velaura
@@ -5905,7 +6770,7 @@
     Physical-AI SoC startup; formal for CPUs, FPUs (IEEE-754), vector/SIMD; 10+
     years expected.
   posted: '2026-07-25'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-381
   company: Velaura
@@ -5923,7 +6788,7 @@
     requisitions:
     https://jobs.lever.co/velaura/4d82a6d6-2567-426a-b974-ca15cce88c1e.
   posted: '2026-08-19'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-382
   company: Velaura
@@ -5941,7 +6806,7 @@
     Other requisitions:
     https://jobs.lever.co/velaura/3fa02429-41fe-451b-b048-5be1f8e04aa2.
   posted: '2026-07-16'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-383
   company: Velaura
@@ -5959,7 +6824,7 @@
     Other requisitions:
     https://jobs.lever.co/velaura/34011ac5-096f-442e-ad2a-07d6fb07d588.
   posted: '2026-07-15'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-384
   company: Velaura
@@ -5977,7 +6842,7 @@
     Other requisitions:
     https://jobs.lever.co/velaura/7ae9ae54-dd22-4171-b572-6c53266d2157.
   posted: '2026-08-19'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-138
   company: Veridise
@@ -5991,7 +6856,7 @@
   seniority: research-scientist
   notes: PhD or equivalent professional research experience requested.
   posted: '2026-01-21'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-385
   company: Voltai
@@ -6006,7 +6871,7 @@
   notes: >-
     FV is a nice-to-have. First published 2025-11-12.
   posted: '2025-11-12'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-386
   company: Voltai
@@ -6021,7 +6886,7 @@
   notes: >-
     FV is a nice-to-have. Takes Voltai to the cap of 5.
   posted: '2026-10-19'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-387
   company: Voltai
@@ -6036,7 +6901,7 @@
   notes: >-
     FV is a nice-to-have.
   posted: '2026-10-19'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-388
   company: Voltai
@@ -6051,7 +6916,7 @@
   notes: >-
     Core hardware FV. Evergreen: first published 2025-11-12.
   posted: '2025-11-12'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-389
   company: Voltai
@@ -6067,23 +6932,7 @@
     Voltai builds AI agents that design chips; this research role builds their
     formal engines.
   posted: '2026-07-23'
-  last_verified: 2026-11-05
-
-- id: FV-139
-  company: Waymo
-  role: Senior Formal Verification Engineer
-  category: hardware
-  url: https://careers.withwaymo.com/jobs?gh_jid=7593534
-  location: Mountain View, CA
-  remote: hybrid
-  stack: [JasperGold, VC Formal, Questa Formal, SystemVerilog Assertions, bounded model checking, sequential equivalence checking]
-  domain: [hardware, automotive, autonomous vehicles]
-  seniority: senior
-  tags: [big-company]
-  compensation: USD 204,000–259,000 base
-  notes: Owns formal sign-off for Waymo's custom autonomous-driving silicon.
-  posted: '2026-02-09'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-390
   company: Westlake University (Institute for Theoretical Sciences)
@@ -6101,7 +6950,7 @@
     Postdoc in Huayi Chen's group; applications reviewed on receipt. The ad asks
     for applicants under 35. Folds the older MathJobs listing #27884.
   posted: '2026-10-13'
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-145
   company: Zeroth Research
@@ -6117,7 +6966,7 @@
   notes: >-
     Fixed-term until November 2027, funded by ARIA's Safeguarded AI programme.
     Mostly remote, with periodic meetups in Birmingham.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-146
   company: Zeroth Research
@@ -6133,7 +6982,7 @@
   notes: >-
     Fixed-term until August 2027, renewable with the project; funded by ARIA's
     Scaling Trust programme. Mostly remote, with periodic meetups in Birmingham.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-147
   company: Zeroth Research
@@ -6150,7 +6999,7 @@
     One posting for two hires: neural certificate learning and LLM-based
     certificate generation. Fixed-term until November 2027, funded by ARIA's
     Safeguarded AI programme; mostly remote, with periodic meetups in Birmingham.
-  last_verified: 2026-11-05
+  last_verified: 2026-11-09
 
 - id: FV-391
   company: Zhejiang University (FICTION formal verification group)
@@ -6164,6 +7013,5 @@
   seniority: postdoc
   notes: >-
     Group of Mingshuai Chen; apply by email. The September 2026 PhD intake is
-    closed; postdoc, RA and later PhD intakes are open. The PhD place starting
-    September 2026 has closed; postdoc and other positions are still invited.
-  last_verified: 2026-11-05
+    closed; postdoc, RA and later PhD intakes are open.
+  last_verified: 2026-11-09

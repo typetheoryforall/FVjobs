@@ -47,6 +47,16 @@
 - {employer: Nethermind, ats: ashby, slug: nethermind}
 - {employer: Succinct, ats: ashby, slug: succinct}
 - {employer: Morpho, ats: ashby, slug: morpho}
+# Added on 2026-11-09
+- {employer: Architect Labs, ats: ashby, slug: architect}
+- {employer: Neurophos, ats: ashby, slug: neurophos}
+- {employer: Lucid Computing, ats: ashby, slug: lucidcomputing}
+- {employer: SASH, ats: ashby, slug: SASH}
+- {employer: Physical Superintelligence, ats: ashby, slug: psi}
+- {employer: Obsidian Systems, ats: ashby, slug: obsidiansystems}
+- {employer: Eigen Labs, ats: ashby, slug: eigen-labs}
+- {employer: Paradigm, ats: ashby, slug: paradigm}
+- {employer: Circle, ats: ashby, slug: circle}
 
 # Lever
 - {employer: Oath Technologies (Convergent Research), ats: lever, slug: convergentresearch}
@@ -60,6 +70,9 @@
 - {employer: Upscale AI, ats: lever, slug: upscale-ai}
 - {employer: Atom Computing, ats: lever, slug: atomcomputing}
 - {employer: Mythic, ats: lever, slug: mythic-ai.com}
+# Added on 2026-11-09
+- {employer: Cirrus Logic, ats: lever-eu, slug: cirrus}
+- {employer: Research Innovations, ats: lever, slug: researchinnovations.com}
 
 # Greenhouse
 - {employer: Jane Street, ats: greenhouse, slug: janestreet}
@@ -81,6 +94,10 @@
 - {employer: OpenZeppelin, ats: greenhouse, slug: openzeppelin}
 - {employer: Aptos Labs, ats: greenhouse, slug: aptoslabs}
 - {employer: Two Six Technologies, ats: greenhouse, slug: twosixtechnologies}
+# Added on 2026-11-09
+- {employer: Baya Systems, ats: greenhouse, slug: bayasystems}
+- {employer: LayerZero Labs, ats: greenhouse, slug: layerzerolabs}
+- {employer: Zipline, ats: greenhouse, slug: flyzipline}
 # Quant firms: no FV today; swept for nice-to-have bullets.
 - {employer: Hudson River Trading, ats: greenhouse, slug: wehrtyou}
 - {employer: DRW, ats: greenhouse, slug: drweng}
@@ -99,6 +116,7 @@
 - {employer: LUBIS EDA, ats: personio, slug: lubis-eda}
 - {employer: Certora, ats: teamtailor, host: careers.certora.com}
 - {employer: Huawei UK, ats: teamtailor, host: huaweiuk.teamtailor.com}
+- {employer: Huawei Ireland Research Centre, ats: teamtailor, host: huaweiireland.teamtailor.com}
 - {employer: Huawei Research Center Germany & Austria, ats: teamtailor, host: huaweiresearchcentergermanyaustria.teamtailor.com}
 - {employer: Huawei Zurich Research Center, ats: teamtailor, host: careers.huaweirc.ch}
 
@@ -122,6 +140,9 @@
 - {employer: Micron, ats: workday, host: micron.wd1.myworkdayjobs.com, site: External}
 - {employer: GlobalFoundries, ats: workday, host: globalfoundries.wd1.myworkdayjobs.com, site: External}
 - {employer: Altera, ats: workday, host: altera.wd1.myworkdayjobs.com, site: Altera}
+# Added on 2026-11-09
+- {employer: Microchip Technology, ats: workday, host: microchiphr.wd5.myworkdayjobs.com, site: External}
+- {employer: Axis Communications, ats: workday, host: axis.wd3.myworkdayjobs.com, site: External_Career_Site}
 
 # Other big-company systems
 - employer: Amazon
@@ -131,6 +152,8 @@
 - {employer: Qualcomm, ats: eightfold, host: careers.qualcomm.com, domain: qualcomm.com}
 - {employer: AMD, ats: jibe, host: careers.amd.com, job_url: 'https://careers.amd.com/careers-home/jobs/{slug}', queries: [formal]}
 - {employer: JHU APL, ats: jibe, host: careers.jhuapl.edu, job_url: 'https://careers.jhuapl.edu/jobs/{slug}', queries: [formal verification, formal methods]}
+# Added on 2026-11-09
+- {employer: Infineon Technologies, ats: eightfold, host: jobs.infineon.com, domain: infineon.com}
 
 # By hand (a browser, a search page, or a single careers page)
 - {employer: Apple, ats: manual, how: 'jobs.apple.com search, parse __staticRouterHydrationData (playbook cookbook)'}
@@ -184,9 +207,23 @@
 - {employer: ChainSecurity, ats: manual, how: 'chainsecurity.com/about/#jobs'}
 - {employer: Informal Systems, ats: manual, how: 'informal.systems/careers (not actively hiring on 2026-11-05)'}
 - {employer: Predictable Machines, ats: manual, how: predictablemachines.com/careers}
-- {employer: Ceva, ats: manual, how: 'ceva-ip.com/careers (DNS failed on 2026-11-02 and 2026-11-05)'}
+- {employer: Ceva, ats: manual, how: 'ceva-ip.com/career/ (resolves again on 2026-11-09); Comeet API company 76.005, token in the career page'}
 - {employer: L&T Technology Services, ats: manual, how: 'ltts.com/careers (JS-only)'}
 - {employer: 'IronVelo, midspiral, Verity Labs, Argument, Lanyon AI, VerifAIX, SkyLabs AI, untyped.ai, Scidonia', ats: manual, how: 'FV startups with no careers page yet; check their sites'}
+# Added on 2026-11-09
+- {employer: General Dynamics Mission Systems, ats: manual, how: 'careers-gdms.icims.com/jobs/search?ss=1&searchKeyword=formal+verification&in_iframe=1 (clearance roles)'}
+- {employer: Renesas Electronics, ats: manual, how: 'SmartRecruiters API, company RenesasElectronics (fuzzy q; grep the postings). Its Workday tenants are wrong'}
+- {employer: Stirling Dynamics, ats: manual, how: 'stirlingdynamics-jobs-expleo.icims.com (iCIMS)'}
+- {employer: JPMorganChase (AI Research), ats: manual, how: 'Oracle Recruiting Cloud jpmc.fa.oraclecloud.com, site CX_1001; keyword Isabelle or TLA isolates the AI Research reqs'}
+- {employer: Palo Alto Networks, ats: manual, how: 'Workday paloaltonetworks.wd5 / panwexternalcareers; TalentBrew org 47263 at jobs.paloaltonetworks.com'}
+- {employer: QEDIT, ats: manual, how: 'qed-it.com/careers/ (no openings on 2026-11-09)'}
+- {employer: Kestrel Institute, ats: manual, how: 'kestrel.edu/careers/ (reachable again, "Coming soon" on 2026-11-09)'}
+- {employer: Qubika, ats: manual, how: 'qubika.careers-page.com (Manatal); posted a hardware FV role on LinkedIn only'}
+- {employer: SiPearl, ats: manual, how: 'careers.sipearl.com/en (JS-only)'}
+- {employer: STMicroelectronics, ats: manual, how: 'st.com careers (unreachable from curl; needs a browser)'}
+- {employer: Serokell, ats: manual, how: serokell.io/careers}
+- {employer: 'lowRISC, Sigil Logic, Capabilities Limited, Cherified Systems, Rigorous Engineering, Glaive Research, Hashberg, Adjoint Labs, Hellas AI', ats: manual, how: 'ARIA Safeguarded AI and AIVHAI performers; check their sites (lowRISC: lowrisc.applytojob.com)'}
+- {employer: 'Theoric, Veriformatics, Verilean, PulseEngine, Oraclizer', ats: manual, how: 'FV and AI-for-FV startups found via GitHub; no careers listings on 2026-11-09'}
 # Academic groups and institutes with standing or recurring FV calls
 - {employer: CWI, ats: manual, how: 'cwi.nl/en/jobs/vacancies/ (one plain page)'}
 - {employer: Westlake University (Institute for Theoretical Sciences), ats: manual, how: MathJobs employer 2280}
@@ -196,3 +233,4 @@
 - {employer: Xi'an Jiaotong-Liverpool University, ats: manual, how: 'MathJobs; career15.sapsf.cn (company xjtlu)'}
 - {employer: Chalmers, ats: manual, how: 'ReachMee list web103.reachmee.com/ext/I003/304/main?site=5&lang=UK (plain GET)'}
 - {employer: University of the Bundeswehr Munich (CODE), ats: manual, how: 'IACR jobs board, iacr.org/jobs'}
+- {employer: LMU Munich (SoSy-Lab), ats: manual, how: 'sosy-lab.org/positions.php (standing doctoral calls)'}

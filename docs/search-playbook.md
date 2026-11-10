@@ -345,7 +345,7 @@ Amazon/AWS (including Annapurna and Leo), AMD, Apple, Arm, Cadence, Google
 NVIDIA, Qualcomm, RTX BBN, Samsung, Snowflake, Synopsys and Thales. The
 2026-11-05 run added Oracle, NXP, HPE, Bosch, Analog Devices, Cisco, Micron,
 GlobalFoundries, Altera, Broadcom, AFRY and ServiceNow, and the maintainer added
-Anthropic, OpenAI and Anduril. The 2026-11-09 run proposes Microchip, Renesas,
+Anthropic, OpenAI and Anduril. The 2026-11-09 run added Microchip, Renesas,
 Infineon, General Dynamics Mission Systems, JPMorganChase and Axis
 Communications (about 5,000 staff, the borderline). Not tagged: Cirrus Logic, Ceva,
 Neurophos, Baya Systems, Architect Labs and Stirling Dynamics, and also not: Jane
@@ -397,4 +397,4 @@ universities.
 | 2026-10-27 | 149 | 100 (+25 your call) | 125 (all recommended and your call; 2 archived) | [2026-10-27](search-runs/2026-10-27.md) |
 | 2026-11-02 | 73 | 25 (+17 your call, 12 over the cap) | 61 (all recommended and your call, 17 filling the new cap of 5, 2 under the nice-to-have rule; 1 archived) | [2026-11-02](search-runs/2026-11-02.md) |
 | 2026-11-05 | 297 | 179: 88 core FV, 91 FV as a nice-to-have (+43 your call, 51 over the cap) | 179 (all recommended; FV-213 to FV-391) | [2026-11-05](search-runs/2026-11-05.md) |
-| 2026-11-09 | 116 (57 + 27 your call + 23 over the cap + 9 skip) | 57: 37 core FV, 20 FV as a nice-to-have | _pending approval_ | [2026-11-09](search-runs/2026-11-09.md) |
+| 2026-11-09 | 116 (57 + 27 your call + 23 over the cap + 9 skip) | 57: 37 core FV, 20 FV as a nice-to-have (+27 your call, 23 over the cap) | 57 (all recommended; FV-392 to FV-448) | [2026-11-09](search-runs/2026-11-09.md) |

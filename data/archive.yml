@@ -249,6 +249,23 @@
   last_verified: 2026-11-02
   closed: 2026-11-05
 
+- id: FV-303
+  company: MatX
+  role: Methodology Engineer (Silicon)
+  category: hardware
+  url: https://jobs.ashbyhq.com/matx/b04424eb-af8d-4b06-b125-bca8d6b5ca9e
+  location: Mountain View, CA or Remote
+  remote: hybrid
+  stack: [lint, CDC, formal tools, SVA]
+  domain: [silicon methodology, AI chips]
+  seniority: engineer
+  compensation: USD 160,000–275,000 (early career), 175,000–400,000 (mid), 250,000–600,000 (senior), plus equity
+  notes: >-
+    FV is a nice-to-have. Silicon methodology (lint, CDC, formal) at MatX.
+  posted: '2026-10-07'
+  last_verified: 2026-11-05
+  closed: 2026-11-09
+
 - id: FV-079
   company: Mercor
   role: Lean Engineer, Formal Mathematics (Lean 4, Mathlib, Theorem Proving)

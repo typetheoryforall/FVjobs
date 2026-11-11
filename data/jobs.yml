@@ -6332,6 +6332,21 @@
   posted: '2026-10-09'
   last_verified: 2026-11-09
 
+- id: FV-449
+  company: Tendrils
+  role: Engineer
+  category: hardware
+  url: https://tendrils.co/join
+  location: Cambridge, UK
+  remote: onsite
+  stack: [SystemVerilog]
+  domain: [hardware, CPU]
+  seniority: engineer
+  compensation: GBP 150K plus equity
+  notes: >-
+    Member-of-Technical-Staff-style dynamic roles. Relocation costs covered.
+  last_verified: 2026-11-11
+
 - id: FV-124
   company: Tenstorrent
   role: Formal Verification Engineer

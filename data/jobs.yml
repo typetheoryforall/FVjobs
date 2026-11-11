@@ -6332,6 +6332,27 @@
   posted: '2026-10-09'
   last_verified: 2026-11-09
 
+- id: FV-449
+  company: Tendrils
+  role: Open applications (chip design, compilers, formal verification)
+  category: hardware
+  url: https://tendrils.co/join
+  location: Cambridge, UK
+  remote: onsite
+  stack: [SystemVerilog, formal verification, FPGA, Rust]
+  domain: [hardware, CPU, interaction nets, compilers]
+  seniority: any
+  compensation: GBP 150,000 base (about USD 200,000) plus significant equity
+  notes: >-
+    A startup building a general-purpose processor with thousands of parallel
+    cores, alongside the open-source Vine language that targets it, with
+    interaction nets in the stack. A general application rather than a
+    specific opening: roles are broad, and functional and formal verification
+    is one of ten listed projects alongside RTL design, FPGA prototyping,
+    physical design and compiler work. Relocation costs covered; apply by
+    emailing the address on the page.
+  last_verified: 2026-11-11
+
 - id: FV-124
   company: Tenstorrent
   role: Formal Verification Engineer

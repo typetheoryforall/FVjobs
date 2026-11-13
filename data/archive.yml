@@ -285,42 +285,6 @@
   last_verified: 2026-10-27
   closed: 2026-11-02
 
-- id: FV-249
-  company: Bosch (Robert Bosch Robotics)
-  role: Tech Lead (f/m/div.)
-  category: software
-  url: https://jobs.smartrecruiters.com/BoschGroup/744000159868749-tech-lead-f-m-div-
-  location: Renningen, Germany
-  remote: onsite
-  stack: [formal verification, model checking, safety/security assurance]
-  domain: [safety-security agent harness for robotics/physical AI]
-  seniority: lead
-  tags: [big-company]
-  notes: >-
-    Tech lead for a safety-security agent harness for robotics and physical AI
-    at Bosch Corporate Research, Renningen.
-  posted: '2026-11-05'
-  last_verified: 2026-11-05
-  closed: 2026-11-09
-
-- id: FV-250
-  company: Bosch (Robert Bosch Robotics)
-  role: Technical Product Owner (f/m/div.)
-  category: software
-  url: https://jobs.smartrecruiters.com/BoschGroup/744000159867534-technical-product-owner-f-m-div-
-  location: Renningen, Germany
-  remote: onsite
-  stack: [formal verification, tool assurance]
-  domain: [same safety-security agent harness]
-  seniority: lead
-  tags: [big-company]
-  notes: >-
-    Technical product owner for the same agent-harness project as the Tech Lead;
-    a management role on an FV effort.
-  posted: '2026-11-05'
-  last_verified: 2026-11-05
-  closed: 2026-11-09
-
 - id: FV-141
   company: Cryspen
   role: Open applications (Rust verification, hax)

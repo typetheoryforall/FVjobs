@@ -26,8 +26,8 @@
 - {employer: Snowflake, ats: ashby, slug: snowflake}
 - {employer: Bedrock Robotics, ats: ashby, slug: bedrock-robotics}
 - {employer: '&Truth', ats: ashby, slug: andtruth}
-# Atalanta's posting is unlisted: the board is empty but the posting is live.
-# Re-verification finds it; the sweep only catches new listed roles.
+# Atalanta's board listed six roles on 2026-11-13 (it was empty, with one
+# unlisted posting, until then).
 - {employer: Atalanta, ats: ashby, slug: atalanta}
 - {employer: Ethereum Foundation, ats: ashby, slug: ethereum-foundation}
 - {employer: Category Labs, ats: ashby, slug: category-labs}
@@ -57,6 +57,16 @@
 - {employer: Eigen Labs, ats: ashby, slug: eigen-labs}
 - {employer: Paradigm, ats: ashby, slug: paradigm}
 - {employer: Circle, ats: ashby, slug: circle}
+
+# Added on 2026-11-13
+- {employer: Cogent Security, ats: ashby, slug: cogent-security}
+- {employer: Lumilens, ats: ashby, slug: lumilens}
+- {employer: OLIX, ats: ashby, slug: olix}
+- {employer: ClickHouse, ats: ashby, slug: clickhouse}
+- {employer: Supabase, ats: ashby, slug: supabase}
+- {employer: ZODL (Zcash Open Development Lab), ats: ashby, slug: zodl}
+- {employer: Stellar Development Foundation, ats: ashby, slug: stellar}
+- {employer: Vals AI, ats: ashby, slug: vals-ai}
 
 # Lever
 - {employer: Oath Technologies (Convergent Research), ats: lever, slug: convergentresearch}
@@ -98,6 +108,9 @@
 - {employer: Baya Systems, ats: greenhouse, slug: bayasystems}
 - {employer: LayerZero Labs, ats: greenhouse, slug: layerzerolabs}
 - {employer: Zipline, ats: greenhouse, slug: flyzipline}
+# Added on 2026-11-13
+- {employer: Invisible Technologies, ats: greenhouse, slug: agency}
+- {employer: Lightmatter, ats: greenhouse, slug: lightmatter}
 # Quant firms: no FV today; swept for nice-to-have bullets.
 - {employer: Hudson River Trading, ats: greenhouse, slug: wehrtyou}
 - {employer: DRW, ats: greenhouse, slug: drweng}
@@ -110,6 +123,9 @@
 - {employer: Galois, ats: workable, slug: galois}
 - {employer: Trail of Bits, ats: workable, slug: trailofbits}
 - {employer: Reasonable AI, ats: workable, slug: reasonable}
+# Added on 2026-11-13
+- {employer: Fidus Systems, ats: workable, slug: fidus}
+- {employer: CommonAI C.I.C., ats: workable, slug: commonai}
 
 # Personio and Teamtailor
 - {employer: Axiomise, ats: personio, slug: axiomise}
@@ -119,6 +135,9 @@
 - {employer: Huawei Ireland Research Centre, ats: teamtailor, host: huaweiireland.teamtailor.com}
 - {employer: Huawei Research Center Germany & Austria, ats: teamtailor, host: huaweiresearchcentergermanyaustria.teamtailor.com}
 - {employer: Huawei Zurich Research Center, ats: teamtailor, host: careers.huaweirc.ch}
+# Added on 2026-11-13
+- {employer: Semidynamics, ats: teamtailor, host: careers.semidynamics.com}
+- {employer: SiPearl, ats: teamtailor, host: careers.sipearl.com}
 
 # Workday
 - {employer: NVIDIA, ats: workday, host: nvidia.wd5.myworkdayjobs.com, site: NVIDIAExternalCareerSite}
@@ -143,6 +162,13 @@
 # Added on 2026-11-09
 - {employer: Microchip Technology, ats: workday, host: microchiphr.wd5.myworkdayjobs.com, site: External}
 - {employer: Axis Communications, ats: workday, host: axis.wd3.myworkdayjobs.com, site: External_Career_Site}
+# Added on 2026-11-13
+- {employer: Ciena, ats: workday, host: ciena.wd5.myworkdayjobs.com, site: Careers}
+- {employer: Draper, ats: workday, host: draper.wd5.myworkdayjobs.com, site: Draper_Careers, queries: [formal verification, formal analysis]}
+- {employer: The Aerospace Corporation, ats: workday, host: aero.wd5.myworkdayjobs.com, site: external, queries: [formal methods]}
+- {employer: RAND, ats: workday, host: rand.wd5.myworkdayjobs.com, site: External_Career_Site, queries: [formal methods, formal verification]}
+- {employer: Palo Alto Networks, ats: workday, host: paloaltonetworks.wd5.myworkdayjobs.com, site: panwexternalcareers}
+- {employer: Boeing, ats: workday, host: boeing.wd1.myworkdayjobs.com, site: EXTERNAL_CAREERS, queries: [formal verification]}
 
 # Other big-company systems
 - employer: Amazon
@@ -154,16 +180,18 @@
 - {employer: JHU APL, ats: jibe, host: careers.jhuapl.edu, job_url: 'https://careers.jhuapl.edu/jobs/{slug}', queries: [formal verification, formal methods]}
 # Added on 2026-11-09
 - {employer: Infineon Technologies, ats: eightfold, host: jobs.infineon.com, domain: infineon.com}
+# Added on 2026-11-13
+- {employer: Ericsson, ats: eightfold, host: jobs.ericsson.com, domain: ericsson.com}
 
 # By hand (a browser, a search page, or a single careers page)
 - {employer: Apple, ats: manual, how: 'jobs.apple.com search, parse __staticRouterHydrationData (playbook cookbook)'}
 - {employer: Google / DeepMind, ats: manual, how: 'Google Careers search; theorem proving, proof assistant, verified code'}
-- {employer: Arm, ats: manual, how: 'TalentBrew org 33099; also search theorem and ACL2'}
+- {employer: Arm, ats: manual, how: 'TalentBrew org 33099 with the full parameter set, RecordsPerPage=100 and CurrentPage paging; also search theorem and ACL2 (0 on 2026-11-13)'}
 - {employer: Synopsys, ats: manual, how: TalentBrew org 44408}
 - {employer: IBM, ats: manual, how: careers search API (playbook cookbook)}
 - {employer: AdaCore, ats: manual, how: AdaCore careers API with X-Requested-With}
 - {employer: Sandia, ats: manual, how: 'sandia.jobs needs a browser; detail JSON on microsites.dejobs.org'}
-- {employer: CLEARSY, ats: manual, how: 'clearsy.nos-recrutements.fr: POST /api/job/list {"page":N,"size":10}, GET /api/job/{id}'}
+- {employer: CLEARSY, ats: manual, how: 'clearsy.nos-recrutements.fr: POST /api/job/list {"page":N,"size":10} (pages start at 1; page 0 is a 500), GET /api/job/{id}'}
 - {employer: TrustInSoft, ats: manual, how: trust-in-soft.com/careers}
 - {employer: Cognichip, ats: manual, how: cognichip.ai/careers list; Octopyd detail needs a browser}
 - {employer: General Diffusion, ats: manual, how: generaldiffusion.com/careers}
@@ -183,7 +211,7 @@
 - {employer: Prover Technology, ats: manual, how: prover.com/job-openings}
 - {employer: Riverside Research, ats: manual, how: 'careers-riversideresearch.icims.com (iCIMS); add ?in_iframe=1 to see the listing and postings'}
 - {employer: Kry10, ats: manual, how: 'kry10.com/company/about/careers/ (postings are PDFs)'}
-- {employer: Amalent, ats: manual, how: amalent.com/careers}
+- {employer: Amalent, ats: manual, how: www.amalent.com/careers}
 - {employer: CEA-List, ats: manual, how: 'emploi.cea.fr all-offers list (about 84 pages); grep French and English FV terms (preuve, vérification formelle, Frama-C)'}
 - {employer: KIT (KASTEL), ats: manual, how: jobs.pse.kit.edu}
 - {employer: Mercor, ats: manual, how: 'work.mercor.com/jobs/list_{id} ("status":"active")'}
@@ -208,29 +236,43 @@
 - {employer: Informal Systems, ats: manual, how: 'informal.systems/careers (not actively hiring on 2026-11-05)'}
 - {employer: Predictable Machines, ats: manual, how: predictablemachines.com/careers}
 - {employer: Ceva, ats: manual, how: 'ceva-ip.com/career/ (resolves again on 2026-11-09); Comeet API company 76.005, token in the career page'}
-- {employer: L&T Technology Services, ats: manual, how: 'ltts.com/careers (JS-only)'}
+- {employer: L&T Technology Services, ats: manual, how: 'SenseHQ ltts.sensehq.com/careers/iframe/jobs?pageSize=250 (jobs in __NEXT_DATA__)'}
 - {employer: 'IronVelo, midspiral, Verity Labs, Argument, Lanyon AI, VerifAIX, SkyLabs AI, untyped.ai, Scidonia', ats: manual, how: 'FV startups with no careers page yet; check their sites'}
 # Added on 2026-11-09
 - {employer: General Dynamics Mission Systems, ats: manual, how: 'careers-gdms.icims.com/jobs/search?ss=1&searchKeyword=formal+verification&in_iframe=1 (clearance roles)'}
 - {employer: Renesas Electronics, ats: manual, how: 'SmartRecruiters API, company RenesasElectronics (fuzzy q; grep the postings). Its Workday tenants are wrong'}
 - {employer: Stirling Dynamics, ats: manual, how: 'stirlingdynamics-jobs-expleo.icims.com (iCIMS)'}
 - {employer: JPMorganChase (AI Research), ats: manual, how: 'Oracle Recruiting Cloud jpmc.fa.oraclecloud.com, site CX_1001; keyword Isabelle or TLA isolates the AI Research reqs'}
-- {employer: Palo Alto Networks, ats: manual, how: 'Workday paloaltonetworks.wd5 / panwexternalcareers; TalentBrew org 47263 at jobs.paloaltonetworks.com'}
 - {employer: QEDIT, ats: manual, how: 'qed-it.com/careers/ (no openings on 2026-11-09)'}
 - {employer: Kestrel Institute, ats: manual, how: 'kestrel.edu/careers/ (reachable again, "Coming soon" on 2026-11-09)'}
 - {employer: Qubika, ats: manual, how: 'qubika.careers-page.com (Manatal); posted a hardware FV role on LinkedIn only'}
-- {employer: SiPearl, ats: manual, how: 'careers.sipearl.com/en (JS-only)'}
-- {employer: STMicroelectronics, ats: manual, how: 'st.com careers (unreachable from curl; needs a browser)'}
+- {employer: STMicroelectronics, ats: manual, how: 'Eightfold v2 API (PCSX answers 403): stmicroelectronics.eightfold.ai/api/apply/v2/jobs?domain=stmicroelectronics.com&query=formal (detail /api/apply/v2/jobs/{id}); postings at /careers/job/{id}'}
 - {employer: Serokell, ats: manual, how: serokell.io/careers}
 - {employer: 'lowRISC, Sigil Logic, Capabilities Limited, Cherified Systems, Rigorous Engineering, Glaive Research, Hashberg, Adjoint Labs, Hellas AI', ats: manual, how: 'ARIA Safeguarded AI and AIVHAI performers; check their sites (lowRISC: lowrisc.applytojob.com)'}
 - {employer: 'Theoric, Veriformatics, Verilean, PulseEngine, Oraclizer', ats: manual, how: 'FV and AI-for-FV startups found via GitHub; no careers listings on 2026-11-09'}
+# Added on 2026-11-13
+- {employer: Sequent, ats: manual, how: 'sequent.inc/hiring/ (JS-only; read it in a browser); apply by email'}
+- {employer: Positron AI, ats: manual, how: 'Rippling board API api.rippling.com/platform/api/ats/v1/board/positron/jobs (+ /{uuid} for text and pay)'}
+- {employer: Bronco AI, ats: manual, how: 'Rippling board api.rippling.com/platform/api/ats/v1/board/bronco-ai/jobs; bronco.ai/careers'}
+- {employer: BAE Systems (FAST Labs), ats: manual, how: 'Phenom: jobs.baesystems.com/global/en/search-results?keywords=formal%20verification (results in phApp.ddo; fuzzy, read each job page)'}
+- {employer: SRI International, ats: manual, how: 'iCIMS careers-sri.icims.com/jobs/search?ss=1&searchKeyword=formal+methods&in_iframe=1 (nothing on 2026-11-13)'}
+- {employer: Real Intent, ats: manual, how: 'realintent.com/careers (one page, email apply)'}
+- {employer: Ndea, ats: manual, how: 'ndea.com/jobs (email apply; FLoC 2026 sponsor)'}
+- {employer: ProvenRun, ats: manual, how: 'provenrun.com/careers (no positions listed on 2026-11-13; spontaneous applications only)'}
+- {employer: Zellic, ats: manual, how: 'zellic-inc.notion.site/Jobs-at-Zellic-82cab8ab2be84a3b9fa443e56196fdfa (Notion, browser only; subpages did not render on 2026-11-13)'}
+- {employer: 'Asymptotic, Axiomat, Proofcraft, CE Labs, Atlas Computing', ats: manual, how: 'FV companies with no careers page on 2026-11-13: asymptotic.tech (Sui Prover), axiomat.com (YC F26), proofcraft.systems (seL4 proofs), celabs.eu (verified crypto), atlascomputing.org'}
 # Academic groups and institutes with standing or recurring FV calls
 - {employer: CWI, ats: manual, how: 'cwi.nl/en/jobs/vacancies/ (one plain page)'}
-- {employer: Westlake University (Institute for Theoretical Sciences), ats: manual, how: MathJobs employer 2280}
+- {employer: Westlake University (Institute for Theoretical Sciences), ats: manual, how: 'MathJobs employer page mathjobs.org/jobs/2280'}
 - {employer: Zhejiang University (FICTION group), ats: manual, how: fiction-zju.github.io/vacancies/}
 - {employer: University of Nottingham (FP Lab), ats: manual, how: "jobs.nottingham.ac.uk (SCI refs); Graham Hutton's TYPES posts each autumn"}
 - {employer: Indiana University Bloomington (Mathematics), ats: manual, how: 'MathJobs IUBloom; indiana.peopleadmin.com'}
 - {employer: Xi'an Jiaotong-Liverpool University, ats: manual, how: 'MathJobs; career15.sapsf.cn (company xjtlu)'}
-- {employer: Chalmers, ats: manual, how: 'ReachMee list web103.reachmee.com/ext/I003/304/main?site=5&lang=UK (plain GET)'}
+- {employer: Chalmers, ats: manual, how: 'ReachMee list web103.reachmee.com/ext/I003/304/main?site=5&lang=UK&validator=a72aeedd63ec10de71e46f8d91d0d57c (plain GET; 404 without the validator)'}
 - {employer: University of the Bundeswehr Munich (CODE), ats: manual, how: 'IACR jobs board, iacr.org/jobs'}
 - {employer: LMU Munich (SoSy-Lab), ats: manual, how: 'sosy-lab.org/positions.php (standing doctoral calls)'}
+# Added on 2026-11-13
+- {employer: Columbia University (Computer Science), ats: manual, how: 'academic.careers.columbia.edu (Angular, curl gets 403; the old academicjobs.columbia.edu host has no DNS). Its legacy_position_id is the Interfolio id: logic.interfolio.com/dossier-api/positions/{id} gives is_open'}
+- {employer: Inria (Liberabaci, Lyon), ats: manual, how: 'jobs.inria.fr/public/classic/en/offres (one page; filter titles locally); Rocq and Hierarchy Builder posts'}
+- {employer: KTH (Monperrus group), ats: manual, how: 'kth.varbi.com/en/ (Varbi list)'}
+- {employer: Aarhus University (GSNS PhD calls), ats: manual, how: 'phd.nat.au.dk: the next call opens 2026-12-01 (Birkedal group, Iris)'}

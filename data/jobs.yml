@@ -6487,6 +6487,26 @@
     and cover letter; applications are reviewed on a rolling basis.
   last_verified: 2026-11-09
 
+- id: FV-450
+  company: Topos Institute
+  role: Research Software Engineer, Type Theory [CA-2026-RSE-1]
+  category: software
+  url: https://topos.institute/community/jobs/ca-2026-rse-1/
+  location: Berkeley, CA
+  remote: onsite
+  stack: [type theory, categorical logic, category theory, Rust, TypeScript]
+  domain: [programming languages, applied category theory, research software]
+  seniority: any
+  work_authorization: Topos will consider sponsoring US visas for exceptional applicants
+  compensation: USD 85,000–115,000
+  notes: >-
+    Designs type theories for categorical and double-categorical logics and
+    builds prototype type checkers for them in Rust for CatColab, the
+    non-profit's open-source modelling platform, working with the Oxford team.
+    PhD preferred; apply by email with a CV and a cover letter naming two
+    references; applications are reviewed on a rolling basis.
+  last_verified: 2026-11-13
+
 - id: FV-128
   company: Trail of Bits
   role: Senior Security Engineer, Research & Engineering (United Kingdom)

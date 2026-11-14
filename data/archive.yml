@@ -19,6 +19,42 @@
   last_verified: 2026-10-27
   closed: 2026-11-02
 
+- id: FV-153
+  company: Advanced Micro Devices (AMD)
+  role: Formal Design Verification Engineer
+  category: hardware
+  url: https://careers.amd.com/careers-home/jobs/80797
+  location: Austin, TX
+  remote: onsite
+  stack: [formal verification, model checking, static analysis, Python]
+  domain: [hardware, EDA tools]
+  seniority: engineer
+  tags: [big-company]
+  work_authorization: Not eligible for visa sponsorship
+  compensation: USD 126,700–181,000
+  notes: Engineer-level role on AMD's central formal verification methodology team.
+  posted: '2026-04-09'
+  last_verified: 2026-11-09
+  closed: 2026-11-13
+
+- id: FV-218
+  company: Altera
+  role: Senior Lead Engineer - Design Verification
+  category: hardware
+  url: https://altera.wd1.myworkdayjobs.com/Altera/job/San-Jose-California-United-States/Senior-Lead-Engineer---Design-Verification_R03438
+  location: San Jose, CA, USA
+  remote: onsite
+  stack: [UVM, formal or static verification]
+  domain: [FPGA silicon]
+  seniority: lead
+  tags: [big-company]
+  compensation: USD 231,500–330,000
+  notes: >-
+    FPGA silicon DV lead; USD 231,500–330,000.
+  posted: '2026-11-05'
+  last_verified: 2026-11-09
+  closed: 2026-11-13
+
 - id: FV-015
   company: Amazon Web Services
   role: Senior Applied Scientist, AWS Quick
@@ -57,6 +93,26 @@
   posted: '2026-08-18'
   last_verified: 2026-10-27
   closed: 2026-11-02
+
+- id: FV-225
+  company: Amazon Web Services
+  role: Software Development Engineer II, AWS Proactive Security / AWS Piezo
+  category: software
+  url: https://www.amazon.jobs/en/jobs/10570417/software-development-engineer-ii-aws-proactive-security-aws-piezo-aws-proactive-security-aws-piezo
+  location: Seattle, WA, USA
+  remote: onsite
+  stack: [Rust, PKI, formal verification]
+  domain: [cloud security, cryptography]
+  seniority: engineer
+  tags: [big-company]
+  compensation: USD 143,700–194,400
+  notes: >-
+    AWS Proactive Security (Piezo), SDE II. Folds twin req 10570524 (Piezo
+    Customer Experiences, 89% the same text). Other requisitions:
+    https://www.amazon.jobs/en/jobs/10570524/software-development-engineer-ii-aws-proactive-security-aws-piezo-aws-piezo-customer-experiences.
+  posted: '2026-10-06'
+  last_verified: 2026-11-09
+  closed: 2026-11-13
 
 - id: FV-017
   company: Amazon Web Services
@@ -119,6 +175,63 @@
   last_verified: 2026-10-27
   closed: 2026-11-02
 
+- id: FV-228
+  company: Amazon Web Services
+  role: Sr. Software Development Engineer, AWS Proactive Security
+  category: software
+  url: https://www.amazon.jobs/en/jobs/10570444/sr-software-development-engineer-aws-proactive-security
+  location: Seattle, WA, USA
+  remote: onsite
+  stack: [Rust, PKI, formal verification, distributed systems]
+  domain: [cloud security, cryptography]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 168,100–227,400
+  notes: >-
+    AWS Proactive Security (Piezo). Folds twin req 10570576 (96% the same text).
+    Other requisitions:
+    https://www.amazon.jobs/en/jobs/10570576/sr-software-development-engineer-piezo.
+  posted: '2026-10-06'
+  last_verified: 2026-11-09
+  closed: 2026-11-13
+
+- id: FV-023
+  company: Apple
+  role: GPU Formal Verification Engineer
+  category: hardware
+  url: https://jobs.apple.com/en-us/details/200684912-3760/gpu-formal-verification-engineer
+  location: Santa Clara, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, GPU, security]
+  seniority: engineer
+  tags: [big-company]
+  compensation: USD 150,400–277,600 base
+  notes: >-
+    Apple Silicon formal team. The work covers formal micro-architecture
+    specifications and security-attack modelling.
+  posted: '2026-10-26'
+  last_verified: 2026-11-09
+  closed: 2026-11-13
+
+- id: FV-243
+  company: Arm
+  role: Robotics Research Engineer
+  category: software
+  url: https://careers.arm.com/job/austin/robotics-research-engineer/33099/100941231360
+  location: Austin, TX
+  remote: hybrid
+  stack: [formal methods, runtime assurance, control barrier functions]
+  domain: [robotics, safety]
+  seniority: research-engineer
+  tags: [big-company]
+  compensation: USD 161,500–218,500
+  notes: >-
+    FV is a nice-to-have. A software role, so Arm's hardware cap doesn't apply.
+  posted: '2026-09-21'
+  last_verified: 2026-11-09
+  closed: 2026-11-13
+
 - id: FV-027
   company: Arm
   role: Theorem Proving Engineer
@@ -139,6 +252,25 @@
   last_verified: 2026-10-27
   closed: 2026-11-02
 
+- id: FV-163
+  company: Arm
+  role: Verification Engineer
+  category: hardware
+  url: https://careers.arm.com/job/chandler/verification-engineer/33099/102632900560
+  location: Chandler, AZ
+  remote: hybrid
+  stack: [SystemVerilog, UVM, formal verification]
+  domain: [hardware, CPU, memory systems]
+  seniority: engineer
+  tags: [big-company]
+  compensation: USD 130,100–176,000
+  notes: >-
+    Cortex-A memory-system verification, building both UVM and formal
+    verification environments. Simulation is the larger part of the job.
+  posted: '2026-10-30'
+  last_verified: 2026-11-09
+  closed: 2026-11-13
+
 - id: FV-031
   company: Astera Labs
   role: Tech Lead, Formal Verification
@@ -152,42 +284,6 @@
   posted: '2026-08-03'
   last_verified: 2026-10-27
   closed: 2026-11-02
-
-- id: FV-249
-  company: Bosch (Robert Bosch Robotics)
-  role: Tech Lead (f/m/div.)
-  category: software
-  url: https://jobs.smartrecruiters.com/BoschGroup/744000159868749-tech-lead-f-m-div-
-  location: Renningen, Germany
-  remote: onsite
-  stack: [formal verification, model checking, safety/security assurance]
-  domain: [safety-security agent harness for robotics/physical AI]
-  seniority: lead
-  tags: [big-company]
-  notes: >-
-    Tech lead for a safety-security agent harness for robotics and physical AI
-    at Bosch Corporate Research, Renningen.
-  posted: '2026-11-05'
-  last_verified: 2026-11-05
-  closed: 2026-11-09
-
-- id: FV-250
-  company: Bosch (Robert Bosch Robotics)
-  role: Technical Product Owner (f/m/div.)
-  category: software
-  url: https://jobs.smartrecruiters.com/BoschGroup/744000159867534-technical-product-owner-f-m-div-
-  location: Renningen, Germany
-  remote: onsite
-  stack: [formal verification, tool assurance]
-  domain: [same safety-security agent harness]
-  seniority: lead
-  tags: [big-company]
-  notes: >-
-    Technical product owner for the same agent-harness project as the Tech Lead;
-    a management role on an FV effort.
-  posted: '2026-11-05'
-  last_verified: 2026-11-05
-  closed: 2026-11-09
 
 - id: FV-141
   company: Cryspen
@@ -375,6 +471,24 @@
   last_verified: 2026-11-02
   closed: 2026-11-02
 
+- id: FV-315
+  company: Microsoft
+  role: Design Verification Engineer II
+  category: hardware
+  url: https://apply.careers.microsoft.com/careers/job/1970393557051080
+  location: Bangalore / Noida, India
+  remote: hybrid
+  stack: [SVA, formal tools, UVM]
+  domain: [Microsoft silicon]
+  seniority: engineer
+  tags: [big-company]
+  notes: >-
+    A second India requisition, 1970393556957365 (India, multiple locations,
+    same title and date), may be a twin; it was not fetched.
+  posted: '2026-11-02'
+  last_verified: 2026-11-09
+  closed: 2026-11-13
+
 - id: FV-081
   company: Microsoft
   role: Principal Design Verification Engineer - Formal
@@ -430,6 +544,25 @@
   posted: '2026-10-14'
   last_verified: 2026-11-02
   closed: 2026-11-05
+
+- id: FV-333
+  company: NVIDIA
+  role: Deep Learning Compiler Verification Engineer
+  category: software
+  url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Deep-Learning-Compiler-Verification-Engineer_JR2028930
+  location: Santa Clara, CA / Austin, TX / Hillsboro, OR / Seattle, WA
+  remote: onsite
+  stack: [LLVM, MLIR, TVM, XLA, formal methods]
+  domain: [DL compilers]
+  seniority: engineer
+  tags: [big-company]
+  compensation: USD 116,000–189,750
+  notes: >-
+    FV is a nice-to-have. Deep-learning compiler verification (correctness
+    testing of LLVM/MLIR/TVM/XLA stacks).
+  posted: '2026-10-31'
+  last_verified: 2026-11-09
+  closed: 2026-11-13
 
 - id: FV-092
   company: NVIDIA
@@ -619,6 +752,24 @@
   posted: '2026-10-20'
   last_verified: 2026-11-02
   closed: 2026-11-05
+
+- id: FV-208
+  company: University of Colorado Boulder
+  role: Assistant Professor
+  category: academic
+  url: https://jobs.colorado.edu/jobs/JobDetail/?jobId=75223
+  location: Boulder, CO
+  remote: onsite
+  stack: [formalization, automated reasoning]
+  domain: [AI for mathematics, formal mathematics]
+  seniority: lead
+  compensation: USD 110,000–130,000
+  notes: >-
+    Department of Mathematics; "formalization and automated reasoning" is one
+    of four named areas. Closes 2026-11-11.
+  posted: '2026-10-12'
+  last_verified: 2026-11-09
+  closed: 2026-11-13
 
 - id: FV-133
   company: University of Edinburgh (Quantum Software Lab)

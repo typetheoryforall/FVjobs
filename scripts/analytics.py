@@ -70,7 +70,7 @@ def y_axis(top, step, plot_h, x0, x1, y0):
 
 
 def growth_chart(history):
-    """Open and tracked roles on each recorded day, on a true time axis."""
+    """Open roles on each recorded day, on a true time axis."""
     if not history:
         return "<p>No history recorded yet.</p>"
     days = [dt.date.fromisoformat(r["date"]) for r in history]
@@ -78,7 +78,7 @@ def growth_chart(history):
     span = max((last - first).days, 1)
     x0, x1 = PAD["l"], W - PAD["r"]
     y0, plot_h = H - PAD["b"], H - PAD["t"] - PAD["b"]
-    top, step = nice_max(max(r["tracked"] for r in history))
+    top, step = nice_max(max(r["open"] for r in history))
     X = lambda d: x0 + (d - first).days / span * (x1 - x0)
     Y = lambda v: y0 - v / top * plot_h
 
@@ -91,19 +91,17 @@ def growth_chart(history):
                      f'<text class="tick" x="{x:.1f}" y="{y0 + 20}" text-anchor="middle">{short(tick)}</text>')
         tick += dt.timedelta(days=7)
 
-    for key, cls, label in (("tracked", "s-tracked", "Tracked"), ("open", "s-open", "Open")):
-        pts = [(X(d), Y(r[key])) for d, r in zip(days, history)]
-        path = " ".join(f"{'M' if i == 0 else 'L'}{x:.1f},{y:.1f}" for i, (x, y) in enumerate(pts))
-        parts.append(f'<path class="trend {cls}" d="{path}"/>')
-        for (x, y), d, r in zip(pts, days, history):
-            parts.append(f'<circle class="dot {cls}" cx="{x:.1f}" cy="{y:.1f}" r="4"/>')
-        lx, ly = pts[-1]
-        parts.append(f'<text class="direct" x="{lx + 10:.1f}" y="{ly + 4:.1f}">{label} {history[-1][key]}</text>')
+    pts = [(X(d), Y(r["open"])) for d, r in zip(days, history)]
+    path = " ".join(f"{'M' if i == 0 else 'L'}{x:.1f},{y:.1f}" for i, (x, y) in enumerate(pts))
+    parts.append(f'<path class="trend s-open" d="{path}"/>')
+    for x, y in pts:
+        parts.append(f'<circle class="dot s-open" cx="{x:.1f}" cy="{y:.1f}" r="4"/>')
+    lx, ly = pts[-1]
+    parts.append(f'<text class="direct" x="{lx + 10:.1f}" y="{ly + 4:.1f}">{history[-1]["open"]} open</text>')
     # One hover target per recorded day, wider than the marks.
     for i, (d, r) in enumerate(zip(days, history)):
         x = X(d)
-        tip = (f"{short(d)}, {d.year}|Open: {r['open']}|Tracked: {r['tracked']}"
-               f"|Added: {r['added']}|Closed: {r['closed']}")
+        tip = f"{short(d)}, {d.year}|Open: {r['open']}|Added: {r['added']}|Closed: {r['closed']}"
         parts.append(f'<rect class="hit" x="{x - 9:.1f}" y="{PAD["t"]}" width="18" height="{plot_h}"'
                      f' tabindex="0" data-tip="{esc(tip)}" aria-label="{esc(tip.replace("|", ", "))}"/>')
     return (f'<svg class="chart" viewBox="0 0 {W} {H}" role="img" aria-labelledby="growth-title">'
@@ -191,20 +189,6 @@ def tiles(history, jobs, archive):
                    f'<p class="sub">{esc(s)}</p></div>' for n, w, s in items)
 
 
-def history_table(history):
-    head = "<tr><th>Date</th><th>Open</th><th>Tracked</th><th>Added</th><th>Closed</th><th>Employers</th></tr>"
-    body = "".join(f"<tr><td>{r['date']}</td><td>{r['open']}</td><td>{r['tracked']}</td><td>{r['added']}</td>"
-                   f"<td>{r['closed']}</td><td>{r['companies']}</td></tr>" for r in reversed(history))
-    return f"<table>{head}{body}</table>"
-
-
-def weekly_table(weeks, counts, labels):
-    head = "<tr><th>Week of</th>" + "".join(f"<th>{esc(labels[c])}</th>" for c in STACK) + "<th>Total</th></tr>"
-    body = "".join(
-        f"<tr><td>{w.isoformat()}</td>" + "".join(f"<td>{counts[w][c]}</td>" for c in STACK)
-        + f"<td>{sum(counts[w].values())}</td></tr>" for w in reversed(weeks))
-    return f"<table>{head}{body}</table>"
-
 
 def render(template, jobs, archive, labels, site, repo):
     history = read_history()
@@ -224,6 +208,4 @@ def render(template, jobs, archive, labels, site, repo):
         .replace("{{in_window}}", str(in_window))
         .replace("{{earlier}}", str(earlier))
         .replace("{{undated}}", str(undated))
-        .replace("{{history_table}}", history_table(history))
-        .replace("{{weekly_table}}", weekly_table(weeks, counts, labels))
     )

@@ -43,20 +43,11 @@
 
 <section class="panel">
   <h2 id="growth-title">The board over time</h2>
-  <p class="lede">Roles on the board on each day its data changed. <b>Open</b> roles are
-  live postings; <b>tracked</b> adds the closed roles kept in the archive.</p>
-  <ul class="legend" aria-hidden="true">
-    <li><span class="swatch s-open"></span>Open</li>
-    <li><span class="swatch s-tracked"></span>Tracked</li>
-  </ul>
+  <p class="lede">Open roles on the board on each day its data changed.</p>
   <figure>{{growth}}</figure>
   <p class="note">Early jumps are the board catching up: each deep search found roles
   that had been open for months. Growth from week to week is a better sign of the
   market once the searches start finding mostly new postings.</p>
-  <details class="table-view">
-    <summary>Show the data as a table</summary>
-    {{history_table}}
-  </details>
 </section>
 
 <section class="panel">
@@ -69,10 +60,6 @@
   earlier and {{undated}} postings show no date. Older weeks are undercounted:
   roles that closed before the board began never made it in. The current week
   is still filling up.</p>
-  <details class="table-view">
-    <summary>Show the data as a table</summary>
-    {{weekly_table}}
-  </details>
 </section>
 </main>
 

@@ -2,7 +2,8 @@
 """Build the static GitHub Pages site from data/jobs.yml and data/archive.yml.
 
 Writes _site/index.html (every role pre-rendered, so the page works without
-JavaScript), copies the assets from site/, publishes the data as
+JavaScript) and _site/analytics.html (graphs from data/history.csv, see
+scripts/analytics.py), copies the assets from site/, publishes the data as
 _site/jobs.json, and the open roles as an RSS feed in _site/feed.xml, with
 robots.txt and sitemap.xml for search engines. The Pages workflow runs this; locally:
 
@@ -18,6 +19,8 @@ import urllib.parse
 import xml.etree.ElementTree as ET
 
 import yaml
+
+import analytics
 
 REMOTE_LABEL = {
     "onsite": "On-site",
@@ -212,12 +215,13 @@ def feed(jobs, latest):
 
 
 def sitemap(updated):
-    """The board is a single page, dated by the last time a role was checked or closed."""
+    """The board and its analytics page, dated by the last time a role was checked or closed."""
     urlset = ET.Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
-    url = ET.SubElement(urlset, "url")
-    ET.SubElement(url, "loc").text = SITE
-    if updated:
-        ET.SubElement(url, "lastmod").text = updated
+    for loc in (SITE, SITE + "analytics.html"):
+        url = ET.SubElement(urlset, "url")
+        ET.SubElement(url, "loc").text = loc
+        if updated:
+            ET.SubElement(url, "lastmod").text = updated
     ET.indent(urlset)
     return ET.tostring(urlset, encoding="unicode", xml_declaration=True)
 
@@ -240,8 +244,11 @@ def main():
     )
     if OUT.exists():
         shutil.rmtree(OUT)
-    shutil.copytree(SRC, OUT, ignore=shutil.ignore_patterns("index.html"))
+    shutil.copytree(SRC, OUT, ignore=shutil.ignore_patterns("index.html", "analytics.html"))
     (OUT / "index.html").write_text(page, encoding="utf-8")
+    stats = analytics.render((SRC / "analytics.html").read_text(encoding="utf-8"),
+                             jobs, archive, CATEGORY_LABEL, SITE, REPO)
+    (OUT / "analytics.html").write_text(stats, encoding="utf-8")
     (OUT / "jobs.json").write_text(
         json.dumps({"jobs": jobs, "archive": archive}, ensure_ascii=False, indent=2), encoding="utf-8"
     )

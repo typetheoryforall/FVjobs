@@ -25,10 +25,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The full history, so scripts/stats.py can rebuild data/history.csv.
+          fetch-depth: ${{ github.event_name == 'pull_request' && 1 || 0 }}
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install pyyaml
+      # On main, refresh the analytics history from git, so a merge that did
+      # not run scripts/stats.py still shows up. PR previews use the
+      # committed data/history.csv.
+      - if: github.event_name != 'pull_request'
+        name: Refresh the board's history
+        run: python3 scripts/stats.py
       - name: Build the site
         run: python3 scripts/site.py
 

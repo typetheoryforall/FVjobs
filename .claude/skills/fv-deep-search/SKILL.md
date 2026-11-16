@@ -196,11 +196,14 @@ Commit nothing yet.
 2. If the maintainer approved anything under "Noticed on the board", make
    those changes. Leave the rest of the board to `recheck-jobs`.
 3. Run `python3 scripts/validate.py --assign-ids`, then
-   `python3 scripts/site.py`. Spot-check a few new cards on the local site
-   (`python3 -m http.server -d _site`).
+   `python3 scripts/stats.py` (it records today's board in
+   `data/history.csv`, which the site's analytics page graphs), then
+   `python3 scripts/site.py`. Spot-check a few new cards and
+   `analytics.html` on the local site (`python3 -m http.server -d _site`).
 4. Fill in the run file's Decision section, and the run-log row's "Added to
    the board" count.
-5. Commit everything on the branch: data, run file, playbook and watchlist.
+5. Commit everything on the branch: data, history, run file, playbook and
+   watchlist.
    Open a PR that summarises the decision, and merge only when the
    maintainer says so.
 

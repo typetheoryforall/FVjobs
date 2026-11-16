@@ -33,6 +33,13 @@ from it. Besides the proof stack and work authorization, each entry records the
 kind of verification, location and remote policy, seniority, published pay, the
 date the employer posted it, and the date someone last checked it was live.
 
+To see how formal verification hiring is growing, open the
+[analytics page](https://jobs.typetheoryforall.com/analytics.html): the board's
+open and tracked roles over time, and new postings per week by kind of
+verification. Its data is [`data/history.csv`](data/history.csv), which
+`python3 scripts/stats.py` rebuilds from the repository's history; every deep
+search and re-check runs it.
+
 To hear about new roles, subscribe to the
 [RSS feed](https://jobs.typetheoryforall.com/feed.xml) in any feed
 reader; it lists every open role, newest listing first.

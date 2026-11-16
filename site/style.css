@@ -255,3 +255,71 @@ footer p { max-width: 44rem; }
   .pager { gap: .3rem; }
   .pager button { min-width: 2rem; padding-inline: .45rem; }
 }
+
+/* Analytics page. Chart series colours are the category hues stepped for a
+   chart: validated as a palette (lightness, chroma, colour-vision separation,
+   contrast) against each surface, in the stacking order of the bars. */
+:root {
+  --c-hardware: #b4432c;
+  --c-ai-for-proof: #7a3fb8;
+  --c-academic: #9a6700;
+  --c-software: #0080a0;
+  --c-cryptocurrency: #a0306e;
+  --s-open: var(--accent);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-hardware: #e06a50;
+    --c-ai-for-proof: #9e72e0;
+    --c-academic: #b98a1c;
+    --c-software: #0f9ab5;
+    --c-cryptocurrency: #dc5c9a;
+  }
+}
+.bar nav a[aria-current="page"] { color: var(--ink); }
+.analytics .overview { padding: 3rem 0 2rem; border-bottom: 1px solid var(--rule); }
+.analytics h1 { font: 600 clamp(1.8rem, 4vw, 2.6rem)/1.15 var(--serif); margin: 0 0 1rem; }
+.analytics .overview > p { max-width: 44rem; color: var(--muted); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: 1rem; margin-top: 2rem; }
+.tile { background: var(--raised); border: 1px solid var(--rule); border-radius: 8px; padding: 1rem 1.1rem; }
+.tile p { margin: 0; }
+.tile .num { font: 600 2rem/1.1 var(--serif); font-variant-numeric: tabular-nums; }
+.tile .what { font-weight: 600; }
+.tile .sub { color: var(--muted); font-size: .9rem; }
+.panel { padding: 2.5rem 0; border-bottom: 1px solid var(--rule); }
+.panel h2 { font: 600 1.5rem var(--serif); margin: 0 0 .4rem; }
+.panel .lede, .panel .note { max-width: 44rem; color: var(--muted); }
+.panel .note { font-size: .92rem; }
+.panel figure { margin: 1rem 0; background: var(--raised); border: 1px solid var(--rule); border-radius: 8px; padding: .75rem; }
+.legend { list-style: none; padding: 0; margin: .75rem 0 0; display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; font-size: .92rem; }
+.legend li { display: inline-flex; align-items: center; gap: .4rem; }
+.swatch { width: .8rem; height: .8rem; border-radius: 3px; display: inline-block; }
+.chart { display: block; width: 100%; height: auto; font: 12px var(--sans); }
+.chart .grid { stroke: var(--rule); stroke-width: 1; }
+.chart .axis { stroke: var(--muted); stroke-width: 1; }
+.chart .tick { fill: var(--muted); }
+.chart .direct { fill: var(--ink); font-weight: 600; }
+.chart .trend { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.chart .dot { stroke: var(--raised); stroke-width: 2; }
+.chart .s-open { stroke: var(--s-open); }
+.chart .dot.s-open { fill: var(--s-open); stroke: var(--raised); }
+.chart .seg { stroke: var(--raised); stroke-width: 2; paint-order: stroke; }
+.chart .hit { fill: transparent; cursor: default; outline: none; }
+.chart .hit.on, .chart .hit:focus-visible { fill: var(--ink); fill-opacity: .06; }
+.c-hardware { fill: var(--c-hardware); background: var(--c-hardware); }
+.c-ai-for-proof { fill: var(--c-ai-for-proof); background: var(--c-ai-for-proof); }
+.c-academic { fill: var(--c-academic); background: var(--c-academic); }
+.c-software { fill: var(--c-software); background: var(--c-software); }
+.c-cryptocurrency { fill: var(--c-cryptocurrency); background: var(--c-cryptocurrency); }
+.tip {
+  position: fixed; z-index: 10; pointer-events: none; max-width: 16rem;
+  background: var(--raised); color: var(--ink); border: 1px solid var(--rule);
+  border-radius: 6px; padding: .45rem .65rem; font-size: .88rem; line-height: 1.4;
+  box-shadow: 0 4px 16px rgb(0 0 0 / .12);
+}
+/* On a phone the graphs keep a readable size and scroll inside their frame. */
+@media (max-width: 720px) {
+  .panel figure { overflow-x: auto; padding: .5rem; }
+  .chart { min-width: 34rem; }
+  .tiles { grid-template-columns: repeat(2, 1fr); }
+}

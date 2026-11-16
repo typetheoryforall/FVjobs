@@ -93,8 +93,12 @@ open-application page that just went quiet.
 ```bash
 python3 scripts/check.py apply --open FV-001,FV-002,... --closed FV-010,...
 python3 scripts/validate.py
+python3 scripts/stats.py
 python3 scripts/site.py
 ```
+
+`stats.py` records today's board in `data/history.csv` for the analytics
+page; commit it with the data.
 
 `apply` edits the files as text. Open roles get today's `last_verified`.
 Closed roles move to `archive.yml`, keeping their ID, sorted by company, with

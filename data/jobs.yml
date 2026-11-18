@@ -128,6 +128,44 @@
   posted: '2026-10-30'
   last_verified: 2026-11-18
 
+- id: FV-507
+  company: Advanced Micro Devices (AMD)
+  role: Formal Design Verification Engineer
+  category: hardware
+  url: https://careers.amd.com/careers-home/jobs/97923
+  location: Santa Clara, CA
+  remote: onsite
+  stack: [formal verification, model checking, static analysis, EDA formal tools, Python]
+  domain: [hardware verification methodology]
+  seniority: engineer
+  tags: [big-company]
+  work_authorization: Not eligible for visa sponsorship
+  compensation: USD 200,000–300,000
+  notes: >-
+    Builds formal verification flows and methodology for AMD's Central
+    Verification team. The same team and text as archived FV-153 (Austin),
+    reposted under a new requisition.
+  posted: '2026-11-16'
+  last_verified: 2026-11-18
+
+- id: FV-508
+  company: Advanced Micro Devices (AMD)
+  role: Silicon Design Engineer (Formal Verification)
+  category: hardware
+  url: https://careers.amd.com/careers-home/jobs/97281
+  location: Taipei or Hsinchu, Taiwan
+  remote: onsite
+  stack: [SVA, property checking, sequential equivalence, formal connectivity, LLM agents, Python]
+  domain: [SoC and IP verification, AI for verification]
+  seniority: engineer
+  tags: [big-company]
+  compensation: TWD 1,860,950–2,658,500/year
+  notes: >-
+    Runs FV strategy and proof convergence for ASIC/SoC IP, and builds AI agents
+    for property generation and formal debug.
+  posted: '2026-11-17'
+  last_verified: 2026-11-18
+
 - id: FV-213
   company: AFRY
   role: UVM Verification specialist
@@ -646,6 +684,25 @@
     interactive theorem prover", to make formal verification usable at AWS
     scale.
   posted: '2026-09-24'
+  last_verified: 2026-11-18
+
+- id: FV-228
+  company: Amazon Web Services
+  role: Sr Software Development Engineer, Piezo
+  category: software
+  url: https://www.amazon.jobs/en/jobs/10570576/sr-software-development-engineer-piezo
+  location: Seattle, WA, USA
+  remote: onsite
+  stack: [Rust, PKI, formal verification, distributed systems]
+  domain: [cloud security, cryptography]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 168,100–227,400
+  notes: >-
+    AWS Proactive Security (Piezo): cryptographic systems in Rust with formal
+    verification and PKI. Its twin requisition 10570444 closed on 2026-11-13;
+    this one is still open.
+  posted: '2026-10-06'
   last_verified: 2026-11-18
 
 - id: FV-230
@@ -1528,6 +1585,44 @@
   posted: '2025-09-19'
   last_verified: 2026-11-18
 
+- id: FV-509
+  company: Booz Allen Hamilton
+  role: Microelectronics Design and Verification Engineer, Lead
+  category: hardware
+  url: https://bah.wd1.myworkdayjobs.com/BAH_Jobs/job/Wright-Patterson-AFB-OH/Microelectronics-Design-and-Verification-Engineer--Lead_R0253544
+  location: Wright-Patterson AFB, OH
+  remote: onsite
+  stack: [SystemVerilog, UVM, SVA, formal verification]
+  domain: [defence microelectronics]
+  seniority: lead
+  tags: [big-company]
+  work_authorization: Secret clearance required (US citizenship)
+  compensation: USD 99,000–225,000
+  notes: >-
+    FV is a nice-to-have: SVA or formal verification tools under "Nice If You
+    Have". Applications close 2027-02-11.
+  posted: '2026-11-13'
+  last_verified: 2026-11-18
+
+- id: FV-510
+  company: Booz Allen Hamilton
+  role: Microelectronics Design and Verification Engineer
+  category: hardware
+  url: https://bah.wd1.myworkdayjobs.com/BAH_Jobs/job/Wright-Patterson-AFB-OH/Microelectronics-Design-and-Verification-Engineer_R0253545
+  location: Wright-Patterson AFB, OH
+  remote: onsite
+  stack: [SystemVerilog, UVM, SVA, formal verification]
+  domain: [defence microelectronics]
+  seniority: engineer
+  tags: [big-company]
+  work_authorization: Secret clearance required (US citizenship)
+  compensation: USD 77,500–176,000
+  notes: >-
+    FV is a nice-to-have: the same text as the lead role. Folds requisitions
+    R0253546 and R0253547. Applications close 2027-02-11.
+  posted: '2026-11-13'
+  last_verified: 2026-11-18
+
 - id: FV-248
   company: Bosch (Bosch Sensortec)
   role: Junior Digital Verification Engineer
@@ -1926,6 +2021,37 @@
     February 2027.
   last_verified: 2026-11-18
 
+- id: FV-511
+  company: CEA-List
+  role: Stage Verification formelle de programmes quantiques non-bornés-Saclay-H/F
+  category: academic
+  url: https://www.emploi.cea.fr/offre-de-emploi/emploi-stage-verification-formelle-de-programmes-quantiques-non-bornes-saclay-h-f_42531.aspx
+  location: Saclay, France
+  remote: onsite
+  stack: [OCaml, formal verification, path-sums]
+  domain: [quantum programs]
+  seniority: intern
+  notes: >-
+    Extends HQbricks, the Qbricks team's framework for verifying hybrid quantum
+    programs, to unbounded loops. A six-month M2 internship that can lead to a
+    PhD.
+  last_verified: 2026-11-18
+
+- id: FV-512
+  company: CEA-List
+  role: Stage IA de confiance - Vérification formelle et domaines différentiels-Saclay- H/F
+  category: academic
+  url: https://www.emploi.cea.fr/offre-de-emploi/emploi-stage-ia-de-confiance-verification-formelle-et-domaines-differentiels-saclay-h-f_41447.aspx
+  location: Saclay, France
+  remote: onsite
+  stack: [Python, abstract interpretation, PyRAT]
+  domain: [neural network verification, AI safety]
+  seniority: intern
+  notes: >-
+    Differential abstract domains in PyRAT to formally verify neural-network
+    safety. 4–6 months from 2027-02-01; a sibling of FV-259.
+  last_verified: 2026-11-18
+
 - id: FV-041
   company: CertiK
   role: Software Engineer (III to Principal), Formal Methods
@@ -2289,6 +2415,23 @@
   posted: '2026-09-03'
   last_verified: 2026-11-18
 
+- id: FV-513
+  company: CISPA Helmholtz Center for Information Security (Cremers group)
+  role: PhD and Postdoc positions related to Automated Verification, Security Protocols, and Cryptography (m/f/d) - Group Cremers
+  category: academic
+  url: https://career.cispa.de/jobs/phd-and-postdoc-positions-related-to-automated-verification-security-protocols-and-cryptography-m-f-d-group-cremers-41
+  location: Saarbrücken, Germany
+  remote: onsite
+  stack: [automated verification, security protocol analysis, Tamarin]
+  domain: [security protocols, cryptography]
+  seniority: any
+  compensation: TVöD E13
+  notes: >-
+    Security protocol analysis and formal verification in the Tamarin group. A
+    standing call with no deadline; its text still names an October 2025 start.
+  posted: '2026-08-20'
+  last_verified: 2026-11-18
+
 - id: FV-043
   company: CLEARSY
   role: Ingénieur développeur full stack Atelier B H/F
@@ -2544,6 +2687,23 @@
     proving an advantage. Deadline 2026-12-31, evaluated on a rolling basis.
   last_verified: 2026-11-18
 
+- id: FV-514
+  company: Delos Data
+  role: Verification Engineer
+  category: hardware
+  url: https://jobs.ashbyhq.com/delos-data/73ff18f4-cb78-4fcb-acbe-78adc77af77c
+  location: Palo Alto, CA / US and Canada
+  remote: remote
+  stack: [SystemVerilog, UVM, SVA]
+  domain: [AI data-center ASICs and FPGAs]
+  seniority: engineer
+  compensation: USD 160,000–240,000 + equity
+  notes: >-
+    FV is a nice-to-have: experience with formal verification techniques and
+    tools is desired.
+  posted: '2026-10-16'
+  last_verified: 2026-11-18
+
 - id: FV-170
   company: DensityAI
   role: DV Formal Verification
@@ -2613,6 +2773,57 @@
   posted: '2026-09-02'
   last_verified: 2026-11-18
 
+- id: FV-515
+  company: Efficient Computer
+  role: Staff Digital Verification Engineer
+  category: hardware
+  url: https://job-boards.greenhouse.io/efficientcomputer/jobs/4391770009
+  location: San Francisco Bay Area, CA / Pittsburgh, PA / Austin, TX
+  remote: onsite
+  stack: [SystemVerilog, UVM, JasperGold]
+  domain: [energy-efficient processors]
+  seniority: senior
+  compensation: USD 160,000–245,000 + 10% bonus
+  notes: >-
+    FV is a nice-to-have: formal verification with JasperGold or similar under
+    "Ways to stand out".
+  posted: '2026-09-01'
+  last_verified: 2026-11-18
+
+- id: FV-516
+  company: Efficient Computer
+  role: Senior Digital Verification Engineer - Contract
+  category: hardware
+  url: https://job-boards.greenhouse.io/efficientcomputer/jobs/4452371009
+  location: San Francisco Bay Area, CA / Pittsburgh, PA / Austin, TX
+  remote: onsite
+  stack: [SystemVerilog, UVM, JasperGold]
+  domain: [energy-efficient processors]
+  seniority: senior
+  compensation: USD 80–130/hour (1099 contract)
+  notes: >-
+    FV is a nice-to-have: formal verification with JasperGold under "Ways to
+    stand out".
+  posted: '2026-10-14'
+  last_verified: 2026-11-18
+
+- id: FV-517
+  company: Efficient Computer
+  role: Lead RTL Design Engineer
+  category: hardware
+  url: https://job-boards.greenhouse.io/efficientcomputer/jobs/4236891009
+  location: San Francisco Bay Area, CA / Pittsburgh, PA / Austin, TX
+  remote: onsite
+  stack: [RTL design, formal verification]
+  domain: [energy-efficient processors]
+  seniority: lead
+  compensation: USD 200,000–275,000 + 10% bonus
+  notes: >-
+    FV is a nice-to-have: formal verification of flow-control logic, deadlock
+    freedom or bus protocol compliance is desired.
+  posted: '2026-04-30'
+  last_verified: 2026-11-18
+
 - id: FV-049
   company: eleQtron
   role: Compiler Engineer (f/m/d)
@@ -2669,6 +2880,39 @@
   notes: >-
     FV is a nice-to-have. SerDes IP DV (Bay Area, Vancouver, Toronto).
   posted: '2026-04-08'
+  last_verified: 2026-11-18
+
+- id: FV-518
+  company: Emergence AI
+  role: Senior Researcher (Formal Methods)
+  category: software
+  url: https://job-boards.greenhouse.io/emergenceai/jobs/4485739009
+  location: India
+  remote: onsite
+  stack: [theorem provers, SAT, model checking, Lean, Rocq]
+  domain: [verifiable AI agents]
+  seniority: research-scientist
+  notes: >-
+    Formal verification for AI: turns natural language into formal
+    specifications validated with theorem provers, SAT solving and model
+    checking.
+  posted: '2026-11-11'
+  last_verified: 2026-11-18
+
+- id: FV-519
+  company: Emergence AI
+  role: Senior Researcher, GPU Algorithms, India
+  category: software
+  url: https://job-boards.greenhouse.io/emergenceai/jobs/4486188009
+  location: Bengaluru, India
+  remote: onsite
+  stack: [CUDA, Triton, Lean 4, validated numerics]
+  domain: [certified computation]
+  seniority: research-scientist
+  notes: >-
+    GPU kernels that emit compact certificates a Lean proof verifies; working
+    knowledge of proof assistants, ideally Lean 4, is required.
+  posted: '2026-11-12'
   last_verified: 2026-11-18
 
 - id: FV-051
@@ -2767,6 +3011,40 @@
   posted: '2026-10-27'
   last_verified: 2026-11-18
 
+- id: FV-520
+  company: Ericsson
+  role: Developer ASIC
+  category: hardware
+  url: https://jobs.ericsson.com/careers/job/563121777484585
+  location: Lund, Sweden
+  remote: onsite
+  stack: [SystemVerilog, UVM, SVA, formal connectivity verification, formal power verification]
+  domain: [radio ASICs, 5G and 6G RAN]
+  seniority: senior
+  tags: [big-company]
+  notes: >-
+    Verification of digital radio ASICs; asks for verification methodologies
+    such as formal, with formal connectivity and power verification preferred.
+  posted: '2026-11-17'
+  last_verified: 2026-11-18
+
+- id: FV-521
+  company: Ericsson
+  role: Silicon Front End CAD Verification Engineer
+  category: hardware
+  url: https://jobs.ericsson.com/careers/job/563121777481796
+  location: Austin, TX
+  remote: onsite
+  stack: [SystemVerilog, UVM, SVA, formal tools, Python]
+  domain: [ASIC verification methodology]
+  seniority: senior
+  tags: [big-company]
+  notes: >-
+    Builds verification methodology across assertions, formal and coverage
+    closure; experience with formal or lint/CDC tools is required.
+  posted: '2026-11-10'
+  last_verified: 2026-11-18
+
 - id: FV-054
   company: Etched
   role: Formal Verification - DV
@@ -2848,6 +3126,56 @@
     Builds UVM, formal and assertion-based verification environments for
     client designs.
   posted: '2026-09-18'
+  last_verified: 2026-11-18
+
+- id: FV-522
+  company: Formal
+  role: Formal Verification Engineer
+  category: software
+  url: https://jobs.gem.com/formal/am9icG9zdDrAOn0y8gXFgLtV90zEqsH5
+  location: United States
+  remote: remote
+  stack: [Rocq, programming language semantics, Rust, C]
+  domain: [verified compilers, kernel language]
+  seniority: engineer
+  compensation: USD 120,000–200,000 + at least 0.2% equity
+  notes: >-
+    Writes mechanized Rocq specifications and proofs for a Rust-like kernel
+    language with a certifying compiler. Evergreen: first published 2025-09-08.
+  posted: '2025-09-08'
+  last_verified: 2026-11-18
+
+- id: FV-523
+  company: Formal
+  role: Formal Methods PhD Intern
+  category: software
+  url: https://jobs.gem.com/formal/am9icG9zdDqzZTOlM5EOs0SrJdS3z8ep
+  location: United States
+  remote: remote
+  stack: [Rocq, SMT, Rust, OCaml]
+  domain: [verified compilers]
+  seniority: intern
+  compensation: USD 8,000–12,000/month
+  notes: >-
+    Mechanized theorems and proofs in Rocq; needs a term of 21 weeks or more.
+  posted: '2025-12-01'
+  last_verified: 2026-11-18
+
+- id: FV-524
+  company: Formal
+  role: Staff Software Engineer
+  category: software
+  url: https://jobs.gem.com/formal/am9icG9zdDouUhEvJgti387bX7udEz8T
+  location: United States
+  remote: remote
+  stack: [Rust, machine-checked proofs, model checking, SMT]
+  domain: [programming languages, kernel language]
+  seniority: senior
+  compensation: USD 175,000–250,000 + at least 0.4% equity
+  notes: >-
+    Formally verifies language properties and implementations; experience with
+    model checking, theorem provers or SMT is required.
+  posted: '2025-12-01'
   last_verified: 2026-11-18
 
 - id: FV-278
@@ -3171,6 +3499,23 @@
     FV is a nice-to-have: experience with software verification such as Lean or
     Dafny is preferred.
   posted: '2026-11-12'
+  last_verified: 2026-11-18
+
+- id: FV-525
+  company: Google
+  role: Silicon Formal Verification Engineer III
+  category: hardware
+  url: https://www.google.com/about/careers/applications/jobs/results/106481682076312262-silicon-formal-verification-engineer-iii
+  location: Bengaluru, India
+  remote: onsite
+  stack: [formal property verification, Jasper, VC Formal, Questa Formal, 360-DV, Python]
+  domain: [custom silicon, SoC]
+  seniority: engineer
+  tags: [big-company]
+  notes: >-
+    Plans the formal verification strategy, writes properties and constraints,
+    and builds reusable formal components; requires 5 years of FV experience.
+  posted: '2026-11-13'
   last_verified: 2026-11-18
 
 - id: FV-061
@@ -3628,6 +3973,41 @@
     months from 2027-02-01. Deadline 2026-12-10.
   last_verified: 2026-11-18
 
+- id: FV-526
+  company: Inria (DEVINE team, Rennes)
+  role: Post-Doctoral Research Visit F/M Safe Planning for Markov Decision Processes via Shielding
+  category: academic
+  url: https://jobs.inria.fr/public/classic/en/offres/2026-10718
+  location: Rennes, France
+  remote: onsite
+  stack: [shield synthesis, two-player games, Markov decision processes]
+  domain: [safe reinforcement learning]
+  seniority: postdoc
+  work_authorization: 'Restricted area (ZRR): ministerial clearance required'
+  compensation: EUR 2,927 gross per month
+  notes: >-
+    With Mitsubishi Electric R&D Centre Europe, in the FRAIME project on AI and
+    formal methods. Apply by 2026-12-31; starts 2027-02-01.
+  last_verified: 2026-11-18
+
+- id: FV-527
+  company: Inria (Startup Studio, Rennes)
+  role: Full-Stack Software Developer - Deeptech Startup Project
+  category: academic
+  url: https://jobs.inria.fr/public/classic/en/offres/2026-10703
+  location: Rennes, France
+  remote: onsite
+  stack: [Rocq, CompCert, SMT, OCaml, Python, C++]
+  domain: [verified compilation, real-time embedded systems]
+  seniority: engineer
+  work_authorization: 'Restricted area (ZRR): ministerial clearance required'
+  compensation: From EUR 2,695 gross per month
+  notes: >-
+    TimeCert, a verified real-time compiler written in Rocq that works with
+    CompCert; interfaces with SMT solvers and proof assistants. Apply by
+    2027-01-16.
+  last_verified: 2026-11-18
+
 - id: FV-177
   company: Inria (SYCOMORES team, Lille)
   role: Research Engineer Contributing to the Mopsa Static Analyzer
@@ -3762,6 +4142,23 @@
   posted: '2025-12-12'
   last_verified: 2026-11-18
 
+- id: FV-528
+  company: IT University of Copenhagen
+  role: PhD position in Modular Algebraic Verification of Compilers (MAVERIC) at IT University of Copenhagen
+  category: academic
+  url: https://candidate.hr-manager.net/ApplicationInit.aspx?cid=119&ProjectId=181924
+  location: Copenhagen, Denmark
+  remote: onsite
+  stack: [Rocq, Lean, separation logic, compiler calculation]
+  domain: [compiler verification, programming languages]
+  seniority: phd
+  compensation: Danish AC salary scale
+  notes: >-
+    An algebraic theory combining compiler calculation with separation logic,
+    implemented in a proof assistant. Supervisor Patrick Bahr; apply by
+    2027-01-01, start 2027-04-01.
+  last_verified: 2026-11-18
+
 - id: FV-070
   company: Jane Street
   role: Formal Methods Engineer
@@ -3883,6 +4280,24 @@
   posted: '2026-10-26'
   last_verified: 2026-11-18
 
+- id: FV-529
+  company: Johns Hopkins Applied Physics Laboratory
+  role: Formal Verification and Software Assurance Engineer
+  category: software
+  url: https://careers.jhuapl.edu/jobs/60870
+  location: Laurel, MD
+  remote: onsite
+  stack: [model checking, abstract interpretation, symbolic execution, Z3, CVC5, TLA+, SPIN, ACL2, GNATprove, Lean, Rocq]
+  domain: [software assurance, national security]
+  seniority: engineer
+  work_authorization: US citizenship; Interim Top Secret clearance by the start date, then Top Secret
+  compensation: USD 100,000–245,000
+  notes: >-
+    Applies formal methods tools to software assurance; interactive theorem
+    provers are preferred. The experienced counterpart of FV-071.
+  posted: '2026-11-16'
+  last_verified: 2026-11-18
+
 - id: FV-426
   company: JPMorganChase
   role: Artificial Intelligence Research Lead - Vice President
@@ -3952,6 +4367,62 @@
   posted: '2026-09-18'
   last_verified: 2026-11-18
 
+- id: FV-530
+  company: K2 Space
+  role: Principal ASIC Synthesis and Timing Engineer
+  category: hardware
+  url: https://job-boards.greenhouse.io/k2spacecorporation/jobs/5479882008
+  location: United States
+  remote: remote
+  stack: [logical equivalence checking, UPF, STA]
+  domain: [space ASICs]
+  seniority: principal
+  work_authorization: 'ITAR: U.S. person required'
+  compensation: USD 190,000–280,000 + equity
+  notes: >-
+    Develops an end-to-end formal verification methodology, from RTL to layout
+    (equivalence checking), for K2's satellite ASICs.
+  posted: '2026-11-11'
+  last_verified: 2026-11-18
+
+- id: FV-531
+  company: K2 Space
+  role: Principal ASIC Design Verification Engineer
+  category: hardware
+  url: https://job-boards.greenhouse.io/k2spacecorporation/jobs/5479885008
+  location: United States / Seattle, WA
+  remote: remote
+  stack: [SystemVerilog, UVM, SVA, formal verification]
+  domain: [space ASICs]
+  seniority: principal
+  work_authorization: 'ITAR: U.S. person required'
+  compensation: USD 190,000–285,000
+  notes: >-
+    Writes SVA and integrates formal verification where appropriate. Folds the
+    Seattle requisition. Other requisitions:
+    https://job-boards.greenhouse.io/k2spacecorporation/jobs/5287999008.
+  posted: '2026-06-30'
+  last_verified: 2026-11-18
+
+- id: FV-532
+  company: K2 Space
+  role: Senior ASIC Design Verification Engineer
+  category: hardware
+  url: https://job-boards.greenhouse.io/k2spacecorporation/jobs/5479888008
+  location: United States / Seattle, WA
+  remote: remote
+  stack: [SystemVerilog, UVM, SVA, formal verification]
+  domain: [space ASICs]
+  seniority: senior
+  work_authorization: 'ITAR: U.S. person required'
+  compensation: USD 170,000–250,000
+  notes: >-
+    Writes SVA and integrates formal verification where appropriate. Folds the
+    Seattle requisition. Other requisitions:
+    https://job-boards.greenhouse.io/k2spacecorporation/jobs/5287990008.
+  posted: '2026-06-30'
+  last_verified: 2026-11-18
+
 - id: FV-181
   company: Karlsruhe Institute of Technology (André Platzer group)
   role: PhD Student / Doctoral Researcher / Postdoc Positions (Logic of Autonomous Dynamical Systems)
@@ -4018,6 +4489,54 @@
     Requires a strong background in formal verification or system security; up
     to 2 years. Deadline 2026-12-02.
   posted: '2026-11-11'
+  last_verified: 2026-11-18
+
+- id: FV-533
+  company: Lattice Semiconductor
+  role: Senior Design Engineer - Modeling
+  category: hardware
+  url: https://latticesemi.wd5.myworkdayjobs.com/latticesemiconductorscareers/job/Manila-Philippines/Senior-Design-Engineer---Modeling_R-103594
+  location: Manila, Philippines
+  remote: onsite
+  stack: [UVM, Conformal LEC]
+  domain: [FPGA model validation]
+  seniority: senior
+  notes: >-
+    Runs formal equivalence checks with Conformal XL to validate FPGA models;
+    working knowledge of formal equivalence checking is asked for.
+  posted: '2026-10-30'
+  last_verified: 2026-11-18
+
+- id: FV-534
+  company: Lattice Semiconductor
+  role: Senior Design Verification Engineer
+  category: hardware
+  url: https://latticesemi.wd5.myworkdayjobs.com/latticesemiconductorscareers/job/Manila-Philippines/Senior-Design-Verification-Engineer_R-100987
+  location: Manila, Philippines / India
+  remote: onsite
+  stack: [SystemVerilog, UVM, assertion-based verification, formal verification]
+  domain: [FPGA]
+  seniority: senior
+  notes: >-
+    Verifies design blocks with assertion-based and formal verification among
+    other methods. Folds the India requisition R-101078.
+  posted: '2026-06-16'
+  last_verified: 2026-11-18
+
+- id: FV-535
+  company: Lattice Semiconductor
+  role: Senior Staff IP Design Engineer
+  category: hardware
+  url: https://latticesemi.wd5.myworkdayjobs.com/latticesemiconductorscareers/job/Penang-Malaysia/Senior-Staff-SW-Dev-Eng_R-102550
+  location: Penang, Malaysia
+  remote: onsite
+  stack: [RTL design, SVA, formal verification]
+  domain: [audio IP]
+  seniority: senior
+  notes: >-
+    FV is a nice-to-have: SystemVerilog Assertions and formal verification are
+    preferred.
+  posted: '2026-09-23'
   last_verified: 2026-11-18
 
 - id: FV-429
@@ -4127,6 +4646,22 @@
     requisition:
     https://jobs.ashbyhq.com/lumilens/b6a08465-22c2-4df7-833f-db4d751568c0.
   posted: '2026-06-24'
+  last_verified: 2026-11-18
+
+- id: FV-536
+  company: Lumilens
+  role: IC Design Verification Engineer
+  category: hardware
+  url: https://jobs.ashbyhq.com/lumilens/83bd5478-7a3d-4e12-b7b1-e64c43d2fee8
+  location: San Jose, CA
+  remote: onsite
+  stack: [SystemVerilog, UVM, formal verification]
+  domain: [photonic interconnect silicon]
+  seniority: engineer
+  notes: >-
+    FV is a nice-to-have: formal verification for control and interlock logic,
+    as in FV-483.
+  posted: '2026-07-06'
   last_verified: 2026-11-18
 
 - id: FV-075
@@ -4464,6 +4999,23 @@
   posted: '2026-10-19'
   last_verified: 2026-11-18
 
+- id: FV-537
+  company: Meta
+  role: ASIC Engineer, Design Verification
+  category: hardware
+  url: https://www.metacareers.com/profile/job_details/1063449896341082
+  location: Sunnyvale, CA / Austin, TX
+  remote: onsite
+  stack: [SystemVerilog, UVM, formal verification, emulation]
+  domain: [data-center ASICs]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 146,000–209,000 + bonus + equity
+  notes: >-
+    FV is a nice-to-have: formal is a preferred area, and the team uses formal
+    and emulation alongside simulation.
+  last_verified: 2026-11-18
+
 - id: FV-432
   company: Microchip Technology
   role: Technical Staff Engineer - Verification
@@ -4530,6 +5082,23 @@
     Verifies designs with assertion-based and formal verification; JasperGold
     or VC Formal is preferred.
   posted: '2026-06-17'
+  last_verified: 2026-11-18
+
+- id: FV-538
+  company: Microchip Technology
+  role: Engineer I - Verification
+  category: hardware
+  url: https://wd5.myworkdaysite.com/recruiting/microchiphr/External/job/AZ---Chandler/Engineer-I---Verification_R4899-26
+  location: Chandler, AZ
+  remote: onsite
+  stack: [formal property verification, SystemVerilog]
+  domain: [ASIC/SoC]
+  seniority: engineer
+  tags: [big-company]
+  notes: >-
+    Develops formal properties, analyses proof results and drives formal
+    coverage closure.
+  posted: '2026-11-17'
   last_verified: 2026-11-18
 
 - id: FV-313
@@ -4918,6 +5487,23 @@
   notes: >-
     FV is a nice-to-have. USD 200,000–400,000 plus equity.
   posted: '2026-07-15'
+  last_verified: 2026-11-18
+
+- id: FV-539
+  company: Normal Computing
+  role: Formal Verification Engineer
+  category: hardware
+  url: https://jobs.ashbyhq.com/normalcomputing/76d43e7d-8735-4c3a-96de-c8626e82afc3
+  location: Mountain View, CA / London, UK / New York, NY
+  remote: hybrid
+  stack: [SVA, Jasper FPV, Jasper C2RTL, VC Formal, Hector, LEC, Lean]
+  domain: [AI accelerator ASICs]
+  seniority: senior
+  compensation: USD 200,000–325,000 + equity
+  notes: >-
+    Owns the FV tools and methodology: property verification, C-to-RTL and
+    RTL-to-gate equivalence. Lean experience is a bonus.
+  posted: '2026-11-17'
   last_verified: 2026-11-18
 
 - id: FV-212
@@ -5403,6 +5989,58 @@
   posted: '2026-06-08'
   last_verified: 2026-11-18
 
+- id: FV-540
+  company: onsemi
+  role: Senior Design Verification Engineer
+  category: hardware
+  url: https://hctz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/2506316
+  location: Brno, Czech Republic
+  remote: onsite
+  stack: [SystemVerilog, UVM, formal verification]
+  domain: [RISC-V CPU IP]
+  seniority: senior
+  tags: [big-company]
+  notes: >-
+    Combines simulation with advanced formal techniques on a RISC-V CPU IP team;
+    formal verification experience is required.
+  posted: '2026-09-03'
+  last_verified: 2026-11-18
+
+- id: FV-541
+  company: onsemi
+  role: Senior Principal Verification Engineer
+  category: hardware
+  url: https://hctz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/2505731
+  location: Bangalore, India
+  remote: onsite
+  stack: [SystemVerilog, UVM, low-power verification, formal verification]
+  domain: [SoC]
+  seniority: principal
+  tags: [big-company]
+  notes: >-
+    SoC verification lead; one duty is to apply formal verification techniques
+    where appropriate.
+  posted: '2026-06-18'
+  last_verified: 2026-11-18
+
+- id: FV-542
+  company: onsemi
+  role: Staff ASIC Verification Engineer
+  category: hardware
+  url: https://hctz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/2506065
+  location: Bangalore, India
+  remote: onsite
+  stack: [SystemVerilog, UVM, UPF]
+  domain: [SoC and IP]
+  seniority: senior
+  tags: [big-company]
+  notes: >-
+    FV is a nice-to-have: knowledge of formal verification techniques is
+    advantageous. Folds twin requisition 2506066. Other requisitions:
+    https://hctz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/2506066.
+  posted: '2026-09-07'
+  last_verified: 2026-11-18
+
 - id: FV-345
   company: OpenAI
   role: Design Verification Engineer
@@ -5515,7 +6153,7 @@
   role: Lead Principal Core Infrastructure Engineer
   category: software
   url: https://careers.oracle.com/en/sites/jobsearch/job/349056
-  location: Nashville, TN (also other US locations)
+  location: Nashville, TN / Seattle, WA / Santa Clara, CA (also other US locations)
   remote: onsite
   stack: [TLA+, distributed systems]
   domain: [cloud infrastructure]
@@ -5525,8 +6163,9 @@
   notes: >-
     OCI core infrastructure. Fold the twin reqs 347200, 347225, 346057 (same
     title), 342847, 343000, 343022 ('Lead Principal Software Engineer, Core
-    Infrastructure') and 348947 (Bengaluru, 'Lead Principal Software
-    Developer').
+    Infrastructure'), 348947 (Bengaluru, 'Lead Principal Software
+    Developer') and 350822 (Seattle and Santa Clara, 'Lead Principal Core
+    Infrastructure Engineer', posted 2026-11-17).
   posted: '2026-10-27'
   last_verified: 2026-11-18
 
@@ -5791,6 +6430,25 @@
   posted: '2026-03-10'
   last_verified: 2026-11-18
 
+- id: FV-192
+  company: Prover Technology
+  role: Railway signaling engineer – rail and metro
+  category: software
+  url: https://www.prover.com/job-openings/railway-signaling-engingeer/
+  location: Sweden or France
+  remote: hybrid
+  stack: [formal verification, Prover tools, EN 50126/50128/50129]
+  domain: [railway, safety-critical systems]
+  seniority: engineer
+  work_authorization: Must be based in, or move to, Sweden or France
+  notes: >-
+    Evaluates and implements interlocking and train-control systems with
+    formal verification and Prover's tools; no prior formal methods experience
+    needed. Evergreen: first published 2023-03-18 as "Formal methods developer
+    – rail and metro", retitled 2026-11-17.
+  posted: '2023-03-18'
+  last_verified: 2026-11-18
+
 - id: FV-105
   company: Qualcomm
   role: Formal Verification Senior Engineer - Qualcomm, Cambridge, UK
@@ -5892,6 +6550,23 @@
     whether it is filled.
   posted: '2026-07-13'
   last_verified: 2026-11-02
+
+- id: FV-543
+  company: Rain
+  role: Senior Blockchain Security Engineer
+  category: cryptocurrency
+  url: https://jobs.ashbyhq.com/rain/aa39ee38-a16f-4538-9137-fa517c66fd6b
+  location: New York, NY
+  remote: hybrid
+  stack: [Foundry, fuzzing, Certora, Halmos, Slither]
+  domain: [stablecoin payments]
+  seniority: senior
+  compensation: USD 200,000–260,000 + equity + bonus
+  notes: >-
+    FV is a nice-to-have: formal verification or contract static analysis
+    (Certora, Halmos, Slither) as a bonus.
+  posted: '2026-11-17'
+  last_verified: 2026-11-18
 
 - id: FV-359
   company: Reasonable AI
@@ -6271,6 +6946,23 @@
     is still unfilled.
   last_verified: 2026-11-18
 
+- id: FV-544
+  company: SambaNova Systems
+  role: Principal Design Verifiction Engineer
+  category: hardware
+  url: https://sambanova.ai/sambanova-available-positions/?gh_jid=6261758004
+  location: San Jose, CA
+  remote: onsite
+  stack: [SystemVerilog, UVM, formal verification]
+  domain: [AI accelerators]
+  seniority: principal
+  compensation: USD 180,000–225,000
+  notes: >-
+    Owns the test plan, coverage model, formal verification and sign-off for an
+    RDU subsystem. The typo in the title is the posting's.
+  posted: '2026-11-13'
+  last_verified: 2026-11-18
+
 - id: FV-366
   company: Samsung (Samsung Semiconductor India Research)
   role: IP Design Verification Engineer
@@ -6563,6 +7255,54 @@
     FV is a nice-to-have: formal methodologies and SVA are a plus. First
     published 2025-09-29.
   posted: '2025-09-29'
+  last_verified: 2026-11-18
+
+- id: FV-545
+  company: SkyLabs AI
+  role: Senior C++ Systems Engineer
+  category: software
+  url: https://apply.workable.com/skylabs-ai/j/1AC5F27680/
+  location: Islamabad, Pakistan
+  remote: onsite
+  stack: [C++26 contracts, formal specifications, Rocq, Lean, Isabelle]
+  domain: [C++ verification]
+  seniority: senior
+  notes: >-
+    FV is a nice-to-have: proof assistants are a bonus; turns formal
+    specifications into runtime checks (training provided).
+  posted: '2026-01-19'
+  last_verified: 2026-11-18
+
+- id: FV-546
+  company: SkyLabs AI
+  role: Senior C++ Tooling Engineer
+  category: software
+  url: https://apply.workable.com/skylabs-ai/j/63105C111C/
+  location: Islamabad, Pakistan
+  remote: onsite
+  stack: [Clang tooling, SMT, Rocq, Lean, Isabelle]
+  domain: [C++ verification]
+  seniority: senior
+  notes: >-
+    FV is a nice-to-have: exposure to formal methods, SMT solvers or proof
+    assistants is preferred.
+  posted: '2026-06-01'
+  last_verified: 2026-11-18
+
+- id: FV-547
+  company: SkyLabs AI
+  role: Technical Lead - AI for Math
+  category: ai-for-proof
+  url: https://apply.workable.com/skylabs-ai/j/15FEF90B36/
+  location: Islamabad, Pakistan
+  remote: onsite
+  stack: [Lean 4, Rocq]
+  domain: [AI formalisation of mathematics]
+  seniority: lead
+  notes: >-
+    Leads an AI-powered platform for formalizing and proving mathematics in
+    Lean 4 and Rocq.
+  posted: '2026-02-09'
   last_verified: 2026-11-18
 
 - id: FV-501
@@ -7100,6 +7840,75 @@
   posted: '2026-11-05'
   last_verified: 2026-11-18
 
+- id: FV-548
+  company: Télécom Paris (IMT)
+  role: Research and Development Engineer in Formal Methods - 12 months contract
+  category: academic
+  url: https://institutminestelecom.recruitee.com/o/research-and-development-engineer-in-formal-methods-12-months-contract
+  location: Palaiseau, France
+  remote: hybrid
+  stack: [model checking, strategic logics, temporal logics, SAT/SMT]
+  domain: [multi-agent systems, cybersecurity]
+  seniority: research-engineer
+  compensation: EUR 33,614–43,000 gross per year
+  notes: >-
+    Develops strategic model-checking algorithms for the VITAMIN-C project on the
+    VITAMIN platform. 12-month contract; apply by 2026-12-03.
+  posted: '2026-11-09'
+  last_verified: 2026-11-18
+
+- id: FV-549
+  company: Télécom Paris (IMT)
+  role: Research and Development Engineer in Artificial Intelligence - 12 months contract
+  category: academic
+  url: https://institutminestelecom.recruitee.com/o/research-and-development-engineer-in-artificial-intelligence-12-months-contract
+  location: Palaiseau, France
+  remote: hybrid
+  stack: [model checking, LLMs, learning-guided search]
+  domain: [AI for formal verification]
+  seniority: research-engineer
+  compensation: EUR 33,614–43,000 gross per year
+  notes: >-
+    AI for formal verification: learning-guided state-space exploration in the
+    VITAMIN-C model checker and LLM help with writing formal models. FV
+    knowledge is appreciated. Apply by 2026-12-03.
+  posted: '2026-11-09'
+  last_verified: 2026-11-18
+
+- id: FV-550
+  company: Télécom Paris (IMT)
+  role: Post-doctorant(e) en IA agentique correcte par construction (SoS) - CDD de 12 mois
+  category: academic
+  url: https://institutminestelecom.recruitee.com/o/post-doctorante-en-ia-agentique-correcte-par-construction-sos-cdd-de-12-mois
+  location: Palaiseau, France
+  remote: hybrid
+  stack: [formal methods, model checking, strategic logics, runtime verification]
+  domain: [agentic AI, AI safety]
+  seniority: postdoc
+  compensation: EUR 36,000 gross per year
+  notes: >-
+    "Sound or Silent": agents may only take actions formally certified against a
+    specification by a trusted verification kernel. The ad is in French; apply
+    by 2027-01-15.
+  posted: '2026-11-16'
+  last_verified: 2026-11-18
+
+- id: FV-551
+  company: u-blox
+  role: Senior IC Verification Engineer
+  category: hardware
+  url: https://fs-4627.my.salesforce-sites.com/recruit/fRecruit__ApplyJob?vacancyNo=VN2722
+  location: Athens (Marousi), Greece
+  remote: hybrid
+  stack: [Jasper, SVA, CDC/RDC, C, Python]
+  domain: [GNSS SoC]
+  seniority: senior
+  work_authorization: Greek, EU or Schengen citizenship, or a Greek work permit
+  notes: >-
+    Owns the formal verification methodology and flow for u-blox's GNSS chips.
+  posted: '2026-10-07'
+  last_verified: 2026-11-18
+
 - id: FV-207
   company: University of Alberta
   role: Tenure-Track Assistant Professor - Mathematical Foundations of AI and Formal Reasoning
@@ -7449,6 +8258,23 @@
     Postdoc in Huayi Chen's group; applications reviewed on receipt. The ad asks
     for applicants under 35. Folds the older MathJobs listing #27884.
   posted: '2026-10-13'
+  last_verified: 2026-11-18
+
+- id: FV-552
+  company: Zellic
+  role: Cryptographer
+  category: cryptocurrency
+  url: https://zellic-inc.notion.site/Cryptographer-80a44878fdc840d887be28949b1c6084
+  location: Remote / New York, NY
+  remote: remote
+  stack: [zero-knowledge proofs, SNARKs, STARKs, Rust, Circom]
+  domain: [ZK circuit audits]
+  seniority: engineer
+  notes: >-
+    FV is a nice-to-have: formal verification of zero-knowledge circuits.
+    Evergreen: the page dates from 2023-05-13 and was edited 2026-05-07; apply
+    at zel.lc/apply.
+  posted: '2023-05-13'
   last_verified: 2026-11-18
 
 - id: FV-145

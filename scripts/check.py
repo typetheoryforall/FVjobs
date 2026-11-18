@@ -376,7 +376,7 @@ def check(entries):
 # The playbook's FV regex. Tool names are case-sensitive ("Lean" is not "lean
 # team"); phrases are not.
 FV_TOOLS = re.compile(r"\bLean ?4\b|\bLean\b|\bCoq\b|\bRocq\b|Isabelle|\bDafny\b|\bVerus\b|TLA\+"
-                      r"|JasperGold|VC Formal|SymbiYosys|ACL2|Frama-C|SPARK|Atelier B")
+                      r"|JasperGold|VC Formal|SymbiYosys|ACL2|Frama-C|SPARK|\bAtelier B\b")
 FV_PHRASES = re.compile(r"formal verification|formal method|theorem prov|proof assistant|autoformali"
                         r"|formal proof|formal math|mathlib", re.I)
 # Default search terms for boards that only search, never list everything.

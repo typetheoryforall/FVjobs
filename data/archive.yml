@@ -249,26 +249,6 @@
   last_verified: 2026-10-27
   closed: 2026-11-02
 
-- id: FV-228
-  company: Amazon Web Services
-  role: Sr. Software Development Engineer, AWS Proactive Security
-  category: software
-  url: https://www.amazon.jobs/en/jobs/10570444/sr-software-development-engineer-aws-proactive-security
-  location: Seattle, WA, USA
-  remote: onsite
-  stack: [Rust, PKI, formal verification, distributed systems]
-  domain: [cloud security, cryptography]
-  seniority: senior
-  tags: [big-company]
-  compensation: USD 168,100–227,400
-  notes: >-
-    AWS Proactive Security (Piezo). Folds twin req 10570576 (96% the same text).
-    Other requisitions:
-    https://www.amazon.jobs/en/jobs/10570576/sr-software-development-engineer-piezo.
-  posted: '2026-10-06'
-  last_verified: 2026-11-09
-  closed: 2026-11-13
-
 - id: FV-023
   company: Apple
   role: GPU Formal Verification Engineer
@@ -870,25 +850,6 @@
   notes: >-
     FV is a nice-to-have. Hybrid once Positron opens its Austin office.
   posted: '2026-08-05'
-  last_verified: 2026-11-13
-  closed: 2026-11-18
-
-- id: FV-192
-  company: Prover Technology
-  role: Formal methods developer – rail and metro
-  category: software
-  url: https://www.prover.com/job-openings/formal-methods-developer-rail-and-metro/
-  location: Stockholm, Sweden / Toulouse, France
-  remote: hybrid
-  stack: [formal specification, formal verification, Python]
-  domain: [railway, safety-critical systems]
-  seniority: engineer
-  work_authorization: Must be based in Sweden or France
-  notes: >-
-    Formal specifications and verification of rail and metro signalling for
-    Prover's customers. Evergreen: first published 2023-03-18, still listed
-    under available positions.
-  posted: '2023-03-18'
   last_verified: 2026-11-13
   closed: 2026-11-18
 

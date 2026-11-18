@@ -235,7 +235,7 @@
 - {employer: ChainSecurity, ats: manual, how: 'chainsecurity.com/about/#jobs'}
 - {employer: Informal Systems, ats: manual, how: 'informal.systems/careers (not actively hiring on 2026-11-05)'}
 - {employer: Predictable Machines, ats: manual, how: predictablemachines.com/careers}
-- {employer: Ceva, ats: manual, how: 'ceva-ip.com/career/ (resolves again on 2026-11-09); Comeet API company 76.005, token in the career page'}
+- {employer: Ceva, ats: manual, how: 'comeet.com/jobs/ceva/76.005 (ceva-ip.com has no DNS again on 2026-11-18; postings live at comeet.com/jobs/ceva/76.005/{slug}/{id}); Comeet API company 76.005, token in the career page'}
 - {employer: L&T Technology Services, ats: manual, how: 'SenseHQ ltts.sensehq.com/careers/iframe/jobs?pageSize=250 (jobs in __NEXT_DATA__)'}
 - {employer: 'IronVelo, midspiral, Verity Labs, Argument, Lanyon AI, VerifAIX, SkyLabs AI, untyped.ai, Scidonia', ats: manual, how: 'FV startups with no careers page yet; check their sites'}
 # Added on 2026-11-09

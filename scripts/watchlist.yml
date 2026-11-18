@@ -235,9 +235,9 @@
 - {employer: ChainSecurity, ats: manual, how: 'chainsecurity.com/about/#jobs'}
 - {employer: Informal Systems, ats: manual, how: 'informal.systems/careers (not actively hiring on 2026-11-05)'}
 - {employer: Predictable Machines, ats: manual, how: predictablemachines.com/careers}
-- {employer: Ceva, ats: manual, how: 'ceva-ip.com/career/ (resolves again on 2026-11-09); Comeet API company 76.005, token in the career page'}
+- {employer: Ceva, ats: manual, how: 'comeet.com/jobs/ceva/76.005 (ceva-ip.com has no DNS again on 2026-11-18; postings live at comeet.com/jobs/ceva/76.005/{slug}/{id}); Comeet API company 76.005, token in the career page'}
 - {employer: L&T Technology Services, ats: manual, how: 'SenseHQ ltts.sensehq.com/careers/iframe/jobs?pageSize=250 (jobs in __NEXT_DATA__)'}
-- {employer: 'IronVelo, midspiral, Verity Labs, Argument, Lanyon AI, VerifAIX, SkyLabs AI, untyped.ai, Scidonia', ats: manual, how: 'FV startups with no careers page yet; check their sites'}
+- {employer: 'IronVelo, midspiral, Verity Labs, Argument, Lanyon AI, VerifAIX, untyped.ai, Scidonia', ats: manual, how: 'FV startups with no careers page yet; check their sites'}
 # Added on 2026-11-09
 - {employer: General Dynamics Mission Systems, ats: manual, how: 'careers-gdms.icims.com/jobs/search?ss=1&searchKeyword=formal+verification&in_iframe=1 (clearance roles)'}
 - {employer: Renesas Electronics, ats: manual, how: 'SmartRecruiters API, company RenesasElectronics (fuzzy q; grep the postings). Its Workday tenants are wrong'}
@@ -259,7 +259,7 @@
 - {employer: Real Intent, ats: manual, how: 'realintent.com/careers (one page, email apply)'}
 - {employer: Ndea, ats: manual, how: 'ndea.com/jobs (email apply; FLoC 2026 sponsor)'}
 - {employer: ProvenRun, ats: manual, how: 'provenrun.com/careers (no positions listed on 2026-11-13; spontaneous applications only)'}
-- {employer: Zellic, ats: manual, how: 'zellic-inc.notion.site/Jobs-at-Zellic-82cab8ab2be84a3b9fa443e56196fdfa (Notion, browser only; subpages did not render on 2026-11-13)'}
+- {employer: Zellic, ats: manual, how: 'zellic-inc.notion.site/Jobs-at-Zellic-82cab8ab2be84a3b9fa443e56196fdfa (Notion; the browser shows the Current Openings list; Notion''s public loadPageChunk/queryCollection API reads collection ace52b45-20db-4214-af8a-97638c522e60, view 2f475f10-8125-801b-aef9-000c9864fdfc); apply at zel.lc/apply'}
 - {employer: 'Asymptotic, Axiomat, Proofcraft, CE Labs, Atlas Computing', ats: manual, how: 'FV companies with no careers page on 2026-11-13: asymptotic.tech (Sui Prover), axiomat.com (YC F26), proofcraft.systems (seL4 proofs), celabs.eu (verified crypto), atlascomputing.org'}
 # Academic groups and institutes with standing or recurring FV calls
 - {employer: CWI, ats: manual, how: 'cwi.nl/en/jobs/vacancies/ (one plain page)'}
@@ -276,3 +276,37 @@
 - {employer: Inria (Liberabaci, Lyon), ats: manual, how: 'jobs.inria.fr/public/classic/en/offres (one page; filter titles locally); Rocq and Hierarchy Builder posts'}
 - {employer: KTH (Monperrus group), ats: manual, how: 'kth.varbi.com/en/ (Varbi list)'}
 - {employer: Aarhus University (GSNS PhD calls), ats: manual, how: 'phd.nat.au.dk: the next call opens 2026-12-01 (Birkedal group, Iris)'}
+# Added on 2026-11-18
+- {employer: Emergence AI, ats: greenhouse, slug: emergenceai}
+- {employer: K2 Space, ats: greenhouse, slug: k2spacecorporation}
+- {employer: SambaNova Systems, ats: greenhouse, slug: sambanovasystems}
+- {employer: Efficient Computer, ats: greenhouse, slug: efficientcomputer}
+- {employer: SpaceX, ats: greenhouse, slug: spacex}   # silicon engineering only; about 2,800 jobs with heavy "Lean manufacturing" noise
+- {employer: Rebellion Defense, ats: greenhouse, slug: rebelliondefense}   # empty on 2026-11-18; posted an FV Engineer before
+- {employer: Delos Data, ats: ashby, slug: delos-data}
+- {employer: Rain, ats: ashby, slug: rain}
+- {employer: Fomo Labs, ats: ashby, slug: fomo-labs}
+- {employer: AZX, ats: ashby, slug: careers.azx.io}   # its Formal Methods & Agentic Systems role was 404 on 2026-11-18
+- {employer: abaka.AI, ats: ashby, slug: abaka.ai}   # Lean 4 trainer gigs in 2024; none on 2026-11-18
+- {employer: fun.xyz, ats: lever, slug: funxyz}
+- {employer: SkyLabs AI, ats: workable, slug: skylabs-ai}
+- {employer: Lattice Semiconductor, ats: workday, host: latticesemi.wd5.myworkdayjobs.com, site: latticesemiconductorscareers}
+- {employer: Booz Allen Hamilton, ats: workday, host: bah.wd1.myworkdayjobs.com, site: BAH_Jobs}   # search is fuzzy (167 hits for "formal verification")
+- {employer: Formal, ats: manual, how: 'Gem API api.gem.com/job_board/v0/formal/job_posts/ (formalstack.com; Rocq-verified kernel language)'}
+- {employer: onsemi, ats: manual, how: 'Oracle Recruiting Cloud hctz.fa.us2.oraclecloud.com, site CX_1001: recruitingCEJobRequisitions with keyword "formal verification"; its Workday tenants all return 422'}
+- {employer: u-blox, ats: manual, how: 'u-blox.com/en/job-openings (Algolia, JS-only); postings at fs-4627.my.salesforce-sites.com/recruit/fRecruit__ApplyJob?vacancyNo=VN####'}
+- {employer: MIT Lincoln Laboratory, ats: manual, how: 'SuccessFactors careers.ll.mit.edu/search/?q=formal+methods&searchResultView=LIST'}
+- {employer: Common Prefix, ats: manual, how: 'commonprefix.com/careers (Notion postings); posted a Formal Verification Engineer in April 2026'}
+- {employer: LambdaClass, ats: manual, how: 'lambdaclass.com/join is 404; apply by email. Lean 4 FV, ZK and Ethereum clients'}
+- {employer: Argot Collective, ats: manual, how: 'argot.org (no jobs page; Act formal specification, hevm)'}
+- {employer: C Proof (formerly Burnin), ats: manual, how: 'cproof.ai (verified numerical code generation, SMT and Lean); founding roles were on Wellfound in May 2026'}
+- {employer: Hashlock, ats: manual, how: 'hashlock.com/careers (audit firm offering FV)'}
+- {employer: Repovive, ats: manual, how: 'ycombinator.com/companies/repovive/jobs (YC F26; Lean formalisation data and RL environments; no jobs on 2026-11-18)'}
+# Academic groups and institutes, added on 2026-11-18
+- {employer: Télécom Paris / Institut Mines-Télécom, ats: manual, how: 'Recruitee API institutminestelecom.recruitee.com/api/offers/ (all IMT schools; grep descriptions, as "formal" also matches "formation")'}
+- {employer: CISPA Helmholtz Center for Information Security, ats: manual, how: 'career.cispa.de/jobs (two pages; Cremers group)'}
+- {employer: IT University of Copenhagen, ats: manual, how: 'en.itu.dk/About-ITU/Vacancies (HR-Manager links, cid=119; Patrick Bahr''s PL group)'}
+- {employer: Barkhausen Institut (Verified System Design Automation), ats: manual, how: 'barkhauseninstitut.org/en/careers/open-positions'}
+- {employer: University of Southern Denmark (FORM section), ats: manual, how: 'sdu.dk vacancies; Lean and FM PhD and postdoc calls recur'}
+- {employer: RC Trust (TU Dortmund, Reliable AI), ats: manual, how: 'rc-trust.ai/career/vacancies'}
+- {employer: Boston University (POPV group), ats: manual, how: 'ankushdas.github.io (recruits PhD students each autumn; deadline 1 December)'}

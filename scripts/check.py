@@ -155,6 +155,10 @@ def workday(f, u):
     s, _, body = f.get(f"https://{u.netloc}/wday/cxs/{tenant}/{site}/{path}")
     if s == 404:
         return CLOSED, "Workday job API 404"
+    if s == 403 and '"S22"' in (body or ""):
+        # A posting that was taken down answers 403 "permission denied" (S22);
+        # an ID that never existed answers 404 (S21). Checked 2026-11-18.
+        return CLOSED, "Workday job API 403 S22 (posting taken down)"
     if s != 200:
         return CHECK, f"Workday job API: HTTP {s}"
     info = json.loads(body).get("jobPostingInfo", {})
@@ -372,7 +376,7 @@ def check(entries):
 # The playbook's FV regex. Tool names are case-sensitive ("Lean" is not "lean
 # team"); phrases are not.
 FV_TOOLS = re.compile(r"\bLean ?4\b|\bLean\b|\bCoq\b|\bRocq\b|Isabelle|\bDafny\b|\bVerus\b|TLA\+"
-                      r"|JasperGold|VC Formal|SymbiYosys|ACL2|Frama-C|SPARK|Atelier B")
+                      r"|JasperGold|VC Formal|SymbiYosys|ACL2|Frama-C|SPARK|\bAtelier B\b")
 FV_PHRASES = re.compile(r"formal verification|formal method|theorem prov|proof assistant|autoformali"
                         r"|formal proof|formal math|mathlib", re.I)
 # Default search terms for boards that only search, never list everything.

@@ -75,23 +75,6 @@
   last_verified: 2026-11-13
   closed: 2026-11-18
 
-- id: FV-213
-  company: AFRY
-  role: UVM Verification specialist
-  category: hardware
-  url: https://jobs.smartrecruiters.com/AFRY/744000150681479-uvm-verification-specialist
-  location: Pune, India
-  remote: hybrid
-  stack: [UVM, SystemVerilog, assertions, formal]
-  domain: [ASIC/FPGA engineering services]
-  seniority: engineer
-  tags: [big-company]
-  notes: >-
-    ASIC/FPGA engineering services in Pune.
-  posted: '2026-09-21'
-  last_verified: 2026-11-18
-  closed: 2026-11-22
-
 - id: FV-216
   company: Airbus
   role: Artificial_Intelligence_For_Systems_Engineering_Intern
@@ -202,26 +185,6 @@
   posted: '2026-08-18'
   last_verified: 2026-10-27
   closed: 2026-11-02
-
-- id: FV-225
-  company: Amazon Web Services
-  role: Software Development Engineer II, AWS Proactive Security / AWS Piezo
-  category: software
-  url: https://www.amazon.jobs/en/jobs/10570417/software-development-engineer-ii-aws-proactive-security-aws-piezo-aws-proactive-security-aws-piezo
-  location: Seattle, WA, USA
-  remote: onsite
-  stack: [Rust, PKI, formal verification]
-  domain: [cloud security, cryptography]
-  seniority: engineer
-  tags: [big-company]
-  compensation: USD 143,700–194,400
-  notes: >-
-    AWS Proactive Security (Piezo), SDE II. Folds twin req 10570524 (Piezo
-    Customer Experiences, 89% the same text). Other requisitions:
-    https://www.amazon.jobs/en/jobs/10570524/software-development-engineer-ii-aws-proactive-security-aws-piezo-aws-piezo-customer-experiences.
-  posted: '2026-10-06'
-  last_verified: 2026-11-09
-  closed: 2026-11-13
 
 - id: FV-226
   company: Amazon Web Services
@@ -429,24 +392,6 @@
   last_verified: 2026-11-18
   closed: 2026-11-22
 
-- id: FV-266
-  company: Cisco
-  role: Senior ASIC Design Verification Engineer
-  category: hardware
-  url: https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/San-Jose-California-US/Senior-ASIC-Design-Verification-Engineer_2027583
-  location: San Jose, CA, USA
-  remote: onsite
-  stack: [UVM, IEV/VC Formal]
-  domain: [networking ASICs]
-  seniority: senior
-  tags: [big-company]
-  compensation: USD 167,700–245,200 (posting also gives other bands by location)
-  notes: >-
-    FV is a nice-to-have. Networking ASICs; USD 167,700–245,200 (San Jose band).
-  posted: '2026-10-21'
-  last_verified: 2026-11-18
-  closed: 2026-11-22
-
 - id: FV-141
   company: Cryspen
   role: Open applications (Rust verification, hax)
@@ -562,24 +507,6 @@
   posted: '2026-10-16'
   last_verified: 2026-11-13
   closed: 2026-11-18
-
-- id: FV-172
-  company: Google
-  role: Senior Edge-AI SoC Formal Verification Engineer, Google Cloud
-  category: hardware
-  url: https://www.google.com/about/careers/applications/jobs/results/85977668461175494-senior-edgeai-soc-formal-verification-engineer-google-cloud
-  location: Tel Aviv / Haifa, Israel
-  remote: onsite
-  stack: [JasperGold, VC Formal]
-  domain: [hardware, AI accelerators, SoC]
-  seniority: senior
-  tags: [big-company]
-  notes: >-
-    Leads formal property verification strategy and sign-off for Edge-AI SoC
-    blocks; 8 years of formal verification required. A different team and
-    requisition from FV-060.
-  last_verified: 2026-11-18
-  closed: 2026-11-22
 
 - id: FV-060
   company: Google
@@ -1146,26 +1073,6 @@
   last_verified: 2026-11-13
   closed: 2026-11-18
 
-- id: FV-104
-  company: Qualcomm
-  role: CPU Formal Verification Engineer
-  category: hardware
-  url: https://careers.qualcomm.com/careers/job/446720301715
-  location: Santa Clara, CA
-  remote: onsite
-  stack: [JasperGold, VC Formal, ACL2, HOL]
-  domain: [hardware, CPU]
-  seniority: senior
-  tags: [big-company]
-  compensation: USD 147,900–221,900
-  notes: >-
-    End-to-end formalisation of the refinement from architecture to
-    microarchitecture. Domain knowledge wanted in ISA, floating point, memory
-    consistency and coherency.
-  posted: '2026-09-17'
-  last_verified: 2026-11-02
-  closed: 2026-11-05
-
 - id: FV-193
   company: Qualcomm
   role: FY27 Intern - Formal Verification Engineering Internship - 6 months, Cambridge
@@ -1523,3 +1430,21 @@
   posted: '2025-09-01'
   last_verified: 2026-11-02
   closed: 2026-11-05
+
+- id: FV-552
+  company: Zellic
+  role: Cryptographer
+  category: cryptocurrency
+  url: https://zellic-inc.notion.site/Cryptographer-80a44878fdc840d887be28949b1c6084
+  location: Remote / New York, NY
+  remote: remote
+  stack: [zero-knowledge proofs, SNARKs, STARKs, Rust, Circom]
+  domain: [ZK circuit audits]
+  seniority: engineer
+  notes: >-
+    FV is a nice-to-have: formal verification of zero-knowledge circuits.
+    Evergreen: the page dates from 2023-05-13 and was edited 2026-05-07; apply
+    at zel.lc/apply.
+  posted: '2023-05-13'
+  last_verified: 2026-11-18
+  closed: 2026-11-22

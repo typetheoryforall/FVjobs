@@ -297,7 +297,7 @@
 - {employer: u-blox, ats: manual, how: 'u-blox.com/en/job-openings (Algolia, JS-only); postings at fs-4627.my.salesforce-sites.com/recruit/fRecruit__ApplyJob?vacancyNo=VN####'}
 - {employer: MIT Lincoln Laboratory, ats: manual, how: 'SuccessFactors careers.ll.mit.edu/search/?q=formal+methods&searchResultView=LIST'}
 - {employer: Common Prefix, ats: manual, how: 'commonprefix.com/careers (Notion postings); posted a Formal Verification Engineer in April 2026'}
-- {employer: LambdaClass, ats: manual, how: 'lambdaclass.com/join is 404; apply by email. Lean 4 FV, ZK and Ethereum clients'}
+- {employer: LambdaClass, ats: manual, how: 'lambdaclass.com lists openings under "Work with us" (lambdaclass.com/join is 404); apply by email. Lean 4 FV, ZK and Ethereum clients'}
 - {employer: Argot Collective, ats: manual, how: 'argot.org (no jobs page; Act formal specification, hevm)'}
 - {employer: C Proof (formerly Burnin), ats: manual, how: 'cproof.ai (verified numerical code generation, SMT and Lean); founding roles were on Wellfound in May 2026'}
 - {employer: Hashlock, ats: manual, how: 'hashlock.com/careers (audit firm offering FV)'}
@@ -307,6 +307,30 @@
 - {employer: CISPA Helmholtz Center for Information Security, ats: manual, how: 'career.cispa.de/jobs (two pages; Cremers group)'}
 - {employer: IT University of Copenhagen, ats: manual, how: 'en.itu.dk/About-ITU/Vacancies (HR-Manager links, cid=119; Patrick Bahr''s PL group)'}
 - {employer: Barkhausen Institut (Verified System Design Automation), ats: manual, how: 'barkhauseninstitut.org/en/careers/open-positions'}
-- {employer: University of Southern Denmark (FORM section), ats: manual, how: 'sdu.dk vacancies; Lean and FM PhD and postdoc calls recur'}
+- {employer: University of Southern Denmark (FORM section), ats: manual, how: 'Oracle Recruiting Cloud fa-eosd-saasfaprod1.fa.ocs.oraclecloud.com, site CX_1001 (the old sdu.dk job page is 404); Lean and FM PhD and postdoc calls recur'}
 - {employer: RC Trust (TU Dortmund, Reliable AI), ats: manual, how: 'rc-trust.ai/career/vacancies'}
 - {employer: Boston University (POPV group), ats: manual, how: 'ankushdas.github.io (recruits PhD students each autumn; deadline 1 December)'}
+# Added on 2026-11-22
+- {employer: Neuralink, ats: greenhouse, slug: neuralink}
+- {employer: CARIAD, ats: greenhouse, slug: cariadinc}
+- {employer: Arago, ats: ashby, slug: arago}
+- {employer: Texas Instruments, ats: manual, how: 'Oracle Recruiting Cloud edbz.fa.us2.oraclecloud.com, site CX; keyword search is fuzzy, so read ExternalQualificationsStr and ExternalDescriptionStr in each detail'}
+- {employer: Openchip & Software Technologies, ats: manual, how: 'Factorial board openchip.factorialhr.com (postings at /job_posting/{slug}-{id}, full text, no date; a removed id redirects to openchip.factorial.com/#jobs)'}
+- {employer: Pure Silicon Solutions, ats: manual, how: 'puresiliconsolutions.com/careers (Wix; curl returns the full text; apply by email). Formal sign-off services, Budapest and SF Bay Area'}
+- {employer: secunet Security Networks AG, ats: manual, how: 'rexx portal jobs.secunet.com (about 47 postings with JSON-LD datePosted and validThrough; grep for formal and SPARK). Ada/SPARK and the Muen separation kernel'}
+- {employer: Mitsubishi Electric R&D Centre Europe (MERCE), ats: manual, how: 'mitsubishielectric-rce.eu/jobs/ (dated list); formal methods in the Rennes Information and Network Systems team'}
+- {employer: Ubitium, ats: manual, how: 'JOIN join.com/companies/ubitium (public API company id 141906); RISC-V processor startup, Karlsruhe'}
+- {employer: Ayar Labs, ats: manual, how: 'Paycor recruitingbypaycor.com/career/CareerHome.action?clientId=8a7883c66a3387ef016a468ba9d104e6 (lists every job; no posted dates)'}
+- {employer: Sandisk, ats: manual, how: 'Avature avature.sandisk.com/Careers/SearchJobs/{query} in the browser (curl fails the TLS handshake; folderOffset paging does not work)'}
+- {employer: Lawrence Livermore National Laboratory, ats: manual, how: 'SmartRecruiters company LLNL: api.smartrecruiters.com/v1/companies/LLNL/postings (about 190 postings; grep each jobAd)'}
+- {employer: Chipmind, ats: manual, how: 'chipmind.ai/careers (Webflow; role pages under /careers/). AI agents for chip design, Zurich'}
+- {employer: Axiado, ats: manual, how: 'SmartRecruiters company Axiado (FV only in the verification overview on 2026-11-22)'}
+- {employer: Georgia Tech Research Institute (CIPHER), ats: manual, how: 'careers.gtri.gatech.edu (trusted microelectronics; formal methods in the team text)'}
+- {employer: Fondazione Bruno Kessler (FBK), ats: manual, how: 'jobs.fbk.eu/cards-annunci?categoria= (4 dated pages); Embedded Systems unit (nuXmv, OCRA, xSAP)'}
+- {employer: Idaho National Laboratory, ats: manual, how: 'careers.inl.gov (Oracle site pro) is behind a Cloudflare check; check by hand. Formal Methods Postdoc and Senior Formal Methods Researcher seen only on aggregators'}
+- {employer: Scaledge Technology, ats: manual, how: 'scaledge.io/Careers.html (mailto roles; its Formal Verification Engineer is aggregator-only)'}
+- {employer: 'Proof Ninja, Inferara, Formal Vindications, SiCrest Semiconductors, Smart-Silicon', ats: manual, how: 'FV companies with no careers page or a blocked one: proof-ninja.co.jp, inferara.com, formalv.com, sicrestsemiconductors.com, smart-silicon (403)'}
+# Academic groups, added on 2026-11-22
+- {employer: MIT CSAIL (FLAME lab), ats: manual, how: 'flame.csail.mit.edu (homepage banner and a Google Form); Rachit Nigam, theorem proving for hardware'}
+- {employer: TUM (Chair of Fundamentals of Programming), ats: manual, how: 'cs.cit.tum.de/en/prog/open-positions/ (Florian Zuleger; program analysis and verification)'}
+- {employer: University of Missouri (DCPS Lab), ats: manual, how: 'dcpslab.com/vacancies (Khaza Hoque; model-checking PhDs each year)'}

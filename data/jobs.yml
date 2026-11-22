@@ -2655,6 +2655,25 @@
   posted: '2026-10-07'
   last_verified: 2026-11-18
 
+- id: FV-553
+  company: Convergent Research
+  role: Fellow
+  category: academic
+  url: https://jobs.lever.co/convergentresearch/cc4d6241-2817-45dc-8e17-46f07a725433
+  location: United States
+  remote: remote
+  stack: [proof assistants, formalized mathematics, program verification, Lean]
+  domain: [verification in science, formalization of physics]
+  seniority: any
+  notes: >-
+    A part- to full-time fellowship of up to six months mapping the future of
+    formalization and verification in science (physics first), and organizing a
+    workshop that brings Lean, formal methods and scientific-verification
+    communities together. Hands-on experience in formal methods, a quantitative
+    science, scientific infrastructure or AI for math is asked for. An unlisted
+    Lever posting, submitted in issue #49.
+  last_verified: 2026-11-22
+
 - id: FV-048
   company: Cornell University
   role: Postdoc in formal methods and programming languages (Alexandra Silva's group)
@@ -6635,6 +6654,26 @@
     verification of software. A separate role from FV-360.
   posted: '2026-11-12'
   last_verified: 2026-11-18
+
+- id: FV-554
+  company: Reasonable AI
+  role: Member of Technical Staff - Formal Verification Specialist
+  category: ai-for-proof
+  url: https://apply.workable.com/reasonable/j/E85F98D06A/
+  location: London, UK / Budapest, Hungary
+  remote: onsite
+  stack: [Verus, Dafny, Lean, Aeneas, Rocq, Iris, Isabelle, SMT]
+  domain: [formal verification of AI-written software, Rust verification]
+  seniority: senior
+  compensation: Generous salary, with equity
+  notes: >-
+    Benchmarks AI in formal methods, designs LLM training environments and
+    writes verification libraries, starting with SMT-backed auto-active
+    verifiers (Verus ideal) and Lean frameworks for Rust. Asks for a PhD or
+    research career focused on FV, or deep industry FV tooling experience.
+    Submitted in issue #48.
+  posted: '2026-11-18'
+  last_verified: 2026-11-22
 
 - id: FV-441
   company: Renesas Electronics

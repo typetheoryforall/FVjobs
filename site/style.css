@@ -326,9 +326,12 @@ footer p { max-width: 44rem; }
   .tiles { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* Ko-fi's floating tip button draws at the bottom left; move it, and the
-   panel it opens, to the bottom right. */
+/* Ko-fi's floating tip button draws at the bottom left in a frame sized for
+   its default label, so "Tip me on Ko-fi" overflowed it and scrolled. Move the
+   button and the panel it opens to the bottom right, and widen the frame,
+   anchored to the right edge of Ko-fi's fixed-width wrapper. */
 .floatingchat-container-wrap,
+.floatingchat-container-wrap-mobi { left: auto !important; right: 16px !important; }
+.floatingchat-container,
+.floatingchat-container-mobi { left: auto !important; right: 0 !important; width: 230px !important; }
 .floating-chat-kofi-popup-iframe { left: auto !important; right: 16px !important; }
-.floatingchat-container-wrap-mobi { left: auto !important; right: 16px !important; width: 0 !important; }
-.floatingchat-container-mobi { left: auto !important; right: 0 !important; }

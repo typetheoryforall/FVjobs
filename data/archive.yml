@@ -284,25 +284,6 @@
   last_verified: 2026-11-22
   closed: 2026-11-28
 
-- id: FV-226
-  company: Amazon Web Services
-  role: Software Development Manager, AWS Proactive Security / AWS Piezo
-  category: software
-  url: https://www.amazon.jobs/en/jobs/10567912/software-development-manager-aws-proactive-security-aws-piezo-aws-proactive-security-aws-piezo
-  location: Seattle, WA, USA
-  remote: onsite
-  stack: [Rust, PKI, formal verification]
-  domain: [cloud security]
-  seniority: lead
-  tags: [big-company]
-  compensation: USD 184,900–250,200
-  notes: >-
-    Software development manager for AWS Proactive Security (Piezo); management
-    on an FV-using team.
-  posted: '2026-10-02'
-  last_verified: 2026-11-18
-  closed: 2026-11-22
-
 - id: FV-017
   company: Amazon Web Services
   role: Sr Applied Scientist, Amazon Cryptographic Libraries

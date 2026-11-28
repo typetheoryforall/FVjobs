@@ -325,3 +325,10 @@ footer p { max-width: 44rem; }
   .chart { min-width: 34rem; }
   .tiles { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Ko-fi's floating tip button draws at the bottom left; move it, and the
+   panel it opens, to the bottom right. */
+.floatingchat-container-wrap,
+.floating-chat-kofi-popup-iframe { left: auto !important; right: 16px !important; }
+.floatingchat-container-wrap-mobi { left: auto !important; right: 16px !important; width: 0 !important; }
+.floatingchat-container-mobi { left: auto !important; right: 0 !important; }

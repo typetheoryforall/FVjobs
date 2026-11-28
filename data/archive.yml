@@ -55,6 +55,45 @@
   last_verified: 2026-11-09
   closed: 2026-11-13
 
+- id: FV-507
+  company: Advanced Micro Devices (AMD)
+  role: Formal Design Verification Engineer
+  category: hardware
+  url: https://careers.amd.com/careers-home/jobs/97923
+  location: Santa Clara, CA
+  remote: onsite
+  stack: [formal verification, model checking, static analysis, EDA formal tools, Python]
+  domain: [hardware verification methodology]
+  seniority: engineer
+  tags: [big-company]
+  work_authorization: Not eligible for visa sponsorship
+  compensation: USD 200,000–300,000
+  notes: >-
+    Builds formal verification flows and methodology for AMD's Central
+    Verification team. The same team and text as archived FV-153 (Austin),
+    reposted under a new requisition.
+  posted: '2026-11-16'
+  last_verified: 2026-11-22
+  closed: 2026-11-28
+
+- id: FV-005
+  company: Advanced Micro Devices (AMD)
+  role: Staff Formal Verification Engineer (GPU)
+  category: hardware
+  url: https://careers.amd.com/careers-home/jobs/87249?lang=en-us
+  location: Cambridge, United Kingdom
+  remote: hybrid
+  stack: [SystemVerilog, SVA, JasperGold, VC Formal, Murphi, theorem proving]
+  domain: [hardware, GPU]
+  seniority: lead
+  tags: [big-company]
+  notes: >-
+    Primary point of contact for formal across AMD's graphics IP. The scope
+    includes exploring formalisation of the GPU ISA and memory model.
+  posted: '2026-06-18'
+  last_verified: 2026-11-22
+  closed: 2026-11-28
+
 - id: FV-155
   company: Advanced Micro Devices (AMD)
   role: Staff Software Development Engineer - Rust, Compilers, and GPU Systems (1)
@@ -147,6 +186,45 @@
   last_verified: 2026-11-13
   closed: 2026-11-18
 
+- id: FV-451
+  company: Amazon (Annapurna Labs)
+  role: Applied Science III
+  category: ai-for-proof
+  url: https://www.amazon.jobs/en/jobs/10602697/applied-science-iii
+  location: Seattle, WA
+  remote: onsite
+  stack: [Lean 4, SMT, model checking, LLMs]
+  domain: [AI for hardware verification, ISA formalisation]
+  seniority: research-scientist
+  tags: [big-company]
+  compensation: USD 167,100–226,100
+  notes: >-
+    Combines LLMs with Lean 4 to generate proofs, formalise ISAs and
+    microarchitecture, and formally check AI-generated artifacts for custom
+    silicon.
+  posted: '2026-11-13'
+  last_verified: 2026-11-22
+  closed: 2026-11-28
+
+- id: FV-224
+  company: Amazon Web Services
+  role: Applied Scientist, Automated Reasoning Group
+  category: software
+  url: https://www.amazon.jobs/en/jobs/10593664/applied-scientist-automated-reasoning-group
+  location: Seattle, WA
+  remote: onsite
+  stack: [theorem proving, model checking, SAT/SMT, Lean, Verus, Dafny, Isabelle, Rocq]
+  domain: [cloud, AI safety, agentic coding]
+  seniority: research-scientist
+  tags: [big-company]
+  compensation: USD 142,800–193,200 (Seattle)
+  notes: >-
+    A new Seattle requisition aimed at agentic AI and AI-generated code. About
+    two-thirds of its text overlaps FV-013 (10502706), which stays open.
+  posted: '2026-10-30'
+  last_verified: 2026-11-22
+  closed: 2026-11-28
+
 - id: FV-015
   company: Amazon Web Services
   role: Senior Applied Scientist, AWS Quick
@@ -186,24 +264,25 @@
   last_verified: 2026-10-27
   closed: 2026-11-02
 
-- id: FV-226
+- id: FV-225
   company: Amazon Web Services
-  role: Software Development Manager, AWS Proactive Security / AWS Piezo
+  role: Software Development Engineer II, AWS Proactive Security / AWS Piezo
   category: software
-  url: https://www.amazon.jobs/en/jobs/10567912/software-development-manager-aws-proactive-security-aws-piezo-aws-proactive-security-aws-piezo
+  url: https://www.amazon.jobs/en/jobs/10608866/software-development-engineer-ii-aws-proactive-security-aws-piezo-aws-proactive-security-aws-piezo
   location: Seattle, WA, USA
   remote: onsite
   stack: [Rust, PKI, formal verification]
-  domain: [cloud security]
-  seniority: lead
+  domain: [cloud security, cryptography]
+  seniority: engineer
   tags: [big-company]
-  compensation: USD 184,900–250,200
+  compensation: USD 143,700–194,400
   notes: >-
-    Software development manager for AWS Proactive Security (Piezo); management
-    on an FV-using team.
-  posted: '2026-10-02'
-  last_verified: 2026-11-18
-  closed: 2026-11-22
+    AWS Proactive Security (Piezo), SDE II: cryptographic systems in Rust with
+    formal verification and PKI. Reposted under a new requisition on
+    2026-11-18.
+  posted: '2026-10-06'
+  last_verified: 2026-11-22
+  closed: 2026-11-28
 
 - id: FV-017
   company: Amazon Web Services
@@ -266,6 +345,25 @@
   last_verified: 2026-10-27
   closed: 2026-11-02
 
+- id: FV-237
+  company: Anthropic
+  role: Platform Hardware Security
+  category: software
+  url: https://job-boards.greenhouse.io/anthropic/jobs/5257689008
+  location: San Francisco, CA; New York, NY; Seattle, WA
+  remote: onsite
+  stack: [firmware, silicon root of trust, formal verification]
+  domain: [platform security]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 320,000–405,000
+  notes: >-
+    FV is a nice-to-have. Platform and firmware security (silicon root of
+    trust).
+  posted: '2026-06-15'
+  last_verified: 2026-11-22
+  closed: 2026-11-28
+
 - id: FV-023
   company: Apple
   role: GPU Formal Verification Engineer
@@ -302,6 +400,24 @@
   posted: '2026-09-21'
   last_verified: 2026-11-09
   closed: 2026-11-13
+
+- id: FV-162
+  company: Arm
+  role: Senior Formal Verification Engineer (CPU group)
+  category: hardware
+  url: https://careers.arm.com/job/cambridge/senior-formal-verification-engineer-cpu-group/33099/102540987440
+  location: Cambridge, UK
+  remote: hybrid
+  stack: [model checking, assume-guarantee reasoning, Python, Tcl]
+  domain: [hardware, CPU]
+  seniority: senior
+  tags: [big-company]
+  work_authorization: UK skilled worker sponsorship available (Arm covers employer-side costs only; no relocation package)
+  compensation: GBP 73,500–99,500
+  notes: CPU group formal verification team; 5+ years of formal verification required.
+  posted: '2026-10-28'
+  last_verified: 2026-11-22
+  closed: 2026-11-28
 
 - id: FV-027
   company: Arm
@@ -374,6 +490,25 @@
   last_verified: 2026-11-13
   closed: 2026-11-18
 
+- id: FV-401
+  company: Broadcom
+  role: Design Verification Engineer
+  category: hardware
+  url: https://broadcom.wd1.myworkdayjobs.com/External_Career/job/USA-CO-Broomfield/Design-Verification-Engineer_R026745
+  location: Broomfield, CO / Fort Collins, CO / San Diego, CA / San Jose, CA / Irvine, CA
+  remote: onsite
+  stack: [UVM, emulation, formal verification]
+  domain: [SoC verification, iJTAG]
+  seniority: engineer
+  tags: [big-company]
+  compensation: USD 143,800–230,000
+  notes: >-
+    FV is a nice-to-have: formal verification concepts or experience "is a
+    plus".
+  posted: '2026-08-04'
+  last_verified: 2026-11-22
+  closed: 2026-11-28
+
 - id: FV-265
   company: Cisco
   role: ASIC Design Verification Engineer, Technical Leader
@@ -405,6 +540,24 @@
   notes: No individual postings listed; speculative applications via info@cryspen.com.
   last_verified: 2026-10-26
   closed: 2026-10-27
+
+- id: FV-515
+  company: Efficient Computer
+  role: Staff Digital Verification Engineer
+  category: hardware
+  url: https://job-boards.greenhouse.io/efficientcomputer/jobs/4391770009
+  location: San Francisco Bay Area, CA / Pittsburgh, PA / Austin, TX
+  remote: onsite
+  stack: [SystemVerilog, UVM, JasperGold]
+  domain: [energy-efficient processors]
+  seniority: senior
+  compensation: USD 160,000–245,000 + 10% bonus
+  notes: >-
+    FV is a nice-to-have: formal verification with JasperGold or similar under
+    "Ways to stand out".
+  posted: '2026-09-01'
+  last_verified: 2026-11-22
+  closed: 2026-11-28
 
 - id: FV-050
   company: EPFL
@@ -490,6 +643,25 @@
   last_verified: 2026-10-27
   closed: 2026-11-02
 
+- id: FV-477
+  company: Google
+  role: ASIC Formal Verification Engineer, Google Cloud
+  category: hardware
+  url: https://www.google.com/about/careers/applications/jobs/results/137736932183417542-asic-formal-verification-engineer-google-cloud
+  location: Sunnyvale, CA
+  remote: onsite
+  stack: [SystemVerilog, SVA, Jasper, VC Formal, Questa Formal]
+  domain: [TPU, AI accelerators]
+  seniority: engineer
+  tags: [big-company]
+  compensation: USD 138,000–197,000 plus bonus and equity
+  notes: >-
+    Formal verification of TPU blocks; asks for 4 years of experience with
+    formal and design verification.
+  posted: '2026-11-11'
+  last_verified: 2026-11-22
+  closed: 2026-11-28
+
 - id: FV-281
   company: Google
   role: Industry Principal Architect, Web3
@@ -558,6 +730,26 @@
     proof search. Both posting IDs returned "job not found" on 2026-10-26.
   last_verified: 2026-09-25
   closed: 2026-10-26
+
+- id: FV-173
+  company: Google DeepMind
+  role: Staff Software Engineer, GenAI Silicon Automation, DeepMind
+  category: hardware
+  url: https://www.google.com/about/careers/applications/jobs/results/90289280902931142-staff-software-engineer-genai-silicon-automation-deepmind
+  location: Paris, France
+  remote: onsite
+  stack: [formal methods, constraint programming, MLIR, Python, JAX]
+  domain: [AI for chip design, AI accelerators]
+  seniority: senior
+  tags: [big-company]
+  compensation: EUR 130,000–133,000 plus 20% bonus target and equity
+  notes: >-
+    Two of the five duties are formal methods: verifying complex computing
+    systems with formal methods and constraint programming, and putting formal
+    methods in the loop of ML hardware-optimization flows. The qualifications
+    don't ask for formal methods.
+  last_verified: 2026-11-22
+  closed: 2026-11-28
 
 - id: FV-174
   company: Huawei (Edinburgh Research Center)
@@ -737,6 +929,23 @@
     Hartenstein). Deadline 2026-11-19. German-language posting.
   last_verified: 2026-11-18
   closed: 2026-11-22
+
+- id: FV-533
+  company: Lattice Semiconductor
+  role: Senior Design Engineer - Modeling
+  category: hardware
+  url: https://latticesemi.wd5.myworkdayjobs.com/latticesemiconductorscareers/job/Manila-Philippines/Senior-Design-Engineer---Modeling_R-103594
+  location: Manila, Philippines
+  remote: onsite
+  stack: [UVM, Conformal LEC]
+  domain: [FPGA model validation]
+  seniority: senior
+  notes: >-
+    Runs formal equivalence checks with Conformal XL to validate FPGA models;
+    working knowledge of formal equivalence checking is asked for.
+  posted: '2026-10-30'
+  last_verified: 2026-11-22
+  closed: 2026-11-28
 
 - id: FV-184
   company: Logical Intelligence
@@ -1000,6 +1209,22 @@
   last_verified: 2026-11-13
   closed: 2026-11-18
 
+- id: FV-095
+  company: NVIDIA
+  role: Senior Formal Verification Engineer
+  category: hardware
+  url: https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Formal-Verification-Engineer_JR2012844
+  location: Santa Clara, CA / Austin, TX
+  remote: onsite
+  stack: [SystemVerilog, SVA]
+  domain: [hardware, GPU]
+  seniority: senior
+  tags: [big-company]
+  compensation: USD 136,000–218,500 (L3) / 168,000–264,500 (L4) base + equity
+  posted: '2026-09-23'
+  last_verified: 2026-11-22
+  closed: 2026-11-28
+
 - id: FV-099
   company: Oath Technologies
   role: Research Engineer, Tools & Infrastructure
@@ -1072,6 +1297,24 @@
   posted: '2026-08-05'
   last_verified: 2026-11-13
   closed: 2026-11-18
+
+- id: FV-355
+  company: Prime Intellect
+  role: Applied Researcher - Chip Design
+  category: hardware
+  url: https://jobs.ashbyhq.com/primeintellect/9ed2340b-029e-4f58-82f5-0d55f09aad5b
+  location: San Francisco, CA / New York, NY / London, UK / Remote
+  remote: remote
+  stack: [RL, agents, EDA tools, formal methods]
+  domain: [RL environments for semiconductor design]
+  seniority: research-scientist
+  compensation: USD 150,000–300,000 plus equity
+  notes: >-
+    FV is a nice-to-have. RL environments for semiconductor design; remote
+    possible.
+  posted: '2026-10-19'
+  last_verified: 2026-11-22
+  closed: 2026-11-28
 
 - id: FV-193
   company: Qualcomm
@@ -1194,6 +1437,45 @@
   posted: '2026-10-12'
   last_verified: 2026-11-02
   closed: 2026-11-05
+
+- id: FV-575
+  company: secunet Security Networks AG
+  role: Software Developer & Verification Expert (m/w/d)
+  category: software
+  url: https://jobs.secunet.com/Software-Developer-Verification-Expert-mwd-de-j3176.html
+  location: Berlin or Dresden, Germany
+  remote: onsite
+  stack: [Ada/SPARK, Frama-C, Rust, Isabelle, Coq, Why3, Lean, SMT]
+  domain: [high-assurance security, separation kernels]
+  seniority: engineer
+  work_authorization: Very good German required
+  compensation: From EUR 70,000
+  notes: >-
+    Develops high-assurance software in SPARK and applies formal methods to
+    prove critical properties, in the Defence & Space division. The ad is in
+    German; apply by 2027-01-29.
+  posted: '2026-09-17'
+  last_verified: 2026-11-22
+  closed: 2026-11-28
+
+- id: FV-576
+  company: secunet Security Networks AG
+  role: Software Developer (m/w/d) Virtualization & Hypervisor Architecture
+  category: software
+  url: https://jobs.secunet.com/Software-Developer-mwd-Virtualization-Hypervisor-Architect-de-j3174.html
+  location: Berlin or Dresden, Germany
+  remote: onsite
+  stack: [hypervisors, Muen separation kernel]
+  domain: [high-assurance virtualization]
+  seniority: engineer
+  work_authorization: Very good German required
+  compensation: From EUR 60,000
+  notes: >-
+    FV is a nice-to-have: knowledge of applying formal methods is desirable. The
+    ad is in German; apply by 2027-02-10.
+  posted: '2026-11-10'
+  last_verified: 2026-11-22
+  closed: 2026-11-28
 
 - id: FV-495
   company: Semidynamics

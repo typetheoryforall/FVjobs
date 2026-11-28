@@ -62,6 +62,8 @@ code { font-size: .92em; }
 .bar nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
 .bar nav a { color: var(--muted); text-decoration: none; }
 .bar nav a:hover { color: var(--accent); }
+.bar nav a.support { color: var(--accent); }
+.bar nav a.support:hover { text-decoration: underline; }
 
 /* Hero: an inference rule, set like a paper's typing judgement. */
 .hero { padding: 4rem 0 3rem; border-bottom: 1px solid var(--rule); }
@@ -323,3 +325,13 @@ footer p { max-width: 44rem; }
   .chart { min-width: 34rem; }
   .tiles { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Ko-fi's floating tip button draws at the bottom left in a frame sized for
+   its default label, so "Tip me on Ko-fi" overflowed it and scrolled. Move the
+   button and the panel it opens to the bottom right, and widen the frame,
+   anchored to the right edge of Ko-fi's fixed-width wrapper. */
+.floatingchat-container-wrap,
+.floatingchat-container-wrap-mobi { left: auto !important; right: 16px !important; }
+.floatingchat-container,
+.floatingchat-container-mobi { left: auto !important; right: 0 !important; width: 230px !important; }
+.floating-chat-kofi-popup-iframe { left: auto !important; right: 16px !important; }

@@ -62,6 +62,8 @@ code { font-size: .92em; }
 .bar nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
 .bar nav a { color: var(--muted); text-decoration: none; }
 .bar nav a:hover { color: var(--accent); }
+.bar nav a.support { color: var(--accent); }
+.bar nav a.support:hover { text-decoration: underline; }
 
 /* Hero: an inference rule, set like a paper's typing judgement. */
 .hero { padding: 4rem 0 3rem; border-bottom: 1px solid var(--rule); }

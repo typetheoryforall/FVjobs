@@ -125,8 +125,13 @@ def lever(f, u):
     org, job = u.path.strip("/").split("/")[:2]
     api = "api.eu.lever.co" if u.netloc.startswith("jobs.eu.") else "api.lever.co"
     s, _, _ = f.get(f"https://{api}/v0/postings/{org}/{job}")
-    return {200: (OPEN, "Lever posting API 200"), 404: (CLOSED, "Lever posting API 404")}.get(
-        s, (CHECK, f"Lever posting API: HTTP {s}"))
+    if s == 404:
+        # The API hides unlisted postings, whose pages still take applications.
+        ps, _, body = f.get(u.geturl())
+        if ps == 200 and "Apply for this job" in (body or ""):
+            return OPEN, "unlisted Lever posting: page live with Apply"
+        return CLOSED, "Lever posting API 404"
+    return {200: (OPEN, "Lever posting API 200")}.get(s, (CHECK, f"Lever posting API: HTTP {s}"))
 
 
 # Careers sites that front a Greenhouse board with ?gh_jid=.
